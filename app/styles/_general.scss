@@ -14,3 +14,14 @@ html, body {
   color: #000;
   padding: 0.2em 0;
 }
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: $screen-desktop-max) {
+  .container {
+    width: 90%
+  }
+}

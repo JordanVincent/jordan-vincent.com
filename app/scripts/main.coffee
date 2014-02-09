@@ -1,11 +1,9 @@
-fitHeader = ->
+fitScreen = ->
   height = $(window).height()
-  $('.header').height(height)
+  $('.header').add('.background').height(height)
 
 $(document).ready ->
-  fitHeader()
+  fitScreen()
 
 $(window).resize ->
-  fitHeader()
-
-
+  fitScreen()
