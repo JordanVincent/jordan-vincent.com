@@ -1,5 +1,3 @@
-$default-prefixes: webkit moz ms o;
-
 @mixin build-prefix-values($property, $value, $prefixes: $default-prefixes) {
   @each $prefix in $prefixes {
       -#{$prefix}-#{$property}: #{$value};

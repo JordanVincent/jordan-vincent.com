@@ -1,14 +1,18 @@
 .header {
   background: black url(#{$images-path}header-panorama.png) no-repeat center;
   background-size: 100%;
-  width: 100%;
-  height: 250px;
-  padding: 100px 0;
   text-align: center;
   position: relative;
+  display: table;
+  width: 100%;
+
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
   h1 {
-    @include text-shadow(0px 1px 1px rgba(150, 150, 150, 0.8));
+    @include text-shadow(0px 1px 1px rgba(0, 0, 0, .5));
     font-size: 6em;
     margin: 0 0 30px 0;
   }
@@ -48,5 +52,34 @@
       bottom: 40px;
     }
   }
+}
 
+@media (max-aspect-ratio: 2/1) {
+  .header {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: $screen-mobile-max) {
+  .header {
+    h1 {
+      font-size: 2.5em;
+    }
+    .sub-title {
+      font-size: 1em;
+      padding: 8px 10px;
+    }
+  }
+}
+
+@media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
+  .header {
+    h1 {
+      font-size: 4em;
+    }
+    .sub-title {
+      font-size: 2em;
+      padding: 8px 20px;
+    }
+  }
 }
