@@ -20,6 +20,11 @@ html, body {
   margin: 0 auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 @media (max-width: $screen-desktop-max) {
   .container {
     width: 90%

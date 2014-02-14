@@ -1,6 +1,6 @@
 fitScreen = ->
   height = $(window).height()
-  $('.header').add('.background').height(height)
+  $('.fullscreen').height(height)
 
 initSmoothScroll = ->
   $('a').smoothScroll()

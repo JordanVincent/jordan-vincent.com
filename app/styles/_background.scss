@@ -1,4 +1,4 @@
-.background {
+#background {
   .inner {
     padding-top: 40px;
   }
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: $screen-mobile-max) {
-  .background {
+  #background {
     h2 {
       font-size: 1.4em;
     }
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
-  .background {
+  #background {
     h2 {
       font-size: 2em;
     }
