@@ -1,5 +1,6 @@
 #projects {
-  background-color: $grey-lighter;
+  background: $grey-lighter url(#{$images-path}background.png);
+  background-size: 60px;
 
   .inner {
     padding: 30px 0;
@@ -13,6 +14,11 @@
     .img {
       width: 10%;
       float: left;
+
+      .icon {
+        width: 100%;
+        border-radius: 3px 0 0 3px;
+      }
     }
 
     .content {
