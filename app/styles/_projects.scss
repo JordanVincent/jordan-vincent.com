@@ -1,0 +1,48 @@
+#projects {
+  background-color: $grey-lighter;
+
+  .inner {
+    padding: 30px 0;
+  }
+
+  .project {
+    @include box-shadow(0 1px 1px $black-trans);
+    margin-bottom: 30px;
+    border-radius: 3px;
+
+    .img {
+      width: 10%;
+      float: left;
+    }
+
+    .content {
+      width: 86%;
+      float: left;
+      border-radius: 0 3px 3px 0;
+      padding: 0 2% 30px 2%;
+      background-color: white;
+
+      header {
+        border-bottom: 1px solid $grey-light;
+        margin: 10px 0 15px 0;
+        padding-bottom: 10px;
+      }
+      .content-inner {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-mobile-max) {
+  #projects {
+    .project {
+      .img {
+        display: none;
+      }
+      .content {
+        width: 96%;
+      }
+    }
+  }
+}

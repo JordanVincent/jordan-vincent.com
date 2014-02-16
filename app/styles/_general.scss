@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Utsaah, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -23,6 +23,10 @@ html, body {
 a {
   color: black;
   text-decoration: none;
+}
+
+.cleaner {
+  clear: both;
 }
 
 @media (max-width: $screen-desktop-max) {
