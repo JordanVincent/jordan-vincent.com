@@ -24,7 +24,9 @@ class App
   displayNavigation: ->
     scrollY = $(document).scrollTop()
     headerHeight = $('#header').height()
-    navTop = if scrollY > headerHeight then 0 else -72
+    navHeight    = $('#nav').outerHeight()
+
+    navTop = if scrollY > (headerHeight-navHeight) then 0 else -navHeight
     $('#nav').css('top',navTop)
 
 
