@@ -45,6 +45,7 @@
 
     .head {
       margin-bottom: 40px;
+      opacity: .8;
 
       .head-inner {
         @include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.35));
