@@ -9,19 +9,23 @@
   background-color: white;
   border-bottom: 1px solid $grey-light;
 
+  a {
+    display: inline-block;
+  }
+
   .logo {
     display: inline-block;
     vertical-align: top;
     border-right: 1px solid $grey-light;
 
+    &:hover {
+      background-color: $grey-lighter;
+    }
+
     img {
       height: 40px;
       margin: 13px 25px;
     }
-  }
-
-  .nav-left {
-
   }
 
   .nav-right {
@@ -47,13 +51,61 @@
       }
 
       a {
-        cursor: pointer;
-        display: inline-block;
         padding: 10px 15px;
         color: $grey;
 
-        &:hover {
+        &:hover, &.active {
           color: black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-mobile-max) {
+  #nav {
+    ul {
+      li {
+        &:first-child a {
+          padding-left: 10px;
+        }
+
+        &:last-child a {
+          padding-right: 10px;
+        }
+
+        a {
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
+  #nav {
+    .logo {
+      img {
+        height: 25px;
+        margin: 13px 15px;
+      }
+    }
+
+    ul {
+      margin: 14px 0;
+
+      li {
+        &:first-child a {
+          padding-left: 10px;
+        }
+
+        &:last-child a {
+          padding-right: 10px;
+        }
+
+        a {
+          padding: 5px 5px;
         }
       }
     }

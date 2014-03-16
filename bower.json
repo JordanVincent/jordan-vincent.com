@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.10.2",
-    "jquery.smooth-scroll": "1.4.13"
+    "jquery.smooth-scroll": "1.4.13",
+    "protonet/jquery.inview": "*"
   },
   "devDependencies": {}
 }

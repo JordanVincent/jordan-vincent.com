@@ -9,7 +9,6 @@
   .project {
     @include box-shadow(0 1px 1px $black-trans);
     margin-bottom: 30px;
-    border-radius: 3px;
 
     .img {
       width: 10%;
@@ -17,14 +16,12 @@
 
       .icon {
         width: 100%;
-        border-radius: 3px 0 0 3px;
       }
     }
 
     .content {
       width: 86%;
       float: left;
-      border-radius: 0 3px 3px 0;
       padding: 0 2% 30px 2%;
       background-color: white;
 
