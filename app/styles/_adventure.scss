@@ -4,7 +4,20 @@
   background-size: 100%;
   color: white;
 
+  h2 {
+    font-size: 2.5em;
+    margin: 0 0 60px 0;
+    border: 1px solid white;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, .2);
+    display: inline-block;
+  }
+
   .container {
+    padding-top: 80px;
+  }
+
+  .columns {
     display: table;
     height: 100%;
 
@@ -30,6 +43,8 @@
     }
 
     .head {
+      margin-bottom: 40px;
+
       .head-inner {
         @include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.35));
         border: 8px solid white;
@@ -70,13 +85,21 @@
     .body {
       h3 {
         font-size: 2em;
-        margin-bottom: 0;
+        display: inline;
+        background: rgba(255, 255, 255, .3);
+        color: #FFF;
       }
 
       p {
         font-weight: bold;
         margin-bottom: 0;
         text-align: justify;
+        border-bottom: 1px solid white;
+        padding-bottom: 15px;
+
+        &:last-child {
+          border-bottom: 0;
+        }
 
         strong {
           text-decoration: underline;
@@ -94,6 +117,10 @@
 
 @media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
   #adventure {
+    h2 {
+      margin: 0 0 30px 0;
+      font-size: 2em;
+    }
     .column {
       width: auto;
       margin-top: 40px;
@@ -102,17 +129,26 @@
       .head {
         display: inline-block;
         vertical-align: middle;
-        width: 40%;
+        width: 35%;
       }
 
       .body {
         display: inline-block;
         vertical-align: middle;
-        width: 60%;
+        width: 65%;
 
         h3 {
           margin-top: 0;
           font-size: 1.5em;
+        }
+
+        p {
+          margin-top: 5px;
+          padding-bottom: 5px;
+
+          &:last-child {
+            border-bottom: 0;
+          }
         }
       }
     }
@@ -121,12 +157,18 @@
 
 @media (max-width: $screen-mobile-max) {
   #adventure {
+    h2 {
+      margin: 0 0 30px 0;
+      font-size: 2em;
+    }
     .column {
       width: auto;
       margin-top: 20px;
       padding: 0;
 
       .head {
+        margin: 20px 0 0 0;
+
         .head-inner {
           @include box-shadow(none);
           border: 0;
@@ -139,6 +181,7 @@
         h3 {
           display: inline-block;
           font-size: 2em;
+          margin: 0;
         }
 
         h4 {
@@ -148,13 +191,16 @@
       }
 
       .body {
-        h2 {
-          margin-top: 0;
-          font-size: 1.5em;
+        h3 {
+          margin: 0 0 10px 0;
+          font-size: 1.3em;
         }
 
         p {
           font-size: 0.9em;
+          margin-top: 5px;
+          border: 0;
+          padding: 0;
         }
       }
     }
