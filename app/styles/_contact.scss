@@ -1,0 +1,31 @@
+#contact {
+  background-color: $purple;
+  color: white;
+
+  .inner {
+    padding-top: 30px;
+  }
+
+  h2 {
+    margin-bottom: 100px;
+  }
+
+  .contacts {
+    width: 100%;
+    margin-bottom: 100px;
+
+    td {
+      text-align: center;
+      a{
+        color: white;
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 2px 0;
+    font-size: 1.2em;
+  }
+}
