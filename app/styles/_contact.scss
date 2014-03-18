@@ -2,6 +2,7 @@
   background-color: $purple-dark;
   color: white;
   text-align: right;
+  position: relative;
 
   .inner {
     padding-top: 100px;
@@ -41,17 +42,22 @@
     border-bottom: 2px solid $orange;
   }
 
-  .contacts {
+  .footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    margin-bottom: 100px;
+    background: $purple-darker;
+    opacity: 0.7;
+    padding: 15px 0;
+    font-size: .9em;
+    text-align: left;
 
-    td {
-      text-align: center;
-      a{
-        color: white;
-        font-size: 1.8em;
-        font-weight: bold;
-      }
+    .copyright {
+      float: right;
+    }
+
+    a {
+      color: white;
     }
   }
 }
