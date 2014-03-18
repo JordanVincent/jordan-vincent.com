@@ -39,3 +39,29 @@ a {
     width: 90%
   }
 }
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-wrench {
+  background-image: url(#{$icons-path}wrench.svg);
+}
+
+.icon-link {
+  background-image: url(#{$icons-path}link.svg);
+}
+
+.icon-star {
+  background-image: url(#{$icons-path}star.svg);
+}
+
+.icon-stopwatch {
+  background-image: url(#{$icons-path}stopwatch.svg);
+}
+

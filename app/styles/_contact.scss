@@ -1,13 +1,44 @@
 #contact {
-  background-color: $purple;
+  background-color: $purple-dark;
   color: white;
+  text-align: right;
 
   .inner {
-    padding-top: 30px;
+    padding-top: 100px;
   }
 
-  h2 {
-    margin-bottom: 100px;
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: normal;
+  }
+
+  p {
+    opacity: .8;
+
+    a {
+      color: white;
+      font-size: 1.2em;
+    }
+  }
+
+
+  h3 {
+    font-size: 3.2em;
+    display: inline-block;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    a {
+      color: $orange;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    border-bottom: 2px solid $orange;
   }
 
   .contacts {
@@ -22,10 +53,5 @@
         font-weight: bold;
       }
     }
-  }
-
-  p {
-    margin: 0 0 2px 0;
-    font-size: 1.2em;
   }
 }
