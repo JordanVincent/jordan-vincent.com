@@ -61,3 +61,25 @@
     }
   }
 }
+
+@media (max-width: $screen-mobile-max) {
+  #contact {
+    h1 {
+      font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
+  #contact {
+    h1 {
+      font-size: 1.8em;
+    }
+    h3 {
+      font-size: 2.5em;
+    }
+  }
+}
