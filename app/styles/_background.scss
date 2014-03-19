@@ -11,7 +11,7 @@
   }
 
   h2 {
-    @include text-shadow(1px 1px 1px $black-trans);
+    @include text-shadow(1px 1px 0 $black-trans);
     font-size: 2.2em;
     margin: 20px 0;
 
