@@ -26,6 +26,10 @@
       height: 40px;
       margin: 13px 25px;
     }
+
+    .menu-btn {
+      display: none;
+    }
   }
 
   .nav-right {
@@ -64,18 +68,52 @@
 
 @media (max-width: $screen-mobile-max) {
   #nav {
-    ul {
-      li {
-        &:first-child a {
-          padding-left: 10px;
-        }
+    &.closed {
+      ul {
+        display: none;
+      }
+      .logo .menu-btn {
+        background-image: url(#{$images-path}menu.png);
+      }
+    }
+    .logo {
+      border: 0;
+      display: block;
 
-        &:last-child a {
-          padding-right: 10px;
+      .menu-btn {
+        background: url(#{$images-path}close.png) no-repeat center;
+        width: 20px;
+        height: 20px;
+        float: right;
+        display: block;
+        padding: 26px;
+        cursor: pointer;
+
+        &:active, &:hover {
+          background-color: $grey-light;
         }
+      }
+    }
+    ul {
+      display: block;
+      margin: 0;
+
+      &.nav-right {
+        float: none;
+      }
+
+      li {
+        border-top: 1px solid $grey-light;
+        display: block;
+        font-size: 1.4em;
+        text-align: right;
 
         a {
-          padding: 10px 5px;
+          display: block;
+        }
+
+        &:first-child a, &:last-child a {
+          padding: 10px 15px;
         }
       }
     }

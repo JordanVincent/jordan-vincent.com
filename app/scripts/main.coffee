@@ -4,6 +4,7 @@ class App
     $(document).ready =>
       @fitScreen()
       @initSmoothScroll()
+      @initToggleNavigation()
       @activateNavigationLinks()
 
     $(window).resize =>
@@ -22,6 +23,21 @@ class App
   initSmoothScroll: ->
     $('a').smoothScroll
       offset: -$('#nav').outerHeight()
+
+  initToggleNavigation: ->
+    $nav = $('#nav')
+
+    closeNav = ->
+      $nav.addClass('closed')
+
+    openNav = ->
+      $nav.removeClass('closed')
+
+    $nav.find('.menu-btn').click ->
+      if $nav.hasClass('closed') then openNav() else closeNav()
+
+    $nav.find('li a').click ->
+      closeNav()
 
   displayNavigation: ->
     scrollY = $(document).scrollTop()
