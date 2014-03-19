@@ -6,6 +6,7 @@ class App
       @initSmoothScroll()
       @initToggleNavigation()
       @activateNavigationLinks()
+      @runHeaderCarousel()
 
     $(window).resize =>
       @fitScreen()
@@ -38,6 +39,18 @@ class App
 
     $nav.find('li a').click ->
       closeNav()
+
+  runHeaderCarousel: ->
+    $carouselItems = $('#header .carousel .carousel-item')
+    carouselIndex = 0
+
+    $($carouselItems[carouselIndex]).show()
+
+    setInterval ->
+      carouselIndex = ($carouselItems.length-1) if --carouselIndex < 0
+      $carouselItems.filter(':visible').fadeOut 800, ->
+        $($carouselItems[carouselIndex]).fadeIn(800)
+    , 4000
 
   displayNavigation: ->
     scrollY = $(document).scrollTop()

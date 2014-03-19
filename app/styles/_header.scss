@@ -17,20 +17,24 @@
     margin: 0 0 30px 0;
   }
 
-  .sub-title {
-    padding: 8px 30px;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    background: $orange;
-    color: white;
-    display: inline-block;
-    border-bottom: 4px solid transparent;
-    cursor: pointer;
+  .carousel {
+    .carousel-item {
+      @include text-shadow(0px 1px 1px rgba(0, 0, 0, .5));
+      @include transition(background-color .3s ease);
+      padding: 8px 30px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: white;
+      display: none;
+      border: 2px solid white;
+      cursor: pointer;
+      background-color: transparent;
 
-    &:hover {
-      background-color: $orange-light;
-      border-color: $orange-dark;
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(255,255,255,.3);
+      }
     }
   }
 
@@ -66,7 +70,7 @@
     h1 {
       font-size: 2.5em;
     }
-    .sub-title {
+    .carousel .carousel-item {
       font-size: 1em;
       padding: 8px 10px;
     }
@@ -74,12 +78,12 @@
 }
 
 @media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
-  .header {
+  #header {
     h1 {
-      font-size: 4em;
+      font-size: 3.8em;
     }
-    .sub-title {
-      font-size: 2em;
+    .carousel .carousel-item {
+      font-size: 1.8em;
       padding: 8px 20px;
     }
   }
