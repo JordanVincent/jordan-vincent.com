@@ -5,8 +5,8 @@ class App
       @fitScreen()
       @initSmoothScroll()
       @initToggleNavigation()
-      @activateNavigationLinks()
       @runHeaderCarousel()
+      @activateNavigationLinks()
 
     $(window).resize =>
       @fitScreen()
@@ -61,12 +61,44 @@ class App
     $('#nav').css('top',navTop)
 
   activateNavigationLinks: ->
-    $('section').bind 'inview', (e, isInView, visibleX, visibleY) ->
-      $('#nav li a').each (index, link) =>
-        $link = $(link)
-        return unless $link.attr('href') is '#' + $(@).attr('id')
-        return $link.removeClass('active') unless isInView
-        $link.addClass('active')
+    $links     = $('#nav li a')
+    $sections  = $('section')
+    $document  = $(document)
+    navHeight  = $('#nav').outerHeight()
+
+    isSectionPassed = ($section) ->
+      scrollY    = $document.scrollTop()
+      sectionTop = Math.round($section.position().top)
+      sectionTop <= scrollY + navHeight
+
+    passedSections = ->
+      $sections.filter (index, section) ->
+        isSectionPassed $(section)
+
+    activeSection = ->
+      passed = passedSections()
+      sorted = passed.sort (sectionA, sectionB) ->
+        sectionATop = $(sectionA).position().top
+        sectionBTop = $(sectionB).position().top
+        sectionBTop - sectionATop
+      sorted[0]
+
+    isSessionLink = ($link, $session) ->
+      $link.attr('href') is '#' + $session.attr('id')
+
+    sessionLink = ($session) ->
+      $links.filter (index, link) ->
+        isSessionLink $(link), $session
+
+    activateLink = ->
+      $activeSection = $(activeSection())
+      $links.removeClass('active')
+
+      link = sessionLink $activeSection
+      $(link).addClass('active')
+
+    $document.scroll ->
+      activateLink()
 
 
 app = new App
