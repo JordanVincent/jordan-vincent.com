@@ -17,6 +17,7 @@
     display: inline-block;
     vertical-align: top;
     border-right: 1px solid $grey-light;
+    float: left;
 
     &:hover {
       background-color: $grey-lighter;
@@ -34,6 +35,10 @@
 
   .nav-right {
     float: right;
+  }
+
+  .nav-left {
+    float: left;
   }
 
   ul {
@@ -69,16 +74,20 @@
 @media (max-width: $screen-mobile-max) {
   #nav {
     &.closed {
+
       ul {
         display: none;
       }
+
       .logo .menu-btn {
         background-image: url(#{$images-path}menu.png);
       }
     }
+
     .logo {
       border: 0;
       display: block;
+      float: none;
 
       .menu-btn {
         background: url(#{$images-path}close.png) no-repeat center;
@@ -94,11 +103,12 @@
         }
       }
     }
+
     ul {
       display: block;
       margin: 0;
 
-      &.nav-right {
+      &.nav-right, &.nav-left {
         float: none;
       }
 
