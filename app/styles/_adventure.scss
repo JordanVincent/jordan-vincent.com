@@ -1,5 +1,4 @@
 #adventure {
-  @include text-shadow(0px 1px 1px rgba(0, 0, 0, .8));
   background: black url(#{$images-path}adventure-panorama.png) no-repeat center;
   background-size: 100%;
   color: white;
@@ -47,7 +46,6 @@
       opacity: .8;
 
       .head-inner {
-        @include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.35));
         border: 8px solid white;
         border-radius: 120px;
         width: 120px;
@@ -171,7 +169,6 @@
         margin: 20px 0 0 0;
 
         .head-inner {
-          @include box-shadow(none);
           border: 0;
           border-radius: 0;
           text-align: left;

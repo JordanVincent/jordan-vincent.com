@@ -1,48 +1,35 @@
 #background {
-  background-color: $beige-light;
+  background-color: white;
 
   .inner {
     padding-top: 50px;
   }
 
-  h4 {
-    margin: 0 0 40px 0;
+  h2 {
     font-size: 1.2em;
+    margin-top: 40px;
   }
 
-  h2 {
-    @include text-shadow(1px 1px 0 $black-trans);
-    font-size: 2.2em;
-    margin: 20px 0;
-
-    &.conclusion {
-      text-align: right;
-      font-style: italic;
-      margin-top: 60px;
+  .row {
+    .dates {
+      width: 160px;
+      float: left;
     }
 
-    strong {
-      color: $orange;
-    }
-
-    small {
-      color: $grey;
+    p {
+      margin-left: 180px;
     }
   }
 }
 
 @media (max-width: $screen-mobile-max) {
   #background {
-    h2 {
-      font-size: 1.4em;
-    }
+
   }
 }
 
 @media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
   #background {
-    h2 {
-      font-size: 2em;
-    }
+   
   }
 }

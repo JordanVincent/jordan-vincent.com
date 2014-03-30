@@ -12,14 +12,12 @@
   }
 
   h1 {
-    @include text-shadow(0px 1px 1px rgba(0, 0, 0, .5));
     font-size: 6em;
     margin: 0 0 30px 0;
   }
 
   .carousel {
     .carousel-item {
-      @include text-shadow(0px 1px 1px rgba(0, 0, 0, .5));
       @include transition(background-color .3s ease);
       padding: 8px 30px;
       text-align: center;
