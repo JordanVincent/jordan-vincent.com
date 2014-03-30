@@ -31,8 +31,11 @@ a {
   text-decoration: none;
   cursor: pointer;
 
-  &:hover {
-    text-decoration: underline;
+  &.external-link {
+    border-bottom: 1px dotted black;
+    &:hover {
+      border-bottom: 1px solid black;
+    }
   }
 }
 
