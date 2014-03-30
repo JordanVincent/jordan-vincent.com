@@ -22,14 +22,17 @@
   }
 }
 
-@media (max-width: $screen-mobile-max) {
+@media (max-width: $screen-tablet-max) {
   #background {
+    .row {
+      .dates {
+        width: auto;
+        float: none;
+      }
 
-  }
-}
-
-@media (min-width: $screen-mobile-max) and (max-width: $screen-tablet-max) {
-  #background {
-   
+      p {
+        margin: 0 0 20px 0;
+      }
+    }
   }
 }
