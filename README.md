@@ -6,7 +6,7 @@ http://jordan-vincent.com
 
 ### Installation
 * ``npm install``
-* ``bundle install``
+* ``bower install``
 
 ### Requirements
 * Node.js 0.10

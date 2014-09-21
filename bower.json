@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "~1.10.2",
     "jquery.smooth-scroll": "1.4.13",
-    "protonet/jquery.inview": "*"
+    "jquery.inview": "1.0.0"
   },
   "devDependencies": {}
 }
