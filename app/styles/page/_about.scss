@@ -1,15 +1,28 @@
 #about {
-  font-family: "Cambria";
-  font-size: 1.4em;
 
-  .img {
-    width: 100%;
-    height: 200px;
+  img {
+    height: 150px;
     background-color: #EEE;
+    border-radius: 3px;
   }
 
   h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
+    margin-bottom: 30px;
   }
+
+  p {
+    font-family: "Cambria";
+    font-size: 1.4em;
+    color: #444;
+  }
+
+  .navigation-bar {
+    margin-top: 50px;
+    .btn {
+      font-weight: bold;
+    }
+  }
+
+
 }

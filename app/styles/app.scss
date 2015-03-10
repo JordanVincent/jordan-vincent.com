@@ -1,5 +1,25 @@
 body {
-  padding-top: 50px;
+  padding: 50px 0;
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.content-container {
+  
+}
+
+.centered-column {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.side-column {
+  width: 150px;
+  position: absolute;
+  left: -170px;
 }
 
 @import "page/about";
