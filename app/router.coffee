@@ -8,6 +8,7 @@ Router.map ->
   @route 'about', {path: '/'}
   @route 'inspiration'
   @route 'contact'
+  @route 'resume'
   @resource 'projects'
 
 `export default Router;`
