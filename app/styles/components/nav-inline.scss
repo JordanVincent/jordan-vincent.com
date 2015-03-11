@@ -1,0 +1,12 @@
+.nav-inline {
+  margin-top: 50px;
+
+  & > .btn {
+    font-weight: bold;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

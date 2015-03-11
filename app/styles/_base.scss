@@ -1,0 +1,56 @@
+body {
+  padding: 80px 0;
+}
+
+.btn {
+  border-radius: 3px;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &.btn-default {
+    background-color: #EEE;
+    &:hover {
+      background-color: #DDD;
+    }
+  }
+
+  &.active {
+    background-color: #1D5774;
+    color: white;
+    box-shadow: none;
+    &:hover {
+      background-color: #154359;
+    }
+  }
+}
+
+.centered-column {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.side-column {
+  width: 150px;
+  position: absolute;
+  left: -170px;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Cambria";
+  font-size: 1.4em;
+  color: #444;
+  margin: 0 0 30px 0;
+}
