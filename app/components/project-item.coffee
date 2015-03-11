@@ -1,6 +1,8 @@
 `import Ember from 'ember';`
 
 ProjectItem = Ember.Component.extend
+  classNames: ['project-item']
+
   style: (->
     color = @get('project.color') ? '#EEE'
     'background-color:' + @get('project.color') + '; ' +
