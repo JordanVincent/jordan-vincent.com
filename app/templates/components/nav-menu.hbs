@@ -1,7 +1,7 @@
 <ul class="nav nav-pills nav-stacked nav-menu">
-  <li>{{link-to 'About' 'about'}}</li>
-  <li>{{link-to 'Inspiration' 'inspiration'}}</li>
-  <li>{{link-to 'Projects' 'projects.index'}}</li>
-  <li>{{link-to 'Contact' 'contact'}}</li>
-  <li>{{link-to 'Résume' 'resume'}}</li>
+  {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
+  {{#link-to 'inspiration' tagName="li"}}<a href="">Inspiration</a>{{/link-to}}
+  {{#link-to 'projects.index' tagName="li"}}<a href="">Projects</a>{{/link-to}}
+  {{#link-to 'contact' tagName="li"}}<a href="">Contact</a>{{/link-to}}
+  {{#link-to 'resume' tagName="li"}}<a href="">Resumé</a>{{/link-to}}
 </ul>

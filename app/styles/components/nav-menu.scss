@@ -7,4 +7,12 @@
     padding-bottom: 4px;
   }
 
+  li.active > a {
+    background-color: $primary-blue;
+  }
+
+  li.active:hover > a {
+    background-color: $primary-blue-dark;
+  }
+
 }

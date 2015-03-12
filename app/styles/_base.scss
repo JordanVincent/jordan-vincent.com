@@ -16,11 +16,11 @@ body {
   }
 
   &.active {
-    background-color: #1D5774;
+    background-color: $primary-blue;
     color: white;
     box-shadow: none;
     &:hover {
-      background-color: #154359;
+      background-color: $primary-blue-dark;
     }
   }
 }
