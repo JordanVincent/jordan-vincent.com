@@ -31,26 +31,28 @@ body {
   position: relative;
 }
 
+$gutter: 20px;
+$side-column-width: 150px;
 .side-column {
-  width: 150px;
+  width: $side-column-width;
   position: absolute;
-  left: -170px;
+  left: - ($side-column-width + $gutter);
 }
 
 h1 {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.6em;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 p {
   font-family: "Cambria";
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #444;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
