@@ -7,9 +7,26 @@
       {{nav-menu}}
     </div>
 
-    <h1>{{name}}</h1>
+    <article>
+      <h1>{{name}}</h1>
+      <div class="date">{{date}}</div>
 
-    <p>Here is a non exhaustive list of projects I created and contributed.</p>
+      {{{description}}}
+
+      {{#if relatedProjects}}
+        <div class="related-projects">
+          <h2>Related projects</h2>
+          <div class="raw clearfix">
+            {{#each project in relatedProjects}}
+              <div class="col-xs-6">
+                {{project-item project=project}}
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      {{/if}}
+
+    </article>
 
     {{nav-inline}}
 
