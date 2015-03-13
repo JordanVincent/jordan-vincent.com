@@ -33,8 +33,10 @@ Project.reopenClass
       <p><strong>Seller web app:</strong> a web app used by sellers to list products, manage their account, track and create orders. It was first developed with EmberJS and then I switched to AngularJS.</p>
       <p><strong>Courier web app:</strong> a mobile web app used by the SixDoors couriers to deliver the products as fast as possible. It ran on every recent device. It was first developed with Sencha Touch 2 and then EmberJS and Ratchet.</p>
 
-      <img src="assets/images/projects/sixdoors-courier-list.png" alt="SixDoors Courier's app. List view."/>
-      <img src="assets/images/projects/sixdoors-courier-details.png" alt="SixDoors Courier's app. Product view."/>
+      <div class="raw">
+        <div class="col-xs-6"><img src="assets/images/projects/sixdoors-courier-list.png" alt="SixDoors Courier's app. List view."/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/sixdoors-courier-details.png" alt="SixDoors Courier's app. Product view."/></div>
+      </div>
       <div class="image-caption">SixDoors Courier's app. List of deliveries and product details</div>
 
       <p><strong>SixDoors-Shopify connector:</strong> it integrated Shopify with SixDoors. It allowed stores to connect their Shopify account to SixDoors and automatically synchronize their inventory. Server side developed with Ruby on Rails and client with AngularJS.</p>
@@ -48,8 +50,22 @@ Project.reopenClass
     color: '#4A5363'
     logo: 'city-domination-logo.png'
     date: 'Sept. 2011 to Dec. 2012 (16 months)'
-    relatedProjects: []
+    relatedProjects: [1,3]
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
+    description: """
+      <p>City Domination is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city! The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors. The game combines social connections in your local neighborhood using mobile phones.</p>
+
+      <div class="raw">
+        <div class="col-xs-6"><img src="assets/images/projects/citydomination-best.png" alt="CityDomination's poster"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/citydomination-map.png" alt="CityDomination's map"/></div>
+      </div>
+      <div class="image-caption">CityDomination's Android app</div>
+
+      <p>I was one of the four original founders. I participated in all the project phases, from the idea, to the launching. I was responsible for the gameplay, the graphics and all the front-end part, that is to say the website and the webapp. I used the Javascript framework Sencha Touch 2 to quickly build a maintainable iPhone webapp. Moreover, I helped to develop the server part which is based on the PHP framework Symfony 2. We used a REST architecture and developed our own API to communicate with our multiple apps: the website, the webapp, and the Android app.
+      </p>
+
+      <p>I left the project in December 2012 due to a lack of time and my studies at INSA of Lyon. CityDomination has been acquired by the gaming company Mob In Life and is now one of their most successful game.</p>
+      """
   ,
     id: 3
     name: 'Direct Matin'
@@ -57,8 +73,21 @@ Project.reopenClass
     color: '#98041E'
     logo: 'direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
-    relatedProjects: []
+    relatedProjects: [1,2]
     summary: 'Developped a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
+    description: """
+      <p>In summer the 2012, I interned for 3 months at Kreactive, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.</p>
+
+      <div class="raw">
+        <div class="col-xs-6"><img src="assets/images/projects/direct-matin-home.png" alt="Direct Matin's homepage"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/direct-matin-menu.png" alt="Direct Matin's menu"/></div>
+      </div>
+      <div class="image-caption">DirectMatin's Android app</div>
+
+      <p>Kreactive wanted to use the new mobile Javascript framework Sencha Touch 2 which had never been used before. I was assisted by the project manager plus another web developer but I had a lot of freedom. The biggest challenge was to adapt the app to all kind platforms and devices, ranging from iPads, iPhones, Android tablets and phones! Finally after 3 months we submitted the app on the AppStore and Google Play.</p>
+
+      <p>I really enjoyed working on an app which is now used by thousands of people every day. Visiting Paris, I was surprised to see in the subway ads promoting the app!</p>
+      """
   ,
     id: 10
     name: 'StartupViz'
