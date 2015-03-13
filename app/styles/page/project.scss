@@ -47,6 +47,24 @@
       margin-left: -15px;
       margin-right: -15px;
     }
+
+    q {
+      font-family: $paragraph-font-family;
+      font-size: 1.2em;
+      color: #999;
+      text-align: justify;
+      display: block;
+
+      &:before, &:after {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    }
+
+    .quote-author {
+      text-align: right;
+      color: #999;
+    }
   }
 
   .related-projects {

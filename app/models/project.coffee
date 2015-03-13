@@ -95,8 +95,21 @@ Project.reopenClass
     color: '#8459BD'
     logo: 'startupviz-logo.png'
     date: 'Sept. to Dec. 2014'
-    relatedProjects: []
+    relatedProjects: [11]
     summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall'
+    description: """
+      <p>An interactive visualization of US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in certain sectors or regions to funding round details for a particular startup.</p>
+
+      <img src="assets/images/projects/startupviz-map.png" alt="StartupViz website"/>
+      <div class="image-caption">StartupViz website</div>
+
+      <p>The design was tested repeatedly through user testing sessions at the UW Busines School and Startup Hall. Feedbacks from users were very positive:</p>
+
+      <q>Normally I have to google competitors or look through all individual entries in Crunchbase to find startups that are similar to ours. Once we even bought a report that contained similar information for around $4000. Seeing how much funding these companies got in their investment rounds can help us to ask for the right amount from our investors.  I would definitely use this tool and pay for it! Probably not $4000, but I would pay for it.</q>
+      <p class="quote-author">&ndash; Greg Robinson, CEO at Wovnenergy</p>
+
+      <p>The tool was designed by UW Human Centered Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
+    """
   ,
     id: 11
     name: 'Haiku Deck'
@@ -104,7 +117,7 @@ Project.reopenClass
     color: '#EEEEEE'
     logo: 'haiku-deck-logo.png'
     date: 'Jan. to Mar. 2015'
-    relatedProjects: []
+    relatedProjects: [10]
     summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
   ,
     id: 21
@@ -142,6 +155,22 @@ Project.reopenClass
     date: 'Sept. 2011 to May 2012 (9 months)'
     relatedProjects: []
     summary: 'A web store selling original LEGO sets. Developped everything by myself from idea, to products ready to ship!'
+    description: """
+      <p>Smart Bricks is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>
+
+      <img src="assets/images/projects/smart-bricks-concept.png" alt="The Smart Bricks' concept"/>
+      <div class="image-caption">The Smart Bricks' concept</div>
+
+      <p>I contacted artists in order to duplicate and sell their creations. I've an agreement with a Spanish artist. Now LEGO fans can now order a nice 2000 pieces LEGO house on my website. The product is delivered with all the pieces, and a booklet containing the building instructions in a nice cardboard, like official LEGO sets.</p>
+
+      <div class="raw">
+        <div class="col-xs-6"><img src="assets/images/projects/smart-bricks-house.jpg" alt="Smart Bricks' Magic House"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/smart-bricks-product.jpg" alt="Model, box and instructions"/></div>
+      </div>
+      <div class="image-caption">Smart Bricks' Magic House. It comes with all pieces and instructions in a nice collector package.</div>
+
+      <p>LEGO artists had nothing to do, I took care of everything: creating the building instructions in 3D, designing and printing the box and the booklet, buying the pieces, shipping the model... It was very complex and time consuming however I'm really proud because I carried on the project, from start to finish by mayself.</p>
+    """
   ]
 
 `export default Project;`
