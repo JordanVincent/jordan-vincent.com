@@ -57,3 +57,23 @@ p {
   color: #444;
   margin: 0 0 20px 0;
 }
+
+.footnotes {
+  margin-top: 50px;
+  position: relative;
+  padding-top: 10px;
+  text-align: justify;
+
+  &:before {
+    content: '';
+    width: 50px;
+    border-top: 1px solid #666;
+    position: absolute;
+    top: 0;
+  }
+
+  span {
+    font-style: italic;
+    color: #666;
+  }
+}

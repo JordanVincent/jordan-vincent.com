@@ -17,23 +17,4 @@
   h2 {
     margin-top: 40px;
   }
-
-  .footnotes {
-    margin-top: 50px;
-    position: relative;
-    padding-top: 10px;
-
-    &:before {
-      content: '';
-      width: 50px;
-      border-top: 1px solid #666;
-      position: absolute;
-      top: 0;
-    }
-
-    span {
-      font-style: italic;
-      color: #666;
-    }
-  }
 }

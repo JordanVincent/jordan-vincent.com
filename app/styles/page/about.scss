@@ -1,9 +1,14 @@
 #about {
-
   img {
     height: 150px;
     background-color: #EEE;
     border-radius: $border-radius;
     margin-bottom: 20px;
+  }
+
+  article {
+    sup a{
+      color: #333;
+    }
   }
 }
