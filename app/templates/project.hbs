@@ -1,15 +1,13 @@
 <div class="content-container" id="project">
 
-  <div class="centered-column">
+  <div class="left-column">
+  </div>
 
-    <div class="side-column">
-      {{project-logo project=this}}
-      {{nav-menu}}
-    </div>
+  <div class="right-column">
 
     <article>
-      {{link-to 'Projects' 'projects.index' class="projects-link"}}
       <h1>{{name}}</h1>
+      {{nav-inline}}
       <div class="date">{{date}}</div>
 
       {{{description}}}
@@ -28,8 +26,6 @@
       {{/if}}
 
     </article>
-
-    {{nav-inline}}
 
   </div>
 </div>

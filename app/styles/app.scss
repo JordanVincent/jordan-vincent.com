@@ -2,6 +2,9 @@ $border-radius: 2px;
 $primary-blue: #1D5774;
 $primary-blue-dark: #154359;
 $paragraph-font-family: 'Merriweather', "Cambria";
+$text-normal-color: #333;
+$text-light-color: #CCC;
+$images-path: "images";
 
 @import "base";
 
@@ -14,3 +17,4 @@ $paragraph-font-family: 'Merriweather', "Cambria";
 @import "page/influences";
 @import "page/projects/index";
 @import "page/project";
+@import "page/contact";

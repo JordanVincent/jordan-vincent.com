@@ -1,47 +1,9 @@
 body {
-  padding: 80px 0;
-}
-
-.btn {
-  border-radius: $border-radius;
-  border: none;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  &.btn-default {
-    background-color: #EEE;
-    &:hover {
-      background-color: #DDD;
-    }
-  }
-
-  &.active {
-    background-color: $primary-blue;
-    color: white;
-    box-shadow: none;
-    &:hover {
-      background-color: $primary-blue-dark;
-    }
-  }
-}
-
-.centered-column {
-  width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
-$gutter: 20px;
-$side-column-width: 150px;
-.side-column {
-  width: $side-column-width;
-  position: absolute;
-  left: - ($side-column-width + $gutter);
 }
 
 h1 {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -86,3 +48,32 @@ article a {
     font-weight: normal;
   }
 }
+
+// Layout
+
+.content-container {
+  position: absolute;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.left-column {
+  width: 38%;
+  position: absolute;
+  background-color: #EEE;
+  height: 100%;
+  background-size: auto 100%;
+}
+
+.right-column {
+  width: 62%;
+  left: 38%;
+  position: absolute;
+  
+  height: 100%;
+  padding: 30px 300px 30px 30px;
+  overflow-y: auto;
+}
+
+// End layout

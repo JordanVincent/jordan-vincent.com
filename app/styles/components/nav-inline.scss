@@ -1,9 +1,16 @@
 .nav-inline {
-  margin-top: 50px;
+  margin: 5px 0 30px 0;
+  font-size: 1.2em;
 
-  & > .btn {
+  a {
     font-weight: bold;
     margin-left: 10px;
+    color: $text-light-color;
+    text-decoration: none;
+
+    &:hover, &.active {
+      color: $text-normal-color;
+    }
 
     &:first-child {
       margin-left: 0;
