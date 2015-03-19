@@ -74,7 +74,7 @@ Project.reopenClass
     logo: 'direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
     relatedProjects: [1,2]
-    summary: 'Developped a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
+    summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
     description: """
       <p>In summer the 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.</p>
 
@@ -152,9 +152,9 @@ Project.reopenClass
     logo: 'labello-logo.png'
     date: 'Feb. 2015'
     relatedProjects: [1]
-    summary: 'A web app for labelling and analysing documents. Developped in less than one week!'
+    summary: 'A web app for labelling and analysing documents. Developed in less than one week!'
     description: """
-      <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analysing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analysing lenghty transcribed interviews but I couldn't find an easy way to do it. So I developped Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser localstorage. But it's possible to import and export files from a different computer! The code is availabe on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
+      <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analysing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analysing lenghty transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser localstorage. But it's possible to import and export files from a different computer! The code is availabe on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
 
       <img src="assets/images/projects/labello-home.png" alt="Labello"/>
       <div class="image-caption">Labello homepage</div>
@@ -192,7 +192,7 @@ Project.reopenClass
     logo: 'smart-bricks-logo.png'
     date: 'Sept. 2011 to May 2012 (9 months)'
     relatedProjects: []
-    summary: 'A web store selling original LEGO sets. Developped everything by myself from the idea, to the products ready to ship!'
+    summary: 'A web store selling original LEGO sets. Developed everything by myself from the idea, to the products ready to ship!'
     description: """
       <p><a href="http://www.smart-bricks.com/" target="_blank">Smart Bricks</a> is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>
 

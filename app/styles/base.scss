@@ -52,7 +52,7 @@ h2 {
 
 p {
   font-family: $paragraph-font-family;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: justify;
   color: #444;
   margin: 0 0 20px 0;
@@ -81,4 +81,8 @@ p {
 article a {
   color: $primary-blue;
   font-weight: bold;
+
+  & * {
+    font-weight: normal;
+  }
 }
