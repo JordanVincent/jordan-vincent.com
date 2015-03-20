@@ -1,4 +1,8 @@
 #project {
+  .left-column {
+    background-image: url($images-path+'/project-image.jpg');
+    background-position: top center;
+  }
 
   .project-logo {
     height: 150px;

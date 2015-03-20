@@ -7,9 +7,20 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #CCC;
+    position: absolute;
+    bottom: -8px;
+  }
 }
 
 p {
