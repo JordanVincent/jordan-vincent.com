@@ -5,17 +5,25 @@
 
   <div class="right-column">
 
+    <div class="side-column">
+      <h4 class="label-item">Date</h4>
+      <p>{{date}}</p>
+      {{#if position}}
+        <h4 class="label-item">Position</h4>
+        <p>{{position}}</p>
+      {{/if}}
+    </div>
+
     <article>
       <h1>{{name}}</h1>
       {{nav-inline}}
 
       {{{description}}}
-
     </article>
 
-    {{#if relatedProjects}}
-      <div class="related-projects">
-        <h2>Related projects</h2>
+    <div class="related-projects">
+      {{#if relatedProjects}}
+        <h2>Related projects <span class="separator">&bull;</span> {{link-to 'All projects' 'projects.index'}}</h2>
         <div class="raw clearfix">
           {{#each project in relatedProjects}}
             <div class="col-xs-4">
@@ -23,8 +31,9 @@
             </div>
           {{/each}}
         </div>
-      </div>
-    {{/if}}
-
+      {{else}}
+        <h2>{{link-to 'All projects' 'projects.index'}}</h2>
+      {{/if}}
+    </div>
   </div>
 </div>

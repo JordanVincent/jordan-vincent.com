@@ -11,6 +11,7 @@ Project = DS.Model.extend
   date: DS.attr()
   summary: DS.attr()
   description: DS.attr()
+  position: DS.attr()
 
 Project.reopenClass
   FIXTURES: [
@@ -21,6 +22,7 @@ Project.reopenClass
     logo: 'sixdoors-logo.png'
     date: 'May 2013 to May 2014 (13 months)'
     relatedProjects: [2,3]
+    position: 'Web Developer'
     summary: 'Joined the San Francisco\' startup SixDoors before launch as a web developper.'
     description: """
       <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day. I was in charge of the development of the Sixdoors web apps:</p>
@@ -51,6 +53,7 @@ Project.reopenClass
     logo: 'city-domination-logo.png'
     date: 'Sept. 2011 to Dec. 2012 (16 months)'
     relatedProjects: [1,3,21]
+    position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
     description: """
       <p><a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">City Domination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city! The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
@@ -74,6 +77,7 @@ Project.reopenClass
     logo: 'direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
     relatedProjects: [1,2]
+    position: 'Web Developer Intern'
     summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
     description: """
       <p>In summer the 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.</p>
@@ -93,7 +97,8 @@ Project.reopenClass
     logo: 'startupviz-logo.png'
     date: 'Sept. to Dec. 2014'
     relatedProjects: [11]
-    summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall'
+    position: 'Student'
+    summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
     description: """
       <p><a href="http://startupviz.com/" target="_blank">StartupViz</a> is an interactive visualization of US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in certain sectors or regions to funding round details for a particular startup.</p>
 
@@ -115,6 +120,7 @@ Project.reopenClass
     logo: 'haiku-deck-logo.png'
     date: 'Jan. to Mar. 2015'
     relatedProjects: [10]
+    position: 'Student'
     summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
   ,
     id: 21
@@ -192,6 +198,7 @@ Project.reopenClass
     logo: 'smart-bricks-logo.png'
     date: 'Sept. 2011 to May 2012 (9 months)'
     relatedProjects: []
+    position: 'Founder'
     summary: 'A web store selling original LEGO sets. Developed everything by myself from the idea, to the products ready to ship!'
     description: """
       <p><a href="http://www.smart-bricks.com/" target="_blank">Smart Bricks</a> is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>

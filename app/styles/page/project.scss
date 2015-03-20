@@ -4,6 +4,34 @@
     background-position: top center;
   }
 
+  .side-column {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+    width: 120px;
+    border: 1px solid #333;
+    border-width: 4px 0 4px 0;
+    padding: 15px 0;
+
+    h4 {
+      color: $text-light-color;
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 0;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    p {
+      font-size: 1em;
+      font-family: $headings-font-family;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
   article {
     li {
       font-family: $paragraph-font-family;
@@ -74,6 +102,17 @@
   .related-projects {
     border-top: 3px solid #EEE;
     margin-top: 30px;
+
+    h2 {
+      .separator {
+        color: $text-light-color;
+        padding: 0 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
 
     .raw {
       margin-left: -15px;
