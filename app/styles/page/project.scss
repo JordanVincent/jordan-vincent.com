@@ -118,7 +118,7 @@
       margin-left: -15px;
       margin-right: -15px;
 
-      .col-xs-4 {
+      [class*="col"] {
         padding-left: 0px;
         padding-right: 0px;
       }

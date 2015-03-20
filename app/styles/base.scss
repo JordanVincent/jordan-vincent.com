@@ -81,10 +81,51 @@ article a {
   width: 62%;
   left: 38%;
   position: absolute;
-  
   height: 100%;
   padding: 30px 300px 30px 30px;
   overflow-y: auto;
+}
+
+@media (min-width : 768px) and (max-width : 1300px) {
+  .left-column {
+    width: 24%;
+  }
+
+  .right-column {
+    width: 76%;
+    left: 24%;
+    padding: 30px 150px 30px 30px;
+  }
+}
+
+@media (min-width : 300px) and (max-width : 768px) {
+  .left-column {
+    width: 10%;
+  }
+
+  .right-column {
+    width: 90%;
+    left: 10%;
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media (min-width : 400px) and (max-width : 768px) {
+  .col-s-6 {
+    width: 50%;
+  }
+}
+
+@media (max-width : 300px) {
+  .left-column {
+    width: 0%;
+  }
+
+  .right-column {
+    width: 100%;
+    left: 0%;
+    padding: 15px;
+  }
 }
 
 // End layout
