@@ -2,21 +2,22 @@
 
   <div class="left-column">
   </div>
+  {{project-cover project=this}}
 
   <div class="right-column">
-
-    <div class="side-column">
-      <h4 class="label-item">Date</h4>
-      <p>{{date}}</p>
-      {{#if position}}
-        <h4 class="label-item">Position</h4>
-        <p>{{position}}</p>
-      {{/if}}
-    </div>
 
     <article>
       <h1>{{name}}</h1>
       {{nav-inline}}
+
+      <div class="side-column">
+        <h4 class="label-item">Date</h4>
+        <p>{{date}}</p>
+        {{#if position}}
+          <h4 class="label-item">Position</h4>
+          <p>{{position}}</p>
+        {{/if}}
+      </div>
 
       {{{description}}}
     </article>

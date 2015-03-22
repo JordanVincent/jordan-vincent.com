@@ -12,6 +12,7 @@ Project = DS.Model.extend
   summary: DS.attr()
   description: DS.attr()
   position: DS.attr()
+  coverImage: DS.attr()
 
 Project.reopenClass
   FIXTURES: [
@@ -22,6 +23,7 @@ Project.reopenClass
     logo: 'sixdoors-logo.png'
     date: 'May 2013 to May 2014 (13 months)'
     relatedProjects: [2,3]
+    coverImage: 'sixdoors-cover.jpg'
     position: 'Web Developer'
     summary: 'Joined the San Francisco\' startup SixDoors before launch as a web developper.'
     description: """
@@ -53,6 +55,7 @@ Project.reopenClass
     logo: 'city-domination-logo.png'
     date: 'Sept. 2011 to Dec. 2012 (16 months)'
     relatedProjects: [1,3,21]
+    coverImage: 'citydomination-cover.jpg'
     position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
     description: """
@@ -77,6 +80,7 @@ Project.reopenClass
     logo: 'direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
     relatedProjects: [1,2]
+    coverImage: 'direct-matin-cover.jpg'
     position: 'Web Developer Intern'
     summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
     description: """
@@ -97,6 +101,7 @@ Project.reopenClass
     logo: 'startupviz-logo.png'
     date: 'Sept. to Dec. 2014'
     relatedProjects: [11]
+    coverImage: 'startupviz-cover.jpg'
     position: 'Student'
     summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
     description: """
@@ -130,6 +135,7 @@ Project.reopenClass
     logo: 'dinofit-logo.png'
     date: 'From June 2014'
     relatedProjects: [2]
+    coverImage: 'dinofit-cover.jpg'
     summary: 'A fitness Android app that keeps users engaged. Soon to be launched!'
     description: """
       <p><a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app that keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated everyday based on the user's feedbacks and previous workouts. It will soon be available on Android!</p>
@@ -178,6 +184,7 @@ Project.reopenClass
     logo: 'veritabs-logo.png'
     date: 'Feb. 2013'
     relatedProjects: []
+    coverImage: 'veritabs-cover.jpg'
     summary: 'A Chrome extension that let you display the tabs vertically. Up to 30 000 users!'
     description: """
       <p><a href="https://chrome.google.com/webstore/detail/veritabs/nehjgjnfanppoiaikadimdkobpdahnmg" target="_blank">Veritabs</a> is a Chrome extension for displaying tabs vertically. In Google Chrome, when you have too much tabs opened at a time, you can't see the tabs' title or even the icon. With Veritabs, the tabs are displayed vertically, so you can always see the name. It makes it easy organize, delete and create new tabs. It was developed using AngularJS and the Google Chrome API.</p>
@@ -198,6 +205,7 @@ Project.reopenClass
     logo: 'smart-bricks-logo.png'
     date: 'Sept. 2011 to May 2012 (9 months)'
     relatedProjects: []
+    coverImage: 'smart-bricks-cover.jpg'
     position: 'Founder'
     summary: 'A web store selling original LEGO sets. Developed everything by myself from the idea, to the products ready to ship!'
     description: """

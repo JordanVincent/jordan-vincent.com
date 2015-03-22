@@ -41,5 +41,19 @@
     margin-top: 10px;
     display: inline-block;
   }
+}
 
+@media (max-width : $screen-sm-min) {
+  .project-item {
+    border-bottom: 2px solid #EEE;
+    border-radius: 0;
+    padding: 0px 0 15px 0;
+    margin: 0 15px 15px 15px;
+
+    &:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow:    none;
+      box-shadow:         none;
+    }
+  }
 }

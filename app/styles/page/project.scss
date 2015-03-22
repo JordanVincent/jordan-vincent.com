@@ -1,6 +1,5 @@
 #project {
   .left-column {
-    background-image: url($images-path+'/project-image.jpg');
     background-position: top center;
   }
 
@@ -27,7 +26,6 @@
     p {
       font-size: 1em;
       font-family: $headings-font-family;
-      text-align: left;
       margin: 0;
     }
   }
@@ -80,7 +78,6 @@
       font-family: $paragraph-font-family;
       font-size: 1.2em;
       color: #999;
-      text-align: justify;
       display: block;
 
       &:before, &:after {
@@ -90,7 +87,6 @@
     }
 
     .quote-author {
-      text-align: right;
       color: #999;
     }
   }
@@ -122,6 +118,31 @@
         padding-left: 0px;
         padding-right: 0px;
       }
+    }
+  }
+}
+
+@media (min-width : $screen-sm-min) and (max-width : $screen-lg-min) {
+  #project {
+    .side-column {
+      right: 20px;
+      top: 130px;
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width : $screen-sm-min) {
+  #project {
+    .side-column {
+      position: relative;
+      right: auto;
+      top: auto;
+      width: auto;
+      border: 1px solid #333;
+      border-width: 4px 0 4px 0;
+      padding: 15px 0;
+      margin: 30px 0;
     }
   }
 }
