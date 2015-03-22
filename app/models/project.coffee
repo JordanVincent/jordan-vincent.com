@@ -164,6 +164,7 @@ Project.reopenClass
     logo: 'labello-logo.png'
     date: 'Feb. 2015'
     relatedProjects: [1]
+    coverImage: 'labello-cover.jpg'
     summary: 'A web app for labelling and analysing documents. Developed in less than one week!'
     description: """
       <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analysing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analysing lenghty transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser localstorage. But it's possible to import and export files from a different computer! The code is availabe on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
