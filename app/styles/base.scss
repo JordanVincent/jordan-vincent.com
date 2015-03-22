@@ -127,3 +127,9 @@ article a {
 }
 
 // End layout
+
+@media (max-width: $screen-s-max){
+  h1 {
+    font-size: 1.6em;
+  }
+}
