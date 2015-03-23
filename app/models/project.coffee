@@ -20,10 +20,10 @@ Project.reopenClass
     name: 'SixDoors'
     rank: 'main'
     color: '#CD4429'
-    logo: 'sixdoors-logo.png'
+    logo: 'assets/images/sixdoors-logo.png'
     date: 'May 2013 to May 2014 (13 months)'
     relatedProjects: [2,3]
-    coverImage: 'sixdoors-cover.jpg'
+    coverImage: 'assets/images/projects/sixdoors-cover.jpg'
     position: 'Web Developer'
     summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developper.'
     description: """
@@ -52,10 +52,10 @@ Project.reopenClass
     name: 'CityDomination'
     rank: 'main'
     color: '#4A5363'
-    logo: 'city-domination-logo.png'
+    logo: 'assets/images/city-domination-logo.png'
     date: 'Sept. 2011 to Dec. 2012 (16 months)'
     relatedProjects: [1,3,21]
-    coverImage: 'citydomination-cover.jpg'
+    coverImage: 'assets/images/projects/citydomination-cover.jpg'
     position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
     description: """
@@ -77,10 +77,10 @@ Project.reopenClass
     name: 'Direct Matin'
     rank: 'main'
     color: '#98041E'
-    logo: 'direct-matin-logo.png'
+    logo: 'assets/images/direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
     relatedProjects: [1,2]
-    coverImage: 'direct-matin-cover.jpg'
+    coverImage: 'assets/images/projects/direct-matin-cover.jpg'
     position: 'Web Developer Intern'
     summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
     description: """
@@ -98,10 +98,10 @@ Project.reopenClass
     name: 'StartupViz'
     rank: 'class'
     color: '#8459BD'
-    logo: 'startupviz-logo.png'
+    logo: 'assets/images/startupviz-logo.png'
     date: 'Sept. to Dec. 2014'
     relatedProjects: [11]
-    coverImage: 'startupviz-cover.jpg'
+    coverImage: 'assets/images/projects/startupviz-cover.jpg'
     position: 'Student'
     summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
     description: """
@@ -122,7 +122,7 @@ Project.reopenClass
     name: 'Haiku Deck'
     rank: 'class'
     color: '#EEEEEE'
-    logo: 'haiku-deck-logo.png'
+    logo: 'assets/images/haiku-deck-logo.png'
     date: 'Jan. to Mar. 2015'
     relatedProjects: [10]
     position: 'Student'
@@ -132,10 +132,10 @@ Project.reopenClass
     name: 'DinoFit'
     rank: 'side'
     color: '#215F41'
-    logo: 'dinofit-logo.png'
+    logo: 'assets/images/dinofit-logo.png'
     date: 'From June 2014'
     relatedProjects: [2]
-    coverImage: 'dinofit-cover.jpg'
+    coverImage: 'assets/images/projects/dinofit-cover.jpg'
     summary: 'A fitness Android app that keeps users engaged. Soon to be launched!'
     description: """
       <p><a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app that keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated everyday based on the user's feedbacks and previous workouts. It will soon be available on Android!</p>
@@ -161,10 +161,10 @@ Project.reopenClass
     name: 'Labello'
     rank: 'side'
     color: '#ECF0F1'
-    logo: 'labello-logo.png'
+    logo: 'assets/images/labello-logo.png'
     date: 'Feb. 2015'
     relatedProjects: [1]
-    coverImage: 'labello-cover.jpg'
+    coverImage: 'assets/images/projects/labello-cover.jpg'
     summary: 'A web app for labelling and analysing documents. Developed in less than one week!'
     description: """
       <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analysing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analysing lenghty transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser localstorage. But it's possible to import and export files from a different computer! The code is availabe on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
@@ -182,10 +182,10 @@ Project.reopenClass
     name: 'Veritabs'
     rank: 'side'
     color: '#222222'
-    logo: 'veritabs-logo.png'
+    logo: 'assets/images/veritabs-logo.png'
     date: 'Feb. 2013'
     relatedProjects: []
-    coverImage: 'veritabs-cover.jpg'
+    coverImage: 'assets/images/projects/veritabs-cover.jpg'
     summary: 'A Chrome extension that let you display the tabs vertically. Up to 30 000 users!'
     description: """
       <p><a href="https://chrome.google.com/webstore/detail/veritabs/nehjgjnfanppoiaikadimdkobpdahnmg" target="_blank">Veritabs</a> is a Chrome extension for displaying tabs vertically. In Google Chrome, when you have too much tabs opened at a time, you can't see the tabs' title or even the icon. With Veritabs, the tabs are displayed vertically, so you can always see the name. It makes it easy organize, delete and create new tabs. It was developed using AngularJS and the Google Chrome API.</p>
@@ -203,10 +203,10 @@ Project.reopenClass
     name: 'Smart Bricks'
     rank: 'side'
     color: '#E2E2E2'
-    logo: 'smart-bricks-logo.png'
+    logo: 'assets/images/smart-bricks-logo.png'
     date: 'Sept. 2011 to May 2012 (9 months)'
     relatedProjects: []
-    coverImage: 'smart-bricks-cover.jpg'
+    coverImage: 'assets/images/projects/smart-bricks-cover.jpg'
     position: 'Founder'
     summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
     description: """
