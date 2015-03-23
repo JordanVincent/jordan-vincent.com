@@ -25,7 +25,7 @@ Project.reopenClass
     relatedProjects: [2,3]
     coverImage: 'sixdoors-cover.jpg'
     position: 'Web Developer'
-    summary: 'Joined the San Francisco\' startup SixDoors before launch as a web developper.'
+    summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developper.'
     description: """
       <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day. I was in charge of the development of the Sixdoors web apps:</p>
 
@@ -208,7 +208,7 @@ Project.reopenClass
     relatedProjects: []
     coverImage: 'smart-bricks-cover.jpg'
     position: 'Founder'
-    summary: 'A web store selling original LEGO sets. Developed everything by myself from the idea, to the products ready to ship!'
+    summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
     description: """
       <p><a href="http://www.smart-bricks.com/" target="_blank">Smart Bricks</a> is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>
 
