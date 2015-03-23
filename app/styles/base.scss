@@ -147,3 +147,9 @@ article a {
     }
   }
 }
+
+@media (max-width: $screen-xs-max) {
+  .content-column {
+    padding-top: 110px;
+  }
+}

@@ -38,6 +38,8 @@
 
 @media (max-width: $screen-xs-max) {
   .nav-responsive {
+    height: 95px;
+
     .left-column {
       & > * {
         display: none;
@@ -53,7 +55,10 @@
       padding-bottom: 5px;
 
       h1 {
-        
+        padding: 5px 0 10px 0;
+        text-align: left;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #EEE;
       }
     }
   }
@@ -67,7 +72,7 @@
       }
 
       h1 {
-        padding: 5px 0;
+        padding: 2px 0;
         text-align: left;
       }
     }
