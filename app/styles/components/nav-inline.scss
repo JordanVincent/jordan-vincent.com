@@ -17,3 +17,42 @@
     }
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .nav-inline a {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &, &:hover, &.active {
+      color: transparent;
+    }
+
+    &:hover, &.active {
+      background-color: #EEE;
+    }
+
+    &.about-link {
+      background-image: url($images-path+'/about-icon.png');
+    }
+
+    &.influences-link {
+      background-image: url($images-path+'/influences-icon.png');
+    }
+
+    &.projects-link {
+      background-image: url($images-path+'/projects-icon.png');
+    }
+
+    &.contact-link {
+      background-image: url($images-path+'/contact-icon.png');
+    }
+
+    &.resume-link {
+      background-image: url($images-path+'/resume-icon.png');
+    }
+  }
+}

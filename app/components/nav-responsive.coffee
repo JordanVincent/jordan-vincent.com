@@ -6,7 +6,7 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
   attributeBindings: ['style']
 
   style: (->
-    top = if @get('display') then '0px' else '-51px'
+    top = if @get('display') or $(window).width() <= 768 then '0px' else '-51px'
     "top: #{top};"
   ).property('display')
 

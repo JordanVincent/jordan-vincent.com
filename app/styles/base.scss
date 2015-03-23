@@ -133,3 +133,17 @@ article a {
     font-size: 1.6em;
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .content-column {
+    padding-top: 70px;
+
+    h1 {
+      display: none;
+    }
+
+    .nav-inline {
+      display: none;
+    }
+  }
+}
