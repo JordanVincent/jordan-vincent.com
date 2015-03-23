@@ -1,0 +1,16 @@
+#projects-index {
+  .left-column {
+    background-image: url($images-path+'/projects-image.jpg');
+    background-position: top center;
+  }
+
+  .raw {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    [class*="col"] {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}

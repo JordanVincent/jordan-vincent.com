@@ -1,0 +1,155 @@
+body {
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #CCC;
+    position: absolute;
+    bottom: -8px;
+  }
+}
+
+p {
+  font-family: $paragraph-font-family;
+  font-size: 1.1em;
+  color: #444;
+  margin: 0 0 20px 0;
+}
+
+.footnotes {
+  margin-top: 50px;
+  position: relative;
+  padding-top: 10px;
+
+  &:before {
+    content: '';
+    width: 50px;
+    border-top: 1px solid #666;
+    position: absolute;
+    top: 0;
+  }
+
+  span {
+    font-style: italic;
+    color: #666;
+  }
+}
+
+article a {
+  color: $primary-blue;
+  font-weight: bold;
+
+  & * {
+    font-weight: normal;
+  }
+}
+
+// Layout
+
+.content-container {
+  position: absolute;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.left-column {
+  width: 38%;
+  position: absolute;
+  background-color: #EEE;
+  height: 100%;
+  background-size: cover;
+}
+
+.right-column {
+  width: 62%;
+  left: 38%;
+  position: absolute;
+  height: 100%;
+  padding: 30px 300px 30px 30px;
+  overflow-y: auto;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
+  .left-column {
+    width: 24%;
+  }
+
+  .right-column {
+    width: 76%;
+    left: 24%;
+    padding: 30px 150px 30px 30px;
+  }
+}
+
+@media (min-width: $screen-xs-max) and (max-width: $screen-sm-min) {
+  .left-column {
+    width: 18%;
+  }
+
+  .right-column {
+    width: 82%;
+    left: 18%;
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media (min-width: $screen-s-max) and (max-width: $screen-sm-min) {
+  .col-s-6 {
+    width: 50%;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .left-column {
+    width: 0%;
+  }
+
+  .right-column {
+    width: 100%;
+    left: 0%;
+    padding: 15px;
+  }
+}
+
+// End layout
+
+@media (max-width: $screen-s-max){
+  h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .content-column {
+    padding-top: 70px;
+
+    h1 {
+      display: none;
+    }
+
+    .nav-inline {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .content-column {
+    padding-top: 110px;
+  }
+}

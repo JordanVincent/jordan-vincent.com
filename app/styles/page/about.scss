@@ -1,0 +1,16 @@
+#about {
+
+  .left-column {
+    background-image: url($images-path+'/about-image.jpg');
+    background-position: top right;
+  }
+
+  article {
+    p.lead {
+    }
+
+    sup a{
+      color: #333;
+    }
+  }
+}
