@@ -1,7 +1,14 @@
 Transitions = ->
   @transition(
-    @fromRoute(null,'about', 'influences', 'projects', 'projects.index', 'project', 'contact'),
-    @toRoute('about', 'influences', 'projects', 'projects.index', 'project', 'contact'),
+    @fromRoute(null, 'about', 'influences', 'projects', 'contact'),
+    @toRoute('about', 'influences', 'projects', 'contact'),
+    @use('crossFade'),
+    @reverse('crossFade')
+  )
+
+  @transition(
+    @fromRoute('projects.index'),
+    @toRoute('project'),
     @use('crossFade'),
     @reverse('crossFade')
   )
