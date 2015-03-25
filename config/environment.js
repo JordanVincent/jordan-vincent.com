@@ -8,7 +8,9 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     contentSecurityPolicy: {
-      'img-src': "'self' http://www.google-analytics.com"
+      'img-src': "'self' http://www.google-analytics.com",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com"
     },
 
     EmberENV: {
