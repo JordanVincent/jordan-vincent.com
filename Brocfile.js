@@ -4,7 +4,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
   fingerprint: {
-    extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'pdf']
+    extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'map', 'pdf']
   }
 });
 
