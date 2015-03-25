@@ -25,7 +25,7 @@ Project.reopenClass
     relatedProjects: [2,3]
     coverImage: 'assets/images/projects/sixdoors-cover.jpg'
     position: 'Web Developer'
-    summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developper.'
+    summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developer.'
     description: """
       <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day. I was in charge of the development of the Sixdoors web apps:</p>
 
@@ -45,7 +45,7 @@ Project.reopenClass
 
       <p><strong>SixDoors-Shopify connector:</strong> it integrated Shopify with SixDoors. It allowed stores to connect their Shopify account to SixDoors and automatically synchronize their inventory. Server side developed with Ruby on Rails and client with AngularJS.</p>
 
-      <p>It was the first time I took part to this kind of project. Everything had to be developed from scratch and in a very short time. I had to learn two new Javascript frameworks: EmberJS and AngularJS, a new syntax: CoffeeScript, a new language: Rails and to deal with various APIs. It was very challenging!</p>
+      <p>It was the first time I took part to this kind of project. Everything had to be developed from scratch and in a very short time. I had to learn two new JavaScript frameworks: EmberJS and AngularJS, a new syntax: CoffeeScript, a new language: Rails and to deal with various APIs. It was very challenging!</p>
       """
   ,
     id: 2
@@ -67,7 +67,7 @@ Project.reopenClass
       </div>
       <div class="image-caption">CityDomination's Android app</div>
 
-      <p>I was one of the four original founders. I participated in all the project phases, from the idea, to the launching. I was responsible for the gameplay, the graphics and all the front-end part, that is to say the website and the webapp. I used the Javascript framework Sencha Touch 2 to quickly build a maintainable iPhone webapp. Moreover, I helped to develop the server part which is based on the PHP framework Symfony 2. We used a REST architecture and developed our own API to communicate with our multiple apps: the website, the webapp, and the Android app.
+      <p>I was one of the four original founders. I participated in all the project phases, from the idea, to the launching. I was responsible for the gameplay, the graphics and all the front-end part, that is to say the website and the webapp. I used the JavaScript framework Sencha Touch 2 to quickly build a maintainable iPhone webapp. Moreover, I helped to develop the server part which is based on the PHP framework Symfony 2. We used a REST architecture and developed our own API to communicate with our multiple apps: the website, the webapp, and the Android app.
       </p>
 
       <p>I left the project in December 2012 due to a lack of time and my studies at INSA of Lyon. CityDomination has been acquired by the gaming company <a href="http://mobinlife.com/" target="_blank">Mob In Life</a> and is now one of their most successful game.</p>
@@ -89,7 +89,7 @@ Project.reopenClass
       <img src="assets/images/projects/direct-matin-iphone.png" alt="Direct Matin's iPhone app"/>
       <div class="image-caption">DirectMatin's iPhone app</div>
 
-      <p>Kreactive wanted to use the new mobile Javascript framework Sencha Touch 2 which had never been used before. I was assisted by the project manager plus another web developer but I had a lot of freedom. The biggest challenge was to adapt the app to all kind platforms and devices, ranging from iPads, iPhones, Android tablets and phones! Finally after 3 months we submitted the app on the <a href="https://itunes.apple.com/fr/app/direct-matin/id555661512" target="_blank">AppStore</a> and <a href="https://play.google.com/store/apps/details?id=com.bolloremediadigital.directmatin" target="_blank">Google Play</a>.</p>
+      <p>Kreactive wanted to use the new mobile JavaScript framework Sencha Touch 2 which had never been used before. I was assisted by the project manager plus another web developer but I had a lot of freedom. The biggest challenge was to adapt the app to all kind platforms and devices, ranging from iPads, iPhones, Android tablets and phones! Finally after 3 months we submitted the app on the <a href="https://itunes.apple.com/fr/app/direct-matin/id555661512" target="_blank">AppStore</a> and <a href="https://play.google.com/store/apps/details?id=com.bolloremediadigital.directmatin" target="_blank">Google Play</a>.</p>
 
       <p>I really enjoyed working on an app which is now used by thousands of people every day. Visiting Paris, I was surprised to see in the subway ads promoting the app!</p>
       """
@@ -110,12 +110,12 @@ Project.reopenClass
       <img src="assets/images/projects/startupviz-map.png" alt="StartupViz website"/>
       <div class="image-caption">StartupViz website</div>
 
-      <p>The design was tested repeatedly through user testing sessions at the UW Busines School and Startup Hall. Feedbacks from users were very positive:</p>
+      <p>The design was tested repeatedly through user testing sessions at the UW Business School and Startup Hall. Feedbacks from users were very positive:</p>
 
       <q>Normally I have to google competitors or look through all individual entries in Crunchbase to find startups that are similar to ours. Once we even bought a report that contained similar information for around $4000. Seeing how much funding these companies got in their investment rounds can help us to ask for the right amount from our investors.  I would definitely use this tool and pay for it! Probably not $4000, but I would pay for it.</q>
-      <p class="quote-author">&ndash; Greg Robinson, CEO at Wovnenergy</p>
+      <p class="quote-author">&ndash; Greg Robinson, CEO at Wovn Energy</p>
 
-      <p>The tool was designed by UW Human Centered Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
+      <p>The tool was designed by University of Washington Human Centered-Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
     """
   ,
     id: 11
@@ -165,9 +165,9 @@ Project.reopenClass
     date: 'Feb. 2015'
     relatedProjects: [1]
     coverImage: 'assets/images/projects/labello-cover.jpg'
-    summary: 'A web app for labelling and analysing documents. Developed in less than one week!'
+    summary: 'A web app for labelling and analyzing documents. Developed in less than one week!'
     description: """
-      <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analysing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analysing lenghty transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser localstorage. But it's possible to import and export files from a different computer! The code is availabe on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
+      <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analyzing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analyzing lengthy transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser local storage. But it's possible to import and export files from a different computer! The code is available on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
 
       <img src="assets/images/projects/labello-home.png" alt="Labello"/>
       <div class="image-caption">Labello homepage</div>
@@ -175,7 +175,7 @@ Project.reopenClass
       <img src="assets/images/projects/labello-document.png" alt="Labello"/>
       <div class="image-caption">Labelling text using Labello</div>
 
-      <p>Not only it permited me to analyse numerous documents, it was also used by my classmates during the quarter.</p>
+      <p>Not only it permitted me to analyze numerous documents, it was also used by my classmates during the quarter.</p>
     """
   ,
     id: 23
