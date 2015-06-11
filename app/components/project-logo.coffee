@@ -5,8 +5,9 @@ ProjectLogo = Ember.Component.extend
 
   style: (->
     color = @get('project.color') ? '#EEE'
-    'background-color:' + @get('project.color') + '; ' +
+    style = 'background-color:' + @get('project.color') + '; ' +
     'background-image: url("' + @get('project.logo') + '");'
+    style.htmlSafe()
   ).property('project.color', 'project.logo')
 
 `export default ProjectLogo;`
