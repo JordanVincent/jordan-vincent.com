@@ -138,23 +138,30 @@ Project.reopenClass
     coverImage: 'assets/images/projects/dinofit-cover.jpg'
     summary: 'A fitness Android app that keeps users engaged. Soon to be launched!'
     description: """
-      <p><a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app that keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated everyday based on the user's feedbacks and previous workouts. It will soon be available on Android!</p>
+      <p><a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app which keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated automatically based on the user’s feedbacks and previous workouts. It will soon be available on Android!</p>
 
       <div class="raw">
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-challenge.png" alt="Dinofit challenge"/></div>
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-shop.png" alt="Dinofit shop"/></div>
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-menu.png" alt="Dinofit menu"/></div>
+        <div class="col-xs-12"><img src="assets/images/projects/dinofit-items.png" alt="Dinofit Items"/></div>
       </div>
-      <div class="image-caption">Dinofit Android app</div>
+      <div class="image-caption">The app includes gaming elements such as shopping items and rewards.</div>
+
+      <p>The game is built around a strong storyline. When opening the app for the first time, an introduction presents DinoFit’s universe and core gaming concepts. Since studies have shown that most people downloading an app uninstall it in the next 10 seconds, the introduction helps engage new users right away. Similarly, at the end of the introduction, the app prompts the user to test their level by doing a quick push-ups test. However, this last step is optional and can be completed later.</p>
+
+      <p>After the introduction, few key elements help in keeping the user engaged. For instance, exercising multiple days in a row will give the user a clear advantage on the game outcome.</p>
 
       <div class="raw">
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-workout.png" alt="Dinofit workout"/></div>
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-xp.png" alt="Dinofit XP"/></div>
-        <div class="col-xs-4"><img src="assets/images/projects/dinofit-streak.png" alt="Dinofit streak"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/dinofit-intro1.png" alt="Dinofit Intro 1"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/dinofit-intro2.png" alt="Dinofit Intro 2"/></div>
       </div>
-      <div class="image-caption">Overview of a workout</div>
+      <div class="image-caption">Introduction screens presenting DinoFit's universe.</div>
 
-      <p>No data is hosted on the user's phone and the whole logic is provided by the backend server. The Android app and the Ruby on Rails server interact with each other using a REST API.</p>
+      <p>Contrary to most fitness apps, DinoFit is really playful. Subtle animations not only bring life to the game, but serve as indicators. For example, depending on the status of the game, the volcano will release more or less fumes, and when doing push-ups, an animation shows water being pumped.</p>
+
+      <div class="raw">
+        <div class="col-xs-6"><img src="assets/images/projects/dinofit-home.png" alt="Dinofit homepage"/></div>
+        <div class="col-xs-6"><img src="assets/images/projects/dinofit-workout.png" alt="Dinofit workout"/></div>
+      </div>
+      <div class="image-caption">Home and workout screens. Animations indicate the user’s progress.</div>
     """
   ,
     id: 22
