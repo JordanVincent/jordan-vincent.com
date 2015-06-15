@@ -1,34 +1,34 @@
 <div class="content-container" id="project">
 
-  {{nav-responsive title=name}}
+  {{nav-responsive title=model.name}}
 
   <div class="left-column">
   </div>
-  {{project-cover project=this}}
+  {{project-cover project=model}}
 
   <div class="right-column content-column">
 
     <article>
-      <h1>{{name}}</h1>
+      <h1>{{model.name}}</h1>
       {{nav-inline}}
 
       <div class="side-column">
         <h4 class="label-item">Date</h4>
-        <p>{{date}}</p>
-        {{#if position}}
+        <p>{{model.date}}</p>
+        {{#if model.position}}
           <h4 class="label-item">Position</h4>
-          <p>{{position}}</p>
+          <p>{{model.position}}</p>
         {{/if}}
       </div>
 
-      {{{description}}}
+      {{{model.description}}}
     </article>
 
     <div class="related-projects">
-      {{#if relatedProjects}}
+      {{#if model.relatedProjects}}
         <h2>Related projects <span class="separator">&bull;</span> {{link-to 'All projects' 'projects.index'}}</h2>
         <div class="raw clearfix">
-          {{#each project in relatedProjects}}
+          {{#each model.relatedProjects key="@guid" as |project|}}
             <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
               {{project-item project=project}}
             </div>
