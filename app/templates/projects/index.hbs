@@ -15,7 +15,7 @@
 
       <h2>Main projects</h2>
       <div class="raw clearfix">
-        {{#each mainProjects key="@guid" as |project|}}
+        {{#each mainProjects as |project|}}
           <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
             {{project-item project=project}}
           </div>
@@ -24,7 +24,7 @@
 
       <h2>Side projects</h2>
       <div class="raw clearfix">
-        {{#each sideProjects key="@guid" as |project|}}
+        {{#each sideProjects as |project|}}
           <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
             {{project-item project=project}}
           </div>
@@ -33,7 +33,7 @@
 
       <h2>Class projects</h2>
       <div class="raw clearfix">
-        {{#each classProjects key="@guid" as |project|}}
+        {{#each classProjects as |project|}}
           <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
             {{project-item project=project}}
           </div>
