@@ -1,15 +1,102 @@
 #about {
 
-  .left-column {
-    background-image: url($images-path+'/about-image.jpeg');
+  .top-nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  header {
+    background-image: url($images-path+'/home-bg.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h1 {
+      color: #FFF;
+      font-weight: 900;
+      font-size: 5em;
+      text-align: center;
+      margin: 0;
+      padding-top: 200px;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .sub-header {
+    position: relative;
+    top: 0;
+
+    .me, .tagline {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .me {
+      max-height: 350px;
+      margin-left: -60px;
+    }
+
+    .tagline {
+      padding: 0;
+      margin-bottom: 70px;
+
+      li {
+        background: #212D39;
+        color: #FFF;
+        font-size: 2em;
+        font-family: AvenirMedium;
+        font-style: oblique;
+        margin-bottom: 2px;
+        line-height: 1;
+        padding: 0 5px;
+        display: inline-block;
+      }
+    }
   }
 
   article {
-    p.lead {
+    position: relative;
+
+    .lead {
+      font-size: 1.7em;
+      font-family: Avenir;
+      margin: 50px 0;
+
+      &:first-letter {
+        float: left;
+        font-size: 3em;
+        line-height: .8;
+        margin-right: 5px;
+        margin-top: 12px;
+      }
     }
 
-    sup a{
-      color: #333;
+    .text {
+      width: 70%;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    aside {
+      width: 30%;
+      right: 0;
+      position: absolute;
+      padding-left: 30px;
+
+      &.quote .inner {
+        font-family: MyriadPro;
+        font-weight: bold;
+        font-size: 1.4em;
+        border: 5px solid #333;
+        border-width: 5px 0;
+        line-height: 1;
+        padding: 8px 0;
+      }
     }
   }
 }
