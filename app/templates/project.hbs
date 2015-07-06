@@ -1,7 +1,5 @@
 <div class="container" id="project">
 
-  {{nav-responsive title=model.name}}
-
   <div class="content-column">
 
     <article>
@@ -20,19 +18,5 @@
       {{{model.description}}}
     </article>
 
-    <div class="related-projects">
-      {{#if model.relatedProjects}}
-        <h2>Related projects <span class="separator">&bull;</span> {{link-to 'All projects' 'projects.index'}}</h2>
-        <div class="raw clearfix">
-          {{#each model.relatedProjects as |project|}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
-              {{project-item project=project}}
-            </div>
-          {{/each}}
-        </div>
-      {{else}}
-        <h2>{{link-to 'All projects' 'projects.index'}}</h2>
-      {{/if}}
-    </div>
   </div>
 </div>

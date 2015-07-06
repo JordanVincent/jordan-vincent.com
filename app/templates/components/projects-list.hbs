@@ -1,0 +1,26 @@
+<h2>Main projects</h2>
+<div class="raw clearfix">
+  {{#each mainProjects as |project|}}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
+      {{project-item project=project}}
+    </div>
+  {{/each}}
+</div>
+
+<h2>Side projects</h2>
+<div class="raw clearfix">
+  {{#each sideProjects as |project|}}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
+      {{project-item project=project}}
+    </div>
+  {{/each}}
+</div>
+
+<h2>Class projects</h2>
+<div class="raw clearfix">
+  {{#each classProjects as |project|}}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
+      {{project-item project=project}}
+    </div>
+  {{/each}}
+</div>

@@ -5,13 +5,13 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
   classNames: ['nav-responsive']
   attributeBindings: ['style']
 
-  height: ( ->
-    0
+  height: ( -> 0
   ).property()
 
   style: (->
     show = @get('display') or $(window).width() <= 768
     top  = if show then 0 else (- @get('height'))
+
     "top: #{top}px;"
   ).property('display', 'height')
 
@@ -28,7 +28,7 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
     @unbindScrolling()
   ).on('willRemoveElement')
 
-  scrolled: (e) ->
+  scrolled: ->
     display = $(window).scrollTop() > 600
     @set('display', display)
 
