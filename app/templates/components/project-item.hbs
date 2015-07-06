@@ -1,5 +1,19 @@
 {{#link-to 'project' project}}
-  {{project-logo project=project}}
-  <h3>{{project.name}}</h3>
-  <span class="summary">{{project.summary}}</span>
+  <div>
+    <div class="svg-wrapper">
+      <div class="back" style="background-color: {{project.color}}"></div>
+      <svg viewBox="0 0 400 400" preserveAspectRatio="none" >
+        <path stroke-miterlimit="3" stroke="none" fill="#FFFFFF" d="{{path.from}}"/>
+      </svg>
+    </div>
+    <div class="project-item-inner">
+      <div class="caption" >
+        <img src="{{project.logo}}"/>
+      </div><!--
+      --><div class="text-inner">
+        <h3>{{project.name}}</h3>
+        <p>{{project.summary}}</p>
+      </div>
+    </div>
+  </div>
 {{/link-to}}

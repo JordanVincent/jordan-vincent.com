@@ -1,5 +1,7 @@
 `import Ember from 'ember';`
 `import ScrollingMixin from '../mixins/scrolling';`
+`import Snap from 'snap-svg';`
+`import mina from 'mina';`
 
 NavResponsive = Ember.Component.extend ScrollingMixin,
   classNames: ['nav-responsive']
