@@ -2,17 +2,16 @@
 
 ScrollingMixin = Ember.Mixin.create
 
-  bindScrolling: (node) ->
-    @set('node', node)
+  bindScrolling: ->
 
     onScroll = (e) =>
       Ember.run.debounce(@, @scrolled, 150)
 
-    $(@get('node')).bind 'touchmove', onScroll
-    $(@get('node')).bind 'scroll', onScroll
+    $(window).bind 'touchmove', onScroll
+    $(window).bind 'scroll', onScroll
 
   unbindScrolling: ->
-    $(@get('node')).unbind 'scroll'
-    $(@get('node')).unbind 'touchmove'
+    $(window).unbind 'scroll'
+    $(window).unbind 'touchmove'
 
 `export default ScrollingMixin;`
