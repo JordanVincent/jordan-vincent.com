@@ -1,47 +1,6 @@
 #about {
 
-  .top-nav {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-  }
-
-  header {
-    background-image: url($images-path+'/home-bg.png');
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
-    h1 {
-      color: #FFF;
-      font-weight: 900;
-      font-size: 5em;
-      text-align: center;
-      margin: 0;
-      padding-top: 200px;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  .sub-header {
-    position: relative;
-    top: 0;
-
-    .ragged-edge {
-      opacity: .5;
-      position: absolute;
-      top: 0;
-      width: 100%;
-
-      img {
-        max-height: 150px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-      }
-    }
+  .hero-image {
 
     .me, .tagline {
       position: absolute;
@@ -67,24 +26,6 @@
         line-height: 1;
         padding: 0 5px;
         display: inline-block;
-      }
-    }
-  }
-
-  .main-section {
-    position: relative;
-    background: #FFF;
-
-    .ragged-edge {
-      position: absolute;
-      top: 0;
-      width: 100%;
-
-      img {
-        max-height: 150px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
       }
     }
   }

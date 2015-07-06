@@ -1,0 +1,28 @@
+<div class="top-nav">
+  <div class="container">
+    {{nav-inline}}
+  </div>
+</div>
+
+<header style="background-image: url({{image}});">
+  {{#if title}}
+    <div class="container">
+      <h1>{{title}}</h1>
+    </div>
+  {{/if}}
+</header>
+
+<div class="sub-header">
+  <div class="ragged-edge">
+    <img src="assets/images/large-ragged-back.png">
+  </div>
+  <div class="container">
+    {{yield}}
+  </div>
+</div>
+
+<div class="header-bottom">
+  <div class="ragged-edge">
+    <img src="assets/images/large-ragged.png">
+  </div>
+</div>
