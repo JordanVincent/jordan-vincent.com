@@ -66,3 +66,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: ArnoPro;
+  src: url(#{$fonts-path}/ArnoPro-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}

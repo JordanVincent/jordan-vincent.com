@@ -1,27 +1,33 @@
 <div id="project">
 
-  {{#hero-image title=model.name image=model.coverImage}}
+  {{#hero-image image=coverImage}}
+    <img class="hero-project-image" src="{{model.logo}}" style="background-color: {{model.color}};"/>
+    <h1 class="hero-project-title" >{{model.name}}</h1>
   {{/hero-image}}
 
   <section class="main-section">
     <div class="container">
-
       <article>
-        <h1>{{model.name}}</h1>
-        {{nav-inline}}
 
-        <div class="side-column">
+        {{#if model.intro}}
+          <div class="lead">
+            {{{model.intro}}}
+          </div>
+        {{/if}}
+
+        <!-- <div class="side-column">
           <h4 class="label-item">Date</h4>
           <p>{{model.date}}</p>
           {{#if model.position}}
             <h4 class="label-item">Position</h4>
             <p>{{model.position}}</p>
           {{/if}}
+        </div> -->
+
+        <div class="text">
+          {{{model.description}}}
         </div>
-
-        {{{model.description}}}
       </article>
-
     </div>
   </section>
 

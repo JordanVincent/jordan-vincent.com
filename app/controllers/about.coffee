@@ -1,6 +1,6 @@
 `import Ember from 'ember';`
 
-AboutController = Ember.ArrayController.extend
+AboutController = Ember.Controller.extend
   birthDate: (-> new Date(1991, 6, 15)).property()
   todayDate: (-> Date.now()).property()
 

@@ -31,29 +31,6 @@
   }
 
   article {
-    position: relative;
-
-    .lead {
-      font-size: 1.7em;
-      font-family: Avenir;
-      margin: 50px 0;
-
-      &:first-letter {
-        float: left;
-        font-size: 3em;
-        line-height: .8;
-        margin-right: 5px;
-        margin-top: 12px;
-      }
-    }
-
-    .text {
-      width: 70%;
-
-      p {
-        margin-bottom: 20px;
-      }
-    }
 
     aside {
       width: 30%;

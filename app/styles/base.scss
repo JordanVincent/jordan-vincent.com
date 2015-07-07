@@ -29,12 +29,38 @@ p {
   }
 }
 
-article a {
-  color: $primary-blue;
-  font-weight: bold;
+article {
+  position: relative;
 
-  & * {
-    font-weight: normal;
+  a {
+    color: $primary-blue;
+    font-weight: bold;
+
+    & * {
+      font-weight: normal;
+    }
+  }
+
+  .lead {
+    font-size: 1.7em;
+    font-family: Avenir;
+    margin: 50px 0;
+
+    &:first-letter {
+      float: left;
+      font-size: 3em;
+      line-height: .6;
+      margin-right: 5px;
+      margin-top: 12px;
+    }
+  }
+
+  .text {
+    width: 70%;
+
+    p {
+      margin-bottom: 20px;
+    }
   }
 }
 

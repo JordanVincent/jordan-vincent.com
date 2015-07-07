@@ -10,6 +10,7 @@ Project = DS.Model.extend
   logo: DS.attr()
   date: DS.attr()
   summary: DS.attr()
+  intro: DS.attr()
   description: DS.attr()
   position: DS.attr()
   coverImage: DS.attr()
@@ -26,8 +27,9 @@ Project.reopenClass
     coverImage: 'assets/images/projects/sixdoors-cover.jpg'
     position: 'Web Developer'
     summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developer.'
+    intro: 'SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day.'
     description: """
-      <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day. I was in charge of the development of the Sixdoors web apps:</p>
+      <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! I was in charge of the development of the Sixdoors web apps:</p>
 
       <p><strong>SixDoors web store:</strong> built with EmberJS, it generated more than 50% of SixDoors sales.</p>
 
@@ -58,8 +60,9 @@ Project.reopenClass
     coverImage: 'assets/images/projects/citydomination-cover.jpg'
     position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
+    intro: '<a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">City Domination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city!'
     description: """
-      <p><a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">City Domination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city! The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
+      <p>The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
 
       <div class="raw">
         <div class="col-xs-6"><img src="assets/images/projects/citydomination-best.png" alt="CityDomination's poster"/></div>
@@ -163,9 +166,8 @@ Project.reopenClass
     relatedProjects: [2]
     coverImage: 'assets/images/projects/dinofit-cover.jpg'
     summary: 'A fitness Android app that keeps users engaged. Soon to be launched!'
+    intro: '<a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app which keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated automatically based on the user’s feedbacks and previous workouts. It will soon be available on Android!'
     description: """
-      <p><a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app which keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated automatically based on the user’s feedbacks and previous workouts. It will soon be available on Android!</p>
-
       <div class="raw">
         <div class="col-xs-12"><img src="assets/images/projects/dinofit-items.png" alt="Dinofit Items"/></div>
       </div>
