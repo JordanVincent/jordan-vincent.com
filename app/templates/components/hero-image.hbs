@@ -4,15 +4,15 @@
   </div>
 </div>
 
-<header style="background-image: url({{image}});">
+<header style="background-image: url({{image}}); top:{{headerTop}}px;">
   {{#if title}}
     <div class="container">
-      <h1>{{title}}</h1>
+      <h1 style="padding-top:{{titlePaddingTop}}px;">{{title}}</h1>
     </div>
   {{/if}}
 </header>
 
-<div class="sub-header">
+<div class="sub-header" style="top:{{subHeaderTop}}px;">
   <div class="ragged-edge">
     <img src="assets/images/large-ragged-back.png">
   </div>

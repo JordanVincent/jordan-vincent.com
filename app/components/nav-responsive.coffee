@@ -17,18 +17,10 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
     "top: #{top}px;"
   ).property('display', 'height')
 
-  _bindScrolling: (->
-    @bindScrolling()
-  ).on('didInsertElement')
-
   _calculateHeight: (->
     height = @$().outerHeight()
     @set('height', height)
   ).on('didInsertElement')
-
-  _unbindScrolling: (->
-    @unbindScrolling()
-  ).on('willRemoveElement')
 
   scrolled: ->
     display = $(window).scrollTop() > 600
