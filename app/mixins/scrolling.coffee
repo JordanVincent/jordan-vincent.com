@@ -8,7 +8,7 @@ ScrollingMixin = Ember.Mixin.create
     namespace = @get('namespace')
 
     onScroll = (e) =>
-      Ember.run.debounce(@, @scrolled, e, 150, true)
+      @scrolled(e)
 
     $(window).bind "touchmove.#{namespace}", onScroll
     $(window).bind "scroll.#{namespace}", onScroll

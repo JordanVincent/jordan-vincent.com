@@ -12,6 +12,10 @@
     "ember-qunit": "0.4.0",
     "ember-qunit-notifications": "0.0.7",
     "qunit": "~1.18.0",
-    "ember-cli-snap-svg-shim": "~0.0.3"
+    "ember-cli-snap-svg-shim": "~0.0.3",
+    "tinycolor": "~1.1.2",
+    "simplr-smoothscroll": "~1.0.1",
+    "jquery-mousewheel": "~3.1.13",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#7.0.2"
   }
 }

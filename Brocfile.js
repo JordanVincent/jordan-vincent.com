@@ -26,5 +26,7 @@ var app = new EmberApp({
 // along with the exports of each module as its value.
 
 app.import('bower_components/tinycolor/tinycolor.js');
+app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
+app.import('bower_components/simplr-smoothscroll/lib/jquery.simplr.smoothscroll.js');
 
 module.exports = app.toTree();
