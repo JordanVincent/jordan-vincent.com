@@ -4,6 +4,6 @@ ProjectController = Ember.Controller.extend
 
   coverImage: (->
     @get('model.coverImage') || 'assets/images/projects-image.jpg'
-  ).property('model.coverImage')
+  ).property('model.coverImage').readOnly()
 
 `export default ProjectController;`

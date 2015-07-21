@@ -26,6 +26,6 @@ ScrollingMixin = Ember.Mixin.create
 
   _unbindScrolling: (->
     @unbindScrolling()
-  ).on('willRemoveElement')
+  ).on('willDestroyElement')
 
 `export default ScrollingMixin;`

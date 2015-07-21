@@ -1,9 +1,10 @@
 `import Ember from 'ember';`
 `import ScrollingMixin from '../mixins/scrolling';`
+`import ResizeMixin from '../mixins/resize';`
 `import Snap from 'snap-svg';`
 `import mina from 'mina';`
 
-NavResponsive = Ember.Component.extend ScrollingMixin,
+NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
   classNames: ['nav-responsive']
   attributeBindings: ['style']
 
@@ -13,9 +14,8 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
   style: (->
     show = @get('display') or $(window).width() <= 768
     top  = if show then 0 else (- @get('height'))
-
-    "top: #{top}px;"
-  ).property('display', 'height')
+    "top: #{top}px;".htmlSafe()
+  ).property('display', 'height').readOnly()
 
   _calculateHeight: (->
     height = @$().outerHeight()
@@ -23,7 +23,17 @@ NavResponsive = Ember.Component.extend ScrollingMixin,
   ).on('didInsertElement')
 
   scrolled: ->
-    display = $(window).scrollTop() > 600
+    @_resetDisplay()
+
+  resized: ->
+    @_resetDisplay()
+
+  _resetDisplay: ->
+    windowH = $(window).height()
+    threshold = if windowH > 600 then 600 else windowH
+    display = $(window).scrollTop() > threshold
+
     @set('display', display)
+
 
 `export default NavResponsive;`
