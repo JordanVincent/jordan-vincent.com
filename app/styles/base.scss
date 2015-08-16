@@ -68,37 +68,3 @@ article {
     }
   }
 }
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
-
-}
-
-@media (min-width: $screen-xs-max) and (max-width: $screen-sm-min) {
-
-}
-
-@media (min-width: $screen-s-max) and (max-width: $screen-sm-min) {
-  .col-s-6 {
-    width: 50%;
-
-    &:nth-child(odd) {
-      clear: left;
-    }
-  }
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .col-md-6:nth-child(odd) {
-    clear: left;
-  }
-}
-
-@media (min-width: $screen-md-min) {
-  .col-md-4:nth-child(3n+1) {
-    clear: left;
-  }
-}
-
-@media (max-width: $screen-xs-max) {
-
-}
