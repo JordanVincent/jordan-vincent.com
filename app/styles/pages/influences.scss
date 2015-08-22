@@ -6,7 +6,7 @@
   .list-header {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #666;
+    color: $gray-light;
     font-size: 1.5em;
     font-family: $headings-font-family;
   }
@@ -18,7 +18,7 @@
     font-family: $headings-font-family;
 
     li {
-      color: #666;
+      color: $gray-light;
       margin-bottom: 5px;
     }
   }

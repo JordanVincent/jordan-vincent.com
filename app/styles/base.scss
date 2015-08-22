@@ -23,14 +23,14 @@ p {
   &:before {
     content: '';
     width: 50px;
-    border-top: 1px solid #666;
+    border-top: 1px solid $gray-light;
     position: absolute;
     top: 0;
   }
 
   .footnote {
     font-style: italic;
-    color: #666;
+    color: $gray-light;
     margin-bottom: 15px;
   }
 }
@@ -67,6 +67,28 @@ article {
 
     p {
       margin-bottom: 20px;
+    }
+  }
+
+  aside {
+    width: 30%;
+    right: 0;
+    position: absolute;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  article {
+    .text {
+      width: 100%;
+    }
+
+    aside {
+      width: 100%;
+      right: 0;
+      position: relative;
+      padding-left: 0;
     }
   }
 }
