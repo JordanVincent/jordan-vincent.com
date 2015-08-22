@@ -46,11 +46,6 @@
       padding: 3px;
     }
 
-    .raw {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
     q {
       font-family: $paragraph-font-family;
       font-size: 1.5em;
@@ -101,16 +96,6 @@
         text-decoration: none;
       }
     }
-
-    .raw {
-      margin-left: -15px;
-      margin-right: -15px;
-
-      [class*="col"] {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
   }
 }
 
@@ -118,6 +103,8 @@
   #project {
     article aside {
       margin: 0 0 20px 0;
+      padding-left: 15px;
+      padding-right: 15px;
 
       .inner {
         border: 0;
