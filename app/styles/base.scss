@@ -18,6 +18,7 @@ p {
   margin-top: 50px;
   position: relative;
   padding-top: 10px;
+  font-size: 1.5em;
 
   &:before {
     content: '';
@@ -36,6 +37,7 @@ p {
 
 article {
   position: relative;
+  margin-bottom: 30px;
 
   a {
     color: $primary-blue;

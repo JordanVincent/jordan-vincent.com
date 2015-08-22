@@ -31,6 +31,11 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
     @set('height', height)
   ).observes('isMobile').on('didInsertElement')
 
+  _resetOpen: (->
+    @set('beforeOpen', false)
+    @set('afterOpen', false)
+  ).observes('isMobile')
+
   _initDefaults: (->
     @_resetDisplay()
     @_updateIsMobile()

@@ -5,6 +5,10 @@
 HeroImage = Ember.Component.extend ScrollingMixin, ResizeMixin,
   classNames: ['hero-image']
 
+  headerTop: 0
+  subHeaderTop: 0
+  titlePaddingTop: 200
+
   headerStyle: ( ->
     "background-image: url(%@); top: %@px; height: %@px"
     .fmt(@get('image'), @get('headerTop'), @get('headerHeight'))

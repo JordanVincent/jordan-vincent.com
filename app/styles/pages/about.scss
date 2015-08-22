@@ -1,6 +1,9 @@
 #about {
-
   .hero-image {
+    header h1 {
+      text-align: center;
+      margin: 0;
+    }
 
     .me, .tagline {
       position: absolute;
@@ -31,7 +34,6 @@
   }
 
   article {
-
     aside {
       width: 30%;
       right: 0;
@@ -47,6 +49,14 @@
         line-height: 1;
         padding: 8px 0;
       }
+    }
+  }
+}
+
+@media (max-width : $screen-sm-min) {
+  #about {
+    .hero-image header h1 {
+      font-size: 3em;
     }
   }
 }

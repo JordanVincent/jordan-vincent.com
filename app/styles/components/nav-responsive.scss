@@ -8,6 +8,7 @@
 
   svg {
     display: none;
+    fill: $purple;
   }
 
   .nav-inline .nav-element a {
@@ -46,11 +47,6 @@
       text-transform: uppercase;
     }
 
-    svg {
-      fill: $purple;
-      display: inline;
-    }
-
     &.before-open {
       height: 100%;
       background: rgba(255, 255, 255, 0.8);
@@ -73,6 +69,9 @@
       height: 100%;
       .nav-inline {
         display: block;
+      }
+      svg {
+        display: inline;
       }
     }
 
