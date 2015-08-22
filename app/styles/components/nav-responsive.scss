@@ -6,6 +6,10 @@
   background: #FFF;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 
+  svg {
+    display: none;
+  }
+
   .nav-inline .nav-element a {
     color: black;
 
@@ -19,8 +23,9 @@
   .nav-responsive {
     text-align: center;
     background: rgba(255, 255, 255, 0);
-    transition: top .3s,opacity .3s;
+    transition: top .3s, opacity .3s, background .5s;
     height: 50px;
+    cursor: pointer;
 
     .container {
       padding-top: 15px;
@@ -43,27 +48,38 @@
 
     svg {
       fill: $purple;
+      display: inline;
     }
 
-    &.open {
+    &.before-open {
       height: 100%;
       background: rgba(255, 255, 255, 0.8);
-
-      .title {
-        font-size: 1.8em;
-      }
 
       .container {
         height: 60%;
       }
 
+      .title {
+        font-size: 1.8em;
+      }
+
+      .nav-inline {
+        height: 80%;
+        opacity: 1;
+      }
+    }
+
+    &.before-open, &.after-open {
+      height: 100%;
       .nav-inline {
         display: block;
       }
     }
 
     .nav-inline {
-      height: 80%;
+      height: 0;
+      transition: height .5s, opacity .5s;
+      opacity: 0;
       display: none;
 
       .nav-element {
