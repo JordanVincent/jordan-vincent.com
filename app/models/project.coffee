@@ -60,7 +60,7 @@ Project.reopenClass
     coverImage: 'assets/images/projects/citydomination-cover.jpg'
     position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
-    intro: '<a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">City Domination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city!'
+    intro: '<a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">CityDomination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city!'
     description: """
       <p>The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
 

@@ -76,3 +76,34 @@
     margin: 0;
   }
 }
+
+@media (max-width : $screen-sm-min) {
+  .project-item {
+    .svg-wrapper {
+      display: none;
+    }
+
+    &.is-dark:hover a {
+      color: #333;
+    }
+
+    .caption {
+      width: 30%;
+      padding-right: 15px;
+
+      img {
+        max-width: 100%;
+        border-radius: 500px;
+      }
+    }
+
+    .text-inner {
+      width: 70%;
+    }
+
+    .caption, .text-inner {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
