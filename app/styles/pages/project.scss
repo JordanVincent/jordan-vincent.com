@@ -1,23 +1,21 @@
 #project {
-  .hero-image {
-    .hero-project-image {
-      position: absolute;
-      bottom: 45px;
-      width: 120px;
-      border-radius: 120px;
-      box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.3);
-    }
+  .hero-project-image {
+    position: absolute;
+    bottom: 45px;
+    width: 120px;
+    border-radius: 120px;
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.3);
+  }
 
-    .hero-project-title {
-      position: absolute;
-      bottom: 50px;
-      margin-left: 150px;
-      font-size: 5em;
-      font-family: MyriadPro;
-      font-weight: 900;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-      color: white;
-    }
+  .hero-project-title {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 150px;
+    font-size: 5em;
+    font-family: MyriadPro;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    color: white;
   }
 
   article {
@@ -123,6 +121,17 @@
       .inner {
         border: 0;
       }
+    }
+
+    .hero-project-image {
+      width: 90px;
+      bottom: 35px;
+    }
+
+    .hero-project-title {
+      font-size: 3em;
+      margin-left: 110px;
+      bottom: 35px;
     }
   }
 }

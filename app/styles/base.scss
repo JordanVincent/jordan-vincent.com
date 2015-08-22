@@ -37,7 +37,7 @@ p {
 
 article {
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px 0;
 
   a {
     color: $primary-blue;
@@ -51,7 +51,7 @@ article {
   .lead {
     font-size: 1.7em;
     font-family: Avenir;
-    margin: 50px 0;
+    margin-bottom: 50px;
 
     &:first-letter {
       float: left;

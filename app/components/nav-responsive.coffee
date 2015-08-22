@@ -22,7 +22,7 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
 
   style: (->
     show = @get('display') or $(window).width() <= 768
-    top  = if show then 0 else (- @get('height'))
+    top = if show then 0 else (- @get('height'))
     "top: #{top}px;".htmlSafe()
   ).property('display', 'height').readOnly()
 
@@ -68,7 +68,7 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
 
     path.attr({ d: @get('pathClosed')})
     @set('svgPath', path)
-  
+
   openMenu: ->
     @set('beforeOpen', true)
     @_animatePath(@get('pathOpen')).then =>
