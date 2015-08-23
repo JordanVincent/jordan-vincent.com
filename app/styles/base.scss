@@ -1,182 +1,94 @@
 body {
 }
 
-h1 {
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  position: relative;
-  margin-bottom: 20px;
-
-  &:before {
-    content: '';
-    width: 50px;
-    height: 4px;
-    background-color: #CCC;
-    position: absolute;
-    bottom: -8px;
-  }
-}
-
 p {
-  font-family: $paragraph-font-family;
-  font-size: 1.1em;
-  color: #444;
-  margin: 0 0 20px 0;
+  font-size: 1.5em;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.main-section {
+  background-color: white;
+  position: relative;
 }
 
 .footnotes {
   margin-top: 50px;
   position: relative;
   padding-top: 10px;
+  font-size: 1.5em;
 
   &:before {
     content: '';
     width: 50px;
-    border-top: 1px solid #666;
+    border-top: 1px solid $gray-light;
     position: absolute;
     top: 0;
   }
 
   .footnote {
     font-style: italic;
-    color: #666;
+    color: $gray-light;
     margin-bottom: 15px;
   }
 }
 
-article a {
-  color: $primary-blue;
-  font-weight: bold;
+article {
+  position: relative;
+  margin: 30px 0;
 
-  & * {
-    font-weight: normal;
-  }
-}
+  a {
+    color: $primary-blue;
+    font-weight: bold;
 
-// Layout
-
-.content-container {
-  position: absolute;
-  overflow-y: hidden;
-  height: 100%;
-  width: 100%;
-}
-
-.left-column {
-  width: 38%;
-  position: absolute;
-  background-color: #EEE;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.right-column {
-  width: 62%;
-  left: 38%;
-  position: absolute;
-  height: 100%;
-  padding: 30px 300px 30px 30px;
-  overflow-y: auto;
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
-  .left-column {
-    width: 24%;
-  }
-
-  .right-column {
-    width: 76%;
-    left: 24%;
-    padding: 30px 150px 30px 30px;
-  }
-}
-
-@media (min-width: $screen-xs-max) and (max-width: $screen-sm-min) {
-  .left-column {
-    width: 18%;
-  }
-
-  .right-column {
-    width: 82%;
-    left: 18%;
-    padding: 30px 30px 30px 30px;
-  }
-}
-
-@media (min-width: $screen-s-max) and (max-width: $screen-sm-min) {
-  .col-s-6 {
-    width: 50%;
-
-    &:nth-child(odd) {
-      clear: left;
+    & * {
+      font-weight: normal;
     }
   }
-}
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .col-md-6:nth-child(odd) {
-    clear: left;
+  .lead {
+    font-size: 1.7em;
+    font-family: Avenir;
+    margin-bottom: 50px;
+
+    &:first-letter {
+      float: left;
+      font-size: 3em;
+      line-height: .6;
+      margin-right: 5px;
+      margin-top: 12px;
+    }
   }
-}
 
-@media (min-width: $screen-md-min) {
-  .col-md-4:nth-child(3n+1) {
-    clear: left;
+  .text {
+    width: 70%;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  aside {
+    width: 30%;
+    right: 0;
+    position: absolute;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: $screen-xs-max) {
-  .left-column {
-    width: 0%;
-  }
-
-  .right-column {
-    width: 100%;
-    left: 0%;
-    padding: 15px;
-  }
-}
-
-// End layout
-
-@media (max-width: $screen-s-max){
-  h1 {
-    font-size: 1.6em;
-  }
-}
-
-@media (max-width: $screen-sm-min) {
-  .content-column {
-    padding-top: 70px;
-
-    h1 {
-      display: none;
+  article {
+    .text {
+      width: 100%;
     }
 
-    .nav-inline {
-      display: none;
+    aside {
+      width: 100%;
+      right: 0;
+      position: relative;
+      padding-left: 0;
     }
   }
-}
-
-@media (max-width: $screen-xs-max) {
-  .content-column {
-    padding-top: 110px;
-  }
-}
-
-// Test
-
-.liquid-container, .liquid-child {
-  position: absolute;
-  overflow-y: hidden;
-  height: 100%;
-  width: 100%;
 }

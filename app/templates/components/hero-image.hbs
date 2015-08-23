@@ -1,0 +1,28 @@
+<div class="top-nav hidden-xs">
+  <div class="container">
+    {{nav-inline}}
+  </div>
+</div>
+
+<header style={{headerStyle}}>
+  {{#if title}}
+    <div class="container">
+      <h1 style="padding-top:{{titlePaddingTop}}px;">{{title}}</h1>
+    </div>
+  {{/if}}
+</header>
+
+<div class="sub-header" style="top:{{subHeaderTop}}px;">
+  <div class="ragged-edge">
+    <img src="assets/images/large-ragged-back.png">
+  </div>
+  <div class="container">
+    {{yield}}
+  </div>
+</div>
+
+<div class="header-bottom">
+  <div class="ragged-edge">
+    <img src="assets/images/large-ragged.png">
+  </div>
+</div>

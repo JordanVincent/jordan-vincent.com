@@ -6,7 +6,7 @@ ProjectCover = Ember.Component.extend
 
   style: (->
     url = @get('project.coverImage') ? 'assets/images/projects-image.jpg'
-    "background-image: url(\"#{url}\");"
-  ).property('project.coverImage')
+    "background-image: url(\"#{url}\");".htmlSafe()
+  ).property('project.coverImage').readOnly()
 
 `export default ProjectCover;`

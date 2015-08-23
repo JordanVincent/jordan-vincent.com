@@ -1,0 +1,75 @@
+// MyriadPro
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(#{$fonts-path}/MyriadPro-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(#{$fonts-path}/MyriadPro-It.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(#{$fonts-path}/MyriadPro-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(#{$fonts-path}/MyriadPro-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+// AvenirLTStd
+
+@font-face {
+  font-family: Avenir;
+  src: url(#{$fonts-path}/AvenirLTStd-Roman.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(#{$fonts-path}/AvenirLTStd-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(#{$fonts-path}/AvenirLTStd-MediumOblique.otf);
+  font-weight: 500;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(#{$fonts-path}/AvenirLTStd-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+// ArnoPro
+
+@font-face {
+  font-family: ArnoPro;
+  src: url(#{$fonts-path}/ArnoPro-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ArnoPro;
+  src: url(#{$fonts-path}/ArnoPro-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}

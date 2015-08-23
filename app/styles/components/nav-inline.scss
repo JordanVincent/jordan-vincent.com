@@ -1,58 +1,22 @@
 .nav-inline {
-  margin: 5px 0 30px 0;
-  font-size: 1.2em;
-
-  a {
-    font-weight: bold;
-    margin-left: 10px;
-    color: $text-light-color;
-    text-decoration: none;
-
-    &:hover, &.active {
-      color: $text-normal-color;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-}
-
-@media (max-width: $screen-sm-min) {
-  .nav-inline a {
+  .nav-element {
+    width: 20%;
     display: inline-block;
-    width: 29px;
-    height: 29px;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: center;
+    text-align: center;
+    padding: 20px 0;
 
-    &, &:hover, &.active {
-      color: transparent;
-    }
+    a {
+      text-decoration: none;
+      font-size: 1.5em;
+      padding-bottom: 5px;
+      transition: border .3s;
+      color: white;
+      font-family: Avenir;
+      font-weight: 500;
 
-    &:hover, &.active {
-      background-color: #EEE;
-    }
-
-    &.about-link {
-      background-image: url($images-path+'/about-icon.png');
-    }
-
-    &.influences-link {
-      background-image: url($images-path+'/influences-icon.png');
-    }
-
-    &.projects-link {
-      background-image: url($images-path+'/projects-icon.png');
-    }
-
-    &.contact-link {
-      background-image: url($images-path+'/contact-icon.png');
-    }
-
-    &.resume-link {
-      background-image: url($images-path+'/resume-icon.png');
+      &.active {
+        border-bottom: 2px solid white;
+      }
     }
   }
 }

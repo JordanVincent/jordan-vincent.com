@@ -1,29 +1,19 @@
-$border-radius: 2px;
-$primary-blue: #1D5774;
-$primary-blue-dark: #154359;
-$text-normal-color: #333;
-$text-light-color: #CCC;
-
-$paragraph-font-family: 'Merriweather', Cambria, serif;
-$headings-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-$images-path: "images";
-
-$screen-lg-min: 1300px;
-$screen-md-min: 992px;
-$screen-sm-min: 768px;
-$screen-s-max: 400px;
-$screen-xs-max: 300px;
+@import "variables";
+@import "mixins";
 
 @import "bootstrap";
 
+@import "font-faces";
 @import "base";
 
 @import "components/nav-inline";
 @import "components/nav-responsive";
+@import "components/hero-image";
+@import "components/projects-list";
 @import "components/project-logo";
 @import "components/project-item";
 
+@import "pages/application";
 @import "pages/about";
 @import "pages/influences";
 @import "pages/projects/index";

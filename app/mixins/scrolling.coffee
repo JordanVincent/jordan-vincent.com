@@ -2,17 +2,30 @@
 
 ScrollingMixin = Ember.Mixin.create
 
-  bindScrolling: (node) ->
-    @set('node', node)
+  namespace: Ember.computed.reads('elementId')
+
+  bindScrolling: ->
+    namespace = @get('namespace')
 
     onScroll = (e) =>
-      Ember.run.debounce(@, @scrolled, 150)
+      @scrolled(e)
 
-    $(@get('node')).bind 'touchmove', onScroll
-    $(@get('node')).bind 'scroll', onScroll
+    $(window).bind "touchmove.#{namespace}", onScroll
+    $(window).bind "scroll.#{namespace}", onScroll
 
   unbindScrolling: ->
-    $(@get('node')).unbind 'scroll'
-    $(@get('node')).unbind 'touchmove'
+    namespace = @get('namespace')
+    $(window).unbind "scroll.#{namespace}"
+    $(window).unbind "touchmove.#{namespace}"
+
+  scrolled: Ember.K
+
+  _bindScrolling: (->
+    @bindScrolling()
+  ).on('didInsertElement')
+
+  _unbindScrolling: (->
+    @unbindScrolling()
+  ).on('willDestroyElement')
 
 `export default ScrollingMixin;`

@@ -1,45 +1,16 @@
-<div class="content-container" id="projects-index">
+<div id="projects-index">
 
-  {{nav-responsive title="Projects"}}
+  {{#hero-image title="Projects" image="assets/images/projects-image.jpg"}}
+  {{/hero-image}}
 
-  <div class="left-column">
-  </div>
+  <section class="main-section">
+    <div class="container">
 
-  <div class="right-column content-column">
+      <article>
+        <p>Here is a list of projects I created or contributed to. My experiences range from co-founding a {{link-to 'massive multiplayer game' 'project' 2}}, designing a {{link-to 'physical product' 'project' 24}} and working in a {{link-to 'startup' 'project' 1}} in San Francisco.</p>
+      </article>
 
-    <article>
-      <h1>Projects</h1>
-      {{nav-inline}}
+    </div>
+  </section>
 
-      <p>Here is a list of projects I created or contributed to. My experiences range from co-founding a {{link-to 'massive multiplayer game' 'project' 2}}, designing a {{link-to 'physical product' 'project' 24}} and working in a {{link-to 'startup' 'project' 1}} in San Francisco.</p>
-
-      <h2>Main projects</h2>
-      <div class="raw clearfix">
-        {{#each mainProjects as |project|}}
-          <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
-            {{project-item project=project}}
-          </div>
-        {{/each}}
-      </div>
-
-      <h2>Side projects</h2>
-      <div class="raw clearfix">
-        {{#each sideProjects as |project|}}
-          <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
-            {{project-item project=project}}
-          </div>
-        {{/each}}
-      </div>
-
-      <h2>Class projects</h2>
-      <div class="raw clearfix">
-        {{#each classProjects as |project|}}
-          <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
-            {{project-item project=project}}
-          </div>
-        {{/each}}
-      </div>
-    </article>
-
-  </div>
 </div>

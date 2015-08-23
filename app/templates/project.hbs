@@ -1,42 +1,32 @@
-<div class="content-container" id="project">
+<div id="project">
 
-  {{nav-responsive title=model.name}}
+  {{#hero-image image=coverImage}}
+    <img class="hero-project-image" src="{{model.logo}}" style="background-color: {{model.color}};"/>
+    <h1 class="hero-project-title" >{{model.name}}</h1>
+  {{/hero-image}}
 
-  <div class="left-column">
-  </div>
-  {{project-cover project=model}}
+  <section class="main-section">
+    <div class="container">
+      <article>
 
-  <div class="right-column content-column">
-
-    <article>
-      <h1>{{model.name}}</h1>
-      {{nav-inline}}
-
-      <div class="side-column">
-        <h4 class="label-item">Date</h4>
-        <p>{{model.date}}</p>
-        {{#if model.position}}
-          <h4 class="label-item">Position</h4>
-          <p>{{model.position}}</p>
-        {{/if}}
-      </div>
-
-      {{{model.description}}}
-    </article>
-
-    <div class="related-projects">
-      {{#if model.relatedProjects}}
-        <h2>Related projects <span class="separator">&bull;</span> {{link-to 'All projects' 'projects.index'}}</h2>
-        <div class="raw clearfix">
-          {{#each model.relatedProjects as |project|}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-s-6">
-              {{project-item project=project}}
-            </div>
-          {{/each}}
+        <div class="lead">
+          {{{model.intro}}}
         </div>
-      {{else}}
-        <h2>{{link-to 'All projects' 'projects.index'}}</h2>
-      {{/if}}
+
+        <!-- <div class="side-column">
+          <h4 class="label-item">Date</h4>
+          <p>{{model.date}}</p>
+          {{#if model.position}}
+            <h4 class="label-item">Position</h4>
+            <p>{{model.position}}</p>
+          {{/if}}
+        </div> -->
+
+        <div class="text">
+          {{{model.description}}}
+        </div>
+      </article>
     </div>
-  </div>
+  </section>
+
 </div>

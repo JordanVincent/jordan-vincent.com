@@ -1,7 +1,7 @@
 `import Ember from "ember";`
 
-ProjectsIndexRoute = Ember.Route.extend
+ApplicationRoute = Ember.Route.extend
   model: (params) ->
     @store.find('project')
 
-`export default ProjectsIndexRoute`
+`export default ApplicationRoute`
