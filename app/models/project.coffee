@@ -1,9 +1,6 @@
 `import DS from "ember-data";`
 
 Project = DS.Model.extend
-  relatedProjects: DS.hasMany('project', {async: true, inverse: 'isRelatedTo'})
-  isRelatedTo: DS.hasMany('project', {async: true, inverse: 'relatedProjects'})
-
   name: DS.attr()
   rank: DS.attr()
   color: DS.attr()
@@ -17,13 +14,43 @@ Project = DS.Model.extend
 
 Project.reopenClass
   FIXTURES: [
+    id: 4
+    name: 'BitTitan'
+    rank: 'main'
+    color: '#333A48'
+    logo: 'assets/images/bittitan-logo.png'
+    date: 'June to Aug. 2012 (3 months)'
+    position: 'Web Developer Intern'
+    summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.'
+    intro: 'I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a developer intern in summer 2015. My goal consisted in replacing <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> old form based dialog creation by a graph visualization.'
+    description: """
+      <p>SalesAutomation is a cloud based software for running automated outbound sales campaigns. Its complex dialogs is one of the main features. They allow Sales agent to design conversations with multiple endings. However, dialogs quickly generate complex graphs. BitTitan needed a way to create, visualize, and fix dialog issues.</p>
+      <p>I used my Data Visualization skills to design a solution to the problem. It is composed of:</p>
+      <ul>
+        <li>A graph visualization: to help users see relationships between scripts.</li>
+        <li>Clear encoding of errors: to indicate what parts need to be fixed and how.</li>
+        <li>A side panel to edit the selected node: both sides interact seamlessly with each other.</li>
+        <li>An auto-save feature: which fits user’s flow.</li>
+      </ul>
+
+      <div class="row">
+        <div class="col-xs-12"><img src="assets/images/projects/bittitan-graph.png" alt="SalesAutomation Dialog Visualization"/></div>
+        <aside><div class="inner">The new dialog creation screen</div></aside>
+      </div>
+
+      <p>I used the framework EmberJS. It permitted to decompose the project into basic components, each responsible for its own actions. It also made testing easy.</p>
+
+      <p>The biggest challenge was to produce a graph as readable as possible. I decided to use <a href="https://github.com/cpettitt/dagre" target="_blank">Dagre</a> to calculate node and edge positions. This project draws on numerous research papers in order to produce a clean layout which reduces edge crossings.<br>Finally, to render the graph, I simply used D3.
+
+      <p>The management team was very impressed by the result. Therfore, it was added to SalesAutomation first release and advertised as a core feature.</p>
+      """
+  ,
     id: 1
     name: 'SixDoors'
     rank: 'main'
     color: '#CD4429'
     logo: 'assets/images/sixdoors-logo.png'
     date: 'May 2013 to May 2014 (13 months)'
-    relatedProjects: [2,3]
     coverImage: 'assets/images/projects/sixdoors-cover.jpg'
     position: 'Web Developer'
     summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developer.'
@@ -58,7 +85,6 @@ Project.reopenClass
     color: '#4A5363'
     logo: 'assets/images/city-domination-logo.png'
     date: 'Sept. 2011 to Dec. 2012 (16 months)'
-    relatedProjects: [1,3,21]
     coverImage: 'assets/images/projects/citydomination-cover.jpg'
     position: 'Co-founder'
     summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
@@ -84,13 +110,11 @@ Project.reopenClass
     color: '#98041E'
     logo: 'assets/images/direct-matin-logo.png'
     date: 'June to Aug. 2012 (3 months)'
-    relatedProjects: [1,2]
     coverImage: 'assets/images/projects/direct-matin-cover.jpg'
     position: 'Web Developer Intern'
     summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
+    intro: 'In summer 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.'
     description: """
-      <p>In summer the 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.</p>
-
       <div class="row">
         <div class="col-xs-12"><img src="assets/images/projects/direct-matin-iphone.png" alt="Direct Matin's iPhone app"/></div>
         <aside><div class="inner">DirectMatin's iPhone app</div></aside>
@@ -107,7 +131,6 @@ Project.reopenClass
     color: '#8459BD'
     logo: 'assets/images/startupviz-logo.png'
     date: 'Sept. to Dec. 2014'
-    relatedProjects: [11, 12]
     coverImage: 'assets/images/projects/startupviz-cover.jpg'
     position: 'Student'
     summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
@@ -133,7 +156,6 @@ Project.reopenClass
     color: '#EEEEEE'
     logo: 'assets/images/haiku-deck-logo.png'
     date: 'Jan. to Mar. 2015'
-    relatedProjects: [10, 12]
     position: 'Student'
     summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
   ,
@@ -143,7 +165,6 @@ Project.reopenClass
     color: '#222834'
     logo: 'assets/images/bridge-logo.png'
     date: 'Apr. to June 2015'
-    relatedProjects: [10, 11]
     position: 'Student'
     summary: 'Redesign and development of a website for a non-profit organization.'
     description: """
@@ -171,7 +192,6 @@ Project.reopenClass
     color: '#215F41'
     logo: 'assets/images/dinofit-logo.png'
     date: 'From June 2014'
-    relatedProjects: [2]
     coverImage: 'assets/images/projects/dinofit-cover.jpg'
     summary: 'A fitness Android app that keeps users engaged. Soon to be launched!'
     intro: '<a href="http://www.getdinofit.com/" target="_blank">Dinofit</a> is a fitness app which keeps users motivated. It incorporates gaming concepts such as challenges, levels and points. Training plans are generated automatically based on the user’s feedbacks and previous workouts. It will soon be available on Android!'
@@ -206,7 +226,6 @@ Project.reopenClass
     color: '#ECF0F1'
     logo: 'assets/images/labello-logo.png'
     date: 'Feb. 2015'
-    relatedProjects: [1]
     coverImage: 'assets/images/projects/labello-cover.jpg'
     summary: 'A web app for labelling and analyzing documents. Developed in less than one week!'
     description: """
@@ -231,7 +250,6 @@ Project.reopenClass
     color: '#222222'
     logo: 'assets/images/veritabs-logo.png'
     date: 'Feb. 2013'
-    relatedProjects: []
     coverImage: 'assets/images/projects/veritabs-cover.jpg'
     summary: 'A Chrome extension that let you display the tabs vertically. Up to 30 000 users!'
     description: """
@@ -254,7 +272,6 @@ Project.reopenClass
     color: '#E2E2E2'
     logo: 'assets/images/smart-bricks-logo.png'
     date: 'Sept. 2011 to May 2012 (9 months)'
-    relatedProjects: []
     coverImage: 'assets/images/projects/smart-bricks-cover.jpg'
     position: 'Founder'
     summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
