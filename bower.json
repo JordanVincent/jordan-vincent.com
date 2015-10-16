@@ -16,6 +16,7 @@
     "tinycolor": "~1.1.2",
     "simplr-smoothscroll": "~1.0.1",
     "jquery-mousewheel": "~3.1.13",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#7.0.2"
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#7.0.2",
+    "bootstrap-sass": "~3.3.5"
   }
 }

@@ -6,9 +6,8 @@ module.exports = function(defaults) {
     fingerprint: {
       extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'map', 'pdf']
     },
-    'ember-cli-bootstrap-sass': {
-      importBootstrapJS: ['affix','collapse'],
-      components: false
+    'ember-cli-bootstrap-sassy': {
+      js: ['affix','collapse']
     }
   });
 
