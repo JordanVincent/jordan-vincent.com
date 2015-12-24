@@ -14,15 +14,49 @@ Project = DS.Model.extend
 
 Project.reopenClass
   FIXTURES: [
+    id: 6
+    name: 'Adminca'
+    rank: 'main'
+    color: '#337AB7'
+    logo: 'assets/images/adminca-logo.png'
+    date: 'from Sept. 2015'
+    position: 'Co-founder'
+    summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded'
+    intro: 'While customer facing products are well designed, the people building them still suffer from inefficient and clumsy tools. I co-founded <a href="https://adminca.com" target="_blank">Adminca</a> with the mission to remove poorly designed admin interfaces from the workplace.'
+    description: """
+      <p>Try Adminca now at <a href="https://adminca.com" target="_blank">adminca.com</a> or follow us on <a href="https://www.facebook.com/admincacom" target="_blank">Facebook</a>.</p>
+      """
+  ,
+    id: 5
+    name: 'BitTitan UX'
+    rank: 'main'
+    color: '#333A48'
+    logo: 'assets/images/bittitan-ux-logo.png'
+    date: 'Sept. to Dec. 2015 (3 months)'
+    position: 'UX Designer Intern'
+    summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan'
+    intro: 'Following my internship as Web Developer at <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a>, I took ownership of the design of <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a>. I successfully accomplished my goal of demonstrating the value of the User-Centered Design in leading product development.'
+    description: """
+      <p>BitTitan is widely known for its email migration solution, MigrationWiz. But the company is currently in the works of becoming an integrated platform for its partners. SalesAutomation is one of BitTitan’s latest products. It is an outbound call automation SaaS application. SalesAutomation streamlines the process of cold calling leads by offering powerful tools.</p>
+      <p>Although migrating millions of files from one server to another efficiently and securely is a very hard task, the real value of SalesAutomation isn’t really in its implementation, but in understanding of the user’s needs. For over a year, the focus of the development team has been finding highly technical solutions to a UX problem. BitTitan only counts one UX designer. His time was very limited and he mostly works on the UI, while the development team was coding. During my first internship as a Web Developer, I tried to find solutions that would improve the user experience of the product. But my reach was limited to the features I developed. I also didn’t have a proper understanding of the users and the business goals of the product.</p>
+      <p>Last September, I exposed the problem to our CTO, and he accepted to let me work part-time as a UX designer for the next three months. He gave me carte blanche to improve the user experience of SalesAutomation.</p>
+      <p>More than redesigning SalesAutomation, my primary goal was to show the value of the User-Centered-Design process in creating software people actually want to use. I tried to include as many people as possible during the process. I interviewed stakeholders, conducted design workshops, and presented my work multiple times.</p>
+      <p>The five weeks long user research period lead to many findings that I compiled into an actionable list that I shared and presented to the team. Although I didn’t have access to any actual user, I conducted the user research interviewing and observing the internal Sales team, and analyzing related research.</p>
+      <p>From the user research, and together with Sales, Developers, and Managers, I created four personas. The personas had much more impact than I first expected. They management team quickly saw the usefulness of the personas in aligning business goals and understanding the users. BitTitan is now in the works of creating personas for its other products.</p>
+      <p>Then, I created a complete wireframe incorporating ideas from the research and the brainstorming workshops I organized. The goal of the wireframes was to demonstrate how SalesAutomation could be improved if we took into account our user needs. I introduced a lot of new concepts but I made sure to always back up my design decisions with findings from the research. Knowing that it wouldn’t be possible to implement all the changes I designed, I prioritized the new features and created a roadmap. A few features are currently being implemented.</p>
+      <p>Finally, I conducted a quick user testing study, to test the software in a real environment by using a Wizard of Oz technique to simulate calls. Once again, I shared the findings with the whole team. It was the first time that we observed users making calls using the software, and it had a huge impact on showing how the software was really performing.</p>
+      <p>Working at BitTitan as a UX Designer was an incredible experience. It was my first time implementing the User-Centered Design process on a real project. Although it is always really hard to change a company culture, the project started discussions inside the management team, and helped the development team better understand the users and their needs.</p>
+      """
+  ,
     id: 4
-    name: 'BitTitan'
+    name: 'BitTitan Dev'
     rank: 'main'
     color: '#333A48'
     logo: 'assets/images/bittitan-logo.png'
-    date: 'June to Aug. 2012 (3 months)'
+    date: 'June to Aug. 2015 (3 months)'
     position: 'Web Developer Intern'
     summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.'
-    intro: 'I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a developer intern in summer 2015. My goal consisted in replacing <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> old form based dialog creation by a graph visualization.'
+    intro: 'I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a Web Developer Intern in summer 2015. My goal consisted in replacing <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> old form based dialog creation by a graph visualization.'
     description: """
       <p>SalesAutomation is a cloud based software for running automated outbound sales campaigns. Its complex dialogs is one of the main features. They allow Sales agent to design conversations with multiple endings. However, dialogs quickly generate complex graphs. BitTitan needed a way to create, visualize, and fix dialog issues.</p>
       <p>I used my Data Visualization skills to design a solution to the problem. It is composed of:</p>
