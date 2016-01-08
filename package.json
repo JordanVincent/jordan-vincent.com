@@ -23,7 +23,7 @@
     "ember-cli": "^1.13.8",
     "ember-cli-app-version": "0.3.3",
     "ember-cli-babel": "^5.0.0",
-    "ember-cli-bootstrap-sassy": "0.0.18",
+    "ember-cli-bootstrap-sassy": "0.5.0",
     "ember-cli-coffeescript": "1.13.0",
     "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "1.0.1",
