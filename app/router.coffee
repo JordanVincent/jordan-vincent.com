@@ -10,6 +10,6 @@ Router.map ->
   @route 'influences'
   @route 'contact'
   @resource 'projects', ->
-    @resource 'project', {path: ':project_id'}, ->
+    @resource 'project', {path: ':project_id/:project_name'}, ->
 
 `export default Router;`
