@@ -1,6 +1,8 @@
 `import Ember from "ember";`
 
 ProjectRoute = Ember.Route.extend
+  titleToken: (model) ->
+    model.get('name')
 
   serialize: (model) ->
     project_id: model.get('id')
