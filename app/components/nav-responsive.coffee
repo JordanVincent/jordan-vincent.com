@@ -26,48 +26,30 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
     "top: #{top}px;".htmlSafe()
   ).property('display', 'height').readOnly()
 
-  _calculateHeight: (->
-    height = @$().outerHeight()
-    @set('height', height)
-  ).observes('isMobile').on('didInsertElement')
-
-  _resetOpen: (->
-    @set('beforeOpen', false)
-    @set('afterOpen', false)
-  ).observes('isMobile')
-
-  _initDefaults: (->
-    @_resetDisplay()
-    @_updateIsMobile()
-    @_initSVG()
+  _initSVG: (->
+    Ember.run.scheduleOnce('afterRender', @, @_calculateHeight)
+    @get('svgPath').attr({ d: @get('pathClosed')})
   ).on('didInsertElement')
 
-  scrolled: ->
-    @_resetDisplay()
+  svgPath: ( ->
+    snap = Snap(@$('svg')[0])
+    snap.select('path')
+  ).property().volatile().readOnly()
 
-  resized: ->
-    @_resetDisplay()
-    @_updateIsMobile()
-
-  _resetDisplay: ->
+  display: ( ->
     windowH = $(window).height()
     threshold = if windowH > 600 then 600 else windowH
-    display = $(window).scrollTop() > threshold
+    $(window).scrollTop() > threshold
+  ).property('_scrolled', '_resized').readOnly()
 
-    @set('display', display)
+  updateIsMobile: ( ->
+    @set 'isMobile', $(window).width() < @MAX_PHONE_WIDTH
+  ).observes('_resized')
 
-  _updateIsMobile: ->
-    windowW = $(window).width()
-    isMobile = windowW < this.MAX_PHONE_WIDTH
-
-    @set('isMobile', isMobile)
-
-  _initSVG: ->
-    snap = Snap(@$('svg')[0])
-    path = snap.select('path')
-
-    path.attr({ d: @get('pathClosed')})
-    @set('svgPath', path)
+  updateView: ( ->
+    @_resetOpen()
+    @_calculateHeight()
+  ).observes('isMobile')
 
   openMenu: ->
     @set('beforeOpen', true)
@@ -82,9 +64,23 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
   # Returns a promise
   _animatePath: (d) ->
     new Ember.RSVP.Promise( (resolve) =>
-      @get('svgPath').animate {path: d}, 500, mina.easeinout, ->
+      @get('svgPath').animate { path: d }, 500, mina.easeinout, ->
         resolve()
     )
+
+  _resetOpen: ->
+    @set('beforeOpen', false)
+    @set('afterOpen', false)
+
+  _calculateHeight: ->
+    return unless @$()
+    @set 'height', @$().outerHeight()
+
+  scrolled: ->
+    @toggleProperty('_scrolled')
+
+  resized: ->
+    @toggleProperty('_resized')
 
   click: ->
     if @get('afterOpen')

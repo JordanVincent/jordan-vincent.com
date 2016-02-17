@@ -17,17 +17,12 @@ ProjectItem = Ember.Component.extend
 
   isDark: ( ->
     tinycolor(@get('project.color')).isDark()
-  ).property('project.color')
+  ).property('project.color').readOnly()
 
   path: (->
     index = @get('index') % @get('paths.length')
     @get('paths').objectAt(index)
-  ).property('index', 'paths.[]')
-
-  setupSnap: (->
-    snapElement = Snap(@$('svg')[0]).select('path')
-    @set('snapElement', snapElement)
-  ).on('didInsertElement')
+  ).property('index', 'paths.[]').readOnly()
 
   bindHover: (->
     @$().on 'mouseenter.project-item', =>
@@ -43,6 +38,7 @@ ProjectItem = Ember.Component.extend
   ).on('willRemoveElement')
 
   animate: (path) ->
-    @get('snapElement').animate({path: path}, 250, mina.easeinout)
+    snapElement = Snap(@$('svg')[0]).select('path')
+    snapElement.animate({path: path}, 250, mina.easeinout)
 
 `export default ProjectItem;`
