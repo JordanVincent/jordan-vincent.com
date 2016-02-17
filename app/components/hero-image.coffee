@@ -10,9 +10,7 @@ HeroImage = Ember.Component.extend ScrollingMixin, ResizeMixin,
   titlePaddingTop: 200
 
   headerStyle: ( ->
-    "background-image: url(%@); top: %@px; height: %@px"
-    .fmt(@get('image'), @get('headerTop'), @get('headerHeight'))
-    .htmlSafe()
+    "background-image: url(#{@get('image')}); top: #{@get('headerTop')}px; height: #{@get('headerHeight')}px".htmlSafe()
   ).property('image', 'headerTop', 'headerHeight')
 
   defaultHeaderHeight: ( ->

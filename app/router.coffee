@@ -9,7 +9,7 @@ Router.map ->
   @route 'about', {path: '/'}
   @route 'influences'
   @route 'contact'
-  @resource 'projects', ->
-    @resource 'project', {path: ':project_id/:project_name'}, ->
+  @route 'projects', ->
+    @route 'project', { path: ':project_id/:project_name', resetNamespace: true }, ->
 
 `export default Router;`
