@@ -1,7 +1,7 @@
 <div id="project">
 
   {{#hero-image image=coverImage}}
-    <img class="hero-project-image" src="{{model.logo}}" style="background-color: {{model.color}};"/>
+    <img class="hero-project-image" src={{model.logo}} style={{model.backgroundColorStyle}}/>
     <h1 class="hero-project-title" >{{model.name}}</h1>
   {{/hero-image}}
 

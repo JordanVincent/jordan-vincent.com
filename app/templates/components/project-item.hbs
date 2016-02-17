@@ -1,14 +1,14 @@
 {{#link-to 'project' project}}
   <div class="svg-wrapper">
-    <div class="back" style="background-color: {{project.color}}"></div>
+    <div class="back" style={{project.backgroundColorStyle}}></div>
     <svg viewBox="0 0 400 400" preserveAspectRatio="none" >
-      <path stroke-miterlimit="3" stroke="none" fill="#FFFFFF" d="{{path.from}}"/>
+      <path stroke-miterlimit="3" stroke="none" fill="#FFFFFF" d={{path.from}}></path>
     </svg>
   </div>
   <div class="project-item-inner">
     <div class="caption" >
-      <img src="{{project.logo}}" class="hidden-xs"/>
-      <img src="{{project.logo}}" class="visible-xs" style="background-color: {{project.color}}"/>
+      <img src={{project.logo}} class="hidden-xs"/>
+      <img src={{project.logo}} class="visible-xs" style={{project.backgroundColorStyle}}/>
     </div><!--
     --><div class="text-inner">
       <h3>{{project.name}}</h3>

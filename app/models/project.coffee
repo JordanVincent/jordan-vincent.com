@@ -12,4 +12,8 @@ Project = DS.Model.extend
   position: DS.attr()
   coverImage: DS.attr()
 
+  backgroundColorStyle: ( ->
+    "background-color: #{@get('color')};".htmlSafe()
+  ).property('color')
+
 `export default Project;`
