@@ -1,9 +1,20 @@
 `import Ember from 'ember';`
 `import config from './config/environment';`
-`import googlePageview from './mixins/google-pageview';`
 
-Router = Ember.Router.extend googlePageview,
+Router = Ember.Router.extend
   location: config.locationType
+  metrics: Ember.inject.service()
+
+  didTransition: ->
+    @_super(arguments...)
+    @_trackPage()
+
+  # Analytics
+  _trackPage: ->
+    Ember.run.scheduleOnce 'afterRender', @, =>
+      page = document.location.pathname
+      title = @getWithDefault('currentRouteName', 'unknown')
+      @get('metrics').trackPage({page: page, title: title})
 
 Router.map ->
   @route 'about', {path: '/'}

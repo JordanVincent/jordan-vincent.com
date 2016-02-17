@@ -7,6 +7,14 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
 
+    metricsAdapters: [{
+      name: 'GoogleAnalytics',
+      environments: ['production'],
+      config: {
+        id: 'UA-39088123-1'
+      }
+    }],
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -41,9 +49,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.googleAnalytics = {
-      webPropertyId: 'UA-39088123-1'
-    }
 
     ENV['ember-cli-mirage'] = {
       enabled: true
