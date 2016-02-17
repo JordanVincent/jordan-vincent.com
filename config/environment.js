@@ -44,6 +44,10 @@ module.exports = function(environment) {
     ENV.googleAnalytics = {
       webPropertyId: 'UA-39088123-1'
     }
+
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }
   }
 
   return ENV;
