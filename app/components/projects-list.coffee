@@ -3,8 +3,11 @@
 ProjectsList = Ember.Component.extend
   classNames: ['projects-list']
 
-  mainProjects:  Ember.computed.filterBy('projects', 'rank', 'main')
-  classProjects: Ember.computed.filterBy('projects', 'rank', 'class')
-  sideProjects:  Ember.computed.filterBy('projects', 'rank', 'side')
+  projectsSorting: ['position:desc']
+  sortedProjects: Ember.computed.sort('projects', 'projectsSorting')
+
+  mainProjects:  Ember.computed.filterBy('sortedProjects', 'category', 'main')
+  classProjects: Ember.computed.filterBy('sortedProjects', 'category', 'class')
+  sideProjects:  Ember.computed.filterBy('sortedProjects', 'category', 'side')
 
 `export default ProjectsList;`

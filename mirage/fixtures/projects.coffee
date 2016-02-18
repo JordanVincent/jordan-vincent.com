@@ -1,24 +1,24 @@
 ProjectFixtures = [
-  id: 6
+  position: 6
   name: 'Adminca'
-  rank: 'main'
+  slug: 'adminca'
+  category: 'main'
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
   date: 'from Sept. 2015'
-  position: 'Co-founder'
   summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded'
   intro: 'While customer facing products are well designed, the people building them still suffer from inefficient and clumsy tools. I co-founded <a href="https://adminca.com" target="_blank">Adminca</a> with the mission to remove poorly designed admin interfaces from the workplace.'
   description: """
     <p>Try Adminca now at <a href="https://adminca.com" target="_blank">adminca.com</a> or follow us on <a href="https://www.facebook.com/admincacom" target="_blank">Facebook</a>.</p>
     """
 ,
-  id: 5
+  position: 5
   name: 'BitTitan UX'
-  rank: 'main'
+  slug: 'bittitan-ux'
+  category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-ux-logo.png'
   date: 'Sept. to Dec. 2015 (3 months)'
-  position: 'UX Designer Intern'
   summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan'
   intro: 'Following my internship as Web Developer at <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a>, I took ownership of the design of <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a>. I successfully accomplished my goal of demonstrating the value of the User-Centered Design in leading product development.'
   description: """
@@ -33,13 +33,13 @@ ProjectFixtures = [
     <p>Working at BitTitan as a UX Designer was an incredible experience. It was my first time implementing the User-Centered Design process on a real project. Although it is always really hard to change a company culture, the project started discussions inside the management team, and helped the development team better understand the users and their needs.</p>
     """
 ,
-  id: 4
+  position: 4
   name: 'BitTitan Dev'
-  rank: 'main'
+  slug: 'bittitan-dev'
+  category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-logo.png'
   date: 'June to Aug. 2015 (3 months)'
-  position: 'Web Developer Intern'
   summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.'
   intro: 'I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a Web Developer Intern in summer 2015. My goal consisted in replacing <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> old form based dialog creation by a graph visualization.'
   description: """
@@ -64,14 +64,14 @@ ProjectFixtures = [
     <p>The management team was very impressed by the result. Therfore, it was added to SalesAutomation first release and advertised as a core feature.</p>
     """
 ,
-  id: 1
+  position: 3
   name: 'SixDoors'
-  rank: 'main'
+  slug: 'sixdoors'
+  category: 'main'
   color: '#CD4429'
   logo: 'assets/images/sixdoors-logo.png'
   date: 'May 2013 to May 2014 (13 months)'
   coverImage: 'assets/images/projects/sixdoors-cover.jpg'
-  position: 'Web Developer'
   summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developer.'
   intro: 'SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day.'
   description: """
@@ -98,14 +98,14 @@ ProjectFixtures = [
     <p>It was the first time I took part to this kind of project. Everything had to be developed from scratch and in a very short time. I had to learn two new JavaScript frameworks: EmberJS and AngularJS, a new syntax: CoffeeScript, a new language: Rails and to deal with various APIs. It was very challenging!</p>
     """
 ,
-  id: 2
+  position: 2
   name: 'CityDomination'
-  rank: 'main'
+  slug: 'city-domination'
+  category: 'main'
   color: '#4A5363'
   logo: 'assets/images/city-domination-logo.png'
   date: 'Sept. 2011 to Dec. 2012 (16 months)'
   coverImage: 'assets/images/projects/citydomination-cover.jpg'
-  position: 'Co-founder'
   summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
   intro: '<a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">CityDomination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city!'
   description: """
@@ -123,14 +123,14 @@ ProjectFixtures = [
     <p>I left the project in December 2012 due to a lack of time and my studies at INSA of Lyon. CityDomination has been acquired by the gaming company <a href="http://mobinlife.com/" target="_blank">Mob In Life</a> and is now one of their most successful game.</p>
     """
 ,
-  id: 3
+  position: 1
   name: 'Direct Matin'
-  rank: 'main'
+  slug: 'direct-matin'
+  category: 'main'
   color: '#98041E'
   logo: 'assets/images/direct-matin-logo.png'
   date: 'June to Aug. 2012 (3 months)'
   coverImage: 'assets/images/projects/direct-matin-cover.jpg'
-  position: 'Web Developer Intern'
   summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
   intro: 'In summer 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.'
   description: """
@@ -144,14 +144,14 @@ ProjectFixtures = [
     <p>I really enjoyed working on an app which is now used by thousands of people every day. Visiting Paris, I was surprised to see in the subway ads promoting the app!</p>
     """
 ,
-  id: 10
+  position: 11
   name: 'StartupViz'
-  rank: 'class'
+  slug: 'startup-viz'
+  category: 'class'
   color: '#8459BD'
   logo: 'assets/images/startupviz-logo.png'
   date: 'Sept. to Dec. 2014'
   coverImage: 'assets/images/projects/startupviz-cover.jpg'
-  position: 'Student'
   summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
   description: """
     <p><a href="http://startupviz.com/" target="_blank">StartupViz</a> is an interactive visualization of US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in certain sectors or regions to funding round details for a particular startup.</p>
@@ -169,22 +169,22 @@ ProjectFixtures = [
     <p>The tool was designed by University of Washington Human Centered-Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
   """
 ,
-  id: 11
+  position: 12
   name: 'Haiku Deck'
-  rank: 'class'
+  slug: 'haiku-deck'
+  category: 'class'
   color: '#EEEEEE'
   logo: 'assets/images/haiku-deck-logo.png'
   date: 'Jan. to Mar. 2015'
-  position: 'Student'
   summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
 ,
-  id: 12
+  position: 13
   name: 'Bridge Disability Ministry'
-  rank: 'class'
+  slug: 'bridge-disability-ministry'
+  category: 'class'
   color: '#222834'
   logo: 'assets/images/bridge-logo.png'
   date: 'Apr. to June 2015'
-  position: 'Student'
   summary: 'Redesign and development of a website for a non-profit organization.'
   description: """
     <p>This project was the final assignment for the User-Centered Web Design class (HCDE 537) at University of Washington. In teams of 5 we worked closely with the client to redesign their website. Our mission consisted of applying the User Centered Design process to the redesign of a website. The client was very satisfied with the final design and decided to replace their old website.</p>
@@ -205,9 +205,10 @@ ProjectFixtures = [
     <p>I am proud of the final result! Contentful+EmberJS proved to be the great solution: every piece of the website can be modified from the general website architecture to every article. I even integrated a dozen custom templates for displaying news, events, staff members, reports, newsletters, and so on.</p>
   """
 ,
-  id: 21
+  position: 24
   name: 'DinoFit'
-  rank: 'side'
+  slug: 'dino-fit'
+  category: 'side'
   color: '#215F41'
   logo: 'assets/images/dinofit-logo.png'
   date: 'From June 2014'
@@ -239,9 +240,10 @@ ProjectFixtures = [
     </div>
   """
 ,
-  id: 22
+  position: 23
   name: 'Labello'
-  rank: 'side'
+  slug: 'labello'
+  category: 'side'
   color: '#ECF0F1'
   logo: 'assets/images/labello-logo.png'
   date: 'Feb. 2015'
@@ -263,9 +265,10 @@ ProjectFixtures = [
     <p>Not only it permitted me to analyze numerous documents, it was also used by my classmates during the quarter.</p>
   """
 ,
-  id: 23
+  position: 22
   name: 'Veritabs'
-  rank: 'side'
+  slug: 'veritabs'
+  category: 'side'
   color: '#222222'
   logo: 'assets/images/veritabs-logo.png'
   date: 'Feb. 2013'
@@ -285,14 +288,14 @@ ProjectFixtures = [
     <p class="quote-author">&ndash; CNET.com</p>
   """
 ,
-  id: 24
+  position: 21
   name: 'Smart Bricks'
-  rank: 'side'
+  slug: 'smart-bricks'
+  category: 'side'
   color: '#E2E2E2'
   logo: 'assets/images/smart-bricks-logo.png'
   date: 'Sept. 2011 to May 2012 (9 months)'
   coverImage: 'assets/images/projects/smart-bricks-cover.jpg'
-  position: 'Founder'
   summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
   description: """
     <p><a href="http://www.smart-bricks.com/" target="_blank">Smart Bricks</a> is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>

@@ -5,10 +5,9 @@ ProjectRoute = Ember.Route.extend
     model.get('name')
 
   serialize: (model) ->
-    project_id: model.get('id')
-    project_name: model.get('name')
+    project_slug: model.get('slug')
 
   model: (params) ->
-    @store.find('project', params.project_id)
+    @store.queryRecord 'project', { slug: params.project_slug }
 
 `export default ProjectRoute`

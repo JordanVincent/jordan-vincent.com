@@ -21,6 +21,6 @@ Router.map ->
   @route 'influences'
   @route 'contact'
   @route 'projects', ->
-    @route 'project', { path: ':project_id/:project_name', resetNamespace: true }, ->
+    @route 'project', { path: ':project_slug', resetNamespace: true }, ->
 
 `export default Router;`

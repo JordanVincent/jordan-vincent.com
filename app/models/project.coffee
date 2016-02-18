@@ -2,15 +2,20 @@
 
 Project = DS.Model.extend
   name: DS.attr()
-  rank: DS.attr()
+  slug: DS.attr()
+
+  category: DS.attr()
+  position: DS.attr()
+
   color: DS.attr()
   logo: DS.attr()
+  coverImage: DS.attr()
+
   date: DS.attr()
+
   summary: DS.attr()
   intro: DS.attr()
   description: DS.attr()
-  position: DS.attr()
-  coverImage: DS.attr()
 
   backgroundColorStyle: ( ->
     "background-color: #{@get('color')};".htmlSafe()
