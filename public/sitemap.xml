@@ -4,17 +4,20 @@
   <url><loc>http://jordan-vincent.com/projects</loc><priority>1</priority></url>
   <url><loc>http://jordan-vincent.com/influences</loc><priority>1</priority></url>
   <url><loc>http://jordan-vincent.com/contact</loc><priority>1</priority></url>
-  <url><loc>http://jordan-vincent.com/projects/1/SixDoors</loc><priority>1</priority></url>
-  <url><loc>http://jordan-vincent.com/projects/2/CityDomination</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/3/Direct%20Matin</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/4/BitTitan%20Dev</loc><priority>1</priority></url>
-  <url><loc>http://jordan-vincent.com/projects/5/BitTitan%20UX</loc><priority>1</priority></url>
-  <url><loc>http://jordan-vincent.com/projects/6/Adminca</loc><priority>1</priority></url>
-  <url><loc>http://jordan-vincent.com/projects/10/StartupViz</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/11/Haiku%20Deck</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/12/Bridge%20Disability%20Ministry</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/21/DinoFit</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/22/Labello</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/23/Veritabs</loc></url>
-  <url><loc>http://jordan-vincent.com/projects/24/Smart%20Bricks</loc></url>
+
+  <url><loc>http://jordan-vincent.com/projects/sixdoors</loc><priority>1</priority></url>
+  <url><loc>http://jordan-vincent.com/projects/city-domination</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/direct-matin</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/bittitan-dev</loc><priority>1</priority></url>
+  <url><loc>http://jordan-vincent.com/projects/bittitan-ux</loc><priority>1</priority></url>
+  <url><loc>http://jordan-vincent.com/projects/adminca</loc><priority>1</priority></url>
+
+  <url><loc>http://jordan-vincent.com/projects/startup-viz</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/haiku-deck</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/bridge-disability-ministry</loc></url>
+
+  <url><loc>http://jordan-vincent.com/projects/dino-fit</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/labello</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/veritabs</loc></url>
+  <url><loc>http://jordan-vincent.com/projects/smart-bricks</loc></url>
 </urlset>
