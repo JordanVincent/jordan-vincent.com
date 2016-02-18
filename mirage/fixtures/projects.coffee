@@ -53,7 +53,7 @@ ProjectFixtures = [
     </ul>
 
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/bittitan-graph.png" alt="SalesAutomation Dialog Visualization"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/bittitan-graph.jpg" alt="SalesAutomation Dialog Visualization"/></div>
       <aside><div class="inner">The new dialog creation screen</div></aside>
     </div>
 
@@ -80,7 +80,7 @@ ProjectFixtures = [
     <p><strong>SixDoors web store:</strong> built with EmberJS, it generated more than 50% of SixDoors sales.</p>
 
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/sixdoors-webstore.png" alt="Sixdoors Web Store"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/sixdoors-webstore.jpg" alt="Sixdoors Web Store"/></div>
       <aside><div class="inner">SixDoors Web Store's front page</div></aside>
     </div>
 
@@ -112,8 +112,8 @@ ProjectFixtures = [
     <p>The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
 
     <div class="row">
-      <div class="col-xs-6"><img src="assets/images/projects/citydomination-best.png" alt="CityDomination's poster"/></div>
-      <div class="col-xs-6"><img src="assets/images/projects/citydomination-map.png" alt="CityDomination's map"/></div>
+      <div class="col-xs-6"><img src="assets/images/projects/citydomination-best.jpg" alt="CityDomination's poster"/></div>
+      <div class="col-xs-6"><img src="assets/images/projects/citydomination-map.jpg" alt="CityDomination's map"/></div>
       <aside><div class="inner">CityDomination's Android app</div></aside>
     </div>
 
@@ -135,7 +135,7 @@ ProjectFixtures = [
   intro: 'In summer 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.'
   description: """
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/direct-matin-iphone.png" alt="Direct Matin's iPhone app"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/direct-matin-iphone.jpg" alt="Direct Matin's iPhone app"/></div>
       <aside><div class="inner">DirectMatin's iPhone app</div></aside>
     </div>
 
@@ -157,7 +157,7 @@ ProjectFixtures = [
     <p><a href="http://startupviz.com/" target="_blank">StartupViz</a> is an interactive visualization of US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in certain sectors or regions to funding round details for a particular startup.</p>
 
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/startupviz-map.png" alt="StartupViz website"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/startupviz-map.jpg" alt="StartupViz website"/></div>
       <aside><div class="inner">StartupViz website</div></aside>
     </div>
 
@@ -190,7 +190,7 @@ ProjectFixtures = [
     <p>This project was the final assignment for the User-Centered Web Design class (HCDE 537) at University of Washington. In teams of 5 we worked closely with the client to redesign their website. Our mission consisted of applying the User Centered Design process to the redesign of a website. The client was very satisfied with the final design and decided to replace their old website.</p>
 
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/bridge-home.png" alt="Bridge Disability Ministry redesign"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/bridge-home.jpg" alt="Bridge Disability Ministry redesign"/></div>
       <aside><div class="inner">Homepage redesigned</div></aside>
     </div>
 
@@ -225,7 +225,7 @@ ProjectFixtures = [
     <p>After the introduction, few key elements help in keeping the user engaged. For instance, exercising multiple days in a row will give the user a clear advantage on the game outcome.</p>
 
     <div class="row">
-      <div class="col-xs-6"><img src="assets/images/projects/dinofit-intro1.png" alt="Dinofit Intro 1"/></div>
+      <div class="col-xs-6"><img src="assets/images/projects/dinofit-intro1.jpg" alt="Dinofit Intro 1"/></div>
       <div class="col-xs-6"><img src="assets/images/projects/dinofit-intro2.png" alt="Dinofit Intro 2"/></div>
       <aside><div class="inner">Introduction screens presenting DinoFit's universe</div></aside>
     </div>
@@ -251,7 +251,7 @@ ProjectFixtures = [
     <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analyzing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analyzing lengthy transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser local storage. But it's possible to import and export files from a different computer! The code is available on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
 
     <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/labello-home.png" alt="Labello"/></div>
+      <div class="col-xs-12"><img src="assets/images/projects/labello-home.jpg" alt="Labello"/></div>
       <aside><div class="inner">Labello homepage</div></aside>
     </div>
 
