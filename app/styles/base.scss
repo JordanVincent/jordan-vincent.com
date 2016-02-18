@@ -41,11 +41,6 @@ article {
 
   a {
     color: $primary-blue;
-    font-weight: bold;
-
-    & * {
-      font-weight: normal;
-    }
   }
 
   .lead {
