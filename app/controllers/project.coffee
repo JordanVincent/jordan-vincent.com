@@ -10,4 +10,8 @@ ProjectController = Ember.Controller.extend
     'case-studies/' + @get('model.slug')
   ).property('model.slug')
 
+  titleColorStyle: ( ->
+    'color: white;'.htmlSafe() if tinycolor(@get('model.color')).isDark()
+  ).property('model.color').readOnly()
+
 `export default ProjectController;`
