@@ -67,6 +67,9 @@
     text-transform: none;
     font-size: 1.8em;
     margin: 5px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   p {
