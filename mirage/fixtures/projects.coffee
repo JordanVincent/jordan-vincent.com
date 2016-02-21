@@ -63,6 +63,15 @@ ProjectFixtures = [
   summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
 ,
   position: 11
+  name: 'Haiku Deck'
+  slug: 'haiku-deck'
+  category: 'class'
+  color: '#EEEEEE'
+  logo: 'assets/images/haiku-deck-logo.png'
+  date: 'Jan. to Mar. 2015'
+  summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
+,
+  position: 12
   name: 'StartupViz'
   slug: 'startup-viz'
   category: 'class'
@@ -86,15 +95,6 @@ ProjectFixtures = [
 
     <p>The tool was designed by University of Washington Human Centered-Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
   """
-,
-  position: 12
-  name: 'Haiku Deck'
-  slug: 'haiku-deck'
-  category: 'class'
-  color: '#EEEEEE'
-  logo: 'assets/images/haiku-deck-logo.png'
-  date: 'Jan. to Mar. 2015'
-  summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
 ,
   position: 13
   name: 'Bridge Disability Ministry'
@@ -153,27 +153,13 @@ ProjectFixtures = [
   position: 23
   name: 'Labello'
   slug: 'labello'
+  isCaseStudy: true
   category: 'side'
   color: '#ECF0F1'
   logo: 'assets/images/labello-logo.png'
   date: 'Feb. 2015'
   coverImage: 'assets/images/projects/labello-cover.jpg'
   summary: 'A web app for labelling and analyzing documents. Developed in less than one week!'
-  description: """
-    <p><a href="https://labello.herokuapp.com" target="_blank">Labello</a> is a webapp for labelling and analyzing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool for analyzing lengthy transcribed interviews but I couldn't find an easy way to do it. So I developed Labello in a few nights! I couldn't have been faster without using the JS framework EmberJS. There is no database, everything is stored in the user's browser local storage. But it's possible to import and export files from a different computer! The code is available on <a href="https://github.com/JordanVincent/labello" target="_blank">Github</a>.</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/labello-home.jpg" alt="Labello"/></div>
-      <aside><div class="inner">Labello homepage</div></aside>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/labello-document.png" alt="Labello"/></div>
-      <aside><div class="inner">Labelling text using Labello</div></aside>
-    </div>
-
-    <p>Not only it permitted me to analyze numerous documents, it was also used by my classmates during the quarter.</p>
-  """
 ,
   position: 22
   name: 'Veritabs'
