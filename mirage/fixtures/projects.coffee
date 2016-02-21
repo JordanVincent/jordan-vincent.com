@@ -123,6 +123,15 @@ ProjectFixtures = [
     <p>I am proud of the final result! Contentful+EmberJS proved to be the great solution: every piece of the website can be modified from the general website architecture to every article. I even integrated a dozen custom templates for displaying news, events, staff members, reports, newsletters, and so on.</p>
   """
 ,
+  position: 14
+  name: 'Visual Communication'
+  slug: 'visual-communication'
+  isCaseStudy: true
+  category: 'class'
+  color: '#FFD424'
+  logo: 'assets/images/visual-communication-logo.png'
+  summary: 'An introduction to the visual elements of design, composition, and effective communication'
+,
   position: 24
   name: 'DinoFit'
   slug: 'dino-fit'
