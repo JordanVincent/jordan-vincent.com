@@ -1,21 +1,42 @@
 #project {
-  .hero-project-image {
-    position: absolute;
-    bottom: 45px;
-    width: 120px;
-    border-radius: 120px;
-    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.3);
-  }
+  // .hero-project-image {
+  //   position: absolute;
+  //   bottom: 45px;
+  //   width: 120px;
+  //   border-radius: 120px;
+  //   box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.3);
+  // }
 
-  .hero-project-title {
-    position: absolute;
-    bottom: 50px;
-    margin-left: 150px;
-    font-size: 5em;
-    font-family: MyriadPro;
-    font-weight: 900;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-    color: white;
+  // .hero-project-title {
+  //   position: absolute;
+  //   bottom: 50px;
+  //   margin-left: 150px;
+  //   font-size: 5em;
+  //   font-family: MyriadPro;
+  //   font-weight: 900;
+  //   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  //   color: white;
+  // }
+
+  .project-cover {
+    .project-logo {
+      max-width: 200px;
+      height: auto;
+      margin: 50px auto 0px auto;
+      display: block;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 4em;
+      margin: 0;
+    }
+
+    svg {
+      margin-top: 50px;
+      display: block;
+    }
   }
 
   article {

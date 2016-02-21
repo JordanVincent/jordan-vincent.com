@@ -2,147 +2,65 @@ ProjectFixtures = [
   position: 6
   name: 'Adminca'
   slug: 'adminca'
+  isCaseStudy: true
   category: 'main'
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
   date: 'from Sept. 2015'
   summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded'
-  intro: 'While customer facing products are well designed, the people building them still suffer from inefficient and clumsy tools. I co-founded <a href="https://adminca.com" target="_blank">Adminca</a> with the mission to remove poorly designed admin interfaces from the workplace.'
-  description: """
-    <p>Try Adminca now at <a href="https://adminca.com" target="_blank">adminca.com</a> or follow us on <a href="https://www.facebook.com/admincacom" target="_blank">Facebook</a>.</p>
-    """
 ,
   position: 5
   name: 'BitTitan UX'
   slug: 'bittitan-ux'
+  isCaseStudy: true
   category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-ux-logo.png'
   date: 'Sept. to Dec. 2015 (3 months)'
   summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan'
-  intro: 'Following my internship as Web Developer at <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a>, I took ownership of the design of <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a>. I successfully accomplished my goal of demonstrating the value of the User-Centered Design in leading product development.'
-  description: """
-    <p>BitTitan is widely known for its email migration solution, MigrationWiz. But the company is currently in the works of becoming an integrated platform for its partners. SalesAutomation is one of BitTitan’s latest products. It is an outbound call automation SaaS application. SalesAutomation streamlines the process of cold calling leads by offering powerful tools.</p>
-    <p>Although migrating millions of files from one server to another efficiently and securely is a very hard task, the real value of SalesAutomation isn’t really in its implementation, but in understanding of the user’s needs. For over a year, the focus of the development team has been finding highly technical solutions to a UX problem. BitTitan only counts one UX designer. His time was very limited and he mostly works on the UI, while the development team was coding. During my first internship as a Web Developer, I tried to find solutions that would improve the user experience of the product. But my reach was limited to the features I developed. I also didn’t have a proper understanding of the users and the business goals of the product.</p>
-    <p>Last September, I exposed the problem to our CTO, and he accepted to let me work part-time as a UX designer for the next three months. He gave me carte blanche to improve the user experience of SalesAutomation.</p>
-    <p>More than redesigning SalesAutomation, my primary goal was to show the value of the User-Centered-Design process in creating software people actually want to use. I tried to include as many people as possible during the process. I interviewed stakeholders, conducted design workshops, and presented my work multiple times.</p>
-    <p>The five weeks long user research period lead to many findings that I compiled into an actionable list that I shared and presented to the team. Although I didn’t have access to any actual user, I conducted the user research interviewing and observing the internal Sales team, and analyzing related research.</p>
-    <p>From the user research, and together with Sales, Developers, and Managers, I created four personas. The personas had much more impact than I first expected. They management team quickly saw the usefulness of the personas in aligning business goals and understanding the users. BitTitan is now in the works of creating personas for its other products.</p>
-    <p>Then, I created a complete wireframe incorporating ideas from the research and the brainstorming workshops I organized. The goal of the wireframes was to demonstrate how SalesAutomation could be improved if we took into account our user needs. I introduced a lot of new concepts but I made sure to always back up my design decisions with findings from the research. Knowing that it wouldn’t be possible to implement all the changes I designed, I prioritized the new features and created a roadmap. A few features are currently being implemented.</p>
-    <p>Finally, I conducted a quick user testing study, to test the software in a real environment by using a Wizard of Oz technique to simulate calls. Once again, I shared the findings with the whole team. It was the first time that we observed users making calls using the software, and it had a huge impact on showing how the software was really performing.</p>
-    <p>Working at BitTitan as a UX Designer was an incredible experience. It was my first time implementing the User-Centered Design process on a real project. Although it is always really hard to change a company culture, the project started discussions inside the management team, and helped the development team better understand the users and their needs.</p>
-    """
 ,
   position: 4
   name: 'BitTitan Dev'
   slug: 'bittitan-dev'
+  isCaseStudy: true
   category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-logo.png'
   date: 'June to Aug. 2015 (3 months)'
   summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.'
-  intro: 'I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a Web Developer Intern in summer 2015. My goal consisted in replacing <a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> old form based dialog creation by a graph visualization.'
-  description: """
-    <p>SalesAutomation is a cloud based software for running automated outbound sales campaigns. Its complex dialogs is one of the main features. They allow Sales agent to design conversations with multiple endings. However, dialogs quickly generate complex graphs. BitTitan needed a way to create, visualize, and fix dialog issues.</p>
-    <p>I used my Data Visualization skills to design a solution to the problem. It is composed of:</p>
-    <ul>
-      <li>A graph visualization: to help users see relationships between scripts.</li>
-      <li>Clear encoding of errors: to indicate what parts need to be fixed and how.</li>
-      <li>A side panel to edit the selected node: both sides interact seamlessly with each other.</li>
-      <li>An auto-save feature: which fits user’s flow.</li>
-    </ul>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/bittitan-graph.jpg" alt="SalesAutomation Dialog Visualization"/></div>
-      <aside><div class="inner">The new dialog creation screen</div></aside>
-    </div>
-
-    <p>I used the framework EmberJS. It permitted to decompose the project into basic components, each responsible for its own actions. It also made testing easy.</p>
-
-    <p>The biggest challenge was to produce a graph as readable as possible. I decided to use <a href="https://github.com/cpettitt/dagre" target="_blank">Dagre</a> to calculate node and edge positions. This project draws on numerous research papers in order to produce a clean layout which reduces edge crossings.<br>Finally, to render the graph, I simply used D3.
-
-    <p>The management team was very impressed by the result. Therfore, it was added to SalesAutomation first release and advertised as a core feature.</p>
-    """
 ,
   position: 3
   name: 'SixDoors'
   slug: 'sixdoors'
+  isCaseStudy: true
   category: 'main'
   color: '#CD4429'
   logo: 'assets/images/sixdoors-logo.png'
   date: 'May 2013 to May 2014 (13 months)'
   coverImage: 'assets/images/projects/sixdoors-cover.jpg'
   summary: 'Joined the San Francisco\'s startup SixDoors before launch as a web developer.'
-  intro: 'SixDoors is an iOS app which allows customers to shop from local stores and be delivered the same day.'
-  description: """
-    <p>I worked as a web developer intern at <a href="https://angel.co/sixdoors" target="_blank">SixDoors</a> for one year. I stopped my studies at INSA of Lyon one year to follow my dreams and work for a San Francisco\'s Startup! I was in charge of the development of the Sixdoors web apps:</p>
-
-    <p><strong>SixDoors web store:</strong> built with EmberJS, it generated more than 50% of SixDoors sales.</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/sixdoors-webstore.jpg" alt="Sixdoors Web Store"/></div>
-      <aside><div class="inner">SixDoors Web Store's front page</div></aside>
-    </div>
-
-    <p><strong>Seller web app:</strong> a web app used by sellers to list products, manage their account, track and create orders. It was first developed with EmberJS and then I switched to AngularJS.</p>
-    <p><strong>Courier web app:</strong> a mobile web app used by the SixDoors couriers to deliver the products as fast as possible. It ran on every recent device. It was first developed with Sencha Touch 2 and then EmberJS and Ratchet.</p>
-
-    <div class="row">
-      <div class="col-xs-6"><img src="assets/images/projects/sixdoors-courier-list.png" alt="SixDoors Courier's app. List view."/></div>
-      <div class="col-xs-6"><img src="assets/images/projects/sixdoors-courier-details.png" alt="SixDoors Courier's app. Product view."/></div>
-      <aside><div class="inner">SixDoors Courier's app. List of deliveries and product details</div></aside>
-    </div>
-
-    <p><strong>SixDoors-Shopify connector:</strong> it integrated Shopify with SixDoors. It allowed stores to connect their Shopify account to SixDoors and automatically synchronize their inventory. Server side developed with Ruby on Rails and client with AngularJS.</p>
-
-    <p>It was the first time I took part to this kind of project. Everything had to be developed from scratch and in a very short time. I had to learn two new JavaScript frameworks: EmberJS and AngularJS, a new syntax: CoffeeScript, a new language: Rails and to deal with various APIs. It was very challenging!</p>
-    """
 ,
   position: 2
   name: 'CityDomination'
   slug: 'city-domination'
+  isCaseStudy: true
   category: 'main'
   color: '#4A5363'
   logo: 'assets/images/city-domination-logo.png'
   date: 'Sept. 2011 to Dec. 2012 (16 months)'
   coverImage: 'assets/images/projects/citydomination-cover.jpg'
   summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
-  intro: '<a href="https://play.google.com/store/apps/details?id=com.mobinlife.citydom" target="_blank">CityDomination</a> is a mobile geolocated game. Use your smartphone to conquer the largest part of your city, the real city!'
-  description: """
-    <p>The world is divided in zones which correspond to real buildings: your university, the city hall and even your house. But, it's impossible to win alone, that's why you must cooperate with your gang members. Social interactions are at the basis of the gameplay, you can play with your friends and neighbors.</p>
-
-    <div class="row">
-      <div class="col-xs-6"><img src="assets/images/projects/citydomination-best.jpg" alt="CityDomination's poster"/></div>
-      <div class="col-xs-6"><img src="assets/images/projects/citydomination-map.jpg" alt="CityDomination's map"/></div>
-      <aside><div class="inner">CityDomination's Android app</div></aside>
-    </div>
-
-    <p>I was one of the four original founders. I participated in all the project phases, from the idea, to the launching. I was responsible for the gameplay, the graphics and all the front-end part, that is to say the website and the webapp. I used the JavaScript framework Sencha Touch 2 to quickly build a maintainable iPhone webapp. Moreover, I helped to develop the server part which is based on the PHP framework Symfony 2. We used a REST architecture and developed our own API to communicate with our multiple apps: the website, the webapp, and the Android app.
-    </p>
-
-    <p>I left the project in December 2012 due to a lack of time and my studies at INSA of Lyon. CityDomination has been acquired by the gaming company <a href="http://mobinlife.com/" target="_blank">Mob In Life</a> and is now one of their most successful game.</p>
-    """
 ,
   position: 1
   name: 'Direct Matin'
   slug: 'direct-matin'
+  isCaseStudy: true
   category: 'main'
   color: '#98041E'
   logo: 'assets/images/direct-matin-logo.png'
   date: 'June to Aug. 2012 (3 months)'
   coverImage: 'assets/images/projects/direct-matin-cover.jpg'
   summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
-  intro: 'In summer 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I was in charge of the development of a mobile web app for the French newspaper Direct Matin.'
-  description: """
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/direct-matin-iphone.jpg" alt="Direct Matin's iPhone app"/></div>
-      <aside><div class="inner">DirectMatin's iPhone app</div></aside>
-    </div>
-
-    <p>Kreactive wanted to use the new mobile JavaScript framework Sencha Touch 2 which had never been used before. I was assisted by the project manager plus another web developer but I had a lot of freedom. The biggest challenge was to adapt the app to all kind platforms and devices, ranging from iPads, iPhones, Android tablets and phones! Finally after 3 months we submitted the app on the <a href="https://itunes.apple.com/fr/app/direct-matin/id555661512" target="_blank">AppStore</a> and <a href="https://play.google.com/store/apps/details?id=com.bolloremediadigital.directmatin" target="_blank">Google Play</a>.</p>
-
-    <p>I really enjoyed working on an app which is now used by thousands of people every day. Visiting Paris, I was surprised to see in the subway ads promoting the app!</p>
-    """
 ,
   position: 11
   name: 'StartupViz'

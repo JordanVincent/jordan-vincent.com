@@ -2,7 +2,7 @@ body {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .container {
@@ -40,22 +40,22 @@ article {
   margin: 30px 0;
 
   a {
-    color: $primary-blue;
-    text-decoration: underline;
+    background: #EEE;
+    transition: background 0.3s;
+
+    &, &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
+      background: #CCC;
+    }
   }
 
   .lead {
-    font-size: 1.7em;
-    font-family: Avenir;
+    font-size: 1.6em;
     margin-bottom: 50px;
-
-    &:first-letter {
-      float: left;
-      font-size: 3em;
-      line-height: .6;
-      margin-right: 5px;
-      margin-top: 12px;
-    }
   }
 
   .text {

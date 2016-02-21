@@ -9,12 +9,13 @@
       text-decoration: none;
       font-size: 1.5em;
       padding-bottom: 5px;
-      transition: border .3s;
+      transition: border .1s;
       color: white;
       font-family: Avenir;
       font-weight: 500;
+      border-bottom: 2px solid transparent;
 
-      &.active {
+      &.active, &:hover {
         border-bottom: 2px solid white;
       }
     }
