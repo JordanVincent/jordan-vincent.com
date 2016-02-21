@@ -74,27 +74,13 @@ ProjectFixtures = [
   position: 12
   name: 'StartupViz'
   slug: 'startup-viz'
+  isCaseStudy: true
   category: 'class'
   color: '#8459BD'
   logo: 'assets/images/startupviz-logo.png'
   date: 'Sept. to Dec. 2014'
   coverImage: 'assets/images/projects/startupviz-cover.jpg'
   summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
-  description: """
-    <p><a href="http://startupviz.com/" target="_blank">StartupViz</a> is an interactive visualization of US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in certain sectors or regions to funding round details for a particular startup.</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/startupviz-map.jpg" alt="StartupViz website"/></div>
-      <aside><div class="inner">StartupViz website</div></aside>
-    </div>
-
-    <p>The design was tested repeatedly through user testing sessions at the UW Business School and Startup Hall. Feedbacks from users were very positive:</p>
-
-    <q>Normally I have to google competitors or look through all individual entries in Crunchbase to find startups that are similar to ours. Once we even bought a report that contained similar information for around $4000. Seeing how much funding these companies got in their investment rounds can help us to ask for the right amount from our investors.  I would definitely use this tool and pay for it! Probably not $4000, but I would pay for it.</q>
-    <p class="quote-author">&ndash; Greg Robinson, CEO at Wovn Energy</p>
-
-    <p>The tool was designed by University of Washington Human Centered-Design and Engineering graduate students to provide a more user-friendly way to understand and analyze such a comprehensive dataset.</p>
-  """
 ,
   position: 13
   name: 'Bridge Disability Ministry'
@@ -164,25 +150,13 @@ ProjectFixtures = [
   position: 22
   name: 'Veritabs'
   slug: 'veritabs'
+  isCaseStudy: true
   category: 'side'
   color: '#222222'
   logo: 'assets/images/veritabs-logo.png'
   date: 'Feb. 2013'
   coverImage: 'assets/images/projects/veritabs-cover.jpg'
   summary: 'A Chrome extension that let you display the tabs vertically. Up to 30 000 users!'
-  description: """
-    <p><a href="https://chrome.google.com/webstore/detail/veritabs/nehjgjnfanppoiaikadimdkobpdahnmg" target="_blank">Veritabs</a> is a Chrome extension for displaying tabs vertically. In Google Chrome, when you have too much tabs opened at a time, you can't see the tabs' title or even the icon. With Veritabs, the tabs are displayed vertically, so you can always see the name. It makes it easy organize, delete and create new tabs. It was developed using AngularJS and the Google Chrome API.</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/veritabs-bar.png" alt="Veritabs extension"/></div>
-      <aside><div class="inner">Veritabs extension</div></aside>
-    </div>
-
-    <p>The app has been reviewed by many tech websites like <a href="http://www.cnet.com/how-to/view-chrome-tabs-in-a-vertical-list-with-veritabs/" target="_blank">CNET</a>, <a href="http://www.pcworld.com/article/2048242/organize-your-chrome-tabs-vertically-with-veritabs.html" target="_blank">PCWorld</a> or <a href="http://www.addictivetips.com/web/veritabs-manage-chrome-tabs-from-vertical-sidebar/" target="_blank">Addictive Tips</a>.</p>
-
-    <q>One reason this extension is great is because it allows you to work in full-screen mode, and still have access to the tabs you open. Normally, you'd either have to exit full screen and switch tabs, or use the keyboard shortcuts (great if you only have 8 tabs open, not great when you have 20). Let's face it, when you have more than 20 or more tabs, cycling through all of them can be quite silly.</q>
-    <p class="quote-author">&ndash; CNET.com</p>
-  """
 ,
   position: 21
   name: 'Smart Bricks'
