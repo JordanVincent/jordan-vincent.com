@@ -25,7 +25,7 @@ ProjectFixtures = [
   isCaseStudy: true
   category: 'main'
   color: '#333A48'
-  logo: 'assets/images/bittitan-logo.png'
+  logo: 'assets/images/bittitan-dev-logo.png'
   date: 'June to Aug. 2015 (3 months)'
   summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.'
 ,
