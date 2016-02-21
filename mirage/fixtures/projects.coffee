@@ -99,29 +99,12 @@ ProjectFixtures = [
   position: 13
   name: 'Bridge Disability Ministry'
   slug: 'bridge-disability-ministry'
+  isCaseStudy: true
   category: 'class'
   color: '#222834'
   logo: 'assets/images/bridge-logo.png'
   date: 'Apr. to June 2015'
   summary: 'Redesign and development of a website for a non-profit organization.'
-  description: """
-    <p>This project was the final assignment for the User-Centered Web Design class (HCDE 537) at University of Washington. In teams of 5 we worked closely with the client to redesign their website. Our mission consisted of applying the User Centered Design process to the redesign of a website. The client was very satisfied with the final design and decided to replace their old website.</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/bridge-home.jpg" alt="Bridge Disability Ministry redesign"/></div>
-      <aside><div class="inner">Homepage redesigned</div></aside>
-    </div>
-
-    <p>Our work started with a meeting with the client to understand the organization and their business goals. Then we conducted user research: we analyzed traffic data from the current website using Google Analytics and Crazy Egg, interviewed users, and created surveys. The data we gathered led to the creation of 3 main personas which was really helpful in summarizing the research into coherent stories.</p>
-
-    <p>Although the current website was definitely outdated, the biggest issue was improving the Information Architecture (AI). From the research we notice that users couldn’t easily find the information they needed. To improve the AI, we used a card sort method with a dozen representative users.</p>
-
-    <p>Drawing on the research findings and the new AI, we quickly prototyped and iterated our design. Early paper prototypes were critiqued internally before moving to medium fidelity prototypes in Axure. We tested the interaction users. After few iterations we moved to visual design.</p>
-
-    <p>Using high-fidelity mockups, I implemented the final website in only one week! Because the client didn’t have the technical skills to update the website, I opted for a Content Management System (CMS). Reviewing multiple CMS, I chose to select Contentful. Contrary to other regular CMSs, Contentful doesn’t require to use an internal templating platform. It provides the content through a REST API, which gave me a lot of freedom and allowed me to use EmberJS.</p>
-
-    <p>I am proud of the final result! Contentful+EmberJS proved to be the great solution: every piece of the website can be modified from the general website architecture to every article. I even integrated a dozen custom templates for displaying news, events, staff members, reports, newsletters, and so on.</p>
-  """
 ,
   position: 14
   name: 'Visual Communication'
