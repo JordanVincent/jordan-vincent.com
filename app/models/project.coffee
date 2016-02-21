@@ -17,8 +17,6 @@ Project = DS.Model.extend
   intro: DS.attr()
   description: DS.attr()
 
-  isCaseStudy: DS.attr()
-
   backgroundColorStyle: ( ->
     "background-color: #{@get('color')};".htmlSafe()
   ).property('color')

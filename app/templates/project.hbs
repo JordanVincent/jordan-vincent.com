@@ -17,23 +17,7 @@
   </div>
 
   <section class="main-section">
-
-    {{#if model.isCaseStudy}}
-      {{component caseStudyComponent}}
-    {{else}}
-      <div class="container">
-        <article>
-
-          <div class="lead">
-            {{{model.intro}}}
-          </div>
-
-          <div class="text">
-            {{{model.description}}}
-          </div>
-        </article>
-      </div>
-    {{/if}}
+    {{component caseStudyComponent}}
   </section>
 
 </div>

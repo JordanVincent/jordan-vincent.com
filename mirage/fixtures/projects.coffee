@@ -2,7 +2,6 @@ ProjectFixtures = [
   position: 6
   name: 'Adminca'
   slug: 'adminca'
-  isCaseStudy: true
   category: 'main'
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
@@ -12,7 +11,6 @@ ProjectFixtures = [
   position: 5
   name: 'BitTitan UX'
   slug: 'bittitan-ux'
-  isCaseStudy: true
   category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-ux-logo.png'
@@ -22,7 +20,6 @@ ProjectFixtures = [
   position: 4
   name: 'BitTitan Dev'
   slug: 'bittitan-dev'
-  isCaseStudy: true
   category: 'main'
   color: '#333A48'
   logo: 'assets/images/bittitan-dev-logo.png'
@@ -32,7 +29,6 @@ ProjectFixtures = [
   position: 3
   name: 'SixDoors'
   slug: 'sixdoors'
-  isCaseStudy: true
   category: 'main'
   color: '#CD4429'
   logo: 'assets/images/sixdoors-logo.png'
@@ -43,7 +39,6 @@ ProjectFixtures = [
   position: 2
   name: 'CityDomination'
   slug: 'city-domination'
-  isCaseStudy: true
   category: 'main'
   color: '#4A5363'
   logo: 'assets/images/city-domination-logo.png'
@@ -54,7 +49,6 @@ ProjectFixtures = [
   position: 1
   name: 'Direct Matin'
   slug: 'direct-matin'
-  isCaseStudy: true
   category: 'main'
   color: '#98041E'
   logo: 'assets/images/direct-matin-logo.png'
@@ -74,7 +68,6 @@ ProjectFixtures = [
   position: 12
   name: 'StartupViz'
   slug: 'startup-viz'
-  isCaseStudy: true
   category: 'class'
   color: '#8459BD'
   logo: 'assets/images/startupviz-logo.png'
@@ -85,7 +78,6 @@ ProjectFixtures = [
   position: 13
   name: 'Bridge Disability Ministry'
   slug: 'bridge-disability-ministry'
-  isCaseStudy: true
   category: 'class'
   color: '#222834'
   logo: 'assets/images/bridge-logo.png'
@@ -95,7 +87,6 @@ ProjectFixtures = [
   position: 14
   name: 'Visual Communication'
   slug: 'visual-communication'
-  isCaseStudy: true
   category: 'class'
   color: '#FFD424'
   logo: 'assets/images/visual-communication-logo.png'
@@ -104,7 +95,6 @@ ProjectFixtures = [
   position: 24
   name: 'DinoFit'
   slug: 'dino-fit'
-  isCaseStudy: true
   category: 'side'
   color: '#215F41'
   logo: 'assets/images/dinofit-logo.png'
@@ -115,7 +105,6 @@ ProjectFixtures = [
   position: 23
   name: 'Labello'
   slug: 'labello'
-  isCaseStudy: true
   category: 'side'
   color: '#ECF0F1'
   logo: 'assets/images/labello-logo.png'
@@ -126,7 +115,6 @@ ProjectFixtures = [
   position: 22
   name: 'Veritabs'
   slug: 'veritabs'
-  isCaseStudy: true
   category: 'side'
   color: '#222222'
   logo: 'assets/images/veritabs-logo.png'
@@ -137,7 +125,6 @@ ProjectFixtures = [
   position: 21
   name: 'Smart Bricks'
   slug: 'smart-bricks'
-  isCaseStudy: true
   category: 'side'
   color: '#6E95B6'
   logo: 'assets/images/smart-bricks-logo.png'
