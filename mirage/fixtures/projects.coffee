@@ -218,30 +218,13 @@ ProjectFixtures = [
   position: 21
   name: 'Smart Bricks'
   slug: 'smart-bricks'
+  isCaseStudy: true
   category: 'side'
-  color: '#E2E2E2'
+  color: '#6E95B6'
   logo: 'assets/images/smart-bricks-logo.png'
   date: 'Sept. 2011 to May 2012 (9 months)'
   coverImage: 'assets/images/projects/smart-bricks-cover.jpg'
   summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
-  description: """
-    <p><a href="http://www.smart-bricks.com/" target="_blank">Smart Bricks</a> is a web store selling original LEGO sets. I realized that there is a large LEGO adult community. They spend their time building nice models, creating a myriad of blogs and organizing events all over the world. Some of them have a real talent in building with LEGO bricks and their creations are admired by their fans. And that's why I created Smart Bricks!</p>
-
-    <div class="row">
-      <div class="col-xs-12"><img src="assets/images/projects/smart-bricks-concept.png" alt="The Smart Bricks' concept"/></div>
-      <aside><div class="inner">The Smart Bricks' concept</div></aside>
-    </div>
-
-    <p>I contacted artists in order to duplicate and sell their creations. I've an agreement with a Spanish artist. Now LEGO fans can now order a nice 2000 pieces LEGO house on my website. The product is delivered with all the pieces, and a booklet containing the building instructions in a nice cardboard, like official LEGO sets.</p>
-
-    <div class="row">
-      <div class="col-xs-6"><img src="assets/images/projects/smart-bricks-house.jpg" alt="Smart Bricks' Magic House"/></div>
-      <div class="col-xs-6"><img src="assets/images/projects/smart-bricks-product.jpg" alt="Model, box and instructions"/></div>
-      <aside><div class="inner">Smart Bricks' Magic House. It comes with all pieces and instructions in a nice collector package</div></aside>
-    </div>
-
-    <p>LEGO artists had nothing to do, I took care of everything: creating the building instructions in 3D, designing and printing the box and the booklet, buying the pieces, shipping the model... It was very complex and time consuming however I'm really proud because I carried on the project, from start to finish by mayself.</p>
-  """
 ]
 
 `export default ProjectFixtures`
