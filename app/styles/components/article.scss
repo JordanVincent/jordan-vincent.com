@@ -86,7 +86,7 @@ article {
     background: #EEE;
     transition: background 0.3s;
 
-    &, &:hover {
+    &, &:hover, &:focus {
       text-decoration: none;
       color: inherit;
     }
