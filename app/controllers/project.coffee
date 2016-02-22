@@ -6,8 +6,8 @@ ProjectController = Ember.Controller.extend
     @get('model.coverImage') || 'assets/images/projects-image.jpg'
   ).property('model.coverImage').readOnly()
 
-  caseStudyComponent: ( ->
-    'case-studies/' + @get('model.slug')
+  articleComponent: ( ->
+    'project-articles/' + @get('model.slug')
   ).property('model.slug')
 
   titleColorStyle: ( ->

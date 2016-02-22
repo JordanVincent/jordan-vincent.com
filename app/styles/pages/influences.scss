@@ -7,7 +7,7 @@
     margin-bottom: 5px;
     font-weight: bold;
     color: $gray-light;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: $headings-font-family;
   }
 
@@ -28,6 +28,23 @@
   }
 
   .footnotes {
+    margin-top: 50px;
+    position: relative;
+    padding-top: 10px;
     font-size: 1.2em;
+
+    &:before {
+      content: '';
+      width: 50px;
+      border-top: 1px solid $gray-light;
+      position: absolute;
+      top: 0;
+    }
+
+    .footnote {
+      font-style: italic;
+      color: $gray-light;
+      margin-bottom: 15px;
+    }
   }
 }

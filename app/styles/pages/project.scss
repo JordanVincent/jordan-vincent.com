@@ -1,22 +1,4 @@
 #project {
-  // .hero-project-image {
-  //   position: absolute;
-  //   bottom: 45px;
-  //   width: 120px;
-  //   border-radius: 120px;
-  //   box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.3);
-  // }
-
-  // .hero-project-title {
-  //   position: absolute;
-  //   bottom: 50px;
-  //   margin-left: 150px;
-  //   font-size: 5em;
-  //   font-family: MyriadPro;
-  //   font-weight: 900;
-  //   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  //   color: white;
-  // }
 
   .project-cover {
     .project-logo {
@@ -32,69 +14,8 @@
       margin: 0;
     }
 
-    svg {
+    .ragged-edge {
       margin-top: 50px;
-      display: block;
-    }
-  }
-
-  article {
-    li {
-      font-family: $paragraph-font-family;
-      font-size: 1.5em;
-    }
-
-    ul {
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    .date {
-      color: $gray-light;
-      margin-bottom: 20px;
-    }
-
-    img {
-      max-width: 100%;
-      max-height: 400px;
-      border-radius: $border-radius;
-      border: 1px solid #EEE;
-      margin-bottom: 10px;
-      padding: 3px;
-    }
-
-    q {
-      font-family: $paragraph-font-family;
-      font-size: 1.5em;
-      font-style: italic;
-      color: #999;
-      display: block;
-
-      &:before, &:after {
-        font-weight: bold;
-        font-size: 1.2em;
-      }
-    }
-
-    .quote-author {
-      color: #999;
-      text-align: right;
-      margin-top: 15px;
-    }
-
-    aside {
-      .inner {
-        border-top: 5px solid $gray-light;
-        font-family: MyriadPro;
-        font-style: italic;
-        font-size: 1.2em;
-        color: $gray-light;
-        line-height: 1;
-        padding-top: 8px;
-      }
     }
   }
 
@@ -121,25 +42,10 @@
 
 @media (max-width : $screen-sm-min) {
   #project {
-    article aside {
-      margin: 0 0 20px 0;
-      padding-left: 15px;
-      padding-right: 15px;
-
-      .inner {
-        border: 0;
+    .project-cover {
+      h1 {
+        font-size: 3em;
       }
-    }
-
-    .hero-project-image {
-      width: 90px;
-      bottom: 35px;
-    }
-
-    .hero-project-title {
-      font-size: 3em;
-      margin-left: 110px;
-      bottom: 35px;
     }
   }
 }

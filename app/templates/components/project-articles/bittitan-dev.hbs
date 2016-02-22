@@ -1,0 +1,91 @@
+<p class="intro">I joined <a href="http://www.bitTitan.com/" target="_blank">BitTitan</a> as a Web Developer Intern in summer 2015. My goal consisted in using a graph visalization to replace a form based interface. I improved the usability by an order of magnitude. It is now a central part of the product.</p>
+
+<div class="section-title">
+  <h2>SalesAutomation</h2>
+</div>
+
+<p class="centered"><a href="http://www.bittitan.com/products/salesautomation/" target="_blank">SalesAutomation</a> is a cloud based software for running automated outbound sales campaigns. Its complex predefined dialogs is one of the main features. It allows Sales agent to design dialogs with multiple endings.</p>
+
+<img src="assets/images/projects/bittitan-sa.png" class="img-responsive">
+
+<div class="centered-column">
+  <p>Dialogs can be represented as a directed graph of scripts (a script can be a simple question, a choice, or a statement). One script starts the conversation and then it branches, depending on the various answers and choices. Some loops are also allowed. For instance, a Sales agent could go through a choice script multiple times, each time choosing a different option.</p>
+</div>
+
+<div class="section-title">
+  <h2>The Existing Solution</h2>
+  <p>A chess game</p>
+</div>
+
+<div class="columns">
+  <p>The current solution for creating dialogs followed a very simple approach. Each script would be created individually using a dedicated form. To link scripts together, dropdowns were used to select the following element. The main dialog page was no more than a long list of scripts.</p>
+  <p>This approach worked very well for less than five scripts. Beyond that number, it is too complex for anyone to hold in their head the entire graph. Most of the time, users who didn't create the dialog wanted to understand how it was structured. They generally ended up drawing the graph on a piece of paper. Moreover, in case the dialog had an error (a field was missing on one of the scripts) is was very difficult to identify the error and then correct it.</p>
+  <p>For the reasons explained above, the form based interface was not well suited for dialog creation, visualization, and validation. Allowing people to visualize the graph and directly interact with it would improve the current solution by at least an order of magnitude.</p>
+</div>
+
+<div class="section-title">
+  <h2>The Challenge</h2>
+  <p>How to use a graph representation to make dialog creation easier?</p>
+</div>
+
+<div class="columns">
+  <p>The biggest challenge for solving this problem was to find a way to render a graph that "humans" can easily understand and use. There are a lot of example of graphs which look "cool" but are actually very difficult to understand.</p>
+  <p>To help in finding the right graph representation, I first listed the characteristics of the "dialog graph": 1) it is composed of less than 100 nodes, and 2) it is mainly linear and has one and only one entry point.</p>
+  <p>A few graph representations can be ruled out. For example 'force directed" layouts don’t preserve direction and therefore it would be very hard to follow the flow of any dialog.</p>
+</div>
+
+<div class="section-title">
+  <h2>Design Principles</h2>
+</div>
+
+<div class="centered">
+  <p>I created multiple prototype to test different interactions layout and interaction ideas. I used my Data Visualization and UX Design skills to design a solution to the problem. Three design principles guided the design:</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <h3>Clear Feedback</h3>
+    <p class="text-muted"><em>When the user executes an action, the system should respond approprietely to reflect the current state.</em></p>
+    <p>Users can direcly manipulate the graph by clicking on the nodes. When a node is modified, the view changes automatically by moving the node.</p>
+  </div>
+  <div class="col-sm-4">
+    <h3>Errors Recovery</h3>
+    <p class="text-muted"><em>If an error is made, the system should be able to detect the error and offer simple mechanisms for handling the error.</em></p>
+    <p>When the user executes an action, the interface checks that the grapgh is still valid. If not, the errored nodes will be highlighted, and a non intrusive error message will explain how to fix the issue.</p>
+  </div>
+  <div class="col-sm-4">
+    <h3>Short Term Memory</h3>
+    <p class="text-muted"><em>The system should not require the users to hold in memory any information required to complete the task.</em></p>
+    <p>The graph visualization doesn't require the user to click through each node to understand the relationships between nodes. Related nodes are linked together, and the dialog prograssion is clearly visible.</p>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2>Implementation</h2>
+  <p>Looking for the right architecture</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src="assets/images/projects/bittitan-graph.png" class="img-responsive">
+  </div>
+  <div class="col-sm-4">
+    <p>After a lot of research, I chose to use Dagre4, a JavaScript library for laying out directed graphs. A few features pushed me to use that library over another.</p>
+    <p>First, it is supported by strong research in the field of graph representation which produces aesthetically pleasing graphs by structuring it in layers reducing edge crossings, and positioning nodes and edges.</p>
+    <p>Second, it is a lightweight plugin. It only computes node and edge positions without making any assumption about the representation layer.</p>
+    <p>Third, it is used by other popular high level libraries such as Cytoscape.js5.</p>
+  </div>
+</div>
+
+<p>As representation layer, I used a mix of SVG and DOM elements. This allowed me to customize the representation of the nodes and edges to display contextual information such as script titles, errors, answers, etc. and make use of Dagre layout algorithm.</p>
+
+<div class="section-title">
+  <h2>The result</h2>
+</div>
+
+<img src="assets/images/projects/bittitan-graph.jpg" class="img-responsive">
+
+<div class="columns">
+  <p>The new interface for creating dialogs had a tremendous impact on the usability of SalesAutomation. SalesAutomation became "fun", a word that has never been associated with any of BitTitan's products in the past. The upper management team quickly saw a lot of potential in using graph visualizations to improve other parts of the software.</p>
+  <p>But this project only solved a small part of the real problem. The underlying issue was much more complex. During {{link-to 'my second internship' 'project' 'bittitan-ux'}} at BitTitan, I proposed to use the User-Centered Design Process as a way to understand the real issue.</p>
+</div>

@@ -1,4 +1,4 @@
-.case-study {
+article {
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -9,21 +9,6 @@
 
   b {
     font-weight: 600;
-  }
-
-  // TODO remove
-  a {
-    background: #EEE;
-    transition: background 0.3s;
-
-    &, &:hover {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    &:hover {
-      background: #CCC;
-    }
   }
 
   .columns {
@@ -96,10 +81,24 @@
     text-align: right;
     margin-bottom: 30px;
   }
+
+  a {
+    background: #EEE;
+    transition: background 0.3s;
+
+    &, &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
+      background: #CCC;
+    }
+  }
 }
 
 @media (max-width : $screen-sm-min) {
-  .case-study {
+  article {
 
     .intro {
       font-size: 1.4em;

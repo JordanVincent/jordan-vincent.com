@@ -14,7 +14,7 @@
   .nav-inline .nav-element a {
     color: black;
 
-    &.active {
+    &.active, &:hover {
       border-bottom: 2px solid black;
     }
   }
@@ -89,11 +89,10 @@
 
         a {
           color: white;
-          font-family: MyriadPro;
           font-weight: bold;
           text-transform: uppercase;
 
-          &.active {
+          &.active, &:hover {
             border-bottom: 2px solid white;
           }
         }

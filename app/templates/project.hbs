@@ -11,13 +11,13 @@
     <img class="project-logo" src={{model.logo}} />
     <h1 style={{titleColorStyle}}>{{model.name}}</h1>
 
-    <svg viewBox="0 0 1200 50" preserveAspectRatio="none" >
-      <path stroke-miterlimit="3" stroke="none" fill="#FFFFFF" d="M 0 50 V23 L60 8 L180 22 L267 14 L440 3 L560 18 L695 0 L803 12 L990 4 L1133 17 L1200 13 V50 H0"></path>
-    </svg>
+    {{ragged-edge}}
   </div>
 
   <section class="main-section">
-    {{component caseStudyComponent}}
+    <article class="container">
+      {{component articleComponent}}
+    </article>
   </section>
 
 </div>
