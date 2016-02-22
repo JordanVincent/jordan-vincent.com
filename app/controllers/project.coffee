@@ -11,7 +11,7 @@ ProjectController = Ember.Controller.extend
   ).property('model.slug')
 
   titleColorStyle: ( ->
-    'color: white;'.htmlSafe() if tinycolor(@get('model.color')).isDark()
-  ).property('model.color').readOnly()
+    'color: white;'.htmlSafe() if @get('model.isColorDark')
+  ).property('model.isColorDark').readOnly()
 
 `export default ProjectController;`

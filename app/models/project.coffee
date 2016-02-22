@@ -21,4 +21,8 @@ Project = DS.Model.extend
     "background-color: #{@get('color')};".htmlSafe()
   ).property('color')
 
+  isColorDark: ( ->
+    tinycolor(@get('color')).isDark()
+  ).property('color')
+
 `export default Project;`

@@ -2,7 +2,7 @@
 
 ProjectItem = Ember.Component.extend
   classNames: ['project-item']
-  classNameBindings: ['isDark']
+  classNameBindings: ['project.isColorDark:is-dark']
 
   paths: [
     from: 'M 0 200 l 100 -25 l 50 25 l 150 -37.5 l 50 25 l 50 -12.5 V 400 H 0 Z'
@@ -14,10 +14,6 @@ ProjectItem = Ember.Component.extend
     from: 'M 0 200 v -25 l 50 -25 l 75 37.5 l 125 -12.5 l 100 12.5 l 50 -12.5 V 400 H 0 Z'
     to: 'M 0 400 V 400 L 50 400 L 125 400 L 250 400 L 350 400 L 400 400 V 400 H 0 Z'
   ]
-
-  isDark: ( ->
-    tinycolor(@get('project.color')).isDark()
-  ).property('project.color').readOnly()
 
   path: (->
     index = @get('index') % @get('paths.length')
