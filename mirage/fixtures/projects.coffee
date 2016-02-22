@@ -6,7 +6,7 @@ ProjectFixtures = [
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
   date: 'from Sept. 2015'
-  summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded'
+  summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded.'
 ,
   position: 5
   name: 'BitTitan UX'
@@ -15,7 +15,7 @@ ProjectFixtures = [
   color: '#333A48'
   logo: 'assets/images/bittitan-ux-logo.png'
   date: 'Sept. to Dec. 2015 (3 months)'
-  summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan'
+  summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan.'
 ,
   position: 4
   name: 'BitTitan Dev'
@@ -90,7 +90,7 @@ ProjectFixtures = [
   category: 'class'
   color: '#FFD424'
   logo: 'assets/images/visual-communication-logo.png'
-  summary: 'An introduction to the visual elements of design, composition, and effective communication'
+  summary: 'An introduction to the visual elements of design, composition, and effective communication.'
 ,
   position: 24
   name: 'DinoFit'
