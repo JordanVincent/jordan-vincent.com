@@ -10,4 +10,9 @@ ProjectRoute = Ember.Route.extend
   model: (params) ->
     @store.queryRecord 'project', { slug: params.project_slug }
 
+  actions:
+    error: (error) ->
+      Ember.Logger.error(error)
+      @transitionTo('not-found')
+
 `export default ProjectRoute`

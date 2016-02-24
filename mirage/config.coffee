@@ -6,7 +6,10 @@ config = ->
     # Individual record
     if slug
       projects = schema.project.where({slug: slug})
-      projects[0] if projects.length
+      if projects.length
+        projects[0]
+      else
+        return new Response(404, {'Content-Type': 'application/json'}, { errors: [] })
 
     # All records
     else
