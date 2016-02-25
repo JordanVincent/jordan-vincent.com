@@ -85,16 +85,13 @@ article {
   }
 
   a {
-    background: #EEE;
-    transition: background 0.3s;
-
     &, &:hover, &:focus {
       text-decoration: none;
-      color: inherit;
+      color: #337ab7;
     }
 
     &:hover {
-      background: #CCC;
+      border-bottom: 3px solid #EEE;
     }
   }
 }
