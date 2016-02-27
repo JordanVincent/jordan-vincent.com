@@ -44,7 +44,7 @@ ProjectFixtures = [
   logo: 'assets/images/city-domination-logo.png'
   date: 'Sept. 2011 to Dec. 2012 (16 months)'
   coverImage: 'assets/images/projects/citydomination-cover.jpg'
-  summary: 'Mobile geolocated game I co-founded. 1000 players on the first month. Later acquired by Mob In Life.'
+  summary: 'Mobile geolocated game I co-founded. 1,000 players on the first month. Later acquired by Mob In Life.'
 ,
   position: 1
   name: 'Direct Matin'
@@ -54,7 +54,7 @@ ProjectFixtures = [
   logo: 'assets/images/direct-matin-logo.png'
   date: 'June to Aug. 2012 (3 months)'
   coverImage: 'assets/images/projects/direct-matin-cover.jpg'
-  summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway and newspapers.'
+  summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway & newspapers.'
 ,
   position: 11
   name: 'Haiku Deck'
@@ -120,7 +120,7 @@ ProjectFixtures = [
   logo: 'assets/images/veritabs-logo.png'
   date: 'Feb. 2013'
   coverImage: 'assets/images/projects/veritabs-cover.jpg'
-  summary: 'A Chrome extension that let you display the tabs vertically. Up to 30 000 users!'
+  summary: 'A Chrome extension that let you display the tabs vertically. Up to 30,000 users!'
 ,
   position: 21
   name: 'Smart Bricks'
