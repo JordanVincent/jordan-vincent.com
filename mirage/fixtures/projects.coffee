@@ -12,6 +12,7 @@ ProjectFixtures = [
   name: 'BitTitan UX'
   slug: 'bittitan-ux'
   category: 'main'
+  isFeatured: true
   color: '#333A48'
   logo: 'assets/images/bittitan-ux-logo.png'
   date: 'Sept. to Dec. 2015 (3 months)'
@@ -59,6 +60,7 @@ ProjectFixtures = [
   position: 11
   name: 'Haiku Deck'
   slug: 'haiku-deck'
+  isFeatured: true
   category: 'class'
   color: '#EEEEEE'
   logo: 'assets/images/haiku-deck-logo.png'
@@ -68,6 +70,7 @@ ProjectFixtures = [
   position: 12
   name: 'StartupViz'
   slug: 'startup-viz'
+  isFeatured: true
   category: 'class'
   color: '#8459BD'
   logo: 'assets/images/startupviz-logo.png'
@@ -96,6 +99,7 @@ ProjectFixtures = [
   name: 'DinoFit'
   slug: 'dino-fit'
   category: 'side'
+  isFeatured: true
   color: '#215F41'
   logo: 'assets/images/dinofit-logo.png'
   date: 'From June 2014'

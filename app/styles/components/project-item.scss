@@ -4,6 +4,7 @@
   padding-right: 0;
   transition: all .3s;
   cursor: pointer;
+  position: relative;
 
   a {
     color: #333;
@@ -61,6 +62,18 @@
     }
   }
 
+  .featured-label {
+    background: #FFB926;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50px;
+  }
+
   h3 {
     font-family: MyriadPro;
     font-weight: bold;
@@ -110,6 +123,17 @@
     .caption, .text-inner {
       display: inline-block;
       vertical-align: top;
+    }
+
+    .featured-label {
+      width: 20px;
+      height: 20px;
+      color: transparent;
+      overflow: hidden;
+      background-image: url($images-path+'/star-icon.png');
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }

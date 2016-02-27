@@ -11,6 +11,8 @@ Project = DS.Model.extend
   logo: DS.attr()
   coverImage: DS.attr()
 
+  isFeatured: DS.attr()
+
   date: DS.attr()
 
   summary: DS.attr()
