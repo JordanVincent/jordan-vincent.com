@@ -6,7 +6,7 @@ ProjectFixtures = [
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
   date: 'from Sept. 2015'
-  summary: 'An easy to setup yet powerful interface for your Parse data that I co-founded.'
+  summary: 'An easy to setup yet powerful interface for any backend that I co-founded.'
 ,
   position: 5
   name: 'BitTitan UX'
@@ -65,7 +65,7 @@ ProjectFixtures = [
   color: '#EEEEEE'
   logo: 'assets/images/haiku-deck-logo.png'
   date: 'Jan. to Mar. 2015'
-  summary: 'User testing of the presentation tool Haiku Deck. Ran a study with 8 participants.'
+  summary: 'User testing of the presentation tool Haiku Deck. Carried out a study with eight participants.'
 ,
   position: 12
   name: 'StartupViz'
@@ -114,7 +114,7 @@ ProjectFixtures = [
   logo: 'assets/images/labello-logo.png'
   date: 'Feb. 2015'
   coverImage: 'assets/images/projects/labello-cover.jpg'
-  summary: 'A web app for labelling and analyzing documents. Developed in less than one week!'
+  summary: 'A web app for labelling and analyzing documents. Developed in less than a week!'
 ,
   position: 22
   name: 'Veritabs'
@@ -134,7 +134,7 @@ ProjectFixtures = [
   logo: 'assets/images/smart-bricks-logo.png'
   date: 'Sept. 2011 to May 2012 (9 months)'
   coverImage: 'assets/images/projects/smart-bricks-cover.jpg'
-  summary: 'A web store for original LEGO sets. Developed everything by myself from the idea, to the product ready to ship!'
+  summary: 'A web store for original LEGO sets. Developed everything, from the idea to the product ready to ship!'
 ]
 
 `export default ProjectFixtures`
