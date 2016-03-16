@@ -3,6 +3,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    SRI: {
+      enabled: false
+    },
     fingerprint: {
       extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'map', 'pdf']
     },
