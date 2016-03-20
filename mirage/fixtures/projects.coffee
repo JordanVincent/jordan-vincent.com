@@ -3,6 +3,7 @@ ProjectFixtures = [
   name: 'Adminca'
   slug: 'adminca'
   category: 'main'
+  isFeatured: true
   color: '#337AB7'
   logo: 'assets/images/adminca-logo.png'
   date: 'from Sept. 2015'
@@ -57,7 +58,7 @@ ProjectFixtures = [
   coverImage: 'assets/images/projects/direct-matin-cover.jpg'
   summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway & newspapers.'
 ,
-  position: 11
+  position: 14
   name: 'Haiku Deck'
   slug: 'haiku-deck'
   isFeatured: true
@@ -67,7 +68,7 @@ ProjectFixtures = [
   date: 'Jan. to Mar. 2015'
   summary: 'User testing of the presentation tool Haiku Deck. Carried out a study with eight participants.'
 ,
-  position: 12
+  position: 13
   name: 'StartupViz'
   slug: 'startup-viz'
   isFeatured: true
@@ -78,7 +79,7 @@ ProjectFixtures = [
   coverImage: 'assets/images/projects/startupviz-cover.jpg'
   summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.'
 ,
-  position: 13
+  position: 12
   name: 'Bridge Disability Ministry'
   slug: 'bridge-disability-ministry'
   category: 'class'
@@ -87,7 +88,7 @@ ProjectFixtures = [
   date: 'Apr. to June 2015'
   summary: 'Redesign and development of a website for a non-profit organization.'
 ,
-  position: 14
+  position: 11
   name: 'Visual Communication'
   slug: 'visual-communication'
   category: 'class'
