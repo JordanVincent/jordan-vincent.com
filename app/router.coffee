@@ -17,10 +17,13 @@ Router = Ember.Router.extend
       @get('metrics').trackPage({page: page, title: title})
 
 Router.map ->
-  @route 'influences'
-  @route 'contact'
-  @route 'projects', ->
-    @route 'project', { path: ':project_slug', resetNamespace: true }, ->
-  @route 'not-found', { path: '/*path' }
+  @route 'case-study'
+  @route 'inner', { path: '/' }, ->
+    @route 'index', { path: '', resetNamespace: true }
+    @route 'influences', { resetNamespace: true }
+    @route 'contact', { resetNamespace: true }
+    @route 'projects', { resetNamespace: true }, ->
+      @route 'project', { path: ':project_slug', resetNamespace: true }
+    @route 'not-found', { path: '*path', resetNamespace: true }
 
 `export default Router;`

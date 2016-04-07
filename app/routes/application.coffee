@@ -6,7 +6,4 @@ ApplicationRoute = Ember.Route.extend
     if !Ember.isEmpty(tokens) then title + tokens.join(' - ')
     else title + 'UX Designer, Software Engineer, Entrepreneur'
 
-  model: (params) ->
-    @store.findAll('project')
-
 `export default ApplicationRoute`
