@@ -13,8 +13,8 @@
     position: absolute;
     max-width: 600px;
 
-    &.img-left {
-      right: 0;
+    &.overflow-left {
+      right: 15px;
     }
   }
 
@@ -84,6 +84,7 @@
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 240px;
 
     img {
       width: 80px;
@@ -125,7 +126,51 @@
     .inner {
       background-color: white;
       padding: 10px 30px 30px 30px;
-      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .personas {
+
+    .persona {
+      background-color: #eee;
+      padding: 70px 30px 30px 30px;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      margin-left: -50px;
+    }
+
+    h3 {
+      margin: 0 0 30px 0;
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    .separator {
+      width: 50px;
+      background-color: #ccc;
+      height: 2px;
+      margin: 15px auto;
+    }
+
+    .quote {
+      font-style: italic;
+    }
+  }
+
+  .ideation {
+    .inner {
+      margin-top: 500px;
     }
   }
 }
