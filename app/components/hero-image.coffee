@@ -39,7 +39,4 @@ HeroImage = Ember.Component.extend ScrollingMixin, ResizeMixin,
     @set('subHeaderTop', top/2)
     @set('titlePaddingTop', 150 + (top/5))
 
-  resized: ->
-    @toggleProperty('_resized')
-
 `export default HeroImage;`

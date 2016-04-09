@@ -18,4 +18,9 @@ Transitions = ->
     @use('crossFade')
   )
 
+  @transition(
+    this.hasClass('prototype-carousel'),
+    @use('crossFade')
+  )
+
 `export default Transitions;`

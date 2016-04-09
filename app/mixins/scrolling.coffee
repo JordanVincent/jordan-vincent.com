@@ -18,7 +18,8 @@ ScrollingMixin = Ember.Mixin.create
     $(window).unbind "scroll.#{namespace}"
     $(window).unbind "touchmove.#{namespace}"
 
-  scrolled: Ember.K
+  scrolled: ->
+    @toggleProperty('_scrolled')
 
   _bindScrolling: (->
     @bindScrolling()

@@ -5,6 +5,8 @@
       <h1>Jordan Vincent</h1>
       <h2>Product Designer</h2>
       <p>I have a strong desire to solve hard but meaningful problems. I developed skills in Development and Design—not as an end—but merely as tools to help me achieve my goals. I worked at many startups companies, and started a few ones.</p>
+
+      {{link-to 'Skip to Portfolio' 'index' class="btn btn-lg btn-primary"}}
     </div>
     <div class="separator"></div>
 
@@ -20,7 +22,6 @@
       <div class="row">
         <div class="col-sm-6">
           <h2>Problem Definition</h2>
-          <h3>Design Question</h3>
           <p class="design-question">"Design a standalone tip calculator app for iOS or Android. Use the Dropbox Brand Guidelines to inform your visual design."</p>
           <h3>Requirements</h3>
           <ul>
@@ -40,7 +41,10 @@
   <section class="research">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-4 inner">
+        <div class="col-sm-6">
+          <img src="assets/images/case-study/competitive-analysis.jpg" class="img-responsive img-overflow overflow-left" alt="competitive analysis"/>
+        </div>
+        <div class="col-sm-6">
           <h2>Research</h2>
           <p>When I encounter a problem, my first action is to understand the space as best as possible. I listed 12 questions that I wanted to answer before starting the ideation phase.</p>
 
@@ -79,7 +83,7 @@
       <div class="row">
         <div class="col-sm-4 col-sm-offset-2">
           <div class="persona">
-            <img src="assets/images/case-study/profile-picture.jpg" class="img-responsive" alt="profile picture"/>
+            <img src="assets/images/case-study/dan.png" class="img-responsive" alt="Dan picture"/>
             <h3 class="text-center">Dan, 28 <span class="text-muted">- Primary</span></h3>
             <p class="quote">"I never know how much to tip, so I always end up tipping too much or too little. I feel very bad sometimes."</p>
             <div class="separator"></div>
@@ -90,7 +94,7 @@
 
         <div class="col-sm-4">
           <div class="persona">
-            <img src="assets/images/case-study/profile-picture.jpg" class="img-responsive" alt="profile picture"/>
+            <img src="assets/images/case-study/maria.png" class="img-responsive" alt="Maria picture"/>
             <h3 class="text-center">Maria, 27 <span class="text-muted">- Secondary</span></h3>
             <p class="quote">"I often go out with the girls during the week but when comes the tab, we can't figure out the right way to split it."</p>
             <div class="separator"></div>
@@ -106,25 +110,104 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img src="assets/images/case-study/ideation-1.jpg" style="max-height: 690px" class="img-responsive img-overflow overflow-left" alt="ideation sketch"/>
+          <img src="assets/images/case-study/ideation-1.jpg" style="max-height: 510px" class="img-responsive img-overflow overflow-left" alt="ideation sketch"/>
         </div>
 
         <div class="col-sm-8">
-          <img src="assets/images/case-study/ideation-2.jpg" style="max-width: 1000px; max-height: 470px;" class="img-responsive img-overflow" alt="ideation sketch"/>
           <div class="inner">
             <h2>Ideation</h2>
             <p>Sketching is my favorite way to ideate. I started by coming up with broad ideas that I refined. That way, I try not to stick to a local maxima for too long.</p>
             <p>Getting the flow right was the hardest part. I strived to design a simple yet powerful flow. The main goal was to limit the number of taps as much as possible. It led me to consider keeping the user on the same page from the beginning to the end, and using the scroll as a way to navigate.</p>
+
+            <img src="assets/images/case-study/ideation-3.jpg" style="max-width: 1000px; max-height: 400px;" class="img-responsive img-overflow" alt="ideation sketch"/>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="row" style="height: 500px; margin-top: 20px;">
+  <section class="prototyping">
+    <div class="container">
+      <div class="row">
         <div class="col-sm-8">
-          <img src="assets/images/case-study/ideation-3.jpg" style="max-height: 500px; max-width: 1000px;" class="img-responsive img-overflow overflow-left" alt="ideation sketch"/>
+          <h2>Prototyping</h2>
+          <p>After drawing each screen on paper, I spent the majority of the time creating a high fidelity prototype in Illustrator. It would allow me later to create a click though prototype in InVision.</p>
+          <p>I chose to design for Android because I am very familiar with its visual language. I used Google Material Design to keep a native feel. Dropbox Brand Guidelines brought some personality and clarity: blue and white, illustrations, clean design.</p>
+          <p>Try out the click through prototype <a href="https://invis.io/436PI03YW" target="_blank">on InVision</a>.</p>
         </div>
-        <div class="col-sm-4">
-          <img src="assets/images/case-study/ideation-4.jpg" style="max-height: 500px; max-width: 1000px;" class="img-responsive img-overflow" alt="ideation sketch"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="prototype">
+    {{#liquid-bind activeSlide class="prototype-carousel" as |slide|}}
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="phone-wrapper">
+              <img src="assets/images/case-study/phone.png" class="img-responsive phone"/>
+              <img src="assets/images/case-study/{{slide.image}}" class="img-responsive screen"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="description-wrapper">
+              <h2>Prototype</h2>
+              <h3>{{slide.title}}</h3>
+              {{{slide.description}}}
+              <div class="btn-toolbar">
+                {{#if showPrevious}}<button class="btn btn-lg btn-link" {{action 'previous'}}>Previous</button>{{/if}}
+                {{#if showNext}}<button class="btn btn-lg btn-primary" {{action 'next'}}>Next</button>{{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/liquid-bind}}
+  </section>
+
+  <section class="testing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Usability Testing</h2>
+          <p>I quickly created a click through prototype in InVision from the mockups. This allowed me to test the solution with participants (my roomates). Given the timeframe of the exercise, testing was very informal. My goal was to test the overall flow and find any usability isssues.</p>
+
+          <h3>Findings</h3>
+          <p>The tests confirmed some of my first impressions:</p>
+          <ul>
+            <li>The bubble-shaped choices had a really small target. It’s hard to tap on it. At first, I had up to five choices on the same row; bubbles are now larger and only three per row.</li>
+            <li>The tipping aid was called "help" and it was confusing. I renamed it "Assistant" but I am sure there is a better name. Also, a meaningful icon could help.</li>
+            <li>Overall, the flow was easy to follow. But the lack of scrolling and animations on the prototype confused users. In the future, I would need to test the interaction by building and interactive prototype with web technologies.</li>
+          </ul>
+        </div>
+        <div class="col-sm-6" style="height: 600px">
+          <img src="assets/images/case-study/testing.jpg" class="img-responsive img-overflow" alt="usability testing"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="implementation">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="text-center">Implementation</h2>
+          <p class="text-center">To test the interaction, I needed more than a click through prototype. I quickly implemented the following app in the matter of a day. I used the JavaScript framework Ember.js which I am very familliar with. Getting the scrolling smooth was the most challenging part. Try it now! (Note: many features are missing)</p>
+        </div>
+      </div>
+    </div>
+    <div class="phone-wrapper">
+      <img src="assets/images/case-study/phone.png" class="img-responsive phone"/>
+      <iframe src="https://tippy-app.herokuapp.com" class="app"></iframe>
+    </div>
+  </section>
+
+  <section class="conclusion">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center">
+          <p>This case study was just an overview of my design process applied to very simple problem. I encourage you to have a look at my other projects on my portfolio.</p>
+          {{link-to 'See Portfolio' 'index' class="btn btn-lg btn-primary"}}
         </div>
       </div>
     </div>

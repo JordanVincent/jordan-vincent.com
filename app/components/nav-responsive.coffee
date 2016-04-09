@@ -9,9 +9,6 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
   classNameBindings: ['afterOpen', 'beforeOpen']
   attributeBindings: ['style']
 
-  isMobile: false
-  MAX_PHONE_WIDTH: 768
-
   height: 0
 
   afterOpen: false
@@ -42,10 +39,6 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
     $(window).scrollTop() > threshold
   ).property('_scrolled', '_resized').readOnly()
 
-  updateIsMobile: ( ->
-    @set 'isMobile', $(window).width() < @MAX_PHONE_WIDTH
-  ).observes('_resized')
-
   updateView: ( ->
     @_resetOpen()
     @_calculateHeight()
@@ -75,12 +68,6 @@ NavResponsive = Ember.Component.extend ScrollingMixin, ResizeMixin,
   _calculateHeight: ->
     return unless @$()
     @set 'height', @$().outerHeight()
-
-  scrolled: ->
-    @toggleProperty('_scrolled')
-
-  resized: ->
-    @toggleProperty('_resized')
 
   click: ->
     if @get('afterOpen')

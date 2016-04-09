@@ -25,6 +25,10 @@
     }
   }
 
+  li {
+    margin-bottom: 10px;
+  }
+
   h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
   }
@@ -35,6 +39,7 @@
 
   h2 {
     font-weight: 300;
+    margin-bottom: 30px;
   }
 
   h3 {
@@ -44,7 +49,13 @@
   }
 
   section {
-    margin: 120px 0;
+    margin: 180px 0;
+  }
+
+  .btn-primary {
+    background-color: $dropbox-blue;
+    border: 0;
+    border-radius: 2px;
   }
 
   .my-intro {
@@ -70,6 +81,10 @@
     p {
       font-size: 1.4em;
       color: #333;
+    }
+
+    .btn {
+      margin-top: 30px;
     }
   }
 
@@ -119,14 +134,13 @@
   }
 
   .research {
-    background-image: url($images-path+'/case-study/competitive-analysis.jpg');
-    background-size: cover;
-    padding: 80px 0;
 
-    .inner {
-      background-color: white;
-      padding: 10px 30px 30px 30px;
-      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
+    img {
+      max-width: 1000px;
+      max-height: 750px;
+    }
+    h2 {
+      margin-top: 0;
     }
   }
 
@@ -146,6 +160,7 @@
       top: -50px;
       left: 50%;
       margin-left: -50px;
+      border: 3px solid $dropbox-blue;
     }
 
     h3 {
@@ -170,7 +185,123 @@
 
   .ideation {
     .inner {
-      margin-top: 500px;
+      position: relative;
+      height: 640px;
+
+      h2 {
+        margin-top: 0;
+      }
+
+      img {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .prototyping {
+    height: 760px;
+    padding: 60px 0;
+    background-image: url($images-path+'/case-study/prototyping.jpg');
+    background-color: #5D5D5D;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px auto;
+    background-size: auto 650px;
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: #ddd;
+    }
+
+    a {
+      color: white;
+    }
+
+  }
+
+  .prototype {
+    .phone-wrapper {
+      position: relative;
+      height: 600px;
+      .phone {
+        height: 600px;
+        position: absolute;
+        right: 0;
+      }
+      .screen {
+        position: absolute;
+        height: 480px;
+        right: 36px;
+        top: 48px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin: 0 0 30px 0;
+    }
+
+    .description-wrapper {
+      position: relative;
+      height: 550px;
+
+      .btn-toolbar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .testing {
+    h2 {
+      margin-top: 0;
+    }
+    img {
+      max-height: 600px;
+      max-width: 1000px;
+    }
+  }
+
+  .implementation {
+    background-color: #eee;
+    padding: 60px 0;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .phone-wrapper {
+      position: relative;
+      height: 731px;
+      width: 417px;
+      margin: 30px auto 0 auto;
+
+      .phone {
+        height: 731px;
+        position: absolute;
+        right: 0;
+      }
+      .app {
+        border: 0;
+        position: absolute;
+        right: 44px;
+        top: 59px;
+        height: 584px;
+        width: 330px;
+      }
+    }
+  }
+
+  .conclusion {
+    .btn {
+      margin-top: 30px;
     }
   }
 }
