@@ -4,7 +4,7 @@ CaseStudyController = Ember.Controller.extend
 
   slides: [
     title: '01 - Enter Bill Price'
-    description: '<p>This is the first screen when opening the app. It asks for the price of the bill. The keyboard is already open. It goes to the next screen on submit.</p>'
+    description: '<p>This is the first screen when opening the app. It asks to enter the price of the bill. The keyboard is already open. It navigates to the next screen on submit.</p>'
     image: 'unnamed-55.png'
   ,
     title: '02 - Choose Tip'
@@ -12,19 +12,19 @@ CaseStudyController = Ember.Controller.extend
     image: 'unnamed-56.png'
   ,
     title: '03 - Choose Tip (assistant)'
-    description: '<p>The assistant is a 3 step process which walks though the user. By asking multiple question, it is able to guess the tip that best suits the situation. From the research, tip depended mostly on setting and service. Next to each option, an estimate helps the user make decisions and learn over time. Note: icons used are placeholders.</p>'
+    description: '<p>The assistant is a three step process which walks though the user. By asking multiple question, it is able to guess the tip that best suits the situation. From the research, the tip depended mostly on setting and service. Next to each option, an estimate helps the user make decisions and learn over time. Note: icons used are placeholders.</p>'
     image: 'unnamed-63.gif'
   ,
     title: '04 - Round Total'
-    description: '<p>From the competitive analysis I noted that a lot of apps allowed to round the total. It is actually very useful when paying with cash.</p>'
+    description: '<p>From the competitive analysis, I noted that a lot of apps allowed to round the total. It is actually very useful when paying with cash.</p>'
     image: 'unnamed-57.png'
   ,
     title: '05 - Summary'
-    description: '<p>After only three simple steps, the user is shown the grand total and the tip. The format (tip first, grand total later) follows the order on the check.</p><p>If not satisfied, the user can scroll up and tap on any previous step to change its choices.</p><p>One reason tipping can be uncomfortable is that a lot of people depend on it to live. After the summary, an interesting fact tries to bring back the focus on the receiver of the tip. It makes the act of tipping more humane.</p><p>From there, the user has the choice to leave or split the bill between multiple participants (second goal). But instead of switching contexts, the user stays on the same page (see next).</p>'
+    description: '<p>After only three simple steps, the user is shown the grand total and the tip. The format (tip first and then grand total) follows the order on the check.</p><p>If not satisfied, the user can scroll up and tap on any previous step to change its choices.</p><p>One reason tipping can be uncomfortable is that a lot of people depend on it to live. After the summary, an interesting fact tries to bring back the focus on the receiver of the tip. It makes the act of tipping more humane.</p><p>From there, the user has the choice to leave or split the bill between multiple participants (second goal). But instead of switching contexts, the user stays on the same page (see next).</p>'
     image: 'unnamed-58.png'
   ,
     title: '06 - Number of Participants'
-    description: '<p>To split the bill, users first need to enter the number of paying participants. For more than five participants, the user can press "+" and a popup shows up.</p><p>Limiting to five participants reduces the number of options and in 90% of the cases groups are less than six people. Six is also a "magic" number in the service industry as the tip is generally automatically included in the bill. Thus, this app becomes less relevant.</p>'
+    description: '<p>To split the bill, the user first needs to enter the number of paying participants. For more than five participants, the user can press "+" and a popup shows up.</p><p>Limiting to five participants reduces the number of options and in 90% of the cases groups are less than six people. Six is also a "magic" number in the service industry as the tip is generally automatically included in the bill. Thus, this app becomes less relevant.</p>'
     image: 'unnamed-59.png'
   ,
     title: '07 - Splitting Strategy'
@@ -32,7 +32,7 @@ CaseStudyController = Ember.Controller.extend
     image: 'unnamed-60.png'
   ,
     title: '08 - Splitting Strategy (custom)'
-    description: '<p>For each participant, the user will be asked to enter what they consumed. Generally the tap lists individual items rather than sub totals for each person. Those screens allow to enter each of those. Participants are differentiated by color (later icons or emoji’s). It’s such an ephemeral use case, I didn’t want to force the user to enter names. It would defy its purpose.</p>'
+    description: '<p>For each participant, the user will be asked to enter what they consumed. Generally the tap lists individual items rather than sub totals for each person. Those screens allow to enter each of those.</p><p>Participants are differentiated by color (later icons or emoji’s). It’s such an ephemeral use case, I didn’t want to force the user to enter names. It would defy its purpose.</p>'
     image: 'unnamed-68.gif'
   ,
     title: '09 - Share Summary'
@@ -40,7 +40,7 @@ CaseStudyController = Ember.Controller.extend
     image: 'unnamed-61.png'
   ,
     title: '10 - History'
-    description: '<p>The history lists the previous tip calculations. The user can tap on an item to inspect it (he is brought back to the summary screen). It is quite useful for quickly tracking expenses.</p><p>The "+" button starts a new tip calculation. Preferences are accessible through the hamburger menu.</p><p>Preferences include currencies, defaults, language, and more.</p>'
+    description: '<p>The history lists the previous tip calculations. The user can tap on an item to inspect it (he is brought back to the summary screen). It is quite useful to quickly track expenses.</p><p>The "+" button starts a new tip calculation. Preferences are accessible through the hamburger menu.</p><p>Preferences include currencies, defaults, language, and more.</p>'
     image: 'unnamed-67.png'
   ]
 
