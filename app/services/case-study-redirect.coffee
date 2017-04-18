@@ -1,6 +1,6 @@
 `import Ember from "ember";`
 
 CaseStudyRedirectRoute = Ember.Service.extend
-  wasRedirected: false
+  wasRedirected: true
 
 `export default CaseStudyRedirectRoute`
