@@ -1,0 +1,152 @@
+#index {
+  margin-bottom: 200px;
+
+  .splash {
+    position: relative;
+
+    .background {
+      width: 100%;
+    }
+
+    .name {
+      position: absolute;
+      left: 29%;
+      top: 12%;
+    }
+  }
+
+  .intro {
+    margin: 50px 0 0 0;
+    font-size: 28px;
+    font-family: "PT Sans Narrow";
+  }
+
+  .values {
+    margin: 200px 0 200px;
+  }
+
+  .navigation-links {
+    list-style-type: none;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+
+      }
+    }
+  }
+
+  .project-meta {
+    font-family: "PT Sans Narrow";
+    margin-bottom: 5px;
+
+    .bullet {
+      padding: 0 12px;
+
+      &:before {
+        content: '\2022';
+        position: relative;
+        font-size: 8px;
+        bottom: 3px;
+
+      }
+    }
+  }
+
+  .main-project {
+    &.cogniac {
+      background-color: #F2F7FC;
+      padding: 50px 0;
+
+      .pipeline {
+        width: 100%;
+        margin: 50px 0;
+      }
+    }
+
+    &.adminca {
+      background-color: #0F3B68;
+      color: transparentize(white, 0.15);
+      background: url($images-path + "/adminca-computer.jpg");
+      background-size: 100% auto;
+      background-position: center 80%;
+      overflow: hidden;
+
+      .read-more-link {
+        color: transparentize(white, 0.15);
+      }
+
+      .column {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 1;
+        height: 700px;
+
+        &:after {
+          position: absolute;
+          height: 100%;
+          background-color: #0F3B68;
+          width: 1000px;
+          content: '';
+          top: 0;
+          left: -20px;
+          z-index: -1;
+        }
+      }
+    }
+
+    &.bittitan {
+      background-color: #BCD0E4;
+      padding: 50px 0;
+
+      .process {
+        position: relative;
+        height: 600px;
+
+        img {
+          position: absolute;
+          right: -250px;
+          bottom: -50px;
+          width: 850px;
+        }
+      }
+    }
+
+    .read-more-link {
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow";
+      color: $text-color;
+      margin-top: 15px;
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  .other-projects {
+    padding: 50px 0;
+
+    .section-title {
+      margin-bottom: 70px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+
+      h3 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .project-meta {
+      .bullet {
+        padding: 0 8px;
+      }
+    }
+  }
+}

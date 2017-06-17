@@ -5,7 +5,13 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-cli-bootstrap-sassy': {
       'js': false
-    }
+    },
+
+    googleFonts: [
+      'PT+Sans:400,700',
+      'PT+Serif:400,700',
+      'PT+Sans+Narrow'
+    ],
   });
 
   // Use `app.import` to add additional libraries to the generated

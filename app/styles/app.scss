@@ -1,7 +1,21 @@
+$font-size-base: 16px;
+$font-family-serif: 'PT Serif', serif;
+$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: bold;
+
+$text-color: #011E3B;
+$link-color: #326598;
+
+$grid-gutter-width: 40px;
+$container-large-desktop: (1000px + $grid-gutter-width);
+
+$images-path: "images";
+$fonts-path: "fonts";
+
 @import "bootstrap";
 
-#index {
-  .splash {
-    width: 100%;
-  }
-}
+@import "base";
+
+@import "pages/index";
