@@ -1,0 +1,17 @@
+.image-slider {
+  .jx-control, .jx-controller {
+    background-color: $text-color;
+  }
+
+  .jx-arrow.jx-left {
+    border-color: transparent $text-color transparent transparent;
+  }
+
+  .jx-arrow.jx-right {
+    border-color: transparent transparent transparent $text-color;
+  }
+
+  .jx-knightlab {
+    visibility: hidden;
+  }
+}

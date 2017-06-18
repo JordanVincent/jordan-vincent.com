@@ -1,0 +1,14 @@
+<div id="project">
+  <div class="project-cover">
+    <div class="article-container">
+      <h1>{{model.name}} {{link-to 'Back' 'index' class="back-link"}}</h1>
+      <div>{{model.subtitle}}</div>
+    </div>
+  </div>
+
+  <section class="main-section">
+    <article class="article-container">
+      {{component (concat 'project-articles/' model.slug) class="project-article"}}
+    </article>
+  </section>
+</div>

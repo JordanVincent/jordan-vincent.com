@@ -1,0 +1,138 @@
+{{!-- <a href="http://startupviz.com/" target="_blank" class="project-link">Live Demo</a> --}}
+
+<p class="intro">StartupViz is an interactive visualization of the US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general trends in specific sectors or regions to funding round details for a particular startup.</p>
+
+<img src="/assets/images/projects/startupviz-website.jpg" class="img-responsive raised" alt="StartupViz website"/>
+
+<div class="section-title">
+  <h2>Goals</h2>
+</div>
+
+<p>My team and I developed an interactive prototype as part of a Data Visualization class (HCDE 511) at the University of Washington. Very interested in entrepreneurship, we wanted to better understand the startup landscape. We also figured out that such a tool could be valuable to anyone working in startups. We built StartupViz to:</p>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Explore Trends</h3>
+    <p>Show overall trends and general information on startups (e.g. which cities have the highest number of startups, which market has received the most funding, which markets are growing and which are shrinking, how cities compare in terms of funding rounds, etc.).</p>
+  </div>
+  <div class="col-sm-6">
+    <h3>Help in Decision Making</h3>
+    <p>Show detailed information for those looking to become a part of a startup (e.g. which markets are dominant in which cities, the startup growth rate in a particular city, etc.), and information on investors for those who are a part of a startup and are looking for funding (e.g. which startups and markets investors have funded, during which round they contributed, etc.).</p>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2>The Data Set</h2>
+  <p>Removing noise</p>
+</div>
+
+<div class="columns">
+  <h3 class="no-margin-top">CrunchBase</h3>
+  <p>The best data set we could find was CrunchBase. CrunchBase allows users to look up any startup or any person related to a startup. It also lists all the events (e.g. funding rounds) that are relevant for specific startups. In total, it contains more than 650k profiles about companies, investors, people, acquisitions, and more. </p>
+
+  <h3>Data Cleaning</h3>
+  <p>CrunchBase’s information is provided and maintained by its users. While it contains a lot of detailed information about current tech startups in the US, a large amount of data is missing. To solve this issue, we removed all records before 2004 and kept only US companies. We removed more than half of the companies, resulting in 18,000 records. </p>
+  <p>We found that though the company market was a great categorical dimension, it had more than 900 distinct values. We grouped them into 15 meta-markets that we later called sectors.</p>
+  <p>We also had to clean up funding rounds. Each funding round could be categorized by type, such as "Seed" or "Series B"; but this sorting was not as sequential as we originally believed it to be. To solve this issue, we assigned a "funding round number" to the funding rounds of each company. This allowed us to group together all the first funding rounds, second funding rounds, and so on, and show the breakdown per funding type.</p>
+</div>
+
+<div class="section-title">
+  <h2>Iterative Prototyping</h2>
+  <p>Sketch, Test, Learn, Repeat</p>
+</div>
+
+<p class="centered">Following the User-Centered Design process, we created multiple prototypes that we tested. After each round of user testing, we improved the prototype.</p>
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src="/assets/images/projects/startupviz-sketch.jpg" class="img-responsive" alt="StartupViz sketching"/>
+  </div>
+  <div class="col-sm-4">
+    <h3>Early sketches</h3>
+    <p>We sketched different paper prototype versions to accomplish our goals, keeping in mind the data limitations. Given the data, we couldn’t represent everything, and we had to adapt the visualizations.</p>
+    <p>For instance, we only had one principal quantitative value: the funding amounts. However, we had very good information about companies’ markets and regions.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src="/assets/images/projects/startupviz-testing.jpg" class="img-responsive" alt="StartupViz user testing"/>
+  </div>
+  <div class="col-sm-4">
+    <h3>User Testing</h3>
+    <p>After sketching a few ideas, we wanted to find out if users preferred a particular layout before we started the process of creating a medium fidelity prototype. We asked five participants interested in startups to tell us what they liked about each layout. We also performed a card sorting activity to learn what users were most interested in.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+    <img src="/assets/images/projects/startupviz-prototype.jpg" class="img-responsive" alt="StartupViz medium fidelity prototype"/>
+  </div>
+  <div class="col-sm-4">
+    <h3>Medium Fidelity Prototype</h3>
+    <p>After a few iterations, we created a click-through prototype. Using paper prototypes, we were limited in term of interactivity and the data presented was not relevant. It made very hard to get real feedback the information presented.</p>
+    <p>We kept the original layout but we worked on individual graphs, selecting and presenting the information that was the most important (based on the card sort from user testing).</p>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2>Final Visualization</h2>
+</div>
+
+<p>We created the final visualization using <a href="http://www.tableau.com/" target="_blank">Tableau</a>. Tableau is a really powerful tool for creating interactive visualizations quickly. However, visualizations types are quite limited. If we had more time we would have chosen D3. Feel free to play with it on our website: <a href="http://startupviz.com/" target="_blank">StartupViz.com</a>. Here are a few important features:</p>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-tutorial.jpg" class="img-responsive raised" alt="StartupViz tutorial"/>
+    <h3>Tutorial</h3>
+    <p>Built on top of Tableau, a tutorial guides new users through two use cases: "What's in my sector", and "I'm looking for funding".</p>
+  </div>
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-map.jpg" class="img-responsive raised" alt="StartupViz map"/>
+    <h3>Overview</h3>
+    <p>The map shows an overview of the startup landscape. For each city is shown the amount of funding as well as the dominating sector.</p>
+  </div>
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-filter.jpg" class="img-responsive raised" alt="StartupViz filters"/>
+    <h3>Filters</h3>
+    <p>For in depth analysis, users can filter by a specific region, sector, or even search for a company by its name.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-trends.jpg" class="img-responsive raised" alt="StartupViz trends"/>
+    <h3>Trends</h3>
+    <p>Time series show how funding evolves, what sectors are trending, or in decline. It also allows to compare sectors.</p>
+  </div>
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-time.jpg" class="img-responsive raised" alt="StartupViz time"/>
+    <h3>Funding Time</h3>
+    <p>Getting funding is a key activity to any entrepreneur. Box plots indicate for each round the time it takes to get funded at each stage.</p>
+  </div>
+  <div class="col-sm-4">
+    <img src="/assets/images/projects/startupviz-details.jpg" class="img-responsive raised" alt="StartupViz details on demand"/>
+    <h3>Details on-demand</h3>
+    <p>Tooltips present additional information on any sector, region, or company. Users can open the CrunchBase article of any company or investor they are interested in!</p>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2>Reactions</h2>
+  <p>A useful tool for entrepreneurs</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="/assets/images/projects/startupviz-presentation.png" class="img-responsive no-margin-top" alt="StartupViz presentation"/>
+  </div>
+  <div class="col-sm-6">
+    <p>Although, StartupViz is just a class project, we wanted to make it available to everyone. It motivated us to create a dedicated website for StartupViz.</p>
+    <p>The Startup Hall at the University of Washington even contacted us to present our work in front of an audience composed of entrepreneurs. It went very well, and we even have been featured in the HCDE's annual publication <a href="http://www.hcde.washington.edu/designing-up" target="_blank">Designing Up 2015</a>.</p>
+    <p>The feedback we received from entrepreneurs have been very positive:</p>
+    <q>Normally I have to google competitors or look through all individual entries in CrunchBase to find startups that are similar to ours. Once we even bought a report that contained similar information for around $4000. Seeing how much funding these companies got in their investment rounds can help us to ask for the right amount from our investors. I would definitely use this tool and pay for it! Probably not $4000, but I would pay for it.</q>
+    <p class="quote-author">&ndash; Greg Robinson, CEO at Wovn Energy</p>
+  </div>
+</div>
+
+<p class="text-muted">Team members: Jordan Vincent, Lukas Eiermann, Alison Chambliss, and Aripta Kulkarni.</p>

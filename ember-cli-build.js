@@ -6,6 +6,10 @@ module.exports = function(defaults) {
     'ember-cli-bootstrap-sassy': {
       'js': false
     },
+    
+    fingerprint: {
+      extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'map', 'pdf']
+    },
 
     googleFonts: [
       'PT+Sans:400,700',

@@ -1,6 +1,24 @@
 #index {
   margin-bottom: 200px;
 
+  .section-title {
+    font-size: 30px;
+    font-family: "PT Sans Narrow";
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
   .splash {
     position: relative;
 
@@ -137,6 +155,9 @@
 
     .project {
       margin-bottom: 40px;
+      cursor: pointer;
+      color: $text-color;
+      display: block;
 
       h3 {
         margin-bottom: 5px;

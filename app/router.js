@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('project', { path: 'projects/:project_slug', resetNamespace: true });
 });
 
 export default Router;
