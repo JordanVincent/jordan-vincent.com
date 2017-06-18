@@ -1,23 +1,15 @@
 <div id="project">
-
-  <div class="project-cover" style={{model.backgroundColorStyle}} >
-
-    <div class="top-nav hidden-xs">
-      <div class="container">
-        {{nav-inline class=(unless model.isColorDark 'dark')}}
-      </div>
+  <div class="project-cover">
+    <div class="article-container">
+      <h1>{{model.name}} {{link-to 'Back' 'index' class="back-link"}}</h1>
+      <div>{{model.subtitle}}</div>
     </div>
-
-    <img class="project-logo" src={{model.logo}} />
-    <h1 style={{titleColorStyle}}>{{model.name}}</h1>
-
-    {{ragged-edge}}
   </div>
 
   <section class="main-section">
-    <article class="container">
-      {{component articleComponent class="project-article"}}
+    <article class="article-container">
+      {{component (concat 'project-articles/' model.slug) class="project-article"}}
+      {{link-to 'Back' 'index' class="back-link-bottom"}}
     </article>
   </section>
-
 </div>

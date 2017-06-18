@@ -1,26 +1,24 @@
-@import "variables";
-@import "mixins";
+$font-size-base: 16px;
+$font-family-serif: 'PT Serif', serif;
+$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: bold;
+
+$text-color: #011E3B;
+$link-color: #326598;
+
+$grid-gutter-width: 40px;
+$container-large-desktop: (1000px + $grid-gutter-width);
+
+$images-path: "images";
+$fonts-path: "fonts";
 
 @import "bootstrap";
 
-@import "font-faces";
 @import "base";
 
-@import "components/nav-inline";
-@import "components/nav-responsive";
-@import "components/hero-image";
-@import "components/projects-list";
-@import "components/project-logo";
-@import "components/project-item";
-@import "components/project-article";
-@import "components/article";
-@import "components/ragged-edge";
 @import "components/image-slider";
 
-@import "pages/inner";
 @import "pages/index";
-@import "pages/case-study";
-@import "pages/influences";
-@import "pages/projects/index";
 @import "pages/project";
-@import "pages/contact";

@@ -1,24 +1,116 @@
 <div id="index">
+  <div class="splash">
+    <img class="name" src="/assets/images/name.svg"/>
+    <img class="background" src="/assets/images/splash.jpg"/>
+  </div>
 
-  {{#hero-image title="Hi, I'm Jordan!" image="assets/images/home-bg.jpg" large=true}}
-    <img class="me" src="assets/images/me.png" alt="Jordan picture"/>
-    <ul class="tagline">
-      <li>UX Designer</li><br>
-      <li>Software Developer</li><br>
-      <li>Aspiring Entrepreneur</li>
-    </ul>
-  {{/hero-image}}
-
-  <section class="main-section">
+  <div class="intro">
     <div class="container">
-
-      <article>
-        <p class="intro">I have a strong desire to solve hard but meaningful problems. I developed skills in Development and Design&mdash;not as an end&mdash;but merely as tools to help me achieve my goals. I worked at many startups companies, and started a few ones.</p>
-
-        <p class="hidden-xs">Do you want to learn more about my design process? Take a look at the {{link-to 'Dropbox Design Excercise' 'case-study'}}.</p>
-      </article>
-
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+          <p>I am a Designer and an Engineer living in the Bay Area. I work at Cogniac to bring computer vision to the world.</p>
+          <ul class="navigation-links">
+            <li><a target="_blank" href="mailto:jordan.vincent.x@gmail.com">Contact</a></li>
+            <li><a target="_blank" href="/assets/documents/jordan-vincent.pdf">Resume</a></li>
+            <li><a target="_blank" href="https://medium.com/@jordanvincent">Blog</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 
-  </section>
+  <div class="values">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 section-title">Values</div>
+        <div class="col-sm-3">
+          <h3>Mission Driven</h3>
+          <div>I want my life to have an impact. All the things I do fit in the big picture.</div>
+        </div>
+        <div class="col-sm-3">
+          <h3>Hyper-focussed</h3>
+          <div>I invest 100% of my energy on one-and-only-one thing at a time.</div>
+        </div>
+        <div class="col-sm-3">
+          <h3>Learning by doing</h3>
+          <div>I will do things I have never done before if I can learn in the process.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-project cogniac">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 section-title">Selected Work</div>
+      </div>
+      <div>
+        <img class="pipeline" src="/assets/images/cogniac-pipeline.png">
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="project-meta">2017<span class="bullet"></span>Sr. UX Engineer at Cogniac</div>
+          <h2>Designing a mental model for Computer Vision applications</h2>
+        </div>
+        <div class="col-sm-3">
+          <p>I am responsible for the design of all Cogniac's interfaces: the web and iOS apps, and the marketing website. My work consists in creating solutions to help data scientists build better computer vision</p>
+        </div>
+        <div class="col-sm-3">
+          <p> models. I use data visualization, metaphors, and active feedback as a way to make computer vision more accessible.</p>
+        </div>
+        <div class="col-sm-3">
+          <p>I like sharing my insights on Medium. In my last article, I show how I use graph-based interfaces to create complex computer vision pipelines.</p>
+          <a class="read-more-link" target="_blank" href="https://medium.com/@jordanvincent/designing-a-mental-model-for-computer-vision-applications-2f310527ad87">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-project adminca">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-9 col-sm-3 column">
+          <div class="project-meta">2016<span class="bullet"></span>Co-founder of Adminca</div>
+          <h2>Creating an admin panel people love to use</h2>
+          <p>I co-founded Adminca to make it easier to manage backend data. I designed, built and launched an application that allows users to quickly create intuitive and powerful admin panels.</p>
+          <p>Panels can be setup and customized within seconds without writing any code. Over 500 sign-ups from startups and agencies within the first two months. 200 mobile agencies are using Adminca every week to manage data with their teams.</p>
+          {{link-to 'Read More' 'project' 'adminca' class="read-more-link"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-project bittitan">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 column">
+          <div class="project-meta">2015<span class="bullet"></span>UX Designer at BitTitan</div>
+          <h2>Advocating for Design in building better products</h2>
+          <p>As one of the first designers, I redesigned a calling software for Sales agents. I used the User-Centered Desing process to teach by example how to create products people love to use.</p>
+          <p>I conducted an extensive user research study, led design workshops, and created personas. Management was impressed by the results and decided to hire two more designers.</p>
+          {{link-to 'Read More' 'project' 'bittitan-ux' class="read-more-link"}}
+        </div>
+        <div class="col-sm-offset-6 col-sm-3 process">
+          <img src="/assets/images/bittitan-process.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="other-projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 section-title">Other Projects</div>
+      </div>
+      {{#each projects as |project|}}
+        {{#link-to "project" project.slug class="row project"}}
+          <div class="col-sm-3">
+            <h3>{{project.name}}</h3>
+            <div class="project-meta">{{{project.date}}}<span class="bullet"></span>{{project.position}}</div>
+          </div>
+          <div class="col-sm-6">{{project.summary}} <a href="" class="read-more-project">Read More</a></div>
+        {{/link-to}}
+      {{/each}}
+    </div>
+  </div>
 </div>

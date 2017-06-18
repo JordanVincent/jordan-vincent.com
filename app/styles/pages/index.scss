@@ -1,89 +1,187 @@
 #index {
-  .hero-image {
-    header h1 {
-      text-align: center;
-      margin: 0;
-      z-index: 1;
-      position: relative;
-    }
+  margin-bottom: 200px;
 
-    .me, .tagline {
-      position: absolute;
-      bottom: 0;
-    }
-
-    .me {
-      max-height: 350px;
-      margin-left: -60px;
-    }
-
-    .tagline {
-      padding: 0;
-      margin-bottom: 70px;
-
-      li {
-        background: #212D39;
-        color: white;
-        font-size: 2em;
-        font-family: AvenirMedium;
-        font-style: oblique;
-        margin-bottom: 2px;
-        line-height: 1;
-        padding: 0 5px;
-        display: inline-block;
-      }
-    }
+  .section-title {
+    font-size: 30px;
+    font-family: "PT Sans Narrow";
+    text-transform: uppercase;
+    margin-bottom: 50px;
   }
 
-  .text {
-    width: 70%;
-
-    p {
-      margin-bottom: 20px;
-    }
+  h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
-  article {
+  h3 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .splash {
     position: relative;
 
-    aside {
-      width: 30%;
-      right: 0;
-      position: absolute;
-      padding-left: 30px;
-
-      .inner {
-        font-family: MyriadPro;
-        font-weight: bold;
-        font-size: 1.4em;
-        border: 5px solid #333;
-        border-width: 5px 0;
-        line-height: 1;
-        padding: 8px 0;
-      }
-    }
-  }
-}
-
-@media (max-width : $screen-xs-max) {
-  #index {
-
-    .text {
+    .background {
       width: 100%;
     }
 
-    article {
-      aside {
-        width: 100%;
-        right: 0;
-        position: relative;
-        padding-left: 0;
-        margin: 30px 0;
+    .name {
+      position: absolute;
+      left: 29%;
+      top: 12%;
+    }
+  }
 
-        .inner {
-          border-width: 0 0 0 5px;
-          padding: 0 0 0 20px;
+  .intro {
+    margin: 50px 0 0 0;
+    font-size: 28px;
+    font-family: "PT Sans Narrow";
+  }
+
+  .values {
+    margin: 200px 0 200px;
+  }
+
+  .navigation-links {
+    list-style-type: none;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+
+      }
+    }
+  }
+
+  .project-meta {
+    font-family: "PT Sans Narrow";
+    margin-bottom: 5px;
+
+    .bullet {
+      padding: 0 12px;
+
+      &:before {
+        content: '\2022';
+        position: relative;
+        font-size: 8px;
+        bottom: 3px;
+
+      }
+    }
+  }
+
+  .main-project {
+    &.cogniac {
+      background-color: #F2F7FC;
+      padding: 50px 0;
+
+      .pipeline {
+        width: 100%;
+        margin: 50px 0;
+      }
+    }
+
+    &.adminca {
+      background-color: #0F3B68;
+      color: transparentize(white, 0.15);
+      background: url($images-path + "/adminca-computer.jpg");
+      background-size: 100% auto;
+      background-position: center 80%;
+      overflow: hidden;
+
+      .read-more-link {
+        color: transparentize(white, 0.15);
+      }
+
+      .column {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 1;
+        height: 700px;
+
+        &:after {
+          position: absolute;
+          height: 100%;
+          background-color: #0F3B68;
+          width: 1000px;
+          content: '';
+          top: 0;
+          left: -20px;
+          z-index: -1;
         }
+      }
+    }
+
+    &.bittitan {
+      background-color: #BCD0E4;
+      padding: 50px 0;
+
+      .process {
+        position: relative;
+        height: 600px;
+
+        img {
+          position: absolute;
+          right: -250px;
+          bottom: -50px;
+          width: 850px;
+        }
+      }
+    }
+
+    .read-more-link {
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow";
+      color: $text-color;
+      margin-top: 15px;
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  .other-projects {
+    padding: 50px 0;
+
+    .section-title {
+      margin-bottom: 70px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+      cursor: pointer;
+      color: $text-color;
+      display: block;
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      .read-more-project {
+        display: none;
+        text-transform: uppercase;
+        font-family: "PT Sans Narrow";
+        position: absolute;
+        left: 20px;
+        bottom: -25px;
+      }
+
+      &:hover {
+        .read-more-project {
+          display: inline;
+        }
+      }
+    }
+
+    .project-meta {
+      .bullet {
+        padding: 0 8px;
       }
     }
   }

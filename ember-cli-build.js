@@ -1,17 +1,21 @@
-/* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+/* eslint-env node */
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    SRI: {
-      enabled: false
+    'ember-cli-bootstrap-sassy': {
+      'js': false
     },
+    
     fingerprint: {
       extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'map', 'pdf']
     },
-    'ember-cli-bootstrap-sassy': {
-      js: ['affix','collapse']
-    }
+
+    googleFonts: [
+      'PT+Sans:400,700',
+      'PT+Serif:400,700',
+      'PT+Sans+Narrow'
+    ],
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -26,10 +30,6 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
-
-  app.import('bower_components/tinycolor/tinycolor.js');
-  app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
-  app.import('bower_components/simplr-smoothscroll/lib/jquery.simplr.smoothscroll.js');
 
   return app.toTree();
 };

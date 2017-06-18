@@ -1,14 +1,14 @@
 .image-slider {
   .jx-control, .jx-controller {
-    background-color: $purple;
+    background-color: $text-color;
   }
 
   .jx-arrow.jx-left {
-    border-color: transparent $purple transparent transparent;
+    border-color: transparent $text-color transparent transparent;
   }
 
   .jx-arrow.jx-right {
-    border-color: transparent transparent transparent $purple;
+    border-color: transparent transparent transparent $text-color;
   }
 
   .jx-knightlab {
