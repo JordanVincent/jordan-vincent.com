@@ -162,6 +162,21 @@
       h3 {
         margin-bottom: 5px;
       }
+
+      .read-more-project {
+        display: none;
+        text-transform: uppercase;
+        font-family: "PT Sans Narrow";
+        position: absolute;
+        left: 20px;
+        bottom: -25px;
+      }
+
+      &:hover {
+        .read-more-project {
+          display: inline;
+        }
+      }
     }
 
     .project-meta {

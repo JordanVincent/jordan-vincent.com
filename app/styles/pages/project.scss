@@ -21,6 +21,7 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: normal;
+      font-family: "PT Sans Narrow";
     }
   }
 
@@ -162,6 +163,22 @@
         margin-top: 20px;
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .back-link-bottom {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow";
+    display: block;
+    margin: 50px 0;
+    border: 1px solid $gray-lighter;
+    padding: 10px;
+    border-width: 1px 0;
+
+    &:hover {
+      border-width: 1px 0;
+      text-decoration: underline;
     }
   }
 }
