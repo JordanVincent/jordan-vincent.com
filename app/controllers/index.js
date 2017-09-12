@@ -10,5 +10,17 @@ export default Ember.Controller.extend({
       projects.findBy('slug', 'city-domination'),
       projects.findBy('slug', 'smart-bricks')
     ];
-  }).readOnly()
+  }).readOnly(),
+
+  // TODO pull images from the Instagram API
+  photos: [
+    { src: 'A.jpg', title: 'Dusy Basin' },
+    { src: 'B.jpg', title: 'Darwin Canyon' },
+    { src: 'C.jpg', title: 'Le Conte Canyon' },
+    { src: 'D.jpg', title: 'Lamarck Col' },
+    { src: 'E.jpg', title: 'Grand Canyon' },
+    { src: 'F.jpg', title: 'Sawtooth Pass' },
+    { src: 'G.jpg', title: 'Colchuck Peak' },
+    { src: 'H.jpg', title: 'Vesper Peak' }
+  ]
 });

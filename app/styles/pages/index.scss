@@ -1,6 +1,5 @@
 #index {
-  margin-bottom: 200px;
-
+  
   .section-title {
     font-size: 30px;
     font-family: "PT Sans Narrow";
@@ -184,6 +183,24 @@
       .bullet {
         padding: 0 8px;
       }
+    }
+  }
+
+  .adventures {
+    padding: 50px 0;
+    background-color: #FBF9F9;
+
+    .section-title {
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      margin-bottom: 50px;
+    }
+
+    .instagram-photo {
+      width: 100%;
+      margin-bottom: 40px;
     }
   }
 }
