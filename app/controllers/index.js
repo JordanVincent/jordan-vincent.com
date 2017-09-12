@@ -14,13 +14,13 @@ export default Ember.Controller.extend({
 
   // TODO pull images from the Instagram API
   photos: [
-    { src: 'A.jpg', title: 'Dusy Basin' },
-    { src: 'B.jpg', title: 'Darwin Canyon' },
-    { src: 'C.jpg', title: 'Le Conte Canyon' },
-    { src: 'D.jpg', title: 'Lamarck Col' },
-    { src: 'E.jpg', title: 'Grand Canyon' },
-    { src: 'F.jpg', title: 'Sawtooth Pass' },
-    { src: 'G.jpg', title: 'Colchuck Peak' },
-    { src: 'H.jpg', title: 'Vesper Peak' }
+    { src: '/assets/images/instagram/A.jpg', title: 'Dusy Basin' },
+    { src: '/assets/images/instagram/B.jpg', title: 'Darwin Canyon' },
+    { src: '/assets/images/instagram/C.jpg', title: 'Le Conte Canyon' },
+    { src: '/assets/images/instagram/D.jpg', title: 'Lamarck Col' },
+    { src: '/assets/images/instagram/E.jpg', title: 'Grand Canyon' },
+    { src: '/assets/images/instagram/F.jpg', title: 'Sawtooth Pass' },
+    { src: '/assets/images/instagram/G.jpg', title: 'Colchuck Peak' },
+    { src: '/assets/images/instagram/H.jpg', title: 'Vesper Peak' }
   ]
 });
