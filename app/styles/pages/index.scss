@@ -1,5 +1,5 @@
 #index {
-  
+
   .section-title {
     font-size: 30px;
     font-family: "PT Sans Narrow";
@@ -78,11 +78,19 @@
   .main-project {
     &.cogniac {
       background-color: #F2F7FC;
+      overflow: hidden;
       padding: 50px 0;
 
-      .pipeline {
+      .dashboard {
+        position: relative;
+        height: 500px;
         width: 100%;
-        margin: 50px 0;
+
+        img {
+          position: absolute;
+          height: 100%;
+          box-shadow: 0 4px 20px rgba(49, 65, 92, 0.2), 0 1px 2px rgba(49, 65, 92, 0.3);
+        }
       }
     }
 
