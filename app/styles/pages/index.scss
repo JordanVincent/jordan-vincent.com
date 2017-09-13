@@ -76,6 +76,9 @@
   }
 
   .main-project {
+    display: block;
+    color: $text-color;
+
     &.cogniac {
       background-color: #F2F7FC;
       overflow: hidden;
