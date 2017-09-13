@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'jordan-vincent',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'router-scroll',
     historySupportMiddleware: true,
 
     metricsAdapters: [{
