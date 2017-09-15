@@ -1,4 +1,12 @@
 export default [{
+  name: 'Cogniac',
+  subtitle: 'Designing intuitive computer vision interfaces',
+  slug: 'cogniac',
+  date: 'from June 2016',
+  summary: '',
+  about: 'Cogniac is a platform that allows anyone to use computer vision to solve problems. Our clients include enterprises and government agencies. Cogniac is still an early stage startup with a lot to learn and build.',
+  role: 'I am working as a Sr. UX Engineer. I designed and developed Cogniac\'s web app, marketing website and mobile apps (design only).'
+},{
   name: 'Adminca',
   subtitle: 'A successful startup project',
   slug: 'adminca',
