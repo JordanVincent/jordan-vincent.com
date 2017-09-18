@@ -98,11 +98,11 @@ export default [{
   role: 'I created this extension after a friend of mine challenged me that it wouldn\'t be possible!'
 },{
   name: 'Smart Bricks',
-  subtitle: 'LEGO sets for grown ups',
+  subtitle: 'LEGO sets for grown-ups',
   slug: 'smart-bricks',
-  date: '2011 - 2012',
+  date: '2011&ndash;2012',
   position: 'Creator',
-  summary: 'A web store for custom LEGO sets. I partnered with LEGO artists to distribute their creations.',
-  about: 'Smart Bricks is a web store for custom LEGO sets. Smart Bricks first product is a beautiful 2,000 pieces set designed by a LEGO artist.',
-  role: 'I founded Smart Bricks. Designed the booklets, packaged the sets and built the web store.'
+  summary: 'A web store offering custom LEGO sets. I partnered with an artist to distribute his creations.',
+  about: 'Smart Bricks is a web store for custom LEGO sets. Smart Bricks\'s first product is a beautiful 2,000 pieces set designed by a LEGO artist.',
+  role: 'I founded Smart Bricks. I didn\'t created the LEGO model by myself, but I created a 3D model, designed the booklets, packaged the sets, and developed the web store.'
 }];

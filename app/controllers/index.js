@@ -2,13 +2,19 @@ import Ember from 'ember';
 import projects from '../fixtures/projects';
 
 export default Ember.Controller.extend({
-  projects: Ember.computed(function() {
+
+  spotlightProjects: Ember.computed(function() {
     return [
       projects.findBy('slug', 'dino-fit'),
+      projects.findBy('slug', 'smart-bricks')
+    ];
+  }).readOnly(),
+
+  otherProjects: Ember.computed(function() {
+    return [
       projects.findBy('slug', 'sixdoors'),
       projects.findBy('slug', 'veritabs'),
-      projects.findBy('slug', 'city-domination'),
-      projects.findBy('slug', 'smart-bricks')
+      projects.findBy('slug', 'city-domination')
     ];
   }).readOnly(),
 

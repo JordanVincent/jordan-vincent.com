@@ -158,13 +158,13 @@
   }
 
   .other-projects {
-    padding: 50px 0;
+    padding: 70px 0;
 
     .section-title {
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
 
-    .project {
+    .other-project {
       margin-bottom: 40px;
       cursor: pointer;
       color: $text-color;
@@ -193,6 +193,54 @@
     .project-meta {
       .bullet {
         padding: 0 8px;
+      }
+    }
+
+    .spotlight-project {
+      color: $text-color;
+      display: block;
+      margin-bottom: 70px;
+      text-decoration: none;
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      .project-meta {
+        margin-bottom: 15px;
+      }
+
+      & > .inner {
+        border-radius: 4px;
+        padding: 20px;
+        cursor: pointer;
+        min-height: 220px;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: auto 100%;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        transition: 0.2s box-shadow, 0.2s transform;
+      }
+
+      &:hover {
+        & > .inner {
+          box-shadow: 0 3px 16px rgba(0,0,0,0.1);
+          transform: translateY(-1px);
+        }
+      }
+
+      &.dino-fit > .inner {
+        background-color: #B8E3E6;
+        background-image: url($images-path + "/dinofit-pushups.png");
+      }
+
+      &.smart-bricks > .inner {
+        background-color: #8BB9D5;
+        background-image: url($images-path + "/smart-bricks-house.png");
+      }
+
+      .spotlight-project-info {
+        width: 46%;
       }
     }
   }

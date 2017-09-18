@@ -101,8 +101,23 @@
       <div class="row">
         <div class="col-sm-3 section-title">Other Projects</div>
       </div>
-      {{#each projects as |project|}}
-        {{#link-to "project" project.slug class="row project"}}
+
+      <div class="row">
+        {{#each spotlightProjects as |project|}}
+          {{#link-to "project" project.slug class=(concat project.slug " col-sm-6 spotlight-project")}}
+            <div class="inner">
+              <div class="spotlight-project-info">
+                <h3>{{project.name}}</h3>
+                <div class="project-meta">{{{project.date}}}<span class="bullet"></span>{{project.position}}</div>
+                <div>{{project.summary}}</div>
+              </div>
+            </div>
+          {{/link-to}}
+        {{/each}}
+      </div>
+
+      {{#each otherProjects as |project|}}
+        {{#link-to "project" project.slug class="row other-project"}}
           <div class="col-sm-3">
             <h3>{{project.name}}</h3>
             <div class="project-meta">{{{project.date}}}<span class="bullet"></span>{{project.position}}</div>
@@ -110,6 +125,7 @@
           <div class="col-sm-6">{{project.summary}} <a href="" class="read-more-project">Read More</a></div>
         {{/link-to}}
       {{/each}}
+
     </div>
   </div>
 
