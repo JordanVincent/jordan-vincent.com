@@ -25,8 +25,9 @@
     </article>
   </section>
 
-  <div class="back-link-bottom">
-    {{link-to 'Back' 'index'}}
+  <div class="bottom-links">
+    {{link-to 'Back' 'index'}}<!--
+ -->{{#if model.next}}{{link-to 'Next Project' 'project' model.next}}{{/if}}
   </div>
 
   {{footer-links}}
