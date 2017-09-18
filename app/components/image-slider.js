@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['image-slider', 'img-responsive'],
+  classNames: ['image-slider'],
 
   didInsertElement() {
     this._super(...arguments)

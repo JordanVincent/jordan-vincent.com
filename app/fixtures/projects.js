@@ -60,6 +60,7 @@ export default [{
   slug: 'startup-viz',
   date: 'Sept. to Dec. 2014',
   summary: 'An interactive visualization of the US startup universe. Presented at the University of Washington\'s Startup Hall.',
+  about: 'StartupViz is an interactive visualization of the US startup universe. Using the CrunchBase dataset, StartupViz allows you to make your own discoveries. You can explore everything from general market trends to funding rounds for a particular startup.'
 },{
   name: 'Bridge Disability Ministry',
   slug: 'bridge-disability-ministry',
@@ -68,7 +69,8 @@ export default [{
 },{
   name: 'Visual Communication',
   slug: 'visual-communication',
-  summary: 'An introduction to the visual elements of design, composition, and effective communication.'
+  summary: 'An introduction to the visual elements of design, composition, and effective communication.',
+  about: 'Visual Communication gives an introduction to the visual elements of design, organizational principles of composition, and effective and meaningful communication. It was one of my favorite class at the University of Washington. Here are some of my assignments.'
 },{
   name: 'DinoFit',
   subtitle: 'Exercise while playing',
@@ -82,7 +84,9 @@ export default [{
   name: 'Labello',
   slug: 'labello',
   date: 'Feb. 2015',
-  summary: 'A web app for labelling and analyzing documents. Developed in less than a week!'
+  summary: 'A web app for labelling and analyzing documents. Developed in less than a week!',
+  about: 'Labello is a web app for labelling and analyzing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool to analyze lengthy transcribed interviews.',
+  role: 'I couldn\'t find an easy way to do it, so I developed Labello in just a few nights!'
 },{
   name: 'Veritabs',
   subtitle: 'Vertical tabs for Chrome',

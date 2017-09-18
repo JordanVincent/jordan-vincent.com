@@ -1,27 +1,31 @@
 <div id="project">
   <div class="project-cover">
     <div class="article-container">
+
       <h1>{{model.name}} {{link-to 'Back' 'index' class="back-link"}}</h1>
       <div class="subtitle">{{model.subtitle}}</div>
 
       <div class="row">
         <div class="col-sm-8">
-          <h2>About</h2>
+          <h2 class={{unless model.about 'hidden'}}>About</h2>
           <div class="about-copy">{{model.about}}</div>
         </div>
         <div class="col-sm-4">
-          <h2>My Role</h2>
+          <h2 class={{unless model.role 'hidden'}}>My Role</h2>
           <div class="role-copy">{{model.role}}</div>
         </div>
-
       </div>
+
     </div>
   </div>
 
   <section class="main-section">
     <article class="article-container">
       {{component (concat 'project-articles/' model.slug) class="project-article"}}
-      {{link-to 'Back' 'index' class="back-link-bottom"}}
     </article>
   </section>
+
+  {{link-to 'Back' 'index' class="back-link-bottom"}}
+
+  {{footer-links}}
 </div>
