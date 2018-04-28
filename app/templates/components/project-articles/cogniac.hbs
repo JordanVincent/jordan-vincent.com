@@ -1,10 +1,9 @@
 
-{{!-- <div class="section-title">
-  <h2>Designer / Developer Ambivalance</h2>
-</div> --}}
-
 <div class="centered-column">
-  <img src="/assets/images/projects/cogniac-diagram.svg" class="img-responsive" alt="Cogniac system"/>
+  <figure>
+    <img src="/assets/images/projects/cogniac-diagram.svg" class="img-responsive" alt="Cogniac system"/>
+  </figure>
+
   <p>Cogniac is a small startup &mdash; of only 10 employees &mdash; with a bold vision: be the leading platform for enterprise computer vision. Cogniac's machine learning technology is central to its success. However, machine learning still needs human input. Computer vision can be powerful only if it was trained correctly.</p>
 </div>
 
@@ -17,15 +16,21 @@
   <p>I designed interfaces that allow people to provide feedback to improve the performance of computer vision models. Because computer vision requires hundreds if not thousands of examples, I optimized the feedback interfaces for speed while balancing accuracy. It's now possible to provide up to 60 pieces of feedback per minute.</p>
 </div>
 
-<figure class="browser">
-  <img src="/assets/images/projects/cogniac-feedback2.png" alt="Feedback screen"/>
+<figure>
+  <div class="browser-frame">
+    <img src="/assets/images/projects/cogniac-feedback2.png" alt="Feedback screen"/>
+  </div>
+  <figcaption>A feedback screen dedicated to drawing bounding boxes around objects.</figcaption>
 </figure>
 
 <div class="centered-column">
   <p>Cogniac has around half a dozen application types such as counting or locating objects, text recognition, or classifying images. The challenge was to build specific feedback interfaces while keeping a consistent experience across applications. When entering the feedback mode, users can expect the same controls for submitting feedback, zooming images, and inspecting details. Providing feedback on a new application type is effortless.</p>
 </div>
 
-<img src="/assets/images/projects/cogniac-feedback.png" class="img-responsive" alt="Feedback screens"/>
+<figure>
+  <img src="/assets/images/projects/cogniac-feedback.png" class="img-responsive" alt="Feedback screens"/>
+  <figcaption>A subset of the feedback panel I created. From left to right: drawing bounding boxes, classification, entering text, and  counting objects.</figcaption>
+</figure>
 
 <div class="section-title">
   <h2><span>Application Pipelines</span></h2>
@@ -34,21 +39,29 @@
 <div class="centered-column">
   <p>Computer vision models are limited and real-life applications always require to associate multiple models together. At Cogniac we call it pipelines. To refine detections, images flow from one application to another. For instance, a first application detects animal types, and the following one classifies dog breeds. The biggest challenge was to design intuitive pipelines of applications. Read the following Medium story to learn more about the process:</p>
 
-  <a target="_blank" class="link-block" href="https://medium.com/@jordanvincent/designing-a-mental-model-for-computer-vision-applications-2f310527ad87">
-    <img src="/assets/images/projects/cogniac-medium.png" alt="Medium article"/>
-  </a>
+  <figure>
+    <a target="_blank" class="link-block" href="https://medium.com/@jordanvincent/designing-a-mental-model-for-computer-vision-applications-2f310527ad87">
+      <img src="/assets/images/projects/cogniac-medium.png" alt="Medium article"/>
+    </a>
+  </figure>
 
   <p>Here is a look at a few iterations of the pipeline. The design is still in flux as the technology changes and we learn more about different use cases.</p>
 </div>
 
-<img src="/assets/images/projects/cogniac-pipeline-elements.png" class="img-responsive" alt="Pipeline elovution"/>
+<figure>
+  <img src="/assets/images/projects/cogniac-pipeline-elements.png" class="img-responsive" alt="Pipeline evolution"/>
+  <figcaption>Different iterations of the application pipeline.</figcaption>
+</figure>
 
 <div class="centered-column">
-  <p>The pipeline is a key element of the web interface. It's a great overview of the system: it acts as navigation and status indicator.</p>
+  <p>The pipeline is a key element of the web interface. It acts as both navigation and status indicator. It is present on all pages of the application.</p>
 </div>
 
-<figure class="browser">
-  <img src="/assets/images/projects/cogniac-pipeline.png" alt="Cogniac dashboard"/>
+<figure>
+  <div class="browser-frame">
+    <img src="/assets/images/projects/cogniac-pipeline.png" alt="Cogniac dashboard"/>
+  </div>
+  <figcaption>Page showing the outpout images of an application.</figcaption>
 </figure>
 
 <div class="section-title">
@@ -59,7 +72,9 @@
   <p>Cogniac's mobile app allows people to provide feedback and manage applications on the go. My work consisted in streamlining the navigation to access applications in just a few taps. Applications from the same pipeline can be reached with a swipe.</p>
 </div>
 
-<img src="/assets/images/projects/cogniac-mobile.png" class="img-responsive" alt="Mobile screens"/>
+<figure>
+  <img src="/assets/images/projects/cogniac-mobile.png" class="img-responsive" alt="Mobile screens"/>
+</figure>
 
 <div class="section-title">
   <h2><span>The marketing website</span></h2>
@@ -71,4 +86,6 @@
   <p>Because computer vision is such a new technology, we needed to help visitors understand how they can use it. The homepage features an interactive demo that presents Cogniac's main concepts.</p>
 </div>
 
-<img src="/assets/images/projects/cogniac-website.png" class="img-responsive" alt="Cogniac Website"/>
+<figure>
+  <img src="/assets/images/projects/cogniac-website.png" class="img-responsive" alt="Cogniac Website"/>
+</figure>

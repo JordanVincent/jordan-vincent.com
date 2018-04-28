@@ -1,20 +1,26 @@
 {{!-- <a href="http://bridgemin.org/redesign" target="_blank" class="project-link">Visit Website</a> --}}
 
-<p class="intro">This project was the final assignment for the User-Centered Web Design class (HCDE 537) at the University of Washington. In teams we worked closely with the client to redesign their website.</p>
-
-<p>Our mission consisted of applying the User-Centered Design process to redesign the <a href="http://bridgemin.org/" target="_blank">Bridge Disability Ministry's website</a>, a non-profit organization based in Bellevue, WA. Bridge helps people with disabilities live full and meaningful lives by providing medical equipment, case management services, and events.</p>
+<div class="centered-column">
+  <p><a href="http://bridgemin.org/" target="_blank">Bridge Disability Ministry</a> is a non-profit organization based in Bellevue, WA. Bridge helps people with disabilities live full and meaningful lives by providing medical equipment, case management services, and events. They needed a new website and we thought it was the perfect opportunity to help the community.</p>
+</div>
 
 <div class="section-title">
-  <h2><span>Existing Website</span></h2>
-  <p>Didn't meet users &amp; organizational needs</p>
+  <h2><span>The Existing Website</span></h2>
+  <p>Didn't meet user &amp; organizational needs</p>
 </div>
 
 <div class="row">
   <div class="col-sm-6">
-    <img src="/assets/images/projects/bridge-old.jpg" class="img-responsive no-margin-top raised" alt="Bridge old website"/>
+    <figure class="no-margin-top">
+      <div class="browser-frame">
+        <img src="/assets/images/projects/bridge-old.jpg" class="img-responsive" alt="Bridge old website"/>
+      </div>
+      <figcaption>Bridge's old website.</figcaption>
+    </figure>
   </div>
-  <div class="col-sm-6">
-    <p>After a meeting with the organization's stakeholders and reviewing the existing website, we concluded that the existing website didn't meet the users and organizational needs. The website suffered from an outdated design, an inconsistent navigation, overwhelming content, and it was not mobile-friendly.</p>
+  <div class="col-sm-4">
+    <p>We met with the organization's stakeholders and we reviewed the existing website. We concluded that the existing website didn't meet the user and organizational needs.</p>
+    <p>More specifically, the website suffered from an outdated design, an inconsistent navigation, overwhelming content, and it was not mobile-friendly.</p>
   </div>
 </div>
 
@@ -24,10 +30,12 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <img src="/assets/images/projects/bridge-persona.png" class="img-responsive" alt="Primary persona"/>
+    <figure class="no-margin-top">
+      <img src="/assets/images/projects/bridge-persona.png" class="img-responsive" alt="Primary persona"/>
+    </figure>
   </div>
-  <div class="col-sm-6">
-    <h3>User Research</h3>
+  <div class="col-sm-4">
+    <h3 class="no-margin-top">User Research</h3>
     <p>Our work started with a meeting with the client to understand the organization and their business goals. Then we conducted user research: we analyzed traffic data from the current website using Google Analytics and Crazy Egg, interviewed users, and created surveys. The data we gathered led to the creation of three main personas which was really helpful in summarizing the research into coherent stories.</p>
 
     <h3>User Tasks</h3>
@@ -42,18 +50,20 @@
   <h2><span>Design</span></h2>
 </div>
 
-<div class="centered">
+<div class="centered-column">
   <p>Drawing on the research findings and the new IA, we quickly prototyped and iterated our design. Early paper prototypes were critiqued internally before moving to medium fidelity prototypes in Axure. We tested the interaction users. After few iterations we moved to visual design.</p>
-</div>
 
-<img src="/assets/images/projects/bridge-sketch.jpg" class="img-responsive" alt="Sketching"/>
+  <figure>
+    <img src="/assets/images/projects/bridge-sketch.jpg" class="img-responsive" alt="Sketching"/>
+  </figure>
+</div>
 
 <div class="section-title">
   <h2><span>Implementation</span></h2>
   <p>A modular solution</p>
 </div>
 
-<div class="columns">
+<div class="centered-column">
   <p>Using high-fidelity mockups, I implemented the final website in only a week! Because the client didn’t have the technical skills to update the website, I opted for a Content Management System (CMS). After reviewing multiple CMS, I selected <a href="https://www.contentful.com/" target="_blank">Contentful</a>. Contrary to other regular CMSs, Contentful doesn’t require to use an internal templating platform. It provides the content through a REST API, which gave me a lot of freedom and allowed me to use EmberJS on the front-end.</p>
 
   <p>Contentful+EmberJS proved to be a great solution: every piece of the website can be modified, from the information architecture, to every article. I even integrated a dozen of custom templates for displaying news, events, staff members, reports, newsletters, and so more.</p>
@@ -64,10 +74,12 @@
   <p>A success!</p>
 </div>
 
-<div class="centered">
+<div class="centered-column">
   <p>The client was very satisfied with the final design and decided to replace their old website. An interactive version of the redesign can be found <a href="http://bridgemin.org/redesign/" target="_blank">here</a>.</p>
+
+  <figure>
+    <div class="browser-frame">
+      <img src="/assets/images/projects/bridge-redesign.jpg" class="img-responsive" alt="Bridge Disability Ministry redesign"/>
+    </div>
+  </figure>
 </div>
-
-<img src="/assets/images/projects/bridge-redesign.jpg" class="img-responsive" alt="Bridge Disability Ministry redesign"/>
-
-<p class="text-muted">Team members: Jordan Vincent, Lukas Eiermann, Alison Chambliss, Lingshuang Chen, and Kristin Kinnamon.</p>

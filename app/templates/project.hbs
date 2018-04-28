@@ -1,6 +1,6 @@
 <div id="project">
-  <div class="project-cover">
-    <div class="article-container">
+  <div class="project__cover">
+    <div class="project__container">
 
       <h1>{{model.name}} {{link-to 'Back' 'index' class="back-link"}}</h1>
       <div class="subtitle">{{model.subtitle}}</div>
@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-sm-8">
           <h2 class={{unless model.about 'hidden'}}>About</h2>
-          <div class="about-copy">{{model.about}}</div>
+          <div class="about-copy">{{{model.about}}}</div>
         </div>
         <div class="col-sm-4">
           <h2 class={{unless model.role 'hidden'}}>My Role</h2>
@@ -20,12 +20,12 @@
   </div>
 
   <section class="main-section">
-    <article class="article-container">
+    <article class="project__container">
       {{component (concat 'project-articles/' model.slug) class="project-article"}}
     </article>
   </section>
 
-  <div class="bottom-links">
+  <div class="project__bottom-links">
     {{link-to 'Back' 'index'}}<!--
  -->{{#if model.next}}{{link-to 'Next Project' 'project' model.next}}{{/if}}
   </div>

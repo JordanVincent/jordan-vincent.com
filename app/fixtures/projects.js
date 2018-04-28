@@ -5,7 +5,7 @@ export default [{
   date: 'from June 2016',
   summary: '',
   about: 'Cogniac is a platform that allows anyone to use computer vision to solve problems. Our clients include enterprises and government agencies. Cogniac is still an early stage startup with a lot to learn and build.',
-  role: 'I am working as a Sr. UX Engineer. I designed and developed Cogniac\'s web app, marketing website and mobile apps (design only).',
+  role: 'I was Cogniac\'s lead Designer and Front-End Engineer. I designed and developed Cogniac\'s web app, marketing website, and mobile apps (design only).',
   next: 'adminca'
 },{
   name: 'Adminca',
@@ -82,19 +82,25 @@ export default [{
   name: 'BitTitan',
   slug: 'bittitan-dev',
   date: 'June to Aug. 2015 (3 months)',
-  summary: 'Developed a graph visualization which is now a central part of BitTitan\'s SalesAutomation.',
+  summary: 'Developed a graph visualization which is now a central part of <a href="https://www.bittitan.com/" target="_blank">BitTitan</a>\'s SalesAutomation.',
+  about: 'I joined BitTitan in summer 2015 to work on the cold calling software SalesAutomation. My goal consisted in using a graph visualization to replace a form based interface and improve the usability. It is now a central part of the product.',
+  role: 'Web Developer Intern, in charge of the design and development of the new feature.',
   next: null
 },{
   name: 'Direct Matin',
   slug: 'direct-matin',
   date: 'June to Aug. 2012 (3 months)',
   summary: 'Developed a web app for a national newspaper while interning at Kreactive. Seen in Paris\' subway & newspapers.',
+  about: 'In summer 2012, I interned for 3 months at <a href="http://www.kreactive.com/" target="_blank">Kreactive</a>, a web and mobile agency in Lyon, France. I developed a mobile web app for the national French newspaper <a href="http://www.directmatin.fr/" target="_blank">Direct Matin</a>.',
+  role: 'Web Developer Intern in charge of the development of the mobile web-app.',
   next: null
 },{
   name: 'Haiku Deck',
   slug: 'haiku-deck',
   date: 'Jan. to Mar. 2015',
   summary: 'User testing of the presentation tool Haiku Deck. Carried out a study with eight participants.',
+  about: 'As part of the Usability Testing class (HCDE 517) at the University of Washington, my team and I assessed the usability of the presentation tool <a href="https://www.haikudeck.com" target="_blank">Haiku Deck</a>. We carried out a study composed of eight participants, and delivered actionable findings to our client.',
+  role: 'I participated in all the aspects of the project. My team included Lorelei Lin, Chen Ye, and Eric Shen.',
   next: null
 },{
   name: 'StartupViz',
@@ -106,15 +112,18 @@ export default [{
   next: null
 },{
   name: 'Bridge Disability Ministry',
+  subtitle: 'Redesigning a website with people in mind',
   slug: 'bridge-disability-ministry',
   date: 'Apr. to June 2015',
   summary: 'Redesign and development of a website for a non-profit organization.',
+  about: "This is the final assignment for the User-Centered Web Design class (HCDE 537) at the University of Washington. Our mission consisted of applying the UCD process to redesign Bridge Disability Ministry's website.",
+  role: 'I participated in all the aspects of the project. My team included Lukas Eiermann, Alison Chambliss, Lingshuang Chen, and Kristin Kinnamon.',
   next: null
 },{
   name: 'Visual Communication',
   slug: 'visual-communication',
   summary: 'An introduction to the visual elements of design, composition, and effective communication.',
-  about: 'Visual Communication gives an introduction to the visual elements of design, organizational principles of composition, and effective and meaningful communication. It was one of my favorite class at the University of Washington. Here are some of my assignments.',
+  about: 'Visual Communication gives an introduction to the visual elements of design, organizational principles of composition, and effective and meaningful communication. It was one of my favorite classes at the University of Washington. Here are some of my assignments.',
   next: null
 },{
   name: 'Labello',

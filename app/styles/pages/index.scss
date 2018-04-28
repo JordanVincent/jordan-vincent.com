@@ -99,14 +99,14 @@
 
     &.adminca {
       background-color: #0F3B68;
-      color: transparentize(white, 0.15);
+      color: transparentize(white, 0.2);
       background: url($images-path + "/adminca-computer.jpg");
       background-size: 100% auto;
       background-position: center 80%;
       overflow: hidden;
 
       .read-more-link {
-        color: transparentize(white, 0.15);
+        color: transparentize(white, 0.2);
       }
 
       .column {

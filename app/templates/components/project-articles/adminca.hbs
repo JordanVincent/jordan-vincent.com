@@ -1,8 +1,10 @@
 {{!-- <a href="http://adminca.com" target="_blank" class="project-link">Visit Website</a> --}}
 
-<div class="embed-responsive embed-responsive-16by9 raised">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tGQS_LY1HOs?rel=0" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class="embed-responsive embed-responsive-16by9 raised">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tGQS_LY1HOs?rel=0" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
+  </div>
+</figure>
 
 <p class="text-center">
   Download the <a href="/assets/documents/adminca-book.pdf" target="_blank">design process book</a> and <a href="/assets/documents/adminca-poster.pdf" target="_blank">poster</a>.
@@ -13,7 +15,9 @@
   <p>Admin Panels are Broken</p>
 </div>
 
-<img src="/assets/images/projects/adminca-diagram.svg" class="img-responsive" alt="Problem space">
+<figure>
+  <img src="/assets/images/projects/adminca-diagram.svg" class="img-responsive" alt="Problem space">
+</figure>
 
 <div class="centered-column">
   <p>Every mobile or web application accumulates data in its backend database. Companies have to design and develop admin panels to enable their non-technical staff to view and manage this data. However, creating admin panels has always been a hassle, because:</p>
@@ -34,19 +38,25 @@
 
 <div class="row">
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-simple.svg" class="img-responsive center-block" alt="Simple"/>
+    <figure>
+      <img src="/assets/images/projects/adminca-simple.svg" class="img-responsive center-block" alt="Simple"/>
+    </figure>
     <h3 class="text-center">Simple</h3>
     <p class="text-center"><em>Effortless setup<br>+ Intuitive interface</em></p>
     <p>Save developers weeks of time, and streamline the admin panel setup process. Provide an intuitive interface that non-technical users can get their hands on without training.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-secure.svg" class="img-responsive center-block" alt="Secure"/>
+    <figure>
+      <img src="/assets/images/projects/adminca-secure.svg" class="img-responsive center-block" alt="Secure"/>
+    </figure>
     <h3 class="text-center">Secure</h3>
     <p class="text-center"><em>Data permissions<br>+ Encrypted credentials</em></p>
     <p>Empower developers to manage data permission to ensure data integrity. Use highest encryption and security measures for Adminca to protect customer’s data.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-smart.svg" class="img-responsive center-block" alt="Smart"/>
+    <figure>
+      <img src="/assets/images/projects/adminca-smart.svg" class="img-responsive center-block" alt="Smart"/>
+    </figure>
     <h3 class="text-center">Smart</h3>
     <p class="text-center"><em>Powerful features<br>+ Smart defaults</em></p>
     <p>Provide solutions for diverse data management problems with a comprehensive feature set. Understand what users want to achieve and provide them with smart defaults that make their live easier.</p>
@@ -62,7 +72,9 @@
   <p>We followed a lean UX approach. It allowed us to deliver to the market a quick and dirty MVP that we iterated over. To prevent technology to slow us down, we sought to use modular web components that we could easily add, modify, or remove based on initial feedback.</p>
 </div>
 
-<img src="/assets/images/projects/adminca-whiteboard.jpg" class="img-responsive" alt="Adminca ideation phase">
+<figure>
+  <img src="/assets/images/projects/adminca-whiteboard.jpg" class="img-responsive" alt="Adminca ideation phase">
+</figure>
 
 <div class="centered-column">
   <p>Because our two main user groups had very different needs, we decided to build a two sided interface. <em>Admins</em> can create and customize their admin panel in a matter of seconds and invite <em>contributors</em>. Contributors only have access to the data management part of the interface which is customized by admins.</p>
@@ -71,8 +83,10 @@
   <p>The main contributor view is the record's detail view. When clicking on a record in the table view, a fly out detail panel appears to present more information <b>without losing context.</b> After a few iterations, we made the side panel easier to read and improved the table view to display more than one column at a time.</p>
 </div>
 
-<figure class="browser">
-  {{image-slider firstImageSrc="/assets/images/projects/adminca-old-details.png" secondImageSrc="/assets/images/projects/adminca-final-details.png"}}
+<figure>
+  <div class="browser-frame">
+    {{image-slider firstImageSrc="/assets/images/projects/adminca-old-details.png" secondImageSrc="/assets/images/projects/adminca-final-details.png"}}
+  </div>
 </figure>
 
 <div class="centered-column">
@@ -80,8 +94,10 @@
   <p>The settings view allows admins to customize what contributors can see and the actions they can perform. Each panel, class, and field is customizable. The challenge was to make customizing multiple fields at the same time fast and intuitive. In the final version, we removed unnecessary information and added tooltips to display help messages.</p>
 </div>
 
-<figure class="browser">
-  {{image-slider firstImageSrc="/assets/images/projects/adminca-old-settings.png" secondImageSrc="/assets/images/projects/adminca-final-settings.png"}}
+<figure>
+  <div class="browser-frame">
+    {{image-slider firstImageSrc="/assets/images/projects/adminca-old-settings.png" secondImageSrc="/assets/images/projects/adminca-final-settings.png"}}
+  </div>
 </figure>
 
 <div class="centered-column">
@@ -91,34 +107,46 @@
 
 <div class="row">
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-signup.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-signup.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>1. Account creation</h3>
     <p>We removed unnecessary fields and reduced the required information to the essential.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-email.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-email.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>2. Welcome email</h3>
     <p>Once the account is created the user receives a welcome email with additional resources. There is no need to confirm the email.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-video.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-video.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>3. Intro video</h3>
     <p>Users understood the basic concept from our marketing website but weren’t exactly sure how Adminca worked. The video explained the main concepts</p>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-create.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-create.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>4. Panel creation</h3>
     <p>Most users weren’t comfortable with providing their keys. We added a new tooltip that explained our security measures and why Adminca required it.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-tips.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-tips.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>5. Onboarding tips</h3>
     <p>We observed that users didn’t know what exactly they were supposed to do next. We added a guided tour to help then get started.</p>
   </div>
   <div class="col-sm-4">
-    <img src="/assets/images/projects/adminca-help.png" class="img-responsive raised" alt="">
+    <figure>
+      <img src="/assets/images/projects/adminca-help.png" class="img-responsive raised" alt="">
+    </figure>
     <h3>6. Help section</h3>
     <p>More detailed explanation about all of Adminca’s features are available in the help section.</p>
   </div>
@@ -130,9 +158,12 @@
   <p>There is much more to Adminca than those few screens, check out the demo to get a better understanding of the whole experience:</p>
 </div>
 
-<div class="embed-responsive embed-responsive-16by9 raised">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bBo8nM-DNzc?rel=0" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class="embed-responsive embed-responsive-16by9 raised">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bBo8nM-DNzc?rel=0" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
+  </div>
+  <figcaption>Onboarding video we created to introduce new users to Adminca.</figcaption>
+</figure>
 
 <div class="section-title">
   <h2><span>Outcome</span></h2>
@@ -143,26 +174,34 @@
   <p>We launched in January 2016 and quickly saw people from all around the world using it! Adminca is the perfect tool for web and mobile agencies. It allows them to offer an admin panel to their clients without the need for coding. After only two months more than 500 accounts have been created, and around 150 people use Adminca every week to manage their data!</p>
 </div>
 
-<div class="adminca-graph-wrapper">
+<figure class="adminca-graph-wrapper">
   <img src="/assets/images/projects/adminca-graph.svg" class="img-responsive" alt="user growth over time">
-</div>
+</figure>
 
 <div class="section-title">
   <h2><span>Feedback</span></h2>
   <p>Mobile agencies love it!</p>
 </div>
 
-<img src="/assets/images/projects/adminca-map.png" class="img-responsive" alt="user feedback around the world">
+<figure>
+  <img src="/assets/images/projects/adminca-map.png" class="img-responsive" alt="user feedback around the world">
+</figure>
 
 <div class="row">
   <div class="col-sm-4">
-    {{twitter-card tweet-id='694862419382894592' class="twitter-card"}}
+    <figure>
+      {{twitter-card tweet-id='694862419382894592' class="twitter-card"}}
+    </figure>
   </div>
   <div class="col-sm-4">
-    {{twitter-card tweet-id='697939302991290368' class="twitter-card"}}
+    <figure>
+      {{twitter-card tweet-id='697939302991290368' class="twitter-card"}}
+    </figure>
   </div>
   <div class="col-sm-4">
-    {{twitter-card tweet-id='696758247106031616' class="twitter-card"}}
+    <figure>
+      {{twitter-card tweet-id='696758247106031616' class="twitter-card"}}
+    </figure>
   </div>
 </div>
 
