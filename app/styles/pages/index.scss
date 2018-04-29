@@ -2,7 +2,7 @@
 
   .section-title {
     font-size: 30px;
-    font-family: "PT Sans Narrow";
+    font-family: $font-family-sans-narrow;
     text-transform: uppercase;
     margin-bottom: 50px;
   }
@@ -35,7 +35,7 @@
   .intro {
     margin: 50px 0 0 0;
     font-size: 28px;
-    font-family: "PT Sans Narrow";
+    font-family: $font-family-sans-narrow;
   }
 
   .values {
@@ -59,7 +59,7 @@
   }
 
   .project-meta {
-    font-family: "PT Sans Narrow";
+    font-family: $font-family-sans-narrow;
     margin-bottom: 5px;
 
     .bullet {
@@ -78,6 +78,25 @@
   .main-project {
     display: block;
     color: $text-color;
+
+    &.goggles {
+      background-color: #2C2C3A;
+      background-image: url($images-path + "/goggles-roam.png");
+      background-size: auto 600px;
+      background-repeat: no-repeat;
+      background-position: 10%;
+      min-height: 700px;
+      padding: 50px 0;
+      color: transparentize(white, 0.2);
+
+      .read-more-link {
+        color: transparentize(white, 0.2);
+      }
+
+      .column {
+        background: transparentize(#2C2C3A, 0.2);
+      }
+    }
 
     &.cogniac {
       background-color: #F2F7FC;
@@ -149,7 +168,7 @@
 
     .read-more-link {
       text-transform: uppercase;
-      font-family: "PT Sans Narrow";
+      font-family: $font-family-sans-narrow;
       color: $text-color;
       margin-top: 15px;
       display: inline-block;
@@ -177,7 +196,7 @@
       .read-more-project {
         display: none;
         text-transform: uppercase;
-        font-family: "PT Sans Narrow";
+        font-family: $font-family-sans-narrow;
         position: absolute;
         left: 20px;
         bottom: -25px;
@@ -214,7 +233,7 @@
         border-radius: 4px;
         padding: 20px;
         cursor: pointer;
-        min-height: 220px;
+        min-height: 234px;
         background-repeat: no-repeat;
         background-position: center right;
         background-size: auto 100%;
