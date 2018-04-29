@@ -69,4 +69,38 @@
       }
     }
   }
+
+  @media (max-width : $screen-sm-min) {
+    .project__container {
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .project__cover {
+      h1 {
+        margin: 0;
+      }
+
+      .subtitle {
+        font-size: 24px;
+        margin-bottom: 50px;
+      }
+
+      .about-copy {
+        font-size: $font-size-base;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 60px;
+      }
+
+      .back-link {
+        position: relative;
+        left: auto;
+        bottom: auto;
+      }
+    }
+  }
 }

@@ -1,5 +1,4 @@
 #index {
-
   .section-title {
     font-size: 30px;
     font-family: $font-family-sans-narrow;
@@ -20,10 +19,13 @@
 
   .splash {
     position: relative;
+    width: 100%;
+    padding-bottom: 480 / 1400 * 100%;
 
-    .background {
-      width: 100%;
-    }
+    background-image: url($images-path + "/splash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .name {
       position: absolute;
@@ -279,6 +281,59 @@
     .instagram-photo {
       width: 100%;
       margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width : $screen-sm-min) {
+    .values {
+      margin: 100px 0 100px;
+
+      h3 {
+        margin: 40px 0 10px 0;
+      }
+    }
+
+    .splash {
+      padding-bottom: 100%;
+
+      .name {
+        left: 0;
+        top: 0;
+        transform: scale(0.8);
+      }
+    }
+
+    .main-project.cogniac {
+      .dashboard {
+        height: auto;
+        margin-top: 40px;
+
+        img {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+      }
+    }
+
+    .main-project.adminca {
+      .column {
+        height: auto;
+      }
+    }
+
+    .main-project.bittitan {
+      .process {
+        height: auto;
+        margin-bottom: -50px;
+
+        img {
+          width: 100%;
+          right: auto;
+          bottom: auto;
+          position: relative;
+        }
+      }
     }
   }
 }

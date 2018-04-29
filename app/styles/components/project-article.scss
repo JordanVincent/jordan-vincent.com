@@ -104,6 +104,15 @@
     margin-bottom: 40px;
   }
 
+  figcaption {
+    font-family: "PT Sans";
+    color: #999;
+    margin-top: 15px;
+    max-width: 250px;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
   .browser-frame {
     position: relative;
     border: 1px solid #babec0;
@@ -143,15 +152,6 @@
       max-width: 100%;
       height: auto;
     }
-  }
-
-  figcaption {
-    font-family: "PT Sans";
-    color: #999;
-    margin-top: 15px;
-    max-width: 250px;
-    font-size: 0.9em;
-    line-height: 1.4;
   }
 
   .adminca-graph-wrapper {
