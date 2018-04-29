@@ -1,19 +1,6 @@
 .project-article {
-  margin-top: 50px;
-  padding-bottom: 50px;
-
-  b {
-    font-weight: 600;
-  }
-
-  .columns {
-    -webkit-columns: auto 2;
-    -moz-columns: auto 2;
-    columns: auto 2;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
+  margin-top: 60px;
+  padding-bottom: 60px;
 
   .section-title {
     text-align: center;
@@ -55,26 +42,18 @@
     }
   }
 
+  b {
+    font-weight: 600;
+  }
+
   h3 {
     font-size: 22px;
     margin: 30px 0 5px 0;
   }
 
-  .centered {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .centered-column {
     width: 60%;
     margin: 0 20%;
-  }
-
-  .img-responsive, .embed-responsive, .twitter-card {
-    &.raised {
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    }
   }
 
   q {
@@ -172,6 +151,7 @@
     margin-top: 15px;
     max-width: 250px;
     font-size: 0.9em;
+    line-height: 1.4;
   }
 
   .adminca-graph-wrapper {
@@ -187,12 +167,6 @@
   }
 
   @media (max-width : $screen-sm-min) {
-    .columns {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-    }
-
     .centered-column {
       width: 100%;
       margin: 0;
@@ -210,11 +184,7 @@
       }
     }
 
-    .centered {
-      width: 90%;
-    }
-
-    .img-responsive {
+    figure {
       margin-top: 20px;
       margin-bottom: 20px;
     }

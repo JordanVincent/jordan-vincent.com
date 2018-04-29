@@ -36,7 +36,7 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: normal;
-      font-family: "PT Sans Narrow";
+      font-family: $font-family-sans-narrow;
     }
   }
 
@@ -49,7 +49,7 @@
 
     a {
       text-transform: uppercase;
-      font-family: "PT Sans Narrow";
+      font-family: $font-family-sans-narrow;
       display: inline-block;
       padding: 15px 34px;
       border-radius: 3px;

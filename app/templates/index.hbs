@@ -39,13 +39,30 @@
     </div>
   </div>
 
-  {{#link-to 'project' 'cogniac' class="main-project cogniac"}}
+  <div>
     <div class="container">
-
       <div class="row">
         <div class="col-sm-3 section-title">Selected Work</div>
       </div>
+    </div>
+  </div>
 
+  {{#link-to 'project' 'goggles' class="main-project goggles"}}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-9 col-sm-3 column">
+          <div class="project-meta">Jan. 2018<span class="bullet"></span>Sr. UX Engineer at Roam</div>
+          <h2>Rethinking Graph Layouts</h2>
+          <p>Roam Analytics's Health Knowldge Graph organizes health data in a graph database spanning hundreds of millions nodes. It has become a challenge for anyone using the graph to understand relationships, maintain, and add new data.</p>
+          <p>I designed and implemented a tool to allow the internal team to make sense of the graph schema. After many unsuccessful attempts, I created a novel way to interact and navigate dense networks.</p>
+          <a class="read-more-link" href="">Read More</a>
+        </div>
+      </div>
+    </div>
+  {{/link-to}}
+
+  {{#link-to 'project' 'cogniac' class="main-project cogniac"}}
+    <div class="container">
       <div class="row">
         <div class="col-sm-3">
           <div class="project-meta">2017<span class="bullet"></span>Sr. UX Engineer at Cogniac</div>

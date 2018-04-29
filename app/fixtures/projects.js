@@ -1,4 +1,13 @@
 export default [{
+  name: 'Goggles',
+  subtitle: 'Rethinking Graph Layouts',
+  slug: 'goggles',
+  date: 'January 2018',
+  summary: '',
+  about: 'Goggles helps Machine Learning and Data Engineers explore <a href="https://roamanalytics.com/" target="_blank">Roam\'s</a> complex health graph. Goggles succeeds where common force directed networks fail.',
+  role: 'I entirely designed, prototyped, and built Goggles in the span of one month.',
+  next: 'cogniac'
+},{
   name: 'Cogniac',
   subtitle: 'Designing intuitive computer vision interfaces',
   slug: 'cogniac',
