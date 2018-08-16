@@ -25,6 +25,7 @@ const Router = Ember.Router.extend(RouterScroll, {
 
 Router.map(function() {
   this.route('project', { path: 'projects/:project_slug', resetNamespace: true });
+  this.route('nps-nights');
 });
 
 export default Router;

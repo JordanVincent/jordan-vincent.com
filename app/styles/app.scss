@@ -23,6 +23,8 @@ $fonts-path: "fonts";
 @import "components/footer-links";
 @import "components/image-slider";
 @import "components/project-article";
+@import "components/nps-nights/chart-legend";
 
 @import "pages/index";
 @import "pages/project";
+@import "pages/nps-nights";

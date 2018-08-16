@@ -1,0 +1,28 @@
+.chart-legend {
+
+}
+.chart-legend-tooltips {
+
+}
+
+.chart-legend-tooltip {
+  font-size: 14px;
+  line-height: 18px;
+
+  & > .primary {
+  }
+
+  & > .secondary {
+    opacity: 0.6;
+    margin-top: 4px;
+  }
+}
+
+.chart-legend-line {
+  stroke: #63544e;
+  fill: none;
+}
+
+.chart-legend-dot {
+  fill: #63544e;
+}
