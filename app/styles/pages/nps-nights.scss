@@ -7,8 +7,8 @@
   $body-color: #948B87;
   $title-color: #63544e;
 
-  --body-color: $body-color;
-  --title-color: $title-color;
+  --body-color: #{$body-color};
+  --title-color: #{$title-color};
 
   --background-color: #F5EEEB;
   --footer-color: #e7deda;
@@ -18,10 +18,10 @@
   $rv-color: #00897B;
   $backcountry-color: #d27f3c;
 
-  --lodging-color: $lodging-color;
-  --tent-color: $tent-color;
-  --rv-color: $rv-color;
-  --backcountry-color: $backcountry-color;
+  --lodging-color: #{$lodging-color};
+  --tent-color: #{$tent-color};
+  --rv-color: #{$rv-color};
+  --backcountry-color: #{$backcountry-color};
 
   & {
     font-size: 16px;
