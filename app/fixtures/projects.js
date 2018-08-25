@@ -26,10 +26,11 @@ export default [{
   role: 'I co-founded Adminca with Lukas Eiermann and Frank Kaiyuan Xu. I participated in every aspect of the project from business strategy to design and development.',
   next: 'bittitan-ux'
 },{
-  name: 'SalesAutomation',
+  name: 'BitTitan',
   subtitle: 'Advocating for Design in building better products',
   slug: 'bittitan-ux',
-  date: 'Sept. to Dec. 2015 (3 months)',
+  date: 'Fall 2015',
+  position: 'UX Design Intern',
   summary: 'Successfully demonstrated and implemented the User-Centered Design at BitTitan.',
   about: 'SalesAutomation is one of BitTitan’s latest products. It is a Sales application that streamlines the process of cold calling leads. The product was in developmnet for more than a year with no clear vision.',
   role: 'I worked as one for the first UX Designers. I used the UCD process to show that design can inform product development.',

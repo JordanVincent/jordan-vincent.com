@@ -150,24 +150,6 @@
       }
     }
 
-    &.bittitan {
-      background-color: #BCD0E4;
-      padding: 50px 0;
-      overflow: hidden;
-
-      .process {
-        position: relative;
-        height: 600px;
-
-        img {
-          position: absolute;
-          right: -250px;
-          bottom: -50px;
-          width: 850px;
-        }
-      }
-    }
-
     .read-more-link {
       text-transform: uppercase;
       font-family: $font-family-sans-narrow;
@@ -319,20 +301,6 @@
     .main-project.adminca {
       .column {
         height: auto;
-      }
-    }
-
-    .main-project.bittitan {
-      .process {
-        height: auto;
-        margin-bottom: -50px;
-
-        img {
-          width: 100%;
-          right: auto;
-          bottom: auto;
-          position: relative;
-        }
       }
     }
   }

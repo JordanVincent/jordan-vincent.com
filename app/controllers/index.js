@@ -12,6 +12,7 @@ export default Ember.Controller.extend({
 
   otherProjects: Ember.computed(function() {
     return [
+      projects.findBy('slug', 'bittitan-ux'),
       projects.findBy('slug', 'sixdoors'),
       projects.findBy('slug', 'veritabs'),
       projects.findBy('slug', 'city-domination')
