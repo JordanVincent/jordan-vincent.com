@@ -7,9 +7,16 @@ const Router = Ember.Router.extend(RouterScroll, {
   rootURL: config.rootURL,
 
   metrics: Ember.inject.service(),
+  headData: Ember.inject.service(),
+
+  setTitle(title) {
+    this.get('headData').set('title', title);
+  },
 
   didTransition() {
     this._super(...arguments);
+    const url = 'http://jordan-vincent.com' + this.get('currentURL');
+    this.get('headData').set('url', url);
     this._trackPage();
   },
 

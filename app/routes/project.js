@@ -1,7 +1,8 @@
 import Ember from 'ember';
 import projects from '../fixtures/projects';
+import DefaultMetaMixin from '../mixins/default-meta';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(DefaultMetaMixin, {
   titleToken(model) {
     return model.name;
   },

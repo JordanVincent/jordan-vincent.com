@@ -2,6 +2,8 @@ import Ember from 'ember';
 import { parks, parkGroups } from '../fixtures/us-parks';
 
 export default Ember.Route.extend({
+  headData: Ember.inject.service(),
+
   model() {
     const groups = [];
 
@@ -20,7 +22,12 @@ export default Ember.Route.extend({
     return groups;
   },
 
-  titleToken() {
-    return 'A Night Under The Stars';
+  afterModel() {
+    this.set('headData.description', 'Explore overnight stays at US National Parks and uncover surprising patterns.');
+    this.set('headData.image', 'http://jordan-vincent.com/assets/images/meta-image-nps-nights.png');
+  },
+
+  title() {
+    return 'A Night Under The Stars | Jordan Vincent';
   }
 });
