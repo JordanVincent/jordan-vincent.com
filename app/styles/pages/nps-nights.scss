@@ -132,6 +132,40 @@
       font-size: 16px;
     }
 
+    .park-group-legend {
+      margin-top: 24px;
+    }
+
+    .park-group-label-lodging, .park-group-label-rv, .park-group-label-tent, .park-group-label-backcountry {
+      font-size: 13px;
+      line-height: 22px;
+
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        margin-right: 8px;
+        display: inline-block;
+      }
+    }
+
+    .park-group-label-lodging:before {
+      background: $lodging-color;
+    }
+
+    .park-group-label-rv:before {
+      background: $rv-color;
+    }
+
+    .park-group-label-tent:before {
+      background: $tent-color;
+    }
+
+    .park-group-label-backcountry:before {
+      background: $backcountry-color;
+    }
+
     .park-group-body {
       flex: 1 1 0px;
     }
