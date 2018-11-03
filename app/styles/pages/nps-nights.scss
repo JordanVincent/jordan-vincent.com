@@ -31,6 +31,21 @@
     font-family: "Open Sans", sans-serif;
   }
 
+  .nps-night-back-btn {
+    position: absolute;
+    color: var(--body-color);
+    padding: 4px 16px;
+    margin: 8px;
+    border-radius: 4px;
+    transition: opacity 0.2s, color 0.2s, background-color 0.2s;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+      background-color: var(--footer-color);
+    }
+  }
+
   // Chart
 
   .chart-wrapper {
