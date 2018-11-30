@@ -30,7 +30,7 @@
     "ember-cli-htmlbars-inline-precompile": "^0.4.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "4.0.1",
-    "ember-cli-sass": "8.0.1",
+    "ember-cli-sass": "7.2.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
@@ -41,8 +41,7 @@
     "ember-router-scroll": "0.3.1",
     "ember-social": "0.3.0",
     "ember-source": "~2.13.0",
-    "loader.js": "^4.2.3",
-    "sass": "^1.15.1"
+    "loader.js": "^4.2.3"
   },
   "engines": {
     "node": "6"
