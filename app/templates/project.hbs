@@ -1,5 +1,5 @@
 <div id="project">
-  <div class="project__cover">
+  <div class="project__cover {{if isCoverDark 'dark'}}" style="background-color:{{coverColor}};">
     <div class="project__container">
 
       <h1>{{model.name}} {{link-to 'Back' 'index' class="back-link"}}</h1>

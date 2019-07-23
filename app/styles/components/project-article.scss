@@ -2,6 +2,21 @@
   margin-top: 60px;
   padding-bottom: 60px;
 
+  .hero-image {
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 60px;
+
+    .backdrop {
+      position: absolute;
+      left: calc((-100vw + #{$article-width})/2);
+      top: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 50%;
+    }
+  }
+
   .section-title {
     text-align: center;
     margin: 100px 0 50px 0;
@@ -187,6 +202,12 @@
     figure {
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    .hero-image {
+      .backdrop {
+        left: -20px;
+      }
     }
   }
 }
