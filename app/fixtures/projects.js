@@ -5,8 +5,8 @@ export default [{
   date: '2018&ndash;19',
   coverColor: '#1A4160',
   summary: '',
-  about: 'The Annotation Manager is a text labeling tool at the core of Roam Analytic\'s natural language processing platform for healthcare. It is used internally for quickly creating high-quality training data for ML models.',
-  role: 'I was the Lead Designer and primary Frontend Developer at Roam Analytics. But it wouldn\'t have been possible without Nick Brown, Daniel Telatnik, Scott Wey, Evan Lin, and many other Roamers.',
+  about: 'The Annotation Manager is a text labeling tool at the core of Roam Analytic\'s natural language processing platform for healthcare. It is used internally for creating high-quality training datasets for machine learning models.',
+  role: 'I was the Lead Designer and primary Frontend Developer at Roam Analytics. It wouldn\'t have been possible without the help of Nick Brown, Daniel Telatnik, Scott Wey, Evan Lin, and many other Roamers.',
   next: 'goggles'
 },{
   name: 'Goggles',

@@ -115,8 +115,18 @@
   }
 
   figure {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+
+    .backdrop {
+      position: absolute;
+      left: calc((-100vw + #{$article-width})/2);
+      top: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 100%;
+    }
   }
 
   figcaption {
@@ -202,6 +212,10 @@
     figure {
       margin-top: 20px;
       margin-bottom: 20px;
+
+      .backdrop {
+        left: -20px;
+      }
     }
 
     .hero-image {
