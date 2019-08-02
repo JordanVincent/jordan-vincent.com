@@ -8,7 +8,7 @@
 <div class="centered-column">
   <p>Mid-2018, Roam Analytics recentered its efforts to focus on what it does best: extracting data from unstructured healthcare notes. Healthcare organizations accumulate vast amounts of clinical notes, but most of that information sits in locked databases. Clinical notes contain valuable information about the patient lifestyle, mental state, and risk factors, etc. More importantly, it can be extracted and analyzed across an entire population. Understanding these trends moves us toward a future where healthcare is more accessible and affordable.</p>
 
-  <p>Natural language processing (NLP) models require thousands of examples to train. At Roam, it used to take highly paid engineers weeks to develop models, because we didn't have a standard tools. We also rely heavily on a team of nurses to create training datasets by annotating text. As a company, it made sense to invest in developing better tools to streamline that workflow.</p>
+  <p>Natural language processing (NLP) models require thousands of examples to train. At Roam, it used to take highly paid engineers weeks to develop models, because we didn't have standard tools. We also rely heavily on a team of nurses to create training datasets by annotating text. As a company, it made sense to invest in developing better tools to streamline that workflow.</p>
 
   <p>Working with the leadership team, I presented in a company-wide vision for what we called "the Roam platform". The Roam platform is an integrated tool for exploring language data, annotating text, training NLP models, and deploying them. To build that vision, I leveraged my experience at {{link-to 'Cogniac' 'project' 'cogniac' target="_blank"}}. At Cogniac, we had successfully built such a platform, which allowed a single person to create a computer vision model in a matter of hours. I thought it would be easy.</p>
 </div>
@@ -26,7 +26,7 @@
 
   <p>There are a few text-labeling tools out there, but they all sacrifice text legibility. This was unacceptable for me. Test labeling is already a daunting task for users. Tools should help, not hinder comprehension. Optimizing for two constraints is easy; optimizing for all three constraints at the same time is borderline impossible.</p>
 
-  <p>It took a few dozens iterations.</p>
+  <p>It took a few dozens of iterations.</p>
 </div>
 
 <div class="row">
@@ -97,7 +97,7 @@
 </figure>
 
 <div class="centered-column">
-  <p>It wasn’t all sunshine and rainbows. This project is the largest project I had ever undertaken; not in term of scope, but in the size of the team and its impact. I made two crucial mistakes which resulted in having to rebuild 50% of the product and a six month delay! The mistakes were: not testing assumptions early enough, and lack of ownership.</p>
+  <p>It wasn’t all sunshine and rainbows. This project is the largest project I had ever undertaken; not in term of scope, but in the size of the team and its impact. I made two crucial mistakes which resulted in having to rebuild 50% of the product and a six-month delay! The mistakes were: not testing assumptions early enough, and lack of ownership.</p>
 </div>
 
 <div class="section-title">
@@ -108,7 +108,7 @@
 
   <p>In January 2019, six months after the start of the project, we finally received feedback from our first user. Laura, a nurse employed by Roam, used the tool for the first time on a new project. Her feedback was concerning.</p>
 
-  <p>The Annotation Manager isn’t the only product I’ve built. I’ve helped develop a dozen products over the years from mobile games to complex enterprise applications. I studied Human-Centered Design, and I know that testing early and often is paramount. And somehow, my manager and I waited six months to get feedback from users!</p>
+  <p>Looking back, I can't believe we waited six months to get feedback. The Annotation Manager isn’t the only product I’ve built. I’ve helped develop a dozen products over the years, from mobile games to complex enterprise applications. I studied Human-Centered Design, and I know that testing early and often is paramount. And somehow, we got carried away.</p>
 
   <p>That was a wake-up call. Why did I spend so much time building features when I should have done my designer's job? For the following weeks, I met with everyone who had used the tool. There were three main issues:</p>
   <ul>
@@ -117,7 +117,7 @@
     <li>The integrated platform approach made it very hard for Data Scientists to integrate the tool into their workflow.</li>
   </ul>
   <p>Interestingly, users loved the new annotation interface I co-designed with them. It was miles ahead from <a target="_blank" href="https://brat.nlplab.org/examples.html">the leading annotation tool</a>.</p>
-  <p>I went back to first principles. I realized that the current architecture was too limiting and a new mental model was needed. I created a series of interactive prototypes to test my assumptions. The prototypes went a long way in convincing end users and leadership that there was <i>a better way</i>. Just a few weeks later, the team started working on a new version of the Annotation Manager. I had succeeded!</p>
+  <p>I went back to first principles. I realized that the current architecture was too limiting and a new mental model was needed. I created a series of interactive prototypes to test my assumptions. The prototypes went a long way in convincing end-users and leadership that there was <i>a better way</i>. Just a few weeks later, the team started working on a new version of the Annotation Manager. I had succeeded!</p>
 </div>
 
 <div class="section-title">
@@ -125,11 +125,11 @@
 </div>
 
 <div class="centered-column">
-  <p>The tool was developed by the infrastructure and application teams. Because we advertised the tool as "the Roam platform”, Engineers believed we needed to invest resources in creating a strong data infrastructure. This two-team approach resulted in no-one owning for the direction of the project. Both teams optimized for different metrics, and communication issues crept up. For instance, the tool was slow because one team was optimizing for database writing speed instead of reading speed. And the teams were constantly blaming each other.</p>
+  <p>The tool was developed by the infrastructure and application teams. Because we advertised the tool as "the Roam platform”, engineers believed we needed to invest resources in creating a strong data infrastructure. This two-team approach resulted in no-one owning for the direction of the project. Both teams optimized for different metrics, and communication issues crept up. For instance, the tool was slow because one team was optimizing for database writing speed instead of reading speed. And the teams were constantly blaming each other.</p>
 
-  <p>I shared those concerns with leadership. They were taken seriously, but I encountered resistance to change. My solution &mdash; breaking up the teams &mdash; went contrary to the platform approach we had sold a few months ago.</p>
+  <p>I shared those concerns with leadership. They were taken seriously, but I encountered resistance to change. What I proposed &mdash; breaking up the teams &mdash; went contrary to the platform approach we had sold a few months ago.</p>
 
-  <p>Taking a top-down approach didn’t work. I was disappointed, but I was decided to improve things. The bottom-up approach ended up being the right choice. During the prototyping phase, I made sure to include the implementation teams. I showed them my process and the reasons behind my decisions. I also used the opportunity to ask for their input which proved to be beneficial. By the end of the process, everyone understood the benefits of breaking up the platform into smaller units.</p>
+  <p>Unfortunately, this top-down approach didn’t work. I was disappointed, but I was decided to change things. The bottom-up approach ended up being a better solution. During the prototyping phase, I made sure to include the implementation teams. I showed them my process and the reasons behind my decisions. I also used the opportunity to ask for their input which proved to be beneficial. By the end of the process, everyone understood the benefits of breaking up the platform into smaller units.</p>
 
   <p>It was decided that from now on, the Annotation Manager's goal would only be to annotate text. Exploring data and training models would happen somewhere else. Once that was clear, it was easy to convince leadership to give full ownership to one of the teams. Today, teams are more independent than ever and morale is much higher. I believe this is the right approach to building successful platforms.</p>
 
@@ -144,12 +144,12 @@
 </div>
 
 <div class="centered-column">
-  <p>Platforms are sexy. I haven’t worked for a company that didn't want to be a platform. But platforms mean something different depending on who you talk to. We often think of platforms as a silver bullet. We convince ourselves that it will eventually solve all our problems. It blinds us and carries us away from our iterative approach to problem solving.</p>
+  <p>Platforms are sexy. I haven’t worked for a company that doesn't want to be a platform. But platforms can mean many things depending on whom you talk to. People often think of platforms as a silver bullet. It's easy to convince ourselves that it will eventually solve all our problems. It blinds us and carries us away from our iterative approach to problem-solving.</p>
 
   <p>I firmly believe that the best way to build platforms is to build a suite of independent and loosely connected products. The benefits are numerous:</p>
   <ol>
     <li>Independent products can evolve at their own pace. It makes it easier to iterate and mistakes are cheaper.</li>
-    <li>A single team can own an entire product. Everyone on the team is aligned toward a single goal. The <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a> states that the structure of a system is a reflection of the communication pattern of its individuals. Because individuals work closer to members on their team than outside of it, products will naturally be loosely coupled.</li>
+    <li>A single team can own an entire product. Everyone on the team is aligned toward a single goal. <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a> states that the structure of a system is a reflection of the communication pattern of its individuals. Because communication within teams is stronger than in between teams, products will naturally be loosely coupled.</li>
     <li>It’s much easier to avoid scope creep because each product fulfills one single goal. Trying to add a new feature that isn’t aligned with any of the platform's existing products? Let’s create a new product and a new team!</li>
   </ol>
 
@@ -166,9 +166,7 @@
 </div>
 
 <div class="centered-column">
-  <p>At Roam, my evolution from a UX Engineer role to a Lead Designer role has been a slow and gradual one. I’ve worn multiple hats: from Frontend Engineer to Product Designer, and even Product Manager.</p>
+  <p>At a small startup like Roam (around 50 employees), I had to wear many hats: from Frontend Engineer to Product Designer, and even Product Manager. I believe many of the mistakes I’ve talked about could have been avoided if I had worn my designer hat more often.</p>
 
-  <p>Creating a strong Design culture is increasingly important. Many of the mistakes I’ve talked about could have been avoided if I had worn my Designer hat more often. As a result, I've delegated all my engineering responsibilities to new Frontend hires.</p>
-
-  <p>Increasingly, I’ve been empowering other people at Roam to think critically. I've focused my efforts in arming people with design tools they can use to solve problems on their own. I found teaching by example to be a powerful tool. I’ve led multiple design sprints with cross-functional teams. My biggest surprise was seeing the emergence of design champions at Roam. As one of my teammates puts it: “Design was limited to the Annotation Manager, but Jordan brought it to the rest of Roam”.</p>
+  <p>It's not enough to be the only design voice at Roam. Even hiring more designers would not fix this issue completely. Creating a strong design culture is increasingly important. Recently, I’ve been empowering other people at Roam to have a product mindset. I've focused my efforts in arming people with design tools they can use to solve similar problems on their own. I found teaching by example to be a powerful tool. I’ve led multiple design sprints with cross-functional teams. My biggest surprise was seeing the emergence of design champions at Roam. As one of my teammates puts it: “Design was limited to the Annotation Manager, but Jordan brought it to the rest of Roam”.</p>
 </div>
