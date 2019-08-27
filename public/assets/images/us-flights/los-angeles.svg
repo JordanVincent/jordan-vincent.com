@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>los-angeles</title>
+    <desc>Created with Sketch.</desc>
+    <g id="los-angeles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M231.5,399 C242.082011,399 250.547619,398.333333 256.896825,397 C263.246032,395.666667 268.113757,392.833333 271.5,388.5" id="Line-13" stroke="#FFFFFF" stroke-linecap="square"></path>
+        <polygon id="Path-13" fill="#FFFFFF" transform="translate(273.000000, 387.000000) rotate(134.000000) translate(-273.000000, -387.000000) " points="276 389 270 387 276 385"></polygon>
+        <path d="M757,173 L794,173" id="Line-13" stroke="#FFFFFF" stroke-linecap="square"></path>
+        <polygon id="Path-13" fill="#FFFFFF" points="759 175 753 173 759 171"></polygon>
+        <path d="M726,179.5 C713.666667,174.166667 704.5,166.666667 698.5,157 C692.5,147.333333 689.5,135 689.5,120" id="Path-15" stroke="#FFFFFF"></path>
+        <polygon id="Path-13-Copy" fill="#FFFFFF" transform="translate(725.000000, 179.000000) rotate(-157.000000) translate(-725.000000, -179.000000) " points="728 181 722 179 728 177"></polygon>
+        <text id="If-your-plane-leaves-Copy" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="91" y="395">If your plane leaves Los </tspan>
+            <tspan x="91" y="411">Angeles at 12pm PST… </tspan>
+        </text>
+        <text id="It-arrives-5-hours-l-Copy" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="620" y="75">It arrives 5 hours later. </tspan>
+            <tspan x="620" y="91">But in New York, it’s </tspan>
+            <tspan x="620" y="107">already 10pm.</tspan>
+        </text>
+        <text id="The-slowest-plane-ar" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="776" y="198">The slowest plane arrives </tspan>
+            <tspan x="776" y="214">in New York at 10:45pm </tspan>
+            <tspan x="776" y="230">EST. 45min after the </tspan>
+            <tspan x="776" y="246">fastest one.  </tspan>
+        </text>
+    </g>
+</svg>

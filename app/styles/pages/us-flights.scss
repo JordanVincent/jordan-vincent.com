@@ -1,0 +1,81 @@
+$us-flights-width: 400px;
+
+#us-flights {
+  background-color: #070823;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 100px 0;
+  overflow: hidden;
+
+  .header {
+    margin-bottom: 100px;
+  }
+
+  .header-title {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .text {
+    width: $us-flights-width;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .centered-chart {
+    position: relative;
+
+    .flight-chart {
+      margin: 0 auto;
+    }
+
+    .chart-markings {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      svg {
+        overflow: visible;
+      }
+    }
+  }
+
+  .floating-chart {
+    width: $us-flights-width;
+    margin: 40px auto;
+    position: relative;
+
+    .floating-chart-inner {
+      position: absolute;
+    }
+
+    .chart-markings {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      svg {
+        overflow: visible;
+      }
+    }
+  }
+
+  .chart-separator {
+    height: 4px;
+    background-color: black;
+  }
+
+  .margin-bottom-large { margin-bottom: 60px; }
+  .margin-top-large { margin-top: 60px; }
+}

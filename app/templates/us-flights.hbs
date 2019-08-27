@@ -1,0 +1,54 @@
+<div id="us-flights">
+  <section class="header">
+    <div class="header-title">A flight against time</div>
+  </section>
+
+  <div class="text">
+    <p>Los Angeles to New York City is a 5-hour flight. But if you’ve ever travelled that route round-trip, you know one leg is going to feel much longer — LA to NYC.</p>
+    <p>As human beings, we don’t perceive distances as much as time spent travelling. To create these maps, we simply substracted th local arrival time by the local departure time. Therefore, a 5-hour flight from Los Angeles to New York counts as 8 hours of lost time.</p>
+    <p>Below, we plotted every flight departing Los Angeles during the third week of January 2019. Each bright pixel represents four flights.</p>
+  </div>
+
+  <div class="centered-chart">
+    {{us-flights/charts/los-angeles}}
+    <div class="chart-markings">{{us-flights/markings/los-angeles}}</div>
+  </div>
+
+  <div class="text margin-bottom-large margin-top-large">
+    <p>Now, let’s fly from New York, back to Los Angeles. Same 5-hour flight, but this time it feels like a 3-hour trip! Departing from New York at 12pm, you arrive at 3pm, leaving you plenty of time to surf in the Pacific Ocean.</p>
+  </div>
+
+  <div class="centered-chart">
+    {{us-flights/charts/new-york}}
+    <div class="chart-markings">{{us-flights/markings/new-york}}</div>
+  </div>
+
+  <div class="text margin-top-large">
+    <p>How does the US look like from some major airports? Let’s have a look!</p>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <p>As the name, implies, the easter timezone, is, well, central. Two planes, flying to the East coast and to the West coast, will arrive around the same local time (but the one flying East will arrive much earlier).</p>
+  </div>
+
+  <div class="floating-chart" style="height: 400px;">
+    <div class="floating-chart-inner" style="right: 90px;">
+      {{us-flights/charts/san-juan}}
+      <div class="chart-markings">{{us-flights/markings/san-juan}}</div>
+    </div>
+  </div>
+  <div class="chart-separator"></div>
+  <div class="floating-chart" style="height: 600px;">
+    <div class="floating-chart-inner" style="left: 50px;">
+      {{us-flights/charts/anchorage}}
+      <div class="chart-markings">{{us-flights/markings/anchorage}}</div>
+    </div>
+  </div>
+  <div class="chart-separator"></div>
+  <div class="floating-chart" style="height: 600px;">
+    <div class="floating-chart-inner" style="left: 100px;">
+      {{us-flights/charts/honolulu}}
+      <div class="chart-markings">{{us-flights/markings/honolulu}}</div>
+    </div>
+  </div>
+</div>
