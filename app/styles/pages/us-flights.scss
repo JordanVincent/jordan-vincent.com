@@ -1,8 +1,9 @@
 $us-flights-width: 400px;
+$us-flights-background-color: #070823;
 
 #us-flights {
-  background-color: #070823;
-  color: rgba(255, 255, 255, 0.7);
+  background-color: $us-flights-background-color;
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -11,6 +12,7 @@ $us-flights-width: 400px;
 
   .header {
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .header-title {
@@ -18,8 +20,24 @@ $us-flights-width: 400px;
     color: white;
     font-size: 70px;
     line-height: 60px;
-    text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+
+  .header-subtitle {
+    font-size: 16px;
+    a {
+      color: #FFC64D;
+    }
+    .bullet {
+      width: 4px;
+      height: 4px;
+      background-color: currentColor;
+      margin: 0px 10px 2px 10px;
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   .text {
@@ -28,6 +46,44 @@ $us-flights-width: 400px;
 
     p {
       margin-bottom: 20px;
+    }
+  }
+
+  .section-title {
+    font-size: 34px;
+    line-height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 80px 0 20px 0;
+  }
+
+  .subsection-header {
+    margin: 100px 0 60px 0;
+    text-align: center;
+    position: relative;
+    border-top: 4px solid black;
+    padding-top: 40px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .subsection-title {
+      font-size: 22px;
+      line-height: 20px;
+      font-weight: normal;
+      color: white;
+      margin: 20px 0 20px 0;
+    }
+
+    .subsection-text {
+      width: 300px;
+      display: block;
+      margin: 0 auto;
     }
   }
 
@@ -47,6 +103,38 @@ $us-flights-width: 400px;
       svg {
         overflow: visible;
       }
+    }
+  }
+
+  .circular-chart {
+    position: relative;
+
+    .chart-inner {
+      overflow: hidden;
+      border-radius: 100%;
+      border: 1px dashed #0D2D84; // TODO
+      height: 400px;
+    }
+
+    .chart-markings {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      svg {
+        overflow: visible;
+      }
+    }
+  }
+
+  .chart-row {
+    display: flex;
+    justify-content: center;
+    margin: 120px 0;
+
+    & > *:first-child {
+      margin-right: 40px;
     }
   }
 
@@ -74,6 +162,35 @@ $us-flights-width: 400px;
   .chart-separator {
     height: 4px;
     background-color: black;
+    margin: 60px 0;
+  }
+
+  .image-container {
+    position: relative;
+    margin: 40px 0;
+
+    &.bottom-shadow:before, &.top-shadow:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 200px;
+    }
+    &.top-shadow:before {
+      top: 0;
+      background: linear-gradient(to bottom, $us-flights-background-color, rgba($us-flights-background-color, 0));
+    }
+    &.bottom-shadow:before {
+      bottom: 0;
+      background: linear-gradient(to top, $us-flights-background-color, rgba($us-flights-background-color, 0));
+    }
+  }
+
+  .footer {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+    padding: 40px 0;
+    margin-top: 140px;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .margin-bottom-large { margin-bottom: 60px; }

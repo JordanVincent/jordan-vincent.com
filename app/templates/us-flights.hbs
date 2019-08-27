@@ -1,21 +1,27 @@
 <div id="us-flights">
   <section class="header">
-    <div class="header-title">A flight against time</div>
+    <h1 class="header-title">A flight against time</h1>
+    <div class="header-subtitle">By {{link-to 'Jordan Vincent' 'index'}}<span class="bullet"></span>August 2019</div>
   </section>
 
   <div class="text">
-    <p>Los Angeles to New York City is a 5-hour flight. But if you’ve ever travelled that route round-trip, you know one leg is going to feel much longer — LA to NYC.</p>
-    <p>As human beings, we don’t perceive distances as much as time spent travelling. To create these maps, we simply substracted th local arrival time by the local departure time. Therefore, a 5-hour flight from Los Angeles to New York counts as 8 hours of lost time.</p>
-    <p>Below, we plotted every flight departing Los Angeles during the third week of January 2019. Each bright pixel represents four flights.</p>
+    <p>Flying is the most convenient way to travel long distances that would otherwise take hours and days. When flying, we don’t perceive distances as much as time spent or lost.</p>
+    <p>While travelling, local arrival time is usually more important than time at home. If you arrive in New York at midnight, you usually go to bed, despite being 9pm at home, in Los Angeles.</p>
+    <p>Below are maps of the US from the point of view of major cities. To create these maps , we simply substracted the local arrival time by the local departure time of all US flights for a full week.</p>
+
+    <h2 class="section-title">East vs West</h2>
+    <p>The Atlantic and Pacific coasts are ones of the most populated regions in the United States. Hundred of flights per day fly between the coasts, crossing three time zones.</p>
   </div>
 
-  <div class="centered-chart">
+  <div class="subsection-header">
+    <img src="/assets/images/us-flights/los-angeles-new-york.svg" alt=""/>
+    <h3 class="subsection-title">Los Angeles / New York</h3>
+    <p class="subsection-text">The New York / Los Angeles route is one of the busiest in the country, with around XX flights per week.</p>
+  </div>
+
+  <div class="centered-chart margin-bottom-large">
     {{us-flights/charts/los-angeles}}
     <div class="chart-markings">{{us-flights/markings/los-angeles}}</div>
-  </div>
-
-  <div class="text margin-bottom-large margin-top-large">
-    <p>Now, let’s fly from New York, back to Los Angeles. Same 5-hour flight, but this time it feels like a 3-hour trip! Departing from New York at 12pm, you arrive at 3pm, leaving you plenty of time to surf in the Pacific Ocean.</p>
   </div>
 
   <div class="centered-chart">
@@ -23,12 +29,97 @@
     <div class="chart-markings">{{us-flights/markings/new-york}}</div>
   </div>
 
-  <div class="text margin-top-large">
-    <p>How does the US look like from some major airports? Let’s have a look!</p>
+  <div class="subsection-header">
+    <img src="/assets/images/us-flights/seattle-miami.svg" alt=""/>
+    <h3 class="subsection-title">Seattle / Miami</h3>
+    <p class="subsection-text">The Seattle/Miami route not as frequented as other routes. Nonetheless, both cities are well connected with their respective coast.</p>
+  </div>
+
+  <div class="centered-chart margin-bottom-large">
+    {{us-flights/charts/seattle}}
+    <div class="chart-markings">{{us-flights/markings/seattle}}</div>
+  </div>
+
+  <div class="centered-chart">
+    {{us-flights/charts/miami}}
+    <div class="chart-markings">{{us-flights/markings/miami}}</div>
+  </div>
+
+
+
+  <div class="text margin-bottom-large">
+    <h2 class="section-title">At the Edge of Time</h2>
+    <p>The United States spans 6 time zones. When New Yorkers stop for lunch, tourists are still asleep in Hawaii.</p>
+    <p>Things get weird when flying across time zones. Flying West feels like slowing time. And flying East can feel like speeding up time.</p>
+    <p>At the edge between two time zones, it’s possible to arrive at destination at an earlier (local time) than you took off. Take Detroit and Chicago for example.</p>
+  </div>
+  <div class="subsection-header">
+    <h3 class="subsection-title">Chicago / Detroit</h3>
+    <p class="subsection-text">Detroit is located in the Eastern timezone while Chicago is in the Central timezone.</p>
+  </div>
+  <div class="text">
+    <div class="image-container bottom-shadow">
+      <img src="/assets/images/us-flights/chicago-detroit.svg" alt="Chicago/Detroit area map"/>
+    </div>
+
+    <p>The otherwise 1h30min flight appears like a 2h30min trip from Chicago and just 30min from Detroit.</p>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/chicago}}</div>
+      <div class="chart-markings">{{us-flights/markings/chicago}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/detroit}}</div>
+      <div class="chart-markings">{{us-flights/markings/detroit}}</div>
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="subsection-header">
+      <h3 class="subsection-title">New Orleans / Atlanta</h3>
+      <p class="subsection-text">Atlanta is located in the Eastern timezone while New Orleans is in the Central timezone.</p>
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="image-container top-shadow">
+      <img src="/assets/images/us-flights/new-orleans-atlanta.svg" alt="New Orleans/Atlanta area map"/>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/new-orleans}}</div>
+      <div class="chart-markings">{{us-flights/markings/new-orleans}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/atlanta}}</div>
+      <div class="chart-markings">{{us-flights/markings/atlanta}}</div>
+    </div>
   </div>
 
   <div class="text margin-bottom-large">
-    <p>As the name, implies, the easter timezone, is, well, central. Two planes, flying to the East coast and to the West coast, will arrive around the same local time (but the one flying East will arrive much earlier).</p>
+    <h2 class="section-title">Going Against Time</h2>
+    <p>Most states follow the daylight saving time. There is no effect on relative flight time because the time changes on the same date everwhere. Except Arizona, Indiana, Hawaii, American Samoa, Puerto Rico, and the Virgin Islands don’t observe daylight saving time.</p>
+    <p>Take Phoenix, Arizona. Arizona stays in Mountain Standard Time (UTC-06:00) year-round. But the states around…</p>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/phoenix}}</div>
+      <div class="chart-markings">{{us-flights/markings/phoenix}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/phoenix}}</div>
+      <div class="chart-markings">{{us-flights/markings/phoenix}}</div>
+    </div>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <h2 class="section-title">At the Edge of the World</h2>
+    <p>Some US states and territories are so far away that they are innaccessible from most US cities.</p>
   </div>
 
   <div class="floating-chart" style="height: 400px;">
@@ -45,10 +136,15 @@
     </div>
   </div>
   <div class="chart-separator"></div>
-  <div class="floating-chart" style="height: 600px;">
+  <div class="floating-chart" style="height: 700px;">
     <div class="floating-chart-inner" style="left: 100px;">
       {{us-flights/charts/honolulu}}
       <div class="chart-markings">{{us-flights/markings/honolulu}}</div>
     </div>
   </div>
+
+  <footer class="text footer">
+    <p>This series of charts was created using flight data from the United States Bureau of Transportation Statistics. All charts, except for Phoenix’s Summer chart, used data between January 14 and January 20, 2019. Phoenix’s Summer chart used data from XXX.</p>
+    <p>Thanks to Jennifer Hwang for providing invaluable feedback.</p>
+  </footer>
 </div>
