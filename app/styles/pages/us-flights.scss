@@ -87,6 +87,10 @@ $us-flights-background-color: #070823;
     }
   }
 
+  .flight-chart {
+    background-color: transparent;
+  }
+
   .centered-chart {
     position: relative;
 
@@ -112,19 +116,19 @@ $us-flights-background-color: #070823;
     .chart-inner {
       overflow: hidden;
       border-radius: 100%;
-      border: 1px dashed #0D2D84; // TODO
       height: 400px;
     }
 
-    .chart-markings {
+    .flight-chart {
+      background-color: rgb(12, 13, 51);
+    }
+
+    .chart-markings svg {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      svg {
-        overflow: visible;
-      }
+      overflow: visible;
     }
   }
 
