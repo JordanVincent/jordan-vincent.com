@@ -10,6 +10,10 @@ $us-flights-background-color: #070823;
   padding: 100px 0;
   overflow: hidden;
 
+  a {
+    color: #2196F3;
+  }
+
   .header {
     margin-bottom: 100px;
     text-align: center;
@@ -26,9 +30,7 @@ $us-flights-background-color: #070823;
 
   .header-subtitle {
     font-size: 16px;
-    a {
-      color: #FFC64D;
-    }
+
     .bullet {
       width: 4px;
       height: 4px;
@@ -195,6 +197,10 @@ $us-flights-background-color: #070823;
     padding: 40px 0;
     margin-top: 140px;
     color: rgba(255, 255, 255, 0.5);
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 
   .margin-bottom-large { margin-bottom: 60px; }
