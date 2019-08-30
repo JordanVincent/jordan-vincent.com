@@ -64,7 +64,7 @@ $us-flights-background-color: #070823;
     margin: 100px 0 60px 0;
     text-align: center;
     position: relative;
-    border-top: 4px solid black;
+    // border-top: 4px solid black;
     padding-top: 40px;
 
     img {
@@ -137,7 +137,7 @@ $us-flights-background-color: #070823;
   .chart-row {
     display: flex;
     justify-content: center;
-    margin: 120px 0;
+    margin: 150px 0;
 
     & > *:first-child {
       margin-right: 40px;
@@ -205,4 +205,6 @@ $us-flights-background-color: #070823;
 
   .margin-bottom-large { margin-bottom: 60px; }
   .margin-top-large { margin-top: 60px; }
+  .margin-bottom-medium { margin-bottom: 40px; }
+  .margin-top-medium { margin-top: 40px; }
 }

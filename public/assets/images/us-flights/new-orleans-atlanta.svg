@@ -22,7 +22,7 @@
         </text>
         <circle id="Oval-Copy-9" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="295" cy="99" r="5"></circle>
         <text id="Atlanta" font-family="NunitoSans-Regular, Nunito Sans" font-size="18" font-weight="normal" line-spacing="20" fill="#FFFFFF">
-            <tspan x="265.5" y="85">Atlanta</tspan>
+            <tspan x="265.5" y="83">Atlanta</tspan>
         </text>
     </g>
 </svg>
