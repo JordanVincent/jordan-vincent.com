@@ -1,15 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="400px" height="240px" viewBox="0 0 400 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="400px" height="250px" viewBox="0 0 400 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>phoenix</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <polygon id="path-1" points="12.2042252 0 0 36.0563235 26.3596683 49.6624474 28.8908919 50.2373913 36.5242252 7.42105263"></polygon>
+        <text id="text-3" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#FFFFFF">
+            <tspan x="64" y="155">Phoenix</tspan>
+        </text>
+        <filter x="-1.3%" y="-3.8%" width="102.6%" height="107.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="76.04" y="100">Salt Lake City</tspan>
+        </text>
+        <filter x="-1.2%" y="-4.7%" width="102.5%" height="109.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-7" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="56.17" y="127">Las Vegas</tspan>
+        </text>
+        <filter x="-1.6%" y="-4.7%" width="103.3%" height="109.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-9" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="137.39" y="120">Denver</tspan>
+        </text>
+        <filter x="-2.3%" y="-4.7%" width="104.5%" height="109.4%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-11" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="11.436" y="176">In Summer</tspan>
+        </text>
+        <filter x="-1.3%" y="-4.7%" width="102.5%" height="109.4%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-13" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="99.282" y="196">In Winter</tspan>
+        </text>
+        <filter x="-1.5%" y="-4.7%" width="102.9%" height="109.4%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
     </defs>
     <g id="phoenix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path-8" fill="#3057C2" points="47.6756875 14 47.6756875 34.8434238 35 68.4244955 35 90.7153793 41.3378437 119.664579 62.0798778 151.942937 75.4757748 155.561587 101.835443 169.167711 134.821039 175.68128 152.826277 194.49826 163.629419 190.011134 180.914448 214.328462 196.759057 222 196.759057 204.485734 204.393278 194.49826 224.703186 190.011134 242.996508 190.011134 258.26495 182.339596 280.447403 182.339596 290.530336 186.681976 297.012222 200.577592 304.502401 214.328462 310.696203 218.670842 314.153208 204.485734 310.696203 190.011134 304.502401 176.983994 304.502401 169.167711 318.762549 151.942937 333.742907 130.375783 328.269315 117.927627 328.269315 101.426583 333.742907 90.7153793 333.742907 82.3201113 345.266259 75.3723034 345.266259 54.2393876 365 38.6068198 352.324313 24.4217119 345.266259 24.4217119 338.784374 46.4231037 318.762549 54.2393876 304.502401 68.4244955 290.530336 82.3201113 276.990397 86.0835073 276.990397 61.3319415 261.433872 61.3319415 258.26495 90.7153793 249.19031 90.7153793 249.19031 68.4244955 255.096028 54.2393876 242.996508 46.4231037 228.304234 54.2393876 228.304234 42.3702157 210.010912 34.8434238 163.629419 34.8434238 113.502837 27.7508699 75.4757748 18.631872"></polygon>
-        <polygon id="Path-35-Copy" fill="#3AAE93" points="47.6756875 14 74.254902 18.3707992 99.84 24.2289446 104.45098 47.2429581 99.84 56.4422701 85.3155556 56.4422701 74 70.9150821 74 78.0038063 99.84 85.0925305 87.68 119.679598 112 127.112913 104.366667 170 101.835443 169.424106 75.1941438 155.595652 62.0798778 152.17087 41.4492962 119.812485 35 92 35 69.5569962 47.6756875 34.877865"></polygon>
-        <g id="Group-2" transform="translate(75.000000, 119.000000)">
+        <polygon id="Path-8" fill="#3057C2" points="47.6756875 29 47.6756875 49.8434238 35 83.4244955 35 105.715379 41.3378437 134.664579 62.0798778 166.942937 75.4757748 170.561587 101.835443 184.167711 134.821039 190.68128 152.826277 209.49826 163.629419 205.011134 180.914448 229.328462 196.759057 237 196.759057 219.485734 204.393278 209.49826 224.703186 205.011134 242.996508 205.011134 258.26495 197.339596 280.447403 197.339596 290.530336 201.681976 297.012222 215.577592 304.502401 229.328462 310.696203 233.670842 314.153208 219.485734 310.696203 205.011134 304.502401 191.983994 304.502401 184.167711 318.762549 166.942937 333.742907 145.375783 328.269315 132.927627 328.269315 116.426583 333.742907 105.715379 333.742907 97.3201113 345.266259 90.3723034 345.266259 69.2393876 365 53.6068198 352.324313 39.4217119 345.266259 39.4217119 338.784374 61.4231037 318.762549 69.2393876 304.502401 83.4244955 290.530336 97.3201113 276.990397 101.083507 276.990397 76.3319415 261.433872 76.3319415 258.26495 105.715379 249.19031 105.715379 249.19031 83.4244955 255.096028 69.2393876 242.996508 61.4231037 228.304234 69.2393876 228.304234 57.3702157 210.010912 49.8434238 163.629419 49.8434238 113.502837 42.7508699 75.4757748 33.631872"></polygon>
+        <polygon id="Path-35-Copy" fill="#3AAE93" points="47.6756875 29 74.254902 33.3707992 99.84 39.2289446 104.45098 62.2429581 99.84 71.4422701 85.3155556 71.4422701 74 85.9150821 74 93.0038063 99.84 100.092531 87.68 134.679598 112 142.112913 104.366667 185 101.835443 184.424106 75.1941438 170.595652 62.0798778 167.17087 41.4492962 134.812485 35 107 35 84.5569962 47.6756875 49.877865"></polygon>
+        <g id="Group-2" transform="translate(75.000000, 134.000000)">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
@@ -29,13 +143,51 @@
                 </g>
             </g>
         </g>
-        <polygon id="Path-8" stroke="#080A23" points="47.6756875 14 47.6756875 34.8434238 35 68.4244955 35 90.7153793 41.3378437 119.664579 62.0798778 151.942937 75.4757748 155.561587 101.835443 169.167711 134.821039 175.68128 152.826277 194.49826 163.629419 190.011134 180.914448 214.328462 196.759057 222 196.759057 204.485734 204.393278 194.49826 224.703186 190.011134 242.996508 190.011134 258.26495 182.339596 280.447403 182.339596 290.530336 186.681976 297.012222 200.577592 304.502401 214.328462 310.696203 218.670842 314.153208 204.485734 310.696203 190.011134 304.502401 176.983994 304.502401 169.167711 318.762549 151.942937 333.742907 130.375783 328.269315 117.927627 328.269315 101.426583 333.742907 90.7153793 333.742907 82.3201113 345.266259 75.3723034 345.266259 54.2393876 365 38.6068198 352.324313 24.4217119 345.266259 24.4217119 338.784374 46.4231037 318.762549 54.2393876 304.502401 68.4244955 290.530336 82.3201113 276.990397 86.0835073 276.990397 61.3319415 261.433872 61.3319415 258.26495 90.7153793 249.19031 90.7153793 249.19031 68.4244955 255.096028 54.2393876 242.996508 46.4231037 228.304234 54.2393876 228.304234 42.3702157 210.010912 34.8434238 163.629419 34.8434238 113.502837 27.7508699 75.4757748 18.631872"></polygon>
-        <polyline id="Path-9" stroke="#080A23" points="98.9281439 22 104.4 48.5484413 99.84 56.5179419 85.3155556 56.5179419 74 70.9811096 74 78.0651101 99.84 85.1491106 87.68 119.71313 112 127.141491 104.366667 170"></polyline>
-        <polyline id="Path-10" stroke="#080A23" points="160.067265 32 160.067265 49.2206703 170.927436 49.2206703 175 61.307983 175 85.3369781 170.927436 100.628157 164.139829 126.259085 160.067265 137.035725 154.335508 172.423881 141.363636 172.423881 138 183"></polyline>
-        <polyline id="Path-11" stroke="#080A23" points="252 89 252 98.0627716 252 115.90946 270.965035 127.760777 270.965035 142.261211 276 162.896445 276 185"></polyline>
-        <text id="Phoenix" font-family="NunitoSans-Regular, Nunito Sans" font-size="18" font-weight="normal" line-spacing="20" fill="#FFFFFF">
-            <tspan x="59.5" y="135">Phoenix</tspan>
+        <polygon id="Path-8" stroke="#080A23" points="47.6756875 29 47.6756875 49.8434238 35 83.4244955 35 105.715379 41.3378437 134.664579 62.0798778 166.942937 75.4757748 170.561587 101.835443 184.167711 134.821039 190.68128 152.826277 209.49826 163.629419 205.011134 180.914448 229.328462 196.759057 237 196.759057 219.485734 204.393278 209.49826 224.703186 205.011134 242.996508 205.011134 258.26495 197.339596 280.447403 197.339596 290.530336 201.681976 297.012222 215.577592 304.502401 229.328462 310.696203 233.670842 314.153208 219.485734 310.696203 205.011134 304.502401 191.983994 304.502401 184.167711 318.762549 166.942937 333.742907 145.375783 328.269315 132.927627 328.269315 116.426583 333.742907 105.715379 333.742907 97.3201113 345.266259 90.3723034 345.266259 69.2393876 365 53.6068198 352.324313 39.4217119 345.266259 39.4217119 338.784374 61.4231037 318.762549 69.2393876 304.502401 83.4244955 290.530336 97.3201113 276.990397 101.083507 276.990397 76.3319415 261.433872 76.3319415 258.26495 105.715379 249.19031 105.715379 249.19031 83.4244955 255.096028 69.2393876 242.996508 61.4231037 228.304234 69.2393876 228.304234 57.3702157 210.010912 49.8434238 163.629419 49.8434238 113.502837 42.7508699 75.4757748 33.631872"></polygon>
+        <polyline id="Path-9" stroke="#080A23" points="98.9281439 37 104.4 63.5484413 99.84 71.5179419 85.3155556 71.5179419 74 85.9811096 74 93.0651101 99.84 100.149111 87.68 134.71313 112 142.141491 104.366667 185"></polyline>
+        <polyline id="Path-10" stroke="#080A23" points="160.067265 47 160.067265 64.2206703 170.927436 64.2206703 175 76.307983 175 100.336978 170.927436 115.628157 164.139829 141.259085 160.067265 152.035725 154.335508 187.423881 141.363636 187.423881 138 198"></polyline>
+        <polyline id="Path-11" stroke="#080A23" points="252 104 252 113.062772 252 130.90946 270.965035 142.760777 270.965035 157.261211 276 177.896445 276 200"></polyline>
+        <g id="Phoenix" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+            <use xlink:href="#text-3"></use>
+        </g>
+        <circle id="Oval-Copy-8" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="92" cy="166" r="5"></circle>
+        <circle id="Oval-Copy-11" stroke="#000000" fill="#FFFFFF" cx="106" cy="109" r="2.5"></circle>
+        <circle id="Oval-Copy-13" stroke="#000000" fill="#FFFFFF" cx="78" cy="136" r="2.5"></circle>
+        <circle id="Oval-Copy-12" stroke="#000000" fill="#FFFFFF" cx="153" cy="129" r="2.5"></circle>
+        <g id="Salt-Lake-City" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-6)" xlink:href="#text-5"></use>
+            <use xlink:href="#text-5"></use>
+        </g>
+        <g id="Las-Vegas" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-8)" xlink:href="#text-7"></use>
+            <use xlink:href="#text-7"></use>
+        </g>
+        <g id="Denver" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-10)" xlink:href="#text-9"></use>
+            <use xlink:href="#text-9"></use>
+        </g>
+        <g id="In-Summer" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-12)" xlink:href="#text-11"></use>
+            <use xlink:href="#text-11"></use>
+        </g>
+        <g id="In-Winter" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-14)" xlink:href="#text-13"></use>
+            <use xlink:href="#text-13"></use>
+        </g>
+        <polygon id="Path-13-Copy-4" fill="#FFFFFF" transform="translate(124.000000, 176.000000) rotate(193.000000) translate(-124.000000, -176.000000) " points="127 178 121 176 127 174"></polygon>
+        <polygon id="Path-13-Copy-4" fill="#FFFFFF" transform="translate(69.000000, 160.000000) rotate(16.000000) translate(-69.000000, -160.000000) " points="72 162 66 160 72 158"></polygon>
+        <path d="M103.5,170.5 L124,176" id="Line-5" stroke="#FFFFFF" stroke-linecap="square"></path>
+        <path d="M70.75,160.75 L81.75,163.75" id="Line-5-Copy" stroke="#FFFFFF" stroke-linecap="square"></path>
+        <text id="Pacific-Time" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+            <tspan x="0" y="54">Pacific </tspan>
+            <tspan x="0" y="66">Time</tspan>
         </text>
-        <circle id="Oval-Copy-8" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="92" cy="151" r="5"></circle>
+        <text id="Mountain-Time" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+            <tspan x="119" y="10">Mountain </tspan>
+            <tspan x="119" y="22">Time</tspan>
+        </text>
+        <path d="M130,29 L130,44.1413675" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
+        <path d="M35,56 L44.7110615,56" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
     </g>
 </svg>

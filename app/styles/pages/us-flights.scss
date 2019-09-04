@@ -64,8 +64,6 @@ $us-flights-background-color: #070823;
     margin: 100px 0 60px 0;
     text-align: center;
     position: relative;
-    // border-top: 4px solid black;
-    padding-top: 40px;
 
     img {
       position: absolute;
@@ -174,22 +172,6 @@ $us-flights-background-color: #070823;
   .image-container {
     position: relative;
     margin: 40px 0;
-
-    &.bottom-shadow:before, &.top-shadow:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 200px;
-    }
-    &.top-shadow:before {
-      top: 0;
-      background: linear-gradient(to bottom, $us-flights-background-color, rgba($us-flights-background-color, 0));
-    }
-    &.bottom-shadow:before {
-      bottom: 0;
-      background: linear-gradient(to top, $us-flights-background-color, rgba($us-flights-background-color, 0));
-    }
   }
 
   .footer {

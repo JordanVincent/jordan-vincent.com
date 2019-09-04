@@ -3,28 +3,99 @@
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>chicago-detroit</title>
     <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#080A23" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.0235294118" offset="10.8489857%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.0862745098" offset="20.6431255%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.184313725" offset="29.6168294%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.301960784" offset="38.0045079%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.431372549" offset="46.040571%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.568627451" offset="53.959429%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.698039216" offset="61.9954921%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.815686275" offset="70.3831706%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.91372549" offset="79.3568745%"></stop>
+            <stop stop-color="#080A23" stop-opacity="0.976470588" offset="89.1510143%"></stop>
+            <stop stop-color="#080A23" offset="100%"></stop>
+        </linearGradient>
+        <text id="text-2" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#FFFFFF">
+            <tspan x="105.5" y="168">Chicago</tspan>
+        </text>
+        <filter x="-1.3%" y="-3.8%" width="102.5%" height="107.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-4" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#FFFFFF">
+            <tspan x="240" y="152">Detroit</tspan>
+        </text>
+        <filter x="-1.5%" y="-3.8%" width="103.0%" height="107.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="-0.5" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
     <g id="chicago-detroit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path-20" fill="#3561D9" points="142.222222 199.096154 133.737374 178.096154 133.737374 156.692308 133.737374 133.269231 133.737374 113.884615 142.222222 100.961538 146.262626 88.8461538 150.707071 78.3461538 150.707071 72.2884615 137.373737 88.8461538 126.868687 96.5192308 142.222222 72.2884615 155.959596 55.3269231 170.10101 55.3269231 194.343434 48.8653846 208.888889 48.8653846 227.474747 48.8653846 227.474747 37.5576923 222.222222 26.25 208.888889 26.25 205.252525 19.7884615 183.030303 19.7884615 163.232323 26.25 142.222222 23.4230769 130.10101 11.7115385 120.40404 11.7115385 126.868687 2.82692308 110.30303 2.82692308 101.818182 7.67307692 75.959596 19.7884615 63.8383838 19.7884615 63.8383838 7.67307692 46.0606061 11.7115385 29.0909091 14.9423077 46.0606061 0 0 0 0 336 400 336 400 133.269231 387.474747 129.634615 374.545455 129.634615 362.828283 133.269231 365.656566 150.230769 355.555556 168 343.030303 173.25 324.444444 184.153846 311.111111 189.403846 291.313131 199.096154 273.535354 205.961538 256.565657 201.923077 247.676768 196.269231 256.565657 184.153846 262.222222 173.25 266.666667 162.346154 273.535354 150.230769 273.535354 138.519231 266.666667 121.961538 256.565657 113.884615 247.676768 117.519231 237.979798 126.403846 232.323232 121.961538 240.808081 106.615385 247.676768 100.961538 247.676768 78.3461538 240.808081 63.4038462 222.222222 55.3269231 205.252525 55.3269231 200 63.4038462 194.343434 78.3461538 183.030303 85.2115385 170.10101 96.5192308 167.272727 117.519231 167.272727 133.269231 170.10101 150.230769 170.10101 168 167.272727 184.153846 155.959596 196.269231"></polygon>
-        <path d="M222.222222,55.3269231 L240.808081,63.4038462 L247.676768,78.3461538 L247.676768,100.961538 L240.808081,106.615385 L232.323232,121.961538 L237.979798,126.403846 L247.676768,117.519231 L256.565657,113.884615 L266.666667,121.961538 L273.535354,138.519231 L273.535354,150.230769 L266.666667,162.346154 L262.222222,173.25 L256.565657,184.153846 L247.676768,196.269231 L256.565657,201.923077 L273.535354,205.961538 L291.313131,199.096154 L311.111111,189.403846 L324.444444,184.153846 L343.030303,173.25 L355.555556,168 L365.656566,150.230769 L362.828283,133.269231 L374.545455,129.634615 L387.474747,129.634615 L400,133.269231 L400,336 L126.105,335.999923 L121.5,333.5 L123,328 L139,311 L139,218.5 L156,218.5 L156,196.224923 L167.272727,184.153846 L170.10101,168 L170.10101,150.230769 L167.272727,133.269231 L167.272727,117.519231 L170.10101,96.5192308 L183.030303,85.2115385 L194.343434,78.3461538 L200,63.4038462 L205.252525,55.3269231 L222.222222,55.3269231 Z" id="Combined-Shape" fill="#3AAE93"></path>
-        <polyline id="Path-42" stroke="#000000" points="144 192 139.034483 198.845333 139.034483 280.989333 139.034483 291.861333 139.034483 310.786667 122.896552 328.101333 120 343"></polyline>
-        <path d="M151,196.5 L256,196.5" id="Path-43" stroke="#000000"></path>
-        <polyline id="Path-44" stroke="#000000" points="71 18 80.9491525 30.8028169 115.118644 41.8309859 132.20339 50.4084507 132.20339 57.3521127 135.050847 69.1971831 144 77.5"></polyline>
-        <polyline id="Path-45" stroke="#000000" points="34.300578 12 23.7803468 20.4827586 20.9479769 43.1034483 8 52.3940887 8 67.3399015 8 83.0935961 20.9479769 96.4236453 26.6127168 102.078818 41.1791908 115.408867 47.6531792 136.413793 47.6531792 150.955665 58.982659 164.689655 62.2196532 175.192118 67.0751445 192.157635 62.2196532 200.640394 41.1791908 207.91133 41.1791908 219.221675 37.5375723 237.802956 34.300578 248.70936 41.1791908 268.098522 47.6531792 280.216749 52.5086705 291.931034 62.2196532 296.374384 62.2196532 311.724138 62.2196532 321.014778 78 340"></polyline>
-        <polyline id="Path-46" stroke="#000000" points="-4 229 25.1473684 232.6 35 243.8 35 249"></polyline>
-        <polyline id="Path-47" stroke="#000000" points="212 196 212 288.629213 205.6 304.404494 191.6 308.449438 188 325.438202 181.6 335.955056 178 340"></polyline>
-        <polyline id="Path-48" stroke="#000000" points="213 288 224.698864 294.153846 239.221591 301.538462 251.727273 304.410256 262.215909 304.410256 268.670455 308.512821 275.931818 313.025641 275.931818 321.641026 280.369318 333.128205 284 336"></polyline>
-        <polyline id="Path-49" stroke="#000000" points="324.909091 176 329 234.829412 324.909091 245.708824 322.045455 267.870588 308.954545 277.138235 299.954545 288.420588 288.909091 299.3 283.181818 308.164706 275 313"></polyline>
-        <polyline id="Path-50" stroke="#000000" points="345 168 345 183 403 178.945946"></polyline>
-        <polyline id="Path-51" stroke="#000000" points="329 235 331 265 410 259.246575"></polyline>
-        <polyline id="Path-52" stroke="#000000" points="342 336 349.760563 325.057895 357.929577 303.578947 364.464789 308.036842 374.267606 293.852632 390.197183 273.994737 390.197183 267.915789 400 260"></polyline>
-        <path d="M59,165 L137,168" id="Path-53" stroke="#000000"></path>
+        <g id="Group" transform="translate(-4.000000, 0.000000)">
+            <polygon id="Path-20" fill="#3561D9" points="146.222222 199.096154 137.737374 178.096154 137.737374 156.692308 137.737374 133.269231 137.737374 113.884615 146.222222 100.961538 150.262626 88.8461538 154.707071 78.3461538 154.707071 72.2884615 141.373737 88.8461538 130.868687 96.5192308 146.222222 72.2884615 159.959596 55.3269231 174.10101 55.3269231 198.343434 48.8653846 212.888889 48.8653846 231.474747 48.8653846 231.474747 37.5576923 226.222222 26.25 212.888889 26.25 209.252525 19.7884615 187.030303 19.7884615 167.232323 26.25 146.222222 23.4230769 134.10101 11.7115385 124.40404 11.7115385 130.868687 2.82692308 114.30303 2.82692308 105.818182 7.67307692 79.959596 19.7884615 67.8383838 19.7884615 67.8383838 7.67307692 50.0606061 11.7115385 33.0909091 14.9423077 50.0606061 0 4 0 4 336 404 336 404 133.269231 391.474747 129.634615 378.545455 129.634615 366.828283 133.269231 369.656566 150.230769 359.555556 168 347.030303 173.25 328.444444 184.153846 315.111111 189.403846 295.313131 199.096154 277.535354 205.961538 260.565657 201.923077 251.676768 196.269231 260.565657 184.153846 266.222222 173.25 270.666667 162.346154 277.535354 150.230769 277.535354 138.519231 270.666667 121.961538 260.565657 113.884615 251.676768 117.519231 241.979798 126.403846 236.323232 121.961538 244.808081 106.615385 251.676768 100.961538 251.676768 78.3461538 244.808081 63.4038462 226.222222 55.3269231 209.252525 55.3269231 204 63.4038462 198.343434 78.3461538 187.030303 85.2115385 174.10101 96.5192308 171.272727 117.519231 171.272727 133.269231 174.10101 150.230769 174.10101 168 171.272727 184.153846 159.959596 196.269231"></polygon>
+            <path d="M226.222222,55.3269231 L244.808081,63.4038462 L251.676768,78.3461538 L251.676768,100.961538 L244.808081,106.615385 L236.323232,121.961538 L241.979798,126.403846 L251.676768,117.519231 L260.565657,113.884615 L270.666667,121.961538 L277.535354,138.519231 L277.535354,150.230769 L270.666667,162.346154 L266.222222,173.25 L260.565657,184.153846 L251.676768,196.269231 L260.565657,201.923077 L277.535354,205.961538 L295.313131,199.096154 L315.111111,189.403846 L328.444444,184.153846 L347.030303,173.25 L359.555556,168 L369.656566,150.230769 L366.828283,133.269231 L378.545455,129.634615 L391.474747,129.634615 L404,133.269231 L404,336 L130.105,335.999923 L125.5,333.5 L127,328 L143,311 L143,218.5 L160,218.5 L160,196.224923 L171.272727,184.153846 L174.10101,168 L174.10101,150.230769 L171.272727,133.269231 L171.272727,117.519231 L174.10101,96.5192308 L187.030303,85.2115385 L198.343434,78.3461538 L204,63.4038462 L209.252525,55.3269231 L226.222222,55.3269231 Z" id="Combined-Shape" fill="#3AAE93"></path>
+            <polyline id="Path-42" stroke="#000000" points="148 192 143.034483 198.845333 143.034483 280.989333 143.034483 291.861333 143.034483 310.786667 126.896552 328.101333 124 343"></polyline>
+            <path d="M155,196.5 L260,196.5" id="Path-43" stroke="#000000"></path>
+            <polyline id="Path-44" stroke="#000000" points="75 18 84.9491525 30.8028169 119.118644 41.8309859 136.20339 50.4084507 136.20339 57.3521127 139.050847 69.1971831 148 77.5"></polyline>
+            <polyline id="Path-45" stroke="#000000" points="38.300578 12 27.7803468 20.4827586 24.9479769 43.1034483 12 52.3940887 12 67.3399015 12 83.0935961 24.9479769 96.4236453 30.6127168 102.078818 45.1791908 115.408867 51.6531792 136.413793 51.6531792 150.955665 62.982659 164.689655 66.2196532 175.192118 71.0751445 192.157635 66.2196532 200.640394 45.1791908 207.91133 45.1791908 219.221675 41.5375723 237.802956 38.300578 248.70936 45.1791908 268.098522 51.6531792 280.216749 56.5086705 291.931034 66.2196532 296.374384 66.2196532 311.724138 66.2196532 321.014778 82 340"></polyline>
+            <polyline id="Path-46" stroke="#000000" points="0 229 29.1473684 232.6 39 243.8 39 249"></polyline>
+            <polyline id="Path-47" stroke="#000000" points="216 196 216 288.629213 209.6 304.404494 195.6 308.449438 192 325.438202 185.6 335.955056 182 340"></polyline>
+            <polyline id="Path-48" stroke="#000000" points="217 288 228.698864 294.153846 243.221591 301.538462 255.727273 304.410256 266.215909 304.410256 272.670455 308.512821 279.931818 313.025641 279.931818 321.641026 284.369318 333.128205 288 336"></polyline>
+            <polyline id="Path-49" stroke="#000000" points="328.909091 176 333 234.829412 328.909091 245.708824 326.045455 267.870588 312.954545 277.138235 303.954545 288.420588 292.909091 299.3 287.181818 308.164706 279 313"></polyline>
+            <polyline id="Path-50" stroke="#000000" points="349 168 349 183 407 178.945946"></polyline>
+            <polyline id="Path-51" stroke="#000000" points="333 235 335 265 414 259.246575"></polyline>
+            <polyline id="Path-52" stroke="#000000" points="346 336 353.760563 325.057895 361.929577 303.578947 368.464789 308.036842 378.267606 293.852632 394.197183 273.994737 394.197183 267.915789 404 260"></polyline>
+            <path d="M63,165 L141,168" id="Path-53" stroke="#000000"></path>
+        </g>
+        <rect id="Rectangle-Copy-🌈ease-in-out;lrgb;12" fill="url(#linearGradient-1)" x="0" y="130" width="400" height="200"></rect>
         <circle id="Oval-Copy-7" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="135" cy="182" r="5"></circle>
         <circle id="Oval-Copy-8" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="265" cy="166" r="5"></circle>
-        <text id="Chicago" font-family="NunitoSans-Regular, Nunito Sans" font-size="18" font-weight="normal" line-spacing="20" fill="#FFFFFF">
-            <tspan x="102" y="166">Chicago</tspan>
+        <g id="Chicago" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-3)" xlink:href="#text-2"></use>
+            <use xlink:href="#text-2"></use>
+        </g>
+        <g id="Detroit" fill="#FFFFFF" fill-opacity="1">
+            <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+            <use xlink:href="#text-4"></use>
+        </g>
+        <text id="Eastern-Standard-Tim" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+            <tspan x="350" y="54">Eastern </tspan>
+            <tspan x="350" y="66">Standard </tspan>
+            <tspan x="350" y="78">Time</tspan>
         </text>
-        <text id="Detroit" font-family="NunitoSans-Regular, Nunito Sans" font-size="18" font-weight="normal" line-spacing="20" fill="#FFFFFF">
-            <tspan x="237" y="150">Detroit</tspan>
+        <text id="Central-Standard-Tim" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+            <tspan x="258" y="33">Central </tspan>
+            <tspan x="258" y="45">Standard </tspan>
+            <tspan x="258" y="57">Time</tspan>
         </text>
+        <path d="M363.5,86.403087 L363.5,130.849427" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
+        <path d="M249.2297,41 L228.812938,41" id="Line-4-Copy-2" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
     </g>
 </svg>
