@@ -1,0 +1,171 @@
+<div id="us-flights">
+  <section class="header">
+    <h1 class="header-title">A flight against time</h1>
+    <div class="header-subtitle">By {{link-to 'Jordan Vincent' 'index'}}<span class="bullet"></span>August 2019</div>
+  </section>
+
+  <div class="text">
+    <p>Flying is the most convenient way to travel long distances that would otherwise take hours and days. When flying, we don’t perceive distances nearly as much as time spent.</p>
+    <p>While traveling, local arrival time is usually more important than time at home. Let's imagine we fly from Los Angeles to New York City. Our plane takes off at 4 pm PST and lands at midnight EST. Upon arrival, you usually go to bed, despite being 9 pm at home, in Los Angeles. It appears as if it took 8 hours. But in reality, you only spent 5 hours on the plane.</p>
+    <p>On the flight back, however, it feels much faster. If you leave New York City at noon, you will arrive in Los Angeles at 3:30 pm PST. It appears like a 3h30min flight. It feels twice as fast to go west than it does to go east!</p>
+    <p>Strange, right? What does the rest of the United States looks like from major airports? Let's have a look!</p>
+
+    <h2 class="section-title">East vs West</h2>
+    <p>The Atlantic and Pacific coasts are two of the most populated regions in the United States. There are hundreds of flights per day making the trip between the coasts.</p>
+  </div>
+
+  <div class="subsection-header">
+    <h3 class="subsection-title">Los Angeles / New York</h3>
+    <p class="subsection-text">The New York/Los Angeles route is one of the busiest in the country with more than 600 flights per week.</p>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <p>Here is what the United States look like from Los Angeles. Because it feels slower to go east, it looks stretched.</p>
+  </div>
+
+  <div class="centered-chart margin-bottom-large">
+    {{us-flights/charts/los-angeles}}
+    <div class="chart-markings">{{us-flights/markings/los-angeles}}</div>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <p>From New York City, however, the United States looks squished because it feels faster to go west.</p>
+  </div>
+
+  <div class="centered-chart">
+    {{us-flights/charts/new-york}}
+    <div class="chart-markings">{{us-flights/markings/new-york}}</div>
+  </div>
+
+  <div class="subsection-header">
+    <h3 class="subsection-title">Seattle / Miami</h3>
+    <p class="subsection-text">The Seattle/Miami route isn't as frequented - with a mere 40 flights per week.</p>
+  </div>
+
+  <div class="centered-chart margin-bottom-large">
+    {{us-flights/charts/seattle}}
+    <div class="chart-markings">{{us-flights/markings/seattle}}</div>
+  </div>
+
+  <div class="centered-chart">
+    {{us-flights/charts/miami}}
+    <div class="chart-markings">{{us-flights/markings/miami}}</div>
+  </div>
+
+  <div class="text">
+    <h2 class="section-title">At the Edge of Time</h2>
+    <p>Things get weird when flying across time zones. When flying west, it feels like time is slowing down. And when flying east, it feels like time is speeding up.</p>
+    <p>At the edge between two time zones, it’s possible to arrive at your destination at an earlier local time than you took off. Let’s have a look at Chicago and Detroit.</p>
+  </div>
+  <div class="subsection-header">
+    <h3 class="subsection-title">Chicago / Detroit</h3>
+    <p class="subsection-text">Chicago is located in the Central time zone while Detroit is located in the Eastern time zone.</p>
+  </div>
+  <div class="text">
+    <div class="image-container bottom-shadow">
+      <img src="/assets/images/us-flights/chicago-detroit.svg" alt="Chicago/Detroit area map"/>
+    </div>
+    <p>The flight between the two cities takes 1h30min. But from Chicago, it appears like a 2h30min trip, and from Detroit, it appears like a 30min trip. A difference of 2 hours.</p>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/chicago}}</div>
+      <div class="chart-markings">{{us-flights/markings/chicago}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/detroit}}</div>
+      <div class="chart-markings">{{us-flights/markings/detroit}}</div>
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="subsection-header">
+      <h3 class="subsection-title">New Orleans / Atlanta</h3>
+      <p class="subsection-text">New Orleans is located in the Central time zone while Atlanta is located in the Eastern time zone.</p>
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="image-container top-shadow">
+      <img src="/assets/images/us-flights/new-orleans-atlanta.svg" alt="New Orleans/Atlanta area map"/>
+    </div>
+    <p>As for Chicago/Detroit, the flight between the two cities takes 1h30min. But from New Orleans, it appears like a 2h30min trip, and from Atlanta, it appears like a 30min trip. A difference of 2 hours.</p>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/new-orleans}}</div>
+      <div class="chart-markings">{{us-flights/markings/new-orleans}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/atlanta}}</div>
+      <div class="chart-markings">{{us-flights/markings/atlanta}}</div>
+    </div>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <h2 class="section-title">Going Against Time</h2>
+    <p>Most states follow daylight saving time. But, there is no effect on relative flight time because local time changes at the same moment everywhere.</p>
+    <p>There are a few exceptions. Places such as Arizona, Hawaii, American Samoa, Puerto Rico, and the Virgin Islands don’t observe daylight saving time. In summer, when daylight saving takes effect, the rest of the US looks different when flying from these states. Take Phoenix, Arizona.</p>
+    <img class="margin-top-medium margin-bottom-medium" src="/assets/images/us-flights/phoenix.svg" alt="Phoenix time zone"/>
+    <p>Phoenix is located at the border between Mountain and Pacific times. Arizona stays in Mountain Standard Time (UTC-06:00) year-round, but all other states around it change time in summer.</p>
+    <p>In summer, Denver and Salt Lake City, which used to be in Phoenix's time zone, are now 1 hour ahead. And Phoenix's time is now the same as other cities on the Pacific coast. So flying to California doesn't save time anymore, and flying to Colorado or Utah costs 1 more hour. As a result, in summer, all states that observe daylight saving time are 1 hour further away!</p>
+  </div>
+
+  <div class="chart-row">
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/phoenix}}</div>
+      <div class="chart-markings">{{us-flights/markings/phoenix}}</div>
+    </div>
+    <div class="circular-chart">
+      <div class="chart-inner">{{us-flights/charts/phoenix-summer}}</div>
+      <div class="chart-markings">{{us-flights/markings/phoenix-summer}}</div>
+    </div>
+  </div>
+
+  <div class="text margin-bottom-large">
+    <h2 class="section-title">At the Edge of the World</h2>
+    <p>Some places in the US are so far away that they are inaccessible by direct flight from most US cities.</p>
+  </div>
+
+  <div class="subsection-header">
+    <h3 class="subsection-title">San Juan</h3>
+    <p class="subsection-text">From San Juan, Puerto Rico, you can only fly directly to the East Coast.</p>
+  </div>
+  <div class="floating-chart" style="height: 400px;">
+    <div class="floating-chart-inner" style="right: 90px;">
+      {{us-flights/charts/san-juan}}
+      <div class="chart-markings">{{us-flights/markings/san-juan}}</div>
+    </div>
+  </div>
+
+  <div class="subsection-header">
+    <h3 class="subsection-title">Anchorage</h3>
+    <p class="subsection-text">From Anchorage, Alaska, you can only fly directly to the West Coast.</p>
+  </div>
+  <div class="floating-chart" style="height: 600px;">
+    <div class="floating-chart-inner" style="left: 50px;">
+      {{us-flights/charts/anchorage}}
+      <div class="chart-markings">{{us-flights/markings/anchorage}}</div>
+    </div>
+  </div>
+
+  <div class="subsection-header">
+    <h3 class="subsection-title">Honolulu</h3>
+    <p class="subsection-text">Hawaii might be further away than Alaska, yet most US airports have regular flights to this paradise.</p>
+  </div>
+  <div class="floating-chart" style="height: 700px;">
+    <div class="floating-chart-inner" style="left: 100px;">
+      {{us-flights/charts/honolulu}}
+      <div class="chart-markings">{{us-flights/markings/honolulu}}</div>
+    </div>
+  </div>
+
+  <footer class="text footer">
+    <p>This series of charts was created using flight data from the United States <a href="https://www.transtats.bts.gov/Tables.asp?DB_ID=120&DB_Name=Airline%20On-Time%20Performance%20Data&DB_Short_Name=On-Time" target="_blank">Bureau of Transportation Statistics</a>. All charts, except for Phoenix’s summer chart, use data from the January 14-20, 2019 period. Phoenix’s summer chart uses data from the April 15-21, 2019 period.</p>
+    <p>Relative travel durations were computed by subtracting the local departure time from the local arrival time.</p>
+    <p>The US boundaries were computed using the time it would take a plane to fly to that GPS coordinate if it flew at the same speed as planes landing at the closest airport.</p>
+    <p>Thanks to Jennifer Hwang for providing invaluable feedback and support.</p>
+  </footer>
+</div>
