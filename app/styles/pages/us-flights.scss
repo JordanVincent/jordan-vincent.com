@@ -7,15 +7,34 @@ $us-flights-background-color: #070823;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   line-height: 22px;
-  padding: 100px 0;
   overflow: hidden;
 
   a {
     color: white;
   }
 
+  .us-flights-back-btn {
+    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+    padding: 0 16px;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .header {
-    margin-bottom: 100px;
+    margin: 100px 0;
     text-align: center;
   }
 
@@ -178,10 +197,22 @@ $us-flights-background-color: #070823;
     border-top: 1px dashed rgba(255, 255, 255, 0.3);
     padding: 40px 0;
     margin-top: 140px;
+    margin-bottom: 140px;
     color: rgba(255, 255, 255, 0.5);
 
     a {
       color: rgba(255, 255, 255, 0.7);
+    }
+
+    .subscription-box {
+      border-radius: 4px;
+      padding: 15px 30px;
+      display: block;
+      background: #1B306C;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 

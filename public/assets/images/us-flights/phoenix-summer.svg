@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>phoenix</title>
+    <title>phoenix-summer</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <text id="text-1" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#FFFFFF">
@@ -81,11 +81,11 @@
             </feMerge>
         </filter>
     </defs>
-    <g id="phoenix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="phoenix-summer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon id="Path-8" fill="#3AAE93" points="47.6756875 29 47.6756875 49.8434238 35 83.4244955 35 105.715379 41.3378437 134.664579 62.0798778 166.942937 75.4757748 170.561587 101.835443 184.167711 134.821039 190.68128 152.826277 209.49826 163.629419 205.011134 180.914448 229.328462 196.759057 237 196.759057 219.485734 204.393278 209.49826 224.703186 205.011134 242.996508 205.011134 258.26495 197.339596 280.447403 197.339596 290.530336 201.681976 297.012222 215.577592 304.502401 229.328462 310.696203 233.670842 314.153208 219.485734 310.696203 205.011134 304.502401 191.983994 304.502401 184.167711 318.762549 166.942937 333.742907 145.375783 328.269315 132.927627 328.269315 116.426583 333.742907 105.715379 333.742907 97.3201113 345.266259 90.3723034 345.266259 69.2393876 365 53.6068198 352.324313 39.4217119 345.266259 39.4217119 338.784374 61.4231037 318.762549 69.2393876 304.502401 83.4244955 290.530336 97.3201113 276.990397 101.083507 276.990397 76.3319415 261.433872 76.3319415 258.26495 105.715379 249.19031 105.715379 249.19031 83.4244955 255.096028 69.2393876 242.996508 61.4231037 228.304234 69.2393876 228.304234 57.3702157 210.010912 49.8434238 163.629419 49.8434238 113.502837 42.7508699 75.4757748 33.631872"></polygon>
-        <polygon id="Path-35-Copy" fill="#2C4FB5" points="47.6756875 29 74.254902 33.3707992 99.84 39.2289446 104.45098 62.2429581 99.84 71.4422701 85.3155556 71.4422701 74 85.9150821 74 93.0038063 99.84 100.092531 87.68 134.679598 75.1941438 170.595652 62.0798778 167.17087 41.4492962 134.812485 35 107 35 84.5569962 47.6756875 49.877865"></polygon>
+        <polygon id="Path-35-Copy" fill="#2C4FB5" points="47.6756875 29 74.254902 33.3707992 99.84 39.2289446 104.45098 62.2429581 99.84 71.4422701 85.3155556 71.4422701 74 85.9150821 74 93.0038063 99.84 100.092531 87.68 134.679598 112 142.112913 104.366667 185 101.835443 184.424106 75.1941438 170.595652 62.0798778 167.17087 41.4492962 134.812485 35 107 35 84.5569962 47.6756875 49.877865"></polygon>
         <polygon id="Path-8" stroke="#080A23" points="47.6756875 29 47.6756875 49.8434238 35 83.4244955 35 105.715379 41.3378437 134.664579 62.0798778 166.942937 75.4757748 170.561587 101.835443 184.167711 134.821039 190.68128 152.826277 209.49826 163.629419 205.011134 180.914448 229.328462 196.759057 237 196.759057 219.485734 204.393278 209.49826 224.703186 205.011134 242.996508 205.011134 258.26495 197.339596 280.447403 197.339596 290.530336 201.681976 297.012222 215.577592 304.502401 229.328462 310.696203 233.670842 314.153208 219.485734 310.696203 205.011134 304.502401 191.983994 304.502401 184.167711 318.762549 166.942937 333.742907 145.375783 328.269315 132.927627 328.269315 116.426583 333.742907 105.715379 333.742907 97.3201113 345.266259 90.3723034 345.266259 69.2393876 365 53.6068198 352.324313 39.4217119 345.266259 39.4217119 338.784374 61.4231037 318.762549 69.2393876 304.502401 83.4244955 290.530336 97.3201113 276.990397 101.083507 276.990397 76.3319415 261.433872 76.3319415 258.26495 105.715379 249.19031 105.715379 249.19031 83.4244955 255.096028 69.2393876 242.996508 61.4231037 228.304234 69.2393876 228.304234 57.3702157 210.010912 49.8434238 163.629419 49.8434238 113.502837 42.7508699 75.4757748 33.631872"></polygon>
-        <polyline id="Path-9" stroke="#080A23" points="98.9281439 37 104.4 63.5484413 99.84 71.5179419 85.3155556 71.5179419 74 85.9811096 74 93.0651101 99.84 100.149111 87.68 134.71313 75 170.5"></polyline>
+        <polyline id="Path-9" stroke="#080A23" points="98.9281439 37 104.4 63.5484413 99.84 71.5179419 85.3155556 71.5179419 74 85.9811096 74 93.0651101 99.84 100.149111 87.68 134.71313 112 142.141491 104.366667 185"></polyline>
         <polyline id="Path-10" stroke="#080A23" points="160.067265 47 160.067265 64.2206703 170.927436 64.2206703 175 76.307983 175 100.336978 170.927436 115.628157 164.139829 141.259085 160.067265 152.035725 154.335508 187.423881 141.363636 187.423881 138 198"></polyline>
         <polyline id="Path-11" stroke="#080A23" points="252 104 252 113.062772 252 130.90946 270.965035 142.760777 270.965035 157.261211 276 177.896445 276 200"></polyline>
         <g id="Phoenix" fill="#FFFFFF" fill-opacity="1">
@@ -108,20 +108,20 @@
             <use filter="url(#filter-8)" xlink:href="#text-7"></use>
             <use xlink:href="#text-7"></use>
         </g>
-        <text id="Pacific-Standard-Tim" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
-            <tspan x="52" y="207">Pacific </tspan>
-            <tspan x="52" y="219">Standard </tspan>
-            <tspan x="52" y="231">Time</tspan>
-        </text>
-        <text id="Mountain-Standard-Ti" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+        <text id="Mountain-Daylight-Ti" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
             <tspan x="119" y="10">Mountain </tspan>
-            <tspan x="119" y="22">Standard </tspan>
+            <tspan x="119" y="22">Daylight </tspan>
             <tspan x="119" y="34">Time</tspan>
         </text>
-        <path d="M130,38.5 L130,45" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
-        <path d="M66,194 L66,168" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
-        <text id="Winter" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="16" fill="#FFFFFF">
-            <tspan x="175.5" y="285">Winter</tspan>
+        <text id="Summer" font-family="NunitoSans-Regular, Nunito Sans" font-size="16" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="170" y="285">Summer</tspan>
         </text>
+        <text id="Pacific-Daylight-Tim" opacity="0.5" font-family="NunitoSans-Regular, Nunito Sans" font-size="10" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+            <tspan x="52" y="207">Pacific </tspan>
+            <tspan x="52" y="219">Daylight </tspan>
+            <tspan x="52" y="231">Time</tspan>
+        </text>
+        <path d="M66,194 L66,168" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
+        <path d="M130,38.5 L130,45" id="Line-4-Copy" stroke="#FFFFFF" opacity="0.399251302" stroke-dasharray="1"></path>
     </g>
 </svg>
