@@ -153,4 +153,11 @@ export default [{
   about: 'Labello is a web app for labelling and analyzing documents. For a Qualitative User Research course at the University of Washington, I needed an effective tool to analyze lengthy transcribed interviews.',
   role: 'I couldn\'t find an easy way to do it, so I developed Labello in just a few nights!',
   next: null
+}, {
+  name: 'A flight against time',
+  slug: 'us-flights',
+  route: 'us-flights',
+  date: 'Summer 2019',
+  position: 'Creator',
+  summary: 'An information visualization that shows how strange the United States looks like from an airplane.'
 }];
