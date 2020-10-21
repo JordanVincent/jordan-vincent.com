@@ -1,0 +1,93 @@
+<div id="ditch-css-margins" class="project-article">
+  <div class="centered-column">
+    <h1 class="title">Ditch CSS margins</h1>
+    <div class="byline">by {{link-to 'Jordan Vincent' 'index'}}</div>
+    <p>Defining CSS margins on an element breaks the law of least knowledge. When you define a margin, you make an assumption on how the element will be used.
+    </p>
+    <p>For example here, we expect <code>Card</code> components to be laid out as a grid with 20 pixel gutters:</p>
+    {{#themed-syntax lang="scss" withBuffers=false}}
+.Card {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  // etc.
+}
+    {{/themed-syntax}}
+    <p>To use <code>Card</code> in a different context, we would need to override its margin. We are used to define margins because the user agent does it. For example, Chrome gives <code>h1</code> elements top and bottom margins:</p>
+    {{#themed-syntax lang="scss" withBuffers=false}}
+h1 {
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+    {{/themed-syntax}}
+    <p>It's convenient if all <code>h1</code> elements are always used in the same context. What if some pages on our website had subheadings? Now we have to find a way to make <code>h1</code>'s bottom margin smaller.</p>
+    {{#themed-syntax lang="scss" withBuffers=false}}
+h1.with-subheading {
+  margin-bottom: 10px;
+}
+    {{/themed-syntax}}
+      <p>Nowadays, people define helpers:</p>
+    {{#themed-syntax lang="scss" withBuffers=false}}
+.margin-bottom-s {
+  margin-bottom: 4px;
+}
+.margin-top-s {
+  margin-top: 4px;
+}
+// etc.
+    {{/themed-syntax}}
+    <p>And they will allow their components to take in a <code>className</code> prop:</p>
+    {{#themed-syntax lang="html" withBuffers=false}}
+&lt;Card className="margin-bottom-s"&#x2F;&gt;
+    {{/themed-syntax}}
+    <p>But now, we've just broken the component's encapsulation. Anyone can just pass any class name and override private styles. If you've worked in a big enough team, you know that this behavior will eventually happen.</p>
+    {{#themed-syntax lang="html" withBuffers=false}}
+&lt;Card className="my-custom-card"&#x2F;&gt;
+
+.my-custom-card {
+  border-radius: 4px;
+  border-color: red;
+}
+    {{/themed-syntax}}
+    <p>A solution is to expose margin props:</p>
+    {{#themed-syntax lang="html" withBuffers=false}}
+&lt;Card marginLeft={10}&#x2F;&gt;
+    {{/themed-syntax}}
+    <p>But since margins are used for spacing components, you will have to add margin props to all your components. It's a lot of work. Therefore, developers usually resort to exposing <code>className</code> and call it a day. But that leaves the door open for abuse.</p>
+    <p>Is there a better solution? Let's go back in time a little bit. Let's go back to way before the web. To the days of letterpress printing.</p>
+    <p>When using a letterpress to print a document, you had to use physical letters. But individual letters never came with margins. Instead, typesetters would use metal blocks to space text. They had 2 kinds of blocks, called spacing for horizontal spacing and leading for vertical spacing. Spacing had the same line-height as the text, but the width was variable. Spacing came in a few sizes. "Leading" were strips of "lead", usually the length of the page, and of variable height. By combining these blocks, the typesetter could quickly build flexible but consistent layouts.</p>
+    <img src="/assets/images/letterpress.jpg" alt="A forme"/>
+    <figcaption>Arrangement of letters, spacing, and leading. <a href="https://www.stbrigidpress.net/blog/a-letterpress-lexicon-part-4">Source</a></figcaption>
+    <h3>An alternative to CSS margins</h3>
+    <p>Can we use the same technique on the web? I think so! I've tried it on a couple of projects and it's been a life-changer. Let me introduce you to my new friends, <code>Wide</code> and <code>Tall</code>.</p>
+    <p><code>Wide</code> and <code>Tall</code> are two simple components. <code>Wide</code> is a 0-height, fixed-width component. <code>Tall</code> is a 0-width, fixed-height component. Similar to "leading" and "spacing", you place them in between other elements to either add vertical or horizontal space. That's all.</p>
+    <p>Now, you've probably already heard of <code>Box</code> components. Most UI libraries have them. <code>Box</code> wraps around your components to add padding or margin so that you don't have to add it directly to the child component. It's neat, but in practice, using <code>Box</code> makes your code more verbose and hard to read.</p>
+    <p>But <code>Wide</code> and <code>Tall</code> don't accept children. This simple difference makes your code a lot easier to read:</p>
+    {{#themed-syntax lang="html" withBuffers=false}}
+&lt;Box margin="20 0"&gt;
+   &lt;Card&#x2F;&gt;
+&lt;&#x2F;Box&gt;
+&lt;Box margin="20 0"&gt;
+   &lt;Card&#x2F;&gt;
+&lt;&#x2F;Box&gt;
+
+vs
+
+&lt;Tall size={20}&#x2F;&gt;
+&lt;Card&#x2F;&gt;
+&lt;Tall size={20}&#x2F;&gt;
+&lt;Card&#x2F;&gt;
+&lt;Tall size={20}&#x2F;&gt;
+    {{/themed-syntax}}
+    <p>Note that <code>Wide</code> and <code>Tall</code> could easily be replaced with a single <code>Spacing</code> component with both <code>width</code> and <code>height</code> props. I belive that having two components makes things a lot clearer.</p>
+    <p>The code for these components is super simple. Nonetheless, I created <code>react-tall-wide</code>, a React package that gives you access to some additional features:</p>
+    <ul>
+      <li>Spacing debugger: to visualize all <code>Tall</code> and <code>Wide</code> components at a glance.</li>
+      <li>Predefined sizes: so that <code>Wide</code> and <code>Tall</code> only use approved sizes to make spacing consistent across your app.</li>
+    </ul>
+    <p>Have a try and let me know what you think!</p>
+
+    {{newsletter-form}}
+
+    {{link-to 'Back to homepage' 'index'}}
+  </div>
+</div>

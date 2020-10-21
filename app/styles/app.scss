@@ -1,13 +1,13 @@
 $font-size-base: 16px;
 $line-height-base: 1.6;
-$font-family-serif: 'PT Serif', serif;
-$font-family-sans-serif: 'PT Sans', sans-serif;
-$font-family-sans-narrow: 'PT Sans Narrow', sans-serif;
+$font-family-serif: "PT Serif", serif;
+$font-family-sans-serif: "PT Sans", sans-serif;
+$font-family-sans-narrow: "PT Sans Narrow", sans-serif;
 $font-family-base: $font-family-serif;
 $headings-font-family: $font-family-sans-serif;
 $headings-font-weight: bold;
 
-$text-color: #011E3B;
+$text-color: #011e3b;
 $link-color: #326598;
 
 $article-width: 1080px;
@@ -29,3 +29,4 @@ $fonts-path: "fonts";
 @import "pages/project";
 @import "pages/nps-nights";
 @import "pages/us-flights";
+@import "pages/ditch-css-margins";

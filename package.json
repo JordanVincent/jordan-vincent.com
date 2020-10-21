@@ -17,6 +17,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "chroma-js": "^2.0.4",
+    "code-highlight-linenums": "^0.2.1",
     "ember-ajax": "^3.0.0",
     "ember-auto-import": "^1.5.2",
     "ember-cli": "2.13.2",
@@ -43,6 +44,9 @@
     "ember-router-scroll": "0.3.1",
     "ember-social": "0.3.0",
     "ember-source": "~2.13.0",
+    "ember-themed-syntax": "^0.1.2",
+    "highlightjs": "^9.16.2",
+    "hljs-themes": "^1.0.0",
     "loader.js": "^4.2.3",
     "sass": "^1.26.10"
   },
