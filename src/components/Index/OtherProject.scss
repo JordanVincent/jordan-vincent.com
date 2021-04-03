@@ -1,5 +1,5 @@
 .Index\/OtherProject {
-  width: 250px;
+  width: var(--column-width);
 
   &__title {
     font-family: var(--monospace-font-family);

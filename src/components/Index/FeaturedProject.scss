@@ -1,5 +1,5 @@
 .Index\/FeaturedProject {
-  width: 250px;
+  width: var(--column-width);
 
   &__title {
     font-family: var(--monospace-font-family);
@@ -9,7 +9,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 25px;
+    margin-bottom: 32px;
     line-height: 22px;
     color: rgba(255, 255, 255, 0.8);
   }

@@ -16,6 +16,7 @@
 
   &__profile-picture {
     transform: rotate(-2deg);
+    width: var(--column-width);
   }
 
   &__profile-picture-section {
@@ -24,7 +25,7 @@
   }
 
   &__mission {
-    width: 250px;
+    width: var(--column-width);
     padding: 8px 12px;
     background-color: #f3ebd3;
     font-family: var(--monospace-font-family);
@@ -34,18 +35,18 @@
   }
 
   &__footer-links {
-    width: 250px;
+    width: var(--column-width);
     display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
-    margin-right: 25px;
+    margin-right: var(--gutter);
   }
 
   &__footer-link {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     display: inline-block;
-    width: calc((250px - 25px) / 2);
+    width: calc((var(--column-width) - var(--gutter)) / 2);
     margin-bottom: 8px;
 
     &:hover {
@@ -53,11 +54,28 @@
     }
 
     &:nth-child(2n + 1) {
-      margin-right: 25px;
+      margin-right: var(--gutter);
     }
   }
 
   &__footer-text {
     color: rgba(255, 255, 255, 0.7);
+    margin-left: var(--gutter);
+  }
+
+  &__description {
+    max-width: calc(var(--column-width) * 2 + var(--gutter));
+
+    a {
+      color: inherit;
+    }
+
+    &--inverted {
+      color: rgba(255, 255, 255, 0.7);
+
+      a {
+        color: inherit;
+      }
+    }
   }
 }

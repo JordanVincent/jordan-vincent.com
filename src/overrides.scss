@@ -15,7 +15,9 @@
   --small-line-height: 18px;
   --micro-line-height: 16px;
   --max-mobile-width: #{variables.$max-mobile-width};
-  --page-width: 800px;
+  --column-width: 250px;
+  --gutter: 40px;
+  --page-width: calc(var(--column-width) * 3 + var(--gutter) * 2);
 
   --monospace-font-family: 'Source Code Pro', monospace;
 

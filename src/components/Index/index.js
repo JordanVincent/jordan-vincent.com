@@ -11,7 +11,6 @@ import ProfessionalProject from './ProfessionalProject';
 import ProfessionalRole from './ProfessionalRole';
 import InstagramPhoto from './InstagramPhoto';
 
-import airtableLogo from './company-logos/airtable.svg';
 import annotationManager from './project-images/annotation-manager.png';
 import outdoorStatus from './project-images/outdoor-status.png';
 import smartBricks from './project-images/smart-bricks.png';
@@ -61,7 +60,6 @@ const Index = () => {
           <div className="Index__profile-picture-section">
             <img
               src={profilePicture}
-              width={250}
               alt="Jordan in the Grand Canyon"
               className="Index__profile-picture"
             />
@@ -79,30 +77,40 @@ const Index = () => {
       <Container backgroundColor="#3C4E11">
         <Tall desktop={80} />
         <Heading variant="darkGreen">Outdoor Initiatives</Heading>
-        <Tall desktop={20} />
-        <p style={{ color: 'white' }}>
+        <Tall desktop={40} />
+        <p className="Index__description--inverted">
           Follow me on{' '}
           <OutboundLink href="https://twitter.com/jordan_vinc">
             Twitter
           </OutboundLink>{' '}
-          or the{' '}
+          or subscribe to the{' '}
           <OutboundLink href="https://outdoorstatus.com">
             Outdoor Status newsletter
           </OutboundLink>
           .
         </p>
-        <Tall desktop={40} />
+        <Tall desktop={60} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <FeaturedProject
-            title="Outdoor Status"
-            subtitle="The newsletter for booking hiking permits"
-            coverSrc={outdoorStatus}
-          />
-          <FeaturedProject
-            title="Rim to Rim permits"
-            subtitle="Interactive guide to the Grand Canyon most iconic trail"
-            coverSrc={outdoorStatus}
-          />
+          <OutboundLink
+            href="https://outdoorstatus.com"
+            style={{ textDecoration: 'none' }}
+          >
+            <FeaturedProject
+              title="Outdoor Status"
+              subtitle="The newsletter for booking hiking permits"
+              coverSrc={outdoorStatus}
+            />
+          </OutboundLink>
+          <OutboundLink
+            href="https://rimtorimpermits.com"
+            style={{ textDecoration: 'none' }}
+          >
+            <FeaturedProject
+              title="Rim to Rim permits"
+              subtitle="An interactive guide to the Grand Canyon most iconic trail"
+              coverSrc={outdoorStatus}
+            />
+          </OutboundLink>
           <FeaturedProject
             title="A night under the stars"
             subtitle="When to visit all US National parks in one visualization"
@@ -114,8 +122,8 @@ const Index = () => {
       <Container>
         <Tall desktop={80} />
         <Heading>Capturing wilderness in its best light</Heading>
-        <Tall desktop={20} />
-        <p>
+        <Tall desktop={40} />
+        <p className="Index__description">
           I trade my computer for my backpack whenever I can! I like to explore
           remote places and climb high peaks. Follow my adventures on{' '}
           <OutboundLink href="https://www.instagram.com/jordan.vinc/">
@@ -123,12 +131,12 @@ const Index = () => {
           </OutboundLink>
           .
         </p>
-        <Tall desktop={40} />
+        <Tall desktop={60} />
         <div
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 25,
+            gap: 'var(--gutter)',
           }}
         >
           {instagramPhotos.map(({ src, alt }) => (
@@ -141,41 +149,37 @@ const Index = () => {
         <Tall desktop={80} />
         <Heading>Helping others acheive their dreams</Heading>
         <Tall desktop={40} />
-        <ProfessionalRole
-          companyName="Airtable"
-          companyLogoSrc={airtableLogo}
-          duration="2020 — present"
-        />
+        <p className="Index__description">
+          Find more details on{' '}
+          <OutboundLink href="https://www.linkedin.com/in/jordanvinc/">
+            LinkedIn
+          </OutboundLink>
+          .
+        </p>
+        <Tall desktop={60} />
+        <ProfessionalRole companyName="Airtable" duration="2020 — present" />
         <Tall desktop={40} />
         <p>Work in progress, literally</p>
         <Tall desktop={80} />
-        <ProfessionalRole
-          companyName="Roam Analytics"
-          companyLogoSrc={airtableLogo}
-          duration="2017 — 2020"
-        />
+        <ProfessionalRole companyName="Roam Analytics" duration="2017 — 2020" />
         <Tall desktop={40} />
         <ProfessionalProject
           title="Annotation Manager"
-          subtitle="I designed and built most of Roam's products, inclusing Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
+          description="I designed and built most of Roam's products, including Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
           coverSrc={annotationManager}
         />
         <Tall desktop={40} />
         <ProfessionalProject
-          title="Graph Explorer"
-          subtitle="I designed and built tools for Data Engineers to explore Roam's extensive health knowledge graph."
+          title="Goggles"
+          description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."
           coverSrc={annotationManager}
         />
         <Tall desktop={80} />
-        <ProfessionalRole
-          companyName="Cogniac"
-          companyLogoSrc={airtableLogo}
-          duration="2016 — 2017"
-        />
+        <ProfessionalRole companyName="Cogniac" duration="2016 — 2017" />
         <Tall desktop={40} />
         <ProfessionalProject
           title="Cogniac Web App"
-          subtitle="I designed and built Cogniac's user interface for building and training computed vision models."
+          description="I designed and built Cogniac's web application. It's used by non-technical users to build and train computed vision models from scratch."
           coverSrc={annotationManager}
         />
         <Tall desktop={40} />
@@ -183,19 +187,16 @@ const Index = () => {
       <Container>
         <Tall desktop={80} />
         <Heading>Other projects</Heading>
-        <Tall desktop={20} />
-        <p>
+        <Tall desktop={40} />
+        <p className="Index__description">
           I've worked on dozens of side projects over the years, these ones are
           the most notable.
         </p>
-        <Tall desktop={40} />
+        <Tall desktop={60} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <OtherProject title="Outdoor Status" coverSrc={smartBricks} />
-          <OtherProject title="Rim to Rim permits" coverSrc={smartBricks} />
-          <OtherProject
-            title="A night under the stars"
-            coverSrc={smartBricks}
-          />
+          <OtherProject title="A flight against time" coverSrc={smartBricks} />
+          <OtherProject title="DinoFit" coverSrc={smartBricks} />
+          <OtherProject title="Smart Bricks" coverSrc={smartBricks} />
         </div>
         <Tall desktop={80} />
       </Container>
@@ -203,26 +204,39 @@ const Index = () => {
         <Tall desktop={40} />
         <div style={{ display: 'flex' }}>
           <div className="Index__footer-links">
-            <OutboundLink className="Index__footer-link" href="">
+            <OutboundLink
+              className="Index__footer-link"
+              href="mailto:jordan.vincent.x@gmail.com"
+              target="_blank"
+            >
               Email
             </OutboundLink>
-            <OutboundLink className="Index__footer-link" href="">
+            <OutboundLink
+              className="Index__footer-link"
+              href="https://www.linkedin.com/in/jordanvinc/"
+            >
               LinkedIn
             </OutboundLink>
-            <OutboundLink className="Index__footer-link" href="">
+            <OutboundLink
+              className="Index__footer-link"
+              href="https://twitter.com/jordan_vinc"
+            >
               Twitter
             </OutboundLink>
-            <OutboundLink className="Index__footer-link" href="">
+            <OutboundLink
+              className="Index__footer-link"
+              href="https://www.instagram.com/jordan.vinc/"
+            >
               Instagram
             </OutboundLink>
-            <OutboundLink className="Index__footer-link" href="">
+            <OutboundLink
+              className="Index__footer-link"
+              href="https://github.com/JordanVincent"
+            >
               GitHub
             </OutboundLink>
-            <OutboundLink className="Index__footer-link" href="">
-              Resume
-            </OutboundLink>
           </div>
-          <div style={{ flex: '1 1 0', marginRight: '25px' }} />
+          <div style={{ flex: '1 1 0' }} />
           <p className="Index__footer-text">Always be exploring.</p>
         </div>
         <Tall desktop={40} />

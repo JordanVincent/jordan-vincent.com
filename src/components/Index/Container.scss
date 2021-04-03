@@ -1,6 +1,6 @@
 .Index\/Container {
   &__inner {
-    width: 800px;
+    width: var(--page-width);
     margin: 0 auto;
   }
 }
