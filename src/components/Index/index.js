@@ -159,7 +159,11 @@ const Index = () => {
         <Tall desktop={60} />
         <ProfessionalRole companyName="Airtable" duration="2020 — present" />
         <Tall desktop={40} />
-        <p>Work in progress, literally</p>
+        <ProfessionalProject
+          title="Airtable Onboarding"
+          description="As part of the Activation team, I design and build onboarding experiences for new Airtable users."
+          coverSrc={annotationManager}
+        />
         <Tall desktop={80} />
         <ProfessionalRole companyName="Roam Analytics" duration="2017 — 2020" />
         <Tall desktop={40} />
