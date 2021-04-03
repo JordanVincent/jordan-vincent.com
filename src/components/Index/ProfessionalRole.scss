@@ -1,0 +1,21 @@
+.Index\/ProfessionalRole {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 32px;
+  }
+
+  &__company-name {
+    margin-left: 16px;
+    font-size: 22px;
+  }
+
+  &__duration {
+    font-weight: normal;
+    margin-left: 12px;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+  }
+}

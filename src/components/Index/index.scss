@@ -1,0 +1,63 @@
+@use 'overrides.scss';
+
+.Index {
+  color: #063155;
+
+  &__name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &__role {
+    font-family: var(--monospace-font-family);
+    margin-top: 10px;
+  }
+
+  &__profile-picture {
+    transform: rotate(-2deg);
+  }
+
+  &__profile-picture-section {
+    position: relative;
+    width: 400px;
+  }
+
+  &__mission {
+    width: 250px;
+    padding: 8px 12px;
+    background-color: #f3ebd3;
+    font-family: var(--monospace-font-family);
+    position: absolute;
+    bottom: -20px;
+    left: 60px;
+  }
+
+  &__footer-links {
+    width: 250px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    margin-right: 25px;
+  }
+
+  &__footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    display: inline-block;
+    width: calc((250px - 25px) / 2);
+    margin-bottom: 8px;
+
+    &:hover {
+      color: white;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 25px;
+    }
+  }
+
+  &__footer-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

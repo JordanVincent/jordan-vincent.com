@@ -1,0 +1,13 @@
+.Spacing\/Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Spacing\/Wide {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.Spacing\/Tall {
+  flex: 0 0 auto;
+}
