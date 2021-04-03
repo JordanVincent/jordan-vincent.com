@@ -18,32 +18,37 @@ import smartBricks from './project-images/smart-bricks.png';
 import profilePicture from './profile.jpg';
 import './index.scss';
 
-import defaultInstagramPhoto from './instagram-photos/default.jpg';
+import instagramPhotoA from './instagram-photos/A.jpg';
+import instagramPhotoB from './instagram-photos/B.jpg';
+import instagramPhotoC from './instagram-photos/C.jpg';
+import instagramPhotoD from './instagram-photos/D.jpg';
+import instagramPhotoE from './instagram-photos/E.jpg';
+import instagramPhotoF from './instagram-photos/F.jpg';
 
 const instagramPhotos = [
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoA,
+    alt: 'Lone Pine Peak',
   },
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoB,
+    alt: 'Tennessee Valley Beach',
   },
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoC,
+    alt: 'Telescope Peak',
   },
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoD,
+    alt: 'Thousand Island Lake',
   },
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoE,
+    alt: 'Mount Assiniboine',
   },
   {
-    src: defaultInstagramPhoto,
-    alt: '',
+    src: instagramPhotoF,
+    alt: 'Mount Lyell',
   },
 ];
 

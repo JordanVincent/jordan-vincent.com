@@ -8,7 +8,12 @@ const InstagramPhoto = ({ src, alt }) => (
     className="Index/InstagramPhoto"
     href="https://www.instagram.com/jordan.vinc/"
   >
-    <img className="Index/InstagramPhoto__image" src={src} alt={alt} />
+    <img
+      className="Index/InstagramPhoto__image"
+      src={src}
+      alt={alt}
+      loading="lazy"
+    />
   </OutboundLink>
 );
 
