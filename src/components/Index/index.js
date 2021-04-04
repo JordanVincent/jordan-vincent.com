@@ -2,6 +2,7 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 import { Tall } from 'components/Spacing';
+import PageMetadata from 'components/PageMetadata';
 
 import Heading from './Heading';
 import Container from './Container';
@@ -54,6 +55,7 @@ const instagramPhotos = [
 const Index = () => {
   return (
     <div className="Index">
+      <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
       <Container>
         <Tall desktop={80} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
