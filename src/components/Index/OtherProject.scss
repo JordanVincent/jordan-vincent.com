@@ -6,4 +6,9 @@
     font-size: 18px;
     margin-top: 10px;
   }
+
+  &__cover {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
 }

@@ -12,8 +12,13 @@ import ProfessionalProject from './ProfessionalProject';
 import ProfessionalRole from './ProfessionalRole';
 import InstagramPhoto from './InstagramPhoto';
 
+import airtable from './project-images/airtable.png';
+import goggles from './project-images/goggles.png';
+import cogniac from './project-images/cogniac.png';
 import annotationManager from './project-images/annotation-manager.png';
 import outdoorStatus from './project-images/outdoor-status.png';
+import nightUnderStars from './project-images/night-under-stars.jpg';
+import rimToRimPermits from './project-images/rim-to-rim-permits.jpg';
 import smartBricks from './project-images/smart-bricks.png';
 import profilePicture from './profile.jpg';
 import './index.scss';
@@ -57,7 +62,7 @@ const Index = () => {
     <div className="Index">
       <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
       <Container>
-        <Tall desktop={80} />
+        <Tall desktop={120} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div className="Index__profile-picture-section">
             <img
@@ -74,7 +79,7 @@ const Index = () => {
             <p className="Index__role">Designer / Engineer</p>
           </div>
         </div>
-        <Tall desktop={120} />
+        <Tall desktop={140} />
       </Container>
       <Container backgroundColor="#3C4E11">
         <Tall desktop={80} />
@@ -110,13 +115,13 @@ const Index = () => {
             <FeaturedProject
               title="Rim to Rim permits"
               subtitle="An interactive guide to the Grand Canyon most iconic trail"
-              coverSrc={outdoorStatus}
+              coverSrc={rimToRimPermits}
             />
           </OutboundLink>
           <FeaturedProject
             title="A night under the stars"
             subtitle="When to visit all US National parks in one visualization"
-            coverSrc={outdoorStatus}
+            coverSrc={nightUnderStars}
           />
         </div>
         <Tall desktop={80} />
@@ -159,15 +164,15 @@ const Index = () => {
           .
         </p>
         <Tall desktop={60} />
-        <ProfessionalRole companyName="Airtable" duration="2020 — present" />
+        <ProfessionalRole companyName="Airtable" duration="2020–present" />
         <Tall desktop={40} />
         <ProfessionalProject
           title="Airtable Onboarding"
           description="As part of the Activation team, I design and build onboarding experiences for new Airtable users."
-          coverSrc={annotationManager}
+          coverSrc={airtable}
         />
         <Tall desktop={80} />
-        <ProfessionalRole companyName="Roam Analytics" duration="2017 — 2020" />
+        <ProfessionalRole companyName="Roam Analytics" duration="2017–2020" />
         <Tall desktop={40} />
         <ProfessionalProject
           title="Annotation Manager"
@@ -178,15 +183,15 @@ const Index = () => {
         <ProfessionalProject
           title="Goggles"
           description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."
-          coverSrc={annotationManager}
+          coverSrc={goggles}
         />
         <Tall desktop={80} />
-        <ProfessionalRole companyName="Cogniac" duration="2016 — 2017" />
+        <ProfessionalRole companyName="Cogniac" duration="2016–2017" />
         <Tall desktop={40} />
         <ProfessionalProject
           title="Cogniac Web App"
           description="I designed and built Cogniac's web application. It's used by non-technical users to build and train computed vision models from scratch."
-          coverSrc={annotationManager}
+          coverSrc={cogniac}
         />
         <Tall desktop={40} />
       </Container>

@@ -4,6 +4,8 @@
   &__cover {
     width: calc(var(--column-width) * 2 + var(--gutter));
     flex: 0 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   }
 
   &__details {
