@@ -13,6 +13,7 @@ const FeaturedProject = ({ title, subtitle, coverSrc }) => {
         alt=""
         width={250}
         height={404}
+        loading="lazy"
       />
     </div>
   );

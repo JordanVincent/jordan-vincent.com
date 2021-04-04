@@ -12,6 +12,8 @@ import ProfessionalProject from './ProfessionalProject';
 import ProfessionalRole from './ProfessionalRole';
 import InstagramPhoto from './InstagramPhoto';
 
+import flightAgainstTime from './project-images/flight-against-time.jpg';
+import dinofit from './project-images/dinofit.png';
 import airtable from './project-images/airtable.png';
 import goggles from './project-images/goggles.png';
 import cogniac from './project-images/cogniac.png';
@@ -19,9 +21,9 @@ import annotationManager from './project-images/annotation-manager.png';
 import outdoorStatus from './project-images/outdoor-status.png';
 import nightUnderStars from './project-images/night-under-stars.jpg';
 import rimToRimPermits from './project-images/rim-to-rim-permits.jpg';
-import smartBricks from './project-images/smart-bricks.png';
+import smartBricks from './project-images/smart-bricks.jpg';
+
 import profilePicture from './profile.jpg';
-import './index.scss';
 
 import instagramPhotoA from './instagram-photos/A.jpg';
 import instagramPhotoB from './instagram-photos/B.jpg';
@@ -29,6 +31,8 @@ import instagramPhotoC from './instagram-photos/C.jpg';
 import instagramPhotoD from './instagram-photos/D.jpg';
 import instagramPhotoE from './instagram-photos/E.jpg';
 import instagramPhotoF from './instagram-photos/F.jpg';
+
+import './index.scss';
 
 const instagramPhotos = [
   {
@@ -205,9 +209,21 @@ const Index = () => {
         </p>
         <Tall desktop={60} />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <OtherProject title="A flight against time" coverSrc={smartBricks} />
-          <OtherProject title="DinoFit" coverSrc={smartBricks} />
-          <OtherProject title="Smart Bricks" coverSrc={smartBricks} />
+          <OtherProject
+            title="A flight against time"
+            subtitle="See how strange the US looks like from an airplane's perspective"
+            coverSrc={flightAgainstTime}
+          />
+          <OtherProject
+            title="DinoFit"
+            subtitle="Do pushups to save dinos on the brink of extinction"
+            coverSrc={dinofit}
+          />
+          <OtherProject
+            title="Smart Bricks"
+            subtitle="A place for LEGO artists to sell their creations"
+            coverSrc={smartBricks}
+          />
         </div>
         <Tall desktop={80} />
       </Container>

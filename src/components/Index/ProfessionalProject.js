@@ -9,6 +9,7 @@ const ProfessionalProject = ({ title, description, coverSrc, coverAlt }) => {
         className="Index/ProfessionalProject__cover"
         src={coverSrc}
         alt={coverAlt}
+        loading="lazy"
       />
       <p className="Index/ProfessionalProject__details">
         <span className="Index/ProfessionalProject__title">{title}.</span>{' '}
