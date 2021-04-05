@@ -1,8 +1,15 @@
 import React from 'react';
 
+import iibBadge from './iib-badge.png';
+
 import './FeaturedProject.scss';
 
-const FeaturedProject = ({ title, subtitle, coverSrc }) => {
+const FeaturedProject = ({
+  title,
+  subtitle,
+  coverSrc,
+  withIibBadge = false,
+}) => {
   return (
     <div className="Index/FeaturedProject">
       <h3 className="Index/FeaturedProject__title">{title}</h3>
@@ -15,6 +22,14 @@ const FeaturedProject = ({ title, subtitle, coverSrc }) => {
         height={404}
         loading="lazy"
       />
+      {withIibBadge && (
+        <img
+          className="Index/FeaturedProject__badge"
+          src={iibBadge}
+          alt=""
+          loading="lazy"
+        />
+      )}
     </div>
   );
 };

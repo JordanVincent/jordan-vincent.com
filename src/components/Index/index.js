@@ -19,8 +19,8 @@ import goggles from './project-images/goggles.png';
 import cogniac from './project-images/cogniac.png';
 import annotationManager from './project-images/annotation-manager.png';
 import outdoorStatus from './project-images/outdoor-status.png';
-import nightUnderStars from './project-images/night-under-stars.jpg';
-import rimToRimPermits from './project-images/rim-to-rim-permits.jpg';
+import nightUnderTheStars from './project-images/night-under-the-stars.png';
+import rimToRimPermits from './project-images/rim-to-rim-permits.png';
 import smartBricks from './project-images/smart-bricks.jpg';
 
 import profilePicture from './profile.jpg';
@@ -125,7 +125,8 @@ const Index = () => {
           <FeaturedProject
             title="A night under the stars"
             subtitle="When to visit all US National parks in one visualization"
-            coverSrc={nightUnderStars}
+            coverSrc={nightUnderTheStars}
+            withIibBadge={true}
           />
         </div>
         <Tall desktop={80} />
@@ -183,7 +184,7 @@ const Index = () => {
           description="I designed and built most of Roam's products, including Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
           coverSrc={annotationManager}
         />
-        <Tall desktop={40} />
+        <Tall desktop={60} />
         <ProfessionalProject
           title="Goggles"
           description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."

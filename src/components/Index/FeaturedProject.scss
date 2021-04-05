@@ -1,5 +1,6 @@
 .Index\/FeaturedProject {
   width: var(--column-width);
+  position: relative;
 
   &__title {
     font-family: var(--monospace-font-family);
@@ -17,5 +18,16 @@
   &__cover {
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    display: block;
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 100px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
 }
