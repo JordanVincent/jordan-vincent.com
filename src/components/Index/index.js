@@ -12,7 +12,7 @@ import ProfessionalProject from './ProfessionalProject';
 import ProfessionalRole from './ProfessionalRole';
 import InstagramPhoto from './InstagramPhoto';
 
-import flightAgainstTime from './project-images/flight-against-time.jpg';
+import flightAgainstTime from './project-images/flight-against-time.png';
 import dinofit from './project-images/dinofit.png';
 import airtable from './project-images/airtable.png';
 import goggles from './project-images/goggles.png';
