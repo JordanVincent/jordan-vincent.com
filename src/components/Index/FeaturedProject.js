@@ -1,4 +1,6 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
+
 import { Tall } from 'components/Spacing';
 
 import iibBadge from './iib-badge.png';
@@ -9,21 +11,18 @@ const FeaturedProject = ({
   title,
   subtitle,
   coverSrc,
+  href,
   withIibBadge = false,
 }) => {
   return (
-    <div className="Index/FeaturedProject">
+    <OutboundLink className="Index/FeaturedProject" href={href}>
       <h3 className="Index/FeaturedProject__title">{title}</h3>
       <Tall desktop={8} />
       <p className="Index/FeaturedProject__subtitle">{subtitle}</p>
       <Tall desktop={20} />
-      <img
+      <div
         className="Index/FeaturedProject__cover"
-        src={coverSrc}
-        alt=""
-        width={250}
-        height={404}
-        loading="lazy"
+        style={{ backgroundImage: `url(${coverSrc})` }}
       />
       {withIibBadge && (
         <img
@@ -33,7 +32,7 @@ const FeaturedProject = ({
           loading="lazy"
         />
       )}
-    </div>
+    </OutboundLink>
   );
 };
 

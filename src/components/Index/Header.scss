@@ -1,0 +1,52 @@
+@use 'variables.scss' as variables;
+
+.Index\/Header {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &__role {
+    font-family: var(--monospace-font-family);
+  }
+
+  &__profile-picture {
+    transform: rotate(-2deg);
+    width: var(--column-width);
+  }
+
+  &__profile-picture-section {
+    position: relative;
+    width: 400px;
+  }
+
+  &__mission {
+    width: var(--column-width);
+    padding: 8px 12px;
+    background-color: #f3ebd3;
+    font-family: var(--monospace-font-family);
+    position: absolute;
+    bottom: -20px;
+    left: 60px;
+  }
+
+  @include variables.mobile {
+    &__inner {
+      flex-wrap: wrap-reverse;
+    }
+
+    &__profile-picture {
+      width: 50%;
+    }
+
+    &__mission {
+      width: 80%;
+    }
+  }
+}

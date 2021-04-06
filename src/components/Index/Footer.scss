@@ -1,0 +1,57 @@
+@use 'variables.scss' as variables;
+
+.Index\/Footer {
+  &__links {
+    width: var(--column-width);
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    margin-right: var(--gutter);
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    display: inline-block;
+    width: calc((var(--column-width) - var(--gutter)) / 2);
+    margin-bottom: 8px;
+
+    &:hover {
+      color: white;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: var(--gutter);
+    }
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: var(--gutter);
+    flex: 0 0 auto;
+    width: var(--column-width);
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__spacer {
+    flex: 1 1 0;
+  }
+
+  @include variables.mobile {
+    &__inner {
+      display: block;
+    }
+
+    &__spacer {
+      display: none;
+    }
+
+    &__text {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

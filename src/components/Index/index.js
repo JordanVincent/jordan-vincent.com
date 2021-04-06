@@ -4,6 +4,8 @@ import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { Tall } from 'components/Spacing';
 import PageMetadata from 'components/PageMetadata';
 
+import Header from './Header';
+import Footer from './Footer';
 import Heading from './Heading';
 import Container from './Container';
 import OtherProject from './OtherProject';
@@ -65,27 +67,7 @@ const Index = () => {
   return (
     <div className="Index">
       <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
-      <Container>
-        <Tall desktop={120} />
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div className="Index__profile-picture-section">
-            <img
-              src={profilePicture}
-              alt="Jordan in the Grand Canyon"
-              className="Index__profile-picture"
-            />
-            <p className="Index__mission">
-              On a mission to improve access to the outdoors
-            </p>
-          </div>
-          <div>
-            <h1 className="Index__name">Jordan Vincent</h1>
-            <Tall desktop={12} />
-            <p className="Index__role">Designer / Engineer</p>
-          </div>
-        </div>
-        <Tall desktop={140} />
-      </Container>
+      <Header />
       <Container backgroundColor="#3C4E11">
         <Tall desktop={80} />
         <Heading variant="darkGreen">Outdoor Initiatives</Heading>
@@ -102,27 +84,19 @@ const Index = () => {
           .
         </p>
         <Tall desktop={60} />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <OutboundLink
+        <div className="Index__featured-projects">
+          <FeaturedProject
+            title="Outdoor Status"
+            subtitle="The newsletter for booking hiking permits"
+            coverSrc={outdoorStatus}
             href="https://outdoorstatus.com"
-            style={{ textDecoration: 'none' }}
-          >
-            <FeaturedProject
-              title="Outdoor Status"
-              subtitle="The newsletter for booking hiking permits"
-              coverSrc={outdoorStatus}
-            />
-          </OutboundLink>
-          <OutboundLink
+          />
+          <FeaturedProject
+            title="Rim to Rim permits"
+            subtitle="An interactive guide to the Grand Canyon most iconic trail"
+            coverSrc={rimToRimPermits}
             href="https://rimtorimpermits.com"
-            style={{ textDecoration: 'none' }}
-          >
-            <FeaturedProject
-              title="Rim to Rim permits"
-              subtitle="An interactive guide to the Grand Canyon most iconic trail"
-              coverSrc={rimToRimPermits}
-            />
-          </OutboundLink>
+          />
           <FeaturedProject
             title="A night under the stars"
             subtitle="Find out when to visit all US National parks, in one visualization"
@@ -145,13 +119,7 @@ const Index = () => {
           .
         </p>
         <Tall desktop={60} />
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 'var(--gutter)',
-          }}
-        >
+        <div className="Index__instagram-photos-grid">
           {instagramPhotos.map(({ src, alt }) => (
             <InstagramPhoto src={src} alt={alt} key={src} />
           ))}
@@ -210,7 +178,7 @@ const Index = () => {
           the most notable.
         </p>
         <Tall desktop={60} />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div className="Index__other-projects">
           <OtherProject
             title="A flight against time"
             subtitle="See how strange the US looks like from an airplane's perspective"
@@ -229,47 +197,7 @@ const Index = () => {
         </div>
         <Tall desktop={80} />
       </Container>
-      <Container backgroundColor="#0F123C">
-        <Tall desktop={40} />
-        <div style={{ display: 'flex' }}>
-          <div className="Index__footer-links">
-            <OutboundLink
-              className="Index__footer-link"
-              href="mailto:jordan.vincent.x@gmail.com"
-              target="_blank"
-            >
-              Email
-            </OutboundLink>
-            <OutboundLink
-              className="Index__footer-link"
-              href="https://www.linkedin.com/in/jordanvinc/"
-            >
-              LinkedIn
-            </OutboundLink>
-            <OutboundLink
-              className="Index__footer-link"
-              href="https://twitter.com/jordan_vinc"
-            >
-              Twitter
-            </OutboundLink>
-            <OutboundLink
-              className="Index__footer-link"
-              href="https://www.instagram.com/jordan.vinc/"
-            >
-              Instagram
-            </OutboundLink>
-            <OutboundLink
-              className="Index__footer-link"
-              href="https://github.com/JordanVincent"
-            >
-              GitHub
-            </OutboundLink>
-          </div>
-          <div style={{ flex: '1 1 0' }} />
-          <p className="Index__footer-text">Always be exploring.</p>
-        </div>
-        <Tall desktop={40} />
-      </Container>
+      <Footer />
     </div>
   );
 };

@@ -1,3 +1,5 @@
+@use 'variables.scss' as variables;
+
 .Index\/ProfessionalProject {
   display: flex;
 
@@ -21,5 +23,18 @@
 
   &__description {
     opacity: 0.7;
+  }
+
+  @include variables.mobile {
+    flex-wrap: wrap;
+
+    &__cover {
+      width: var(--column-width);
+    }
+
+    &__details {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 }

@@ -1,65 +1,23 @@
 @use 'overrides.scss';
+@use 'variables.scss' as variables;
 
 .Index {
   color: #063155;
 
-  &__name {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
-    line-height: 50px;
+  &__instagram-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gutter);
   }
 
-  &__role {
-    font-family: var(--monospace-font-family);
-  }
-
-  &__profile-picture {
-    transform: rotate(-2deg);
-    width: var(--column-width);
-  }
-
-  &__profile-picture-section {
-    position: relative;
-    width: 400px;
-  }
-
-  &__mission {
-    width: var(--column-width);
-    padding: 8px 12px;
-    background-color: #f3ebd3;
-    font-family: var(--monospace-font-family);
-    position: absolute;
-    bottom: -20px;
-    left: 60px;
-  }
-
-  &__footer-links {
-    width: var(--column-width);
+  &__featured-projects {
     display: flex;
-    flex: 0 0 auto;
-    flex-wrap: wrap;
-    margin-right: var(--gutter);
+    justify-content: space-between;
   }
 
-  &__footer-link {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    display: inline-block;
-    width: calc((var(--column-width) - var(--gutter)) / 2);
-    margin-bottom: 8px;
-
-    &:hover {
-      color: white;
-    }
-
-    &:nth-child(2n + 1) {
-      margin-right: var(--gutter);
-    }
-  }
-
-  &__footer-text {
-    color: rgba(255, 255, 255, 0.7);
-    margin-left: var(--gutter);
+  &__other-projects {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__description {
@@ -75,6 +33,21 @@
       a {
         color: inherit;
       }
+    }
+  }
+
+  @include variables.mobile {
+    &__instagram-photos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__featured-projects {
+      flex-wrap: wrap;
+    }
+
+    &__other-projects {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }

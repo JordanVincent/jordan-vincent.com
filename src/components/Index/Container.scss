@@ -1,6 +1,16 @@
+@use 'variables.scss' as variables;
+
 .Index\/Container {
   &__inner {
     width: var(--page-width);
     margin: 0 auto;
+  }
+
+  @include variables.mobile {
+    &__inner {
+      padding: 0 var(--gutter);
+      width: auto;
+      margin: 0;
+    }
   }
 }

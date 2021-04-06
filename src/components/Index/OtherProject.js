@@ -14,8 +14,6 @@ const OtherProject = ({ title, subtitle, coverSrc }) => {
         className="Index/OtherProject__cover"
         src={coverSrc}
         alt=""
-        width={250}
-        height={250}
         loading="lazy"
       />
     </div>
