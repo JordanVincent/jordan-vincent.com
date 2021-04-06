@@ -4,9 +4,7 @@ import './ProfessionalRole.scss';
 
 const ProfessionalRole = ({ companyName, duration }) => (
   <h4 className="Index/ProfessionalRole">
-    <span className="Index/ProfessionalRole__company-name">
-      {companyName}, {duration}
-    </span>
+    {companyName}, {duration}
   </h4>
 );
 

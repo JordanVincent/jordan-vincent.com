@@ -1,8 +1,8 @@
 .Index\/ProfessionalRole {
-  display: flex;
-  align-items: center;
   padding-top: 16px;
   position: relative;
+  font-size: 20px;
+  font-weight: 500;
 
   &::before {
     content: '';
@@ -12,23 +12,5 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  &__logo {
-    width: 32px;
-  }
-
-  &__company-name {
-    font-size: 22px;
-    font-family: var(--monospace-font-family);
-    font-size: 18px;
-  }
-
-  &__duration {
-    font-weight: normal;
-    margin-left: 12px;
-    font-size: 16px;
-    position: relative;
-    top: 2px;
   }
 }

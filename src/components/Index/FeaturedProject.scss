@@ -3,14 +3,11 @@
   position: relative;
 
   &__title {
-    font-family: var(--monospace-font-family);
     font-size: 18px;
     color: white;
-    margin-bottom: 10px;
   }
 
   &__subtitle {
-    margin-bottom: 32px;
     line-height: 22px;
     color: rgba(255, 255, 255, 0.8);
   }

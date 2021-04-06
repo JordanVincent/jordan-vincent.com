@@ -80,6 +80,7 @@ const Index = () => {
           </div>
           <div>
             <h1 className="Index__name">Jordan Vincent</h1>
+            <Tall desktop={12} />
             <p className="Index__role">Designer / Engineer</p>
           </div>
         </div>
@@ -124,7 +125,7 @@ const Index = () => {
           </OutboundLink>
           <FeaturedProject
             title="A night under the stars"
-            subtitle="When to visit all US National parks in one visualization"
+            subtitle="Find out when to visit all US National parks, in one visualization"
             coverSrc={nightUnderTheStars}
             withIibBadge={true}
           />
