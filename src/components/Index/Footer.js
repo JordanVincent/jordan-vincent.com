@@ -10,7 +10,7 @@ import './Footer.scss';
 const Footer = () => (
   <div className="Index/Footer">
     <Container backgroundColor="#0F123C">
-      <Tall desktop={40} />
+      <Tall desktop={40} mobile={40} />
       <div className="Index/Footer__inner">
         <div className="Index/Footer__links">
           <OutboundLink
@@ -48,7 +48,7 @@ const Footer = () => (
         <div className="Index/Footer__spacer" />
         <p className="Index/Footer__text">Always be exploring.</p>
       </div>
-      <Tall desktop={40} />
+      <Tall desktop={40} mobile={40} />
     </Container>
   </div>
 );

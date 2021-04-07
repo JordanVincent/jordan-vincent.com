@@ -1,3 +1,5 @@
+@use 'variables.scss' as variables;
+
 .Spacing\/Row {
   display: flex;
   flex-direction: row;
@@ -6,8 +8,34 @@
 .Spacing\/Wide {
   display: inline-block;
   flex: 0 0 auto;
+  height: 1px;
+
+  @include variables.mobile {
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include variables.desktop {
+    &--mobile {
+      display: none;
+    }
+  }
 }
 
 .Spacing\/Tall {
   flex: 0 0 auto;
+  width: 1px;
+
+  @include variables.mobile {
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include variables.desktop {
+    &--mobile {
+      display: none;
+    }
+  }
 }

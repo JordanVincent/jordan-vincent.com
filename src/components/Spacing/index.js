@@ -10,16 +10,38 @@ export const Row = ({ children, verticalAlign = 'normal' }) => (
 
 export const Wide = ({ desktop, mobile, children }) => {
   return (
-    <div className="Spacing/Wide" style={desktop ? { width: desktop } : {}}>
-      {children}
-    </div>
+    <React.Fragment>
+      {!!desktop && (
+        <div
+          className="Spacing/Wide Spacing/Wide--desktop"
+          style={{ height: desktop }}
+        />
+      )}
+      {!!mobile && (
+        <div
+          className="Spacing/Wide Spacing/Wide--mobile"
+          style={{ height: mobile }}
+        />
+      )}
+    </React.Fragment>
   );
 };
 
 export const Tall = ({ desktop, mobile, children }) => {
   return (
-    <div className="Spacing/Tall" style={desktop ? { height: desktop } : {}}>
-      {children}
-    </div>
+    <React.Fragment>
+      {!!desktop && (
+        <div
+          className="Spacing/Tall Spacing/Tall--desktop"
+          style={{ height: desktop }}
+        />
+      )}
+      {!!mobile && (
+        <div
+          className="Spacing/Tall Spacing/Tall--mobile"
+          style={{ height: mobile }}
+        />
+      )}
+    </React.Fragment>
   );
 };

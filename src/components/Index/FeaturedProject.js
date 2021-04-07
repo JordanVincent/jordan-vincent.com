@@ -17,9 +17,9 @@ const FeaturedProject = ({
   return (
     <OutboundLink className="Index/FeaturedProject" href={href}>
       <h3 className="Index/FeaturedProject__title">{title}</h3>
-      <Tall desktop={8} />
+      <Tall desktop={8} mobile={8} />
       <p className="Index/FeaturedProject__subtitle">{subtitle}</p>
-      <Tall desktop={20} />
+      <Tall desktop={20} mobile={20} />
       <div
         className="Index/FeaturedProject__cover"
         style={{ backgroundImage: `url(${coverSrc})` }}

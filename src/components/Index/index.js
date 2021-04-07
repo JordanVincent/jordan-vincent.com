@@ -69,9 +69,9 @@ const Index = () => {
       <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
       <Header />
       <Container backgroundColor="#3C4E11">
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
         <Heading variant="darkGreen">Outdoor Initiatives</Heading>
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={40} />
         <p className="Index__description--inverted">
           Follow me on{' '}
           <OutboundLink href="https://twitter.com/jordan_vinc">
@@ -83,7 +83,7 @@ const Index = () => {
           </OutboundLink>
           .
         </p>
-        <Tall desktop={60} />
+        <Tall desktop={60} mobile={40} />
         <div className="Index__featured-projects">
           <FeaturedProject
             title="Outdoor Status"
@@ -91,12 +91,14 @@ const Index = () => {
             coverSrc={outdoorStatus}
             href="https://outdoorstatus.com"
           />
+          <Tall mobile={40} />
           <FeaturedProject
             title="Rim to Rim permits"
             subtitle="An interactive guide to the Grand Canyon most iconic trail"
             coverSrc={rimToRimPermits}
             href="https://rimtorimpermits.com"
           />
+          <Tall mobile={40} />
           <FeaturedProject
             title="A night under the stars"
             subtitle="Find out when to visit all US National parks, in one visualization"
@@ -104,12 +106,12 @@ const Index = () => {
             withIibBadge={true}
           />
         </div>
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={80} />
       </Container>
       <Container>
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
         <Heading>Capturing wilderness in its best light</Heading>
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={40} />
         <p className="Index__description">
           I trade my computer for my backpack whenever I can! I like to explore
           remote places and climb high peaks. Follow my adventures on{' '}
@@ -118,18 +120,18 @@ const Index = () => {
           </OutboundLink>
           .
         </p>
-        <Tall desktop={60} />
+        <Tall desktop={60} mobile={40} />
         <div className="Index__instagram-photos-grid">
           {instagramPhotos.map(({ src, alt }) => (
             <InstagramPhoto src={src} alt={alt} key={src} />
           ))}
         </div>
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
       </Container>
       <Container backgroundColor="#F8F3EC">
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
         <Heading>Helping others acheive their dreams</Heading>
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={40} />
         <p className="Index__description">
           Find more details on{' '}
           <OutboundLink href="https://www.linkedin.com/in/jordanvinc/">
@@ -137,65 +139,67 @@ const Index = () => {
           </OutboundLink>
           .
         </p>
-        <Tall desktop={60} />
+        <Tall desktop={60} mobile={40} />
         <ProfessionalRole companyName="Airtable" duration="2020–present" />
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Airtable Onboarding"
           description="As part of the Activation team, I design and build onboarding experiences for new Airtable users."
           coverSrc={airtable}
         />
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={60} />
         <ProfessionalRole companyName="Roam Analytics" duration="2017–2020" />
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Annotation Manager"
           description="I designed and built most of Roam's products, including Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
           coverSrc={annotationManager}
         />
-        <Tall desktop={60} />
+        <Tall desktop={60} mobile={40} />
         <ProfessionalProject
           title="Goggles"
           description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."
           coverSrc={goggles}
         />
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
         <ProfessionalRole companyName="Cogniac" duration="2016–2017" />
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Cogniac Web App"
           description="I designed and built Cogniac's web application. It's used by non-technical users to build and train computed vision models from scratch."
           coverSrc={cogniac}
         />
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={40} />
       </Container>
       <Container>
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
         <Heading>Other projects</Heading>
-        <Tall desktop={40} />
+        <Tall desktop={40} mobile={40} />
         <p className="Index__description">
           I've worked on dozens of side projects over the years, these ones are
           the most notable.
         </p>
-        <Tall desktop={60} />
+        <Tall desktop={60} mobile={40} />
         <div className="Index__other-projects">
           <OtherProject
             title="A flight against time"
             subtitle="See how strange the US looks like from an airplane's perspective"
             coverSrc={flightAgainstTime}
           />
+          <Tall desktop={0} mobile={40} />
           <OtherProject
             title="DinoFit"
             subtitle="Do pushups to save dinos on the brink of extinction"
             coverSrc={dinofit}
           />
+          <Tall desktop={0} mobile={40} />
           <OtherProject
             title="Smart Bricks"
             subtitle="A place for LEGO artists to sell their creations"
             coverSrc={smartBricks}
           />
         </div>
-        <Tall desktop={80} />
+        <Tall desktop={80} mobile={40} />
       </Container>
       <Footer />
     </div>
