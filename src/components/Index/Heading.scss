@@ -13,7 +13,6 @@
   }
 
   &__back {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -27,6 +26,7 @@
 
   &--darkGreen {
     color: #314111;
+    left: 12px;
 
     .Index\/Heading__back {
       background-color: white;

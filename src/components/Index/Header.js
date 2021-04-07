@@ -12,7 +12,7 @@ import './Header.scss';
 const Header = () => (
   <div className="Index/Header">
     <Container>
-      <Tall desktop={120} />
+      <Tall desktop={120} mobile={40} />
       <div className="Index/Header__inner">
         <div className="Index/Header__profile-picture-section">
           <img
@@ -21,16 +21,21 @@ const Header = () => (
             className="Index/Header__profile-picture"
           />
           <p className="Index/Header__mission">
-            On a mission to improve access to the outdoors
+            On a mission to improve
+            <br />
+            access to the outdoors
           </p>
         </div>
-        <div>
-          <h1 className="Index/Header__name">Jordan Vincent</h1>
-          <Tall desktop={12} />
+        <div className="Index/Header__name-section">
+          <h1 className="Index/Header__name">
+            <span className="Index/Header__first-name">Jordan</span>{' '}
+            <span className="Index/Header__last-name">Vincent</span>
+          </h1>
+          <Tall desktop={12} mobile={20} />
           <p className="Index/Header__role">Designer / Engineer</p>
         </div>
       </div>
-      <Tall desktop={140} />
+      <Tall desktop={140} mobile={80} />
     </Container>
   </div>
 );

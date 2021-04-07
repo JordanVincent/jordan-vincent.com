@@ -69,7 +69,7 @@ const Index = () => {
       <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
       <Header />
       <Container backgroundColor="#3C4E11">
-        <Tall desktop={80} mobile={40} />
+        <Tall desktop={80} mobile={60} />
         <Heading variant="darkGreen">Outdoor Initiatives</Heading>
         <Tall desktop={40} mobile={40} />
         <p className="Index__description--inverted">

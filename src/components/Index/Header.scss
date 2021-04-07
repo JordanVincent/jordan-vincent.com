@@ -27,8 +27,8 @@
   }
 
   &__mission {
-    width: var(--column-width);
-    padding: 8px 12px;
+    width: 280px;
+    padding: 12px 16px;
     background-color: #f3ebd3;
     font-family: var(--monospace-font-family);
     position: absolute;
@@ -37,16 +37,69 @@
   }
 
   @include variables.mobile {
+    position: relative;
+    overflow: hidden;
+
     &__inner {
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
     }
 
     &__profile-picture {
-      width: 50%;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    &__profile-picture-section {
+      position: static;
+      width: auto;
+    }
+
+    &__name-section {
+      position: relative;
+      top: -100px;
+      left: 30px;
     }
 
     &__mission {
-      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    &__name {
+      transform: rotate(-3deg);
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__role {
+      transform: rotate(-3deg);
+    }
+
+    &__first-name,
+    &__last-name {
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        bottom: -5px;
+        right: -15px;
+        left: -15px;
+        background-color: #b7d2fc;
+        z-index: -1;
+        transform: skew(-20deg, 1deg);
+      }
+    }
+
+    &__last-name {
+      left: 10px;
     }
   }
 }
