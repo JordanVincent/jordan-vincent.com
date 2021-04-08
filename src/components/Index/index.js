@@ -197,6 +197,7 @@ const Index = () => {
             title="Smart Bricks"
             subtitle="A place for LEGO artists to sell their creations"
             coverSrc={smartBricks}
+            href="/projects/smart-bricks"
           />
         </div>
         <Tall desktop={80} mobile={40} />

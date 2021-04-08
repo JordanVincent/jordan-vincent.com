@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'gatsby';
+
 import { Tall } from 'components/Spacing';
 
 import './OtherProject.scss';
 
-const OtherProject = ({ title, subtitle, coverSrc }) => {
+const OtherProject = ({ title, subtitle, coverSrc, href }) => {
   return (
-    <div className="Index/OtherProject">
+    <Link className="Index/OtherProject" href={href}>
       <h3 className="Index/OtherProject__title">{title}</h3>
       <Tall desktop={8} mobile={8} />
       <p className="Index/OtherProject__subtitle">{subtitle}</p>
@@ -16,7 +18,7 @@ const OtherProject = ({ title, subtitle, coverSrc }) => {
         alt=""
         loading="lazy"
       />
-    </div>
+    </Link>
   );
 };
 
