@@ -146,6 +146,7 @@ const Index = () => {
           title="Airtable Onboarding"
           description="As part of the Activation team, I design and build onboarding experiences for new Airtable users."
           coverSrc={airtable}
+          href="https://airtable.com"
         />
         <Tall desktop={80} mobile={60} />
         <ProfessionalRole companyName="Roam Analytics" duration="2017–2020" />

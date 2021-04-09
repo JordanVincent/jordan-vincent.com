@@ -1,7 +1,7 @@
 import React from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 import { Tall } from 'components/Spacing';
+import UniversalLink from 'components/UniversalLink';
 
 import iibBadge from './iib-badge.png';
 
@@ -15,7 +15,7 @@ const FeaturedProject = ({
   withIibBadge = false,
 }) => {
   return (
-    <OutboundLink className="Index/FeaturedProject" href={href}>
+    <UniversalLink className="Index/FeaturedProject" href={href}>
       <h3 className="Index/FeaturedProject__title">{title}</h3>
       <Tall desktop={8} mobile={8} />
       <p className="Index/FeaturedProject__subtitle">{subtitle}</p>
@@ -32,7 +32,7 @@ const FeaturedProject = ({
           loading="lazy"
         />
       )}
-    </OutboundLink>
+    </UniversalLink>
   );
 };
 

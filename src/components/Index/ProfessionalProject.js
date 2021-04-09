@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import UniversalLink from 'components/UniversalLink';
+
 import './ProfessionalProject.scss';
 
 const ProfessionalProject = ({
@@ -11,7 +13,7 @@ const ProfessionalProject = ({
   href,
 }) => {
   return (
-    <Link className="Index/ProfessionalProject" href={href}>
+    <UniversalLink className="Index/ProfessionalProject" href={href}>
       <img
         className="Index/ProfessionalProject__cover"
         src={coverSrc}
@@ -24,7 +26,7 @@ const ProfessionalProject = ({
           {description}
         </span>
       </p>
-    </Link>
+    </UniversalLink>
   );
 };
 
