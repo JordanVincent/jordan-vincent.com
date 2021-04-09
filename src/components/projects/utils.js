@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import IndexFooter from 'components/Index/Footer';
 
@@ -26,6 +27,7 @@ export function Figure({
   caption,
   isVideo,
   withBrowserFrame = false,
+  withMargins = true,
 }) {
   const content = isVideo ? (
     <video className="projects/Figure__media" alt={alt} autoPlay muted loop>
@@ -42,7 +44,11 @@ export function Figure({
   );
 
   return (
-    <figure className="projects/Figure">
+    <figure
+      className={classnames('projects/Figure', {
+        'projects/Figure--margins': withMargins,
+      })}
+    >
       {wrappedContent}
       {caption && (
         <figcaption className="projects/Figure__caption">{caption}</figcaption>

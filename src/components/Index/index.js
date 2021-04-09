@@ -160,6 +160,7 @@ const Index = () => {
           title="Goggles"
           description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."
           coverSrc={goggles}
+          href="/projects/goggles"
         />
         <Tall desktop={80} mobile={40} />
         <ProfessionalRole companyName="Cogniac" duration="2016–2017" />
@@ -168,6 +169,7 @@ const Index = () => {
           title="Cogniac Web App"
           description="I designed and built Cogniac's web application. It's used by non-technical users to build and train computed vision models from scratch."
           coverSrc={cogniac}
+          href="/projects/cogniac"
         />
         <Tall desktop={40} mobile={40} />
       </Container>

@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import './ProfessionalProject.scss';
 
-const ProfessionalProject = ({ title, description, coverSrc, coverAlt }) => {
+const ProfessionalProject = ({
+  title,
+  description,
+  coverSrc,
+  coverAlt,
+  href,
+}) => {
   return (
-    <div className="Index/ProfessionalProject">
+    <Link className="Index/ProfessionalProject" href={href}>
       <img
         className="Index/ProfessionalProject__cover"
         src={coverSrc}
@@ -17,7 +24,7 @@ const ProfessionalProject = ({ title, description, coverSrc, coverAlt }) => {
           {description}
         </span>
       </p>
-    </div>
+    </Link>
   );
 };
 

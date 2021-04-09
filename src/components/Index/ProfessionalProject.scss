@@ -2,6 +2,8 @@
 
 .Index\/ProfessionalProject {
   display: flex;
+  text-decoration: none;
+  color: inherit;
 
   &__cover {
     width: calc(var(--column-width) * 2 + var(--gutter));

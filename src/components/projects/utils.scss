@@ -21,6 +21,10 @@ $headings-font-family: $font-family-sans-serif;
     padding-left: 20px;
     margin: 8px 0;
   }
+
+  a {
+    color: #0076d8;
+  }
 }
 
 .projects\/SectionHeading {
@@ -39,8 +43,11 @@ $headings-font-family: $font-family-sans-serif;
 }
 
 .projects\/Figure {
-  margin: 60px 0;
   position: relative;
+
+  &--margins {
+    margin: 60px 0;
+  }
 
   .backdrop {
     position: absolute;
@@ -106,8 +113,9 @@ $headings-font-family: $font-family-sans-serif;
   }
 
   @media (max-width: $screen-sm-min) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    &--margins {
+      margin: 20px 0;
+    }
 
     .backdrop {
       left: -20px;
