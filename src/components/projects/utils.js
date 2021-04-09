@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import classnames from 'classnames';
 
 import { Tall } from 'components/Spacing';
+import IndexFooter from 'components/Index/Footer';
 
 import './utils.scss';
 
@@ -23,10 +24,30 @@ export function SectionHeading({ title, subtitle }) {
   );
 }
 
-export function Figure({ caption, ...rest }) {
+export function Figure({
+  src,
+  alt,
+  caption,
+  isVideo,
+  withBrowserFrame = false,
+}) {
+  const content = isVideo ? (
+    <video className="projects/Figure__media" alt={alt} autoPlay muted loop>
+      <source src={src} type="video/mp4" />
+    </video>
+  ) : (
+    <img src={src} alt={alt} className="projects/Figure__media" />
+  );
+
+  const wrappedContent = withBrowserFrame ? (
+    <div className="projects/Figure__browser-frame">{content}</div>
+  ) : (
+    content
+  );
+
   return (
     <figure className="projects/Figure">
-      <img {...rest} className="projects/Figure__media" />
+      {wrappedContent}
       {caption && (
         <figcaption className="projects/Figure__caption">{caption}</figcaption>
       )}
@@ -54,7 +75,7 @@ export function Header({ title, subtitle, backgroundColor, about, role }) {
   const isCoverDark = false;
 
   return (
-    <div
+    <header
       className={classnames('projects/Header', {
         'projects/Header--dark': isCoverDark,
       })}
@@ -86,6 +107,10 @@ export function Header({ title, subtitle, backgroundColor, about, role }) {
         </div>
       </div>
       <Tall desktop={40} mobile={40} />
-    </div>
+    </header>
   );
+}
+
+export function Footer() {
+  return <IndexFooter />;
 }
