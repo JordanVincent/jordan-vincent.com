@@ -2,18 +2,6 @@ $article-width: 1080px;
 $link-color: blue;
 $screen-sm-min: 768px;
 
-.project__container {
-  width: 650px;
-  margin: 60px auto;
-}
-
-@media (max-width: $screen-sm-min) {
-  .project__container {
-    width: auto;
-    margin: 40px 16px;
-  }
-}
-
 .project-article {
   margin-top: 60px;
   padding-bottom: 60px;

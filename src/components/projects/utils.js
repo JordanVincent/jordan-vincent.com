@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import classnames from 'classnames';
 
-import { Tall } from 'components/Spacing';
 import IndexFooter from 'components/Index/Footer';
+
+import Header from './Header';
+import Bleed from './Bleed';
 
 import './utils.scss';
 
@@ -13,14 +13,10 @@ export function Paragraph({ children }) {
 
 export function SectionHeading({ title, subtitle }) {
   return (
-    <Bleed>
-      <div className="projects/SectionHeading">
-        <h2 className="projects/SectionHeading__title">
-          <span className="projects/SectionHeading__title-inner">{title}</span>
-        </h2>
-        <p className="projects/SectionHeading__subtitle">{subtitle}</p>
-      </div>
-    </Bleed>
+    <div className="projects/SectionHeading">
+      <h2 className="projects/SectionHeading__title">{title}</h2>
+      <p className="projects/SectionHeading__subtitle">{subtitle}</p>
+    </div>
   );
 }
 
@@ -55,9 +51,12 @@ export function Figure({
   );
 }
 
-export function Distribute({ children }) {
+export function Distribute({ children, childrenPerRow = 3 }) {
   return (
-    <div className="projects/Distribute">
+    <div
+      className="projects/Distribute"
+      style={{ gridTemplateColumns: `repeat(${childrenPerRow}, 1fr)` }}
+    >
       {React.Children.map(children, (child, index) => (
         <div className="projects/Distribute__child" key={index}>
           {child}
@@ -67,50 +66,18 @@ export function Distribute({ children }) {
   );
 }
 
-export function Bleed({ children }) {
-  return <div className="projects/Bleed">{children}</div>;
-}
-
-export function Header({ title, subtitle, backgroundColor, about, role }) {
-  const isCoverDark = false;
-
-  return (
-    <header
-      className={classnames('projects/Header', {
-        'projects/Header--dark': isCoverDark,
-      })}
-      style={{ backgroundColor }}
-    >
-      <Tall desktop={140} mobile={40} />
-      <div className="projects/Header__container">
-        <h1 className="projects/Header__title">
-          {title}{' '}
-          <Link to="/" className="projects/Header__back-link">
-            Back
-          </Link>
-        </h1>
-        <div className="projects/Header__subtitle">{subtitle}</div>
-        <Tall desktop={100} mobile={60} />
-        <div className="projects/Header__context">
-          <div className="projects/Header__about">
-            <h2 className="projects/Header__about-title">About</h2>
-            <Tall desktop={12} mobile={12} />
-            <div className="projects/Header__about-text">{about}</div>
-          </div>
-          {role && (
-            <div className="projects/Header__role">
-              <h2 className="projects/Header__role-title">My Role</h2>
-              <Tall desktop={12} mobile={12} />
-              <div className="projects/Header__role-text">{role}</div>
-            </div>
-          )}
-        </div>
-      </div>
-      <Tall desktop={40} mobile={40} />
-    </header>
-  );
-}
-
 export function Footer() {
   return <IndexFooter />;
 }
+
+export function Article({ children, ...rest }) {
+  return (
+    <article className="projects/Article">
+      <Header {...rest} />
+      <section className="projects/Article__inner">{children}</section>
+      <IndexFooter />
+    </article>
+  );
+}
+
+export { Bleed };

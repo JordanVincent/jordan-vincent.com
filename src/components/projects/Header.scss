@@ -1,0 +1,156 @@
+// TODO remove
+$article-width: 1080px;
+$link-color: blue;
+$screen-sm-min: 768px;
+
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$font-family-serif: 'PT Serif', serif;
+$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-sans-narrow: 'PT Sans Narrow', sans-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+
+.projects\/Header {
+  &__container {
+    width: var(--article-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--dark {
+    color: rgba(255, 255, 255, 0.8);
+
+    .projects\/Header__back-link {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .projects\/Header__title-back {
+      background-color: white;
+      opacity: 1;
+      top: -10px;
+      bottom: -10px;
+      right: -10px;
+      left: -10px;
+    }
+  }
+
+  &__title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    line-height: 60px;
+    color: #063155;
+    text-align: center;
+
+    &-inner {
+      position: relative;
+      max-width: 600px;
+      display: inline-block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 5px;
+        right: 5px;
+        bottom: 0;
+        background-color: #6ea5f8;
+        opacity: 0.5;
+        z-index: 0;
+        transform: skew(10deg, -1deg);
+      }
+    }
+
+    &-text {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__subtitle {
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--monospace-font-family);
+  }
+
+  &__context {
+    display: flex;
+  }
+
+  &__about {
+    flex: 1.618 1.618 0;
+    min-width: 0;
+  }
+
+  &__role {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-left: 60px;
+  }
+
+  &__about-title,
+  &__role-title {
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    font-weight: 500;
+  }
+
+  &__about-text {
+    line-height: 34px;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-bottom: 60px;
+  }
+
+  &__role-text {
+    line-height: 24px;
+    opacity: 0.7;
+  }
+
+  &__back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: inherit;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s;
+    }
+  }
+
+  @media (max-width: $screen-sm-min) {
+    &__container {
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+
+    &__context {
+      display: block;
+    }
+
+    &__role {
+      margin: 0;
+    }
+
+    &__about-text {
+      font-size: $font-size-base;
+    }
+
+    &__about-title,
+    &__role-title {
+      font-size: 18px;
+      margin-top: 60px;
+    }
+  }
+}

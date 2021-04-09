@@ -1,0 +1,9 @@
+$screen-sm-min: 768px;
+
+.projects\/Bleed {
+  margin: 0 calc((var(--article-width) - var(--article-bleed-width)) / 2);
+
+  @media (max-width: $screen-sm-min) {
+    margin: 0;
+  }
+}
