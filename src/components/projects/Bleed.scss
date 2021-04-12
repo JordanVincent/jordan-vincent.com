@@ -3,6 +3,17 @@ $screen-sm-min: 768px;
 .projects\/Bleed {
   margin: 0 calc((var(--article-width) - var(--article-bleed-width)) / 2);
 
+  &--background {
+    width: 100vw;
+    margin-right: 0;
+    margin-left: calc((var(--article-width) - 100vw) / 2);
+  }
+
+  &__inner {
+    width: var(--article-bleed-width);
+    margin: 0 auto;
+  }
+
   @media (max-width: $screen-sm-min) {
     margin: 0;
   }

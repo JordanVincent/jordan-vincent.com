@@ -155,6 +155,7 @@ const Index = () => {
           title="Annotation Manager"
           description="I designed and built most of Roam's products, including Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
           coverSrc={annotationManager}
+          href="/projects/annotation-manager"
         />
         <Tall desktop={60} mobile={40} />
         <ProfessionalProject

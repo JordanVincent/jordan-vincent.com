@@ -20,7 +20,7 @@ import websiteImage from 'assets/projects/cogniac/cogniac-website.png';
 
 import './styles.scss';
 
-export default function SmartBricks() {
+export default function Cogniac() {
   return (
     <Article
       title="Cogniac"

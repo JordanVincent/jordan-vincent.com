@@ -12,11 +12,10 @@ export default function Header({
   title,
   subtitle,
   backgroundColor = '#F8F3EC',
+  isBackgroundDark = false,
   about,
   role,
 }) {
-  const isBackgroundDark = false;
-
   return (
     <header
       className={classnames('projects/Header', {

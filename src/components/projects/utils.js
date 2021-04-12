@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import IndexFooter from 'components/Index/Footer';
 
 import Header from './Header';
+import Figure from './Figure';
 import Bleed from './Bleed';
 
 import './utils.scss';
@@ -18,42 +19,6 @@ export function SectionHeading({ title, subtitle }) {
       <h2 className="projects/SectionHeading__title">{title}</h2>
       <p className="projects/SectionHeading__subtitle">{subtitle}</p>
     </div>
-  );
-}
-
-export function Figure({
-  src,
-  alt,
-  caption,
-  isVideo,
-  withBrowserFrame = false,
-  withMargins = true,
-}) {
-  const content = isVideo ? (
-    <video className="projects/Figure__media" alt={alt} autoPlay muted loop>
-      <source src={src} type="video/mp4" />
-    </video>
-  ) : (
-    <img src={src} alt={alt} className="projects/Figure__media" />
-  );
-
-  const wrappedContent = withBrowserFrame ? (
-    <div className="projects/Figure__browser-frame">{content}</div>
-  ) : (
-    content
-  );
-
-  return (
-    <figure
-      className={classnames('projects/Figure', {
-        'projects/Figure--margins': withMargins,
-      })}
-    >
-      {wrappedContent}
-      {caption && (
-        <figcaption className="projects/Figure__caption">{caption}</figcaption>
-      )}
-    </figure>
   );
 }
 
@@ -86,4 +51,4 @@ export function Article({ children, ...rest }) {
   );
 }
 
-export { Bleed };
+export { Bleed, Figure };

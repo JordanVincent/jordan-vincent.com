@@ -184,34 +184,40 @@ export default function SmartBricks() {
             src={proto1Image}
             alt="Goggles Prototype"
             caption="Early and rough prototype; trying to group nodes by namespace."
+            withMargins={false}
           />
           <Figure
             src={proto2Image}
             alt="Goggles Prototype"
             caption="Using physics simulation to group nodes by namespace and connect
             namespaces together."
+            withMargins={false}
           />
           <Figure
             src={proto3Image}
             alt="Goggles Prototype"
             caption="Bringing some structure to the nodes within namespaces."
+            withMargins={false}
           />
           <Figure
             src={proto4Image}
             alt="Goggles Prototype"
             caption="Alright, now let's try to group namespaces that are connected."
+            withMargins={false}
           />
           <Figure
             src={proto5Image}
             alt="Goggles Prototype"
             caption="Bringing some structure to how namespaces are connected to each
             other."
+            withMargins={false}
           />
           <Figure
             src={proto6Image}
             alt="Goggles Prototype"
             caption="Arranging namespaces in a linear pattern to help with
             readability."
+            withMargins={false}
           />
         </Distribute>
       </Bleed>

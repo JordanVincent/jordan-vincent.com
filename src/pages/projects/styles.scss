@@ -35,11 +35,6 @@ $screen-sm-min: 768px;
     margin: 30px 0 5px 0;
   }
 
-  .centered-column {
-    width: 60%;
-    margin: 0 20%;
-  }
-
   q {
     margin: 30px 0 15px 0;
     display: block;
@@ -76,11 +71,6 @@ $screen-sm-min: 768px;
   }
 
   @media (max-width: $screen-sm-min) {
-    .centered-column {
-      width: 100%;
-      margin: 0;
-    }
-
     .hero-image {
       .backdrop {
         left: -20px;
