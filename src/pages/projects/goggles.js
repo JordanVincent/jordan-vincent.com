@@ -22,8 +22,6 @@ import sketchesImage from 'assets/projects/goggles/goggles-sketches.jpg';
 import specimensImage from 'assets/projects/goggles/goggles-specimens.png';
 import tshirtImage from 'assets/projects/goggles/goggles-tshirt.jpg';
 
-import './styles.scss';
-
 export default function SmartBricks() {
   return (
     <Article

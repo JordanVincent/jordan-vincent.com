@@ -22,6 +22,10 @@ export function SectionHeading({ title, subtitle }) {
   );
 }
 
+export function Heading({ children }) {
+  return <div className="projects/Heading">{children}</div>;
+}
+
 export function Distribute({ children, childrenPerRow = 3 }) {
   return (
     <div

@@ -22,8 +22,6 @@ import overviewImage from 'assets/projects/annotation-manager/annotation-manager
 import platformImage from 'assets/projects/annotation-manager/annotation-manager-platform.png';
 import specImage from 'assets/projects/annotation-manager/annotation-manager-spec.png';
 
-import './styles.scss';
-
 export default function AnnotationManager() {
   return (
     <Article
@@ -37,15 +35,6 @@ export default function AnnotationManager() {
       <Bleed>
         <Figure src={overviewImage} alt="Annotation Manager" withBrowserFrame />
       </Bleed>
-      {/* <div class="hero-image">
-        <div class="browser-frame">
-          <img
-            src="/assets/images/projects/annotation-manager-overview.png"
-            alt="Annotation Manager"
-          />
-        </div>
-        <div class="backdrop" style="background: #1A4160"></div>
-      </div> */}
 
       <Paragraph>
         Mid-2018, Roam Analytics recentered its efforts to focus on what it does
@@ -233,15 +222,6 @@ export default function AnnotationManager() {
       <Bleed backgroundColor="#ebeff2">
         <Figure src={specImage} alt="Annotation interface specification" />
       </Bleed>
-      {/* <figure>
-        <img
-          src="/assets/images/projects/annotation-manager-spec.png"
-          alt="Annotation interface specification"
-          class="img-responsive"
-        />
-        <figcaption></figcaption>
-        <div class="backdrop" style="background: #EBEFF2"></div>
-      </figure> */}
 
       <Paragraph>Here it is in action:</Paragraph>
 

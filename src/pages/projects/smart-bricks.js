@@ -16,8 +16,6 @@ import houseImage from 'assets/projects/smart-bricks/smart-bricks-house.jpg';
 import instructionsImage from 'assets/projects/smart-bricks/smart-bricks-instructions.jpg';
 import packageImage from 'assets/projects/smart-bricks/smart-bricks-package.jpg';
 
-import './styles.scss';
-
 export default function SmartBricks() {
   return (
     <Article

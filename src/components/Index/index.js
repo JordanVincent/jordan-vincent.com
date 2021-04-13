@@ -195,6 +195,7 @@ const Index = () => {
             title="DinoFit"
             subtitle="Do pushups to save dinos on the brink of extinction"
             coverSrc={dinofit}
+            href="/projects/dino-fit"
           />
           <Tall desktop={0} mobile={40} />
           <OtherProject

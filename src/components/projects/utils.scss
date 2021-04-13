@@ -14,7 +14,7 @@ $headings-font-family: $font-family-sans-serif;
 .projects\/Paragraph {
   line-height: 28px;
   font-size: 18px;
-  margin: 28px 0;
+  margin: 0 0 28px 0;
 
   ul,
   ol {
@@ -25,6 +25,10 @@ $headings-font-family: $font-family-sans-serif;
 
   a {
     color: #0076d8;
+  }
+
+  b {
+    font-weight: 500;
   }
 }
 
@@ -41,6 +45,12 @@ $headings-font-family: $font-family-sans-serif;
     font-size: 18px;
     margin-top: 8px;
   }
+}
+
+.projects\/Heading {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 40px 0 16px 0;
 }
 
 .projects\/Distribute {

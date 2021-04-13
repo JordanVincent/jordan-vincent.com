@@ -18,8 +18,6 @@ import pipelineElementsImage from 'assets/projects/cogniac/cogniac-pipeline-elem
 import pipelineImage from 'assets/projects/cogniac/cogniac-pipeline.png';
 import websiteImage from 'assets/projects/cogniac/cogniac-website.png';
 
-import './styles.scss';
-
 export default function Cogniac() {
   return (
     <Article
