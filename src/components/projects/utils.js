@@ -23,7 +23,7 @@ export function SectionHeading({ title, subtitle }) {
 }
 
 export function Heading({ children }) {
-  return <div className="projects/Heading">{children}</div>;
+  return <h3 className="projects/Heading">{children}</h3>;
 }
 
 export function Distribute({ children, childrenPerRow = 3 }) {

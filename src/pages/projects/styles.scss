@@ -6,21 +6,6 @@ $screen-sm-min: 768px;
   margin-top: 60px;
   padding-bottom: 60px;
 
-  .hero-image {
-    position: relative;
-    margin-top: -60px;
-    margin-bottom: 60px;
-
-    .backdrop {
-      position: absolute;
-      left: calc((-100vw + #{$article-width}) / 2);
-      top: 0;
-      width: 100vw;
-      z-index: -1;
-      height: 50%;
-    }
-  }
-
   b {
     font-weight: 600;
   }
@@ -50,26 +35,6 @@ $screen-sm-min: 768px;
 
     &:hover {
       border-bottom: 2px solid $link-color;
-    }
-  }
-
-  .adminca-graph-wrapper {
-    position: relative;
-    height: 380px;
-
-    img {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  @media (max-width: $screen-sm-min) {
-    .hero-image {
-      .backdrop {
-        left: -20px;
-      }
     }
   }
 }

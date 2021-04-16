@@ -12,25 +12,31 @@ $font-family-base: $font-family-serif;
 $headings-font-family: $font-family-sans-serif;
 
 .projects\/Figure {
-  position: relative;
   margin: 0;
 
   &--margins {
     margin: 60px 0;
   }
 
-  .backdrop {
-    position: absolute;
-    left: calc((-100vw + #{$article-width}) / 2);
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-    height: 100%;
-  }
-
   &__media {
     max-width: 100%;
     display: block;
+    position: relative;
+
+    &--youtube {
+      width: 100%;
+      padding-bottom: 56.25%;
+
+      .projects\/Figure__media-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border: 0;
+      }
+    }
   }
 
   &__caption {
@@ -86,13 +92,13 @@ $headings-font-family: $font-family-sans-serif;
     }
   }
 
+  &__with-border {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   @media (max-width: $screen-sm-min) {
     &--margins {
       margin: 20px 0;
-    }
-
-    .backdrop {
-      left: -20px;
     }
   }
 }
