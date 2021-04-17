@@ -16,7 +16,7 @@ const ProfessionalProject = ({
       <img
         className="Index/ProfessionalProject__cover"
         src={coverSrc}
-        alt={coverAlt}
+        alt={title}
         loading="lazy"
       />
       <p className="Index/ProfessionalProject__details">

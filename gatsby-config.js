@@ -2,6 +2,7 @@ module.exports = {
   // Used by `gatsby-plugin-sitemap`
   siteMetadata: {
     title: 'Jordan Vincent',
+    siteUrl: 'https://jordan-vincent.com',
   },
   plugins: [
     'gatsby-plugin-eslint',
