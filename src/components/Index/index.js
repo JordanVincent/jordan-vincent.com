@@ -189,6 +189,7 @@ const Index = () => {
             title="A flight against time"
             subtitle="See how strange the US looks like from an airplane's perspective"
             coverSrc={flightAgainstTime}
+            href="/flight-against-time"
           />
           <Tall desktop={0} mobile={40} />
           <OtherProject
