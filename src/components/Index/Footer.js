@@ -5,6 +5,8 @@ import { Tall } from 'components/Spacing';
 
 import Container from './Container';
 
+import resumeDocument from './jordan-vincent.pdf';
+
 import './Footer.scss';
 
 const Footer = () => (
@@ -44,6 +46,14 @@ const Footer = () => (
           >
             GitHub
           </OutboundLink>
+          <a
+            className="Index/Footer__link"
+            href={resumeDocument}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
         </div>
         <div className="Index/Footer__spacer" />
         <p className="Index/Footer__text">Always be exploring.</p>
