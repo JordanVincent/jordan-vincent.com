@@ -5,7 +5,7 @@
   "description": "Jordan Vincent",
   "author": "jordanvincent",
   "engines": {
-    "node": ">=12.13.0",
+    "node": ">=12.13.0"
   },
   "scripts": {
     "develop": "gatsby develop",
