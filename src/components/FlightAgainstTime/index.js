@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
+import PageMetadata from 'components/PageMetadata';
+
 import anchorageChart from './charts/anchorage.js';
 import atlantaChart from './charts/atlanta.js';
 import chicagoChart from './charts/chicago.js';
@@ -34,12 +36,18 @@ import chicagoDetroitImage from './images/chicago-detroit.svg';
 import newOrleansAtlantaImage from './images/new-orleans-atlanta.svg';
 import phoenixSummerImage from './images/phoenix-summer.svg';
 import phoenixImage from './images/phoenix.svg';
+import metaImage from './meta.png';
 
 import './index.scss';
 
 export default function FlightAgainstTime() {
   return (
     <div className="FlightAgainstTime">
+      <PageMetadata
+        title="A flight against time | Jordan Vincent"
+        description="What does the United States look like from major airports?"
+        image={{ src: metaImage, width: 480, height: 480 }}
+      />
       <Link to="/" className="FlightAgainstTime__back-btn">
         Other Projects
       </Link>

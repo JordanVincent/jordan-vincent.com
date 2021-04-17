@@ -6,7 +6,7 @@ const siteUrl = 'http://jordan-vincent.com';
 export default function PageMetadata({
   title = 'Jordan Vincent | Designer & Engineer',
   description = 'Designer and Engineer on a mission to improve access to the outdoors',
-  image,
+  image = {},
 }) {
   const { src: imageSrc, width: imageWith, height: imageHeight } = image;
 

@@ -2,21 +2,32 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
+import PageMetadata from 'components/PageMetadata';
+
 import legend from './legend';
 import parkGroups from './park-data';
 import chartData from './chart-data';
+import metaImage from './meta.png';
 
 import './index.scss';
 
 export default function NightUnderTheStars() {
   return (
-    <div id="nps-nights">
-      <OutboundLink className="os-banner" href="https://outdoorstatus.com">
+    <div className="NightUnderTheStars">
+      <PageMetadata
+        title="A Night Under The Stars | Jordan Vincent"
+        description="Explore overnight stays at US National Parks and uncover surprising patterns."
+        image={{ src: metaImage, width: 480, height: 480 }}
+      />
+      <OutboundLink
+        className="NightUnderTheStars__os-banner"
+        href="https://outdoorstatus.com"
+      >
         Tired of missing outdoor permit deadlines? Check out the Outdoor Status
         newsletter!
       </OutboundLink>
 
-      <Link to="/" className="nps-night-back-btn">
+      <Link to="/" className="NightUnderTheStars__back-btn">
         Other Projects
       </Link>
 

@@ -4,7 +4,7 @@
   @return 340px * $groups + 280px + 60px * 2;
 }
 
-#nps-nights {
+.NightUnderTheStars {
   $title-color: #63544e;
   --body-color: #948b87;
   --title-color: #{$title-color};
@@ -34,7 +34,7 @@
     margin-bottom: 12px;
   }
 
-  .nps-night-back-btn {
+  &__back-btn {
     position: fixed;
     top: 42px;
     left: 16px;
@@ -48,7 +48,7 @@
     text-decoration: none;
   }
 
-  .os-banner {
+  &__os-banner {
     padding: 8px 20px;
     background: #4cb159;
     color: white;
@@ -344,24 +344,24 @@
   }
 }
 
-#nps-nights .park-group {
+.NightUnderTheStars .park-group {
   width: group-width(4);
 }
 
 @media only screen and (max-width: group-width(4)) {
-  #nps-nights .park-group {
+  .NightUnderTheStars .park-group {
     width: group-width(3);
   }
 }
 
 @media only screen and (max-width: group-width(3)) {
-  #nps-nights .park-group {
+  .NightUnderTheStars .park-group {
     width: group-width(2);
   }
 }
 
 @media only screen and (max-width: group-width(2)) {
-  #nps-nights .park-group {
+  .NightUnderTheStars .park-group {
     flex-direction: column;
     width: auto;
 
@@ -377,7 +377,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #nps-nights {
+  .NightUnderTheStars {
     .park-group {
       padding: 0 20px;
 

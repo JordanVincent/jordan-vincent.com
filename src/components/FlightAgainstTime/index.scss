@@ -46,6 +46,14 @@
   .header-subtitle {
     font-size: 16px;
 
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     .bullet {
       width: 4px;
       height: 4px;
@@ -198,6 +206,11 @@
 
     a {
       color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
