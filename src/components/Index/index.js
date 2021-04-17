@@ -104,6 +104,7 @@ const Index = () => {
             subtitle="Find out when to visit all US National parks, in one visualization"
             coverSrc={nightUnderTheStars}
             withIibBadge={true}
+            href="/night-under-the-stars"
           />
         </div>
         <Tall desktop={80} mobile={80} />
