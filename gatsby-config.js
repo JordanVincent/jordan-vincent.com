@@ -1,33 +1,34 @@
 module.exports = {
   // Used by `gatsby-plugin-sitemap`
   siteMetadata: {
-    title: "Jordan Vincent",
+    title: 'Jordan Vincent',
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-eslint',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require("sass"),
+        implementation: require('sass'),
       },
     },
     {
-      resolve: "gatsby-plugin-google-gtag",
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: ["UA-39088123-1"],
+        trackingIds: ['UA-39088123-1'],
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Jordan Vincent",
-        short_name: "Jordan Vincent",
-        start_url: "/",
-        background_color: "white",
-        theme_color: "white",
-        display: "standalone",
-        icon: "src/assets/icon.png",
+        name: 'Jordan Vincent',
+        short_name: 'Jordan Vincent',
+        start_url: '/',
+        background_color: 'white',
+        theme_color: 'white',
+        display: 'standalone',
+        icon: 'src/assets/icon.png',
       },
     },
   ],

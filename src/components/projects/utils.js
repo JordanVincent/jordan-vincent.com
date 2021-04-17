@@ -1,8 +1,6 @@
 import React from 'react';
 
-import IndexFooter from 'components/Index/Footer';
-
-import Header from './Header';
+import Article from './Article';
 import Figure from './Figure';
 import Bleed from './Bleed';
 
@@ -45,18 +43,4 @@ export function Distribute({ children, childrenPerRow = 3 }) {
   );
 }
 
-export function Footer() {
-  return <IndexFooter />;
-}
-
-export function Article({ children, ...rest }) {
-  return (
-    <article className="projects/Article">
-      <Header {...rest} />
-      <section className="projects/Article__inner">{children}</section>
-      <IndexFooter />
-    </article>
-  );
-}
-
-export { Bleed, Figure };
+export { Bleed, Figure, Article };

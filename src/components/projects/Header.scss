@@ -21,10 +21,6 @@ $headings-font-family: $font-family-sans-serif;
   &--dark {
     color: rgba(255, 255, 255, 0.9);
 
-    .projects\/Header__back-link {
-      color: var(--base-text-color);
-    }
-
     .projects\/Header__title-back {
       background-color: white;
       opacity: 1;
@@ -97,7 +93,6 @@ $headings-font-family: $font-family-sans-serif;
   &__about-title,
   &__role-title {
     font-size: var(--base-font-size);
-    line-height: var(--base-line-height);
     font-weight: 500;
   }
 
@@ -115,17 +110,49 @@ $headings-font-family: $font-family-sans-serif;
 
   &__back-link {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 40px;
+    right: 40px;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 8px 16px;
-    border-radius: 4px;
-    color: inherit;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: background-color 0.2s;
+
+    &::before,
+    &::after {
+      width: 2px;
+      height: 28px;
+      background-color: #bbb;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transition: background-color 0.2s;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) translate(1px, 1px) rotate(-45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) translate(1px, 1px) rotate(45deg);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(0, 0, 0, 0.8);
+    }
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-      transition: background-color 0.2s;
+      background-color: #eee;
+
+      &::before,
+      &::after {
+        background-color: #555;
+      }
     }
   }
 
@@ -138,6 +165,7 @@ $headings-font-family: $font-family-sans-serif;
 
     &__subtitle {
       font-size: 24px;
+      line-height: 32px;
     }
 
     &__context {
@@ -150,12 +178,18 @@ $headings-font-family: $font-family-sans-serif;
 
     &__about-text {
       font-size: $font-size-base;
+      line-height: 24px;
     }
 
     &__about-title,
     &__role-title {
       font-size: 18px;
       margin-top: 60px;
+    }
+
+    &__back-link {
+      top: 12px;
+      right: 12px;
     }
   }
 }

@@ -16,5 +16,14 @@ $screen-sm-min: 768px;
 
   @media (max-width: $screen-sm-min) {
     margin: 0;
+
+    &--background {
+      margin: 0 -16px;
+    }
+
+    &__inner {
+      width: auto;
+      margin: 0 16px;
+    }
   }
 }

@@ -23,10 +23,8 @@ export default function Header({
       })}
       style={{ backgroundColor }}
     >
-      <Tall desktop={140} mobile={40} />
-      <Link to="/" className="projects/Header__back-link">
-        Back
-      </Link>
+      <Tall desktop={140} mobile={140} />
+      <Link to="/" className="projects/Header__back-link" arial-label="Back" />
 
       <div className="projects/Header__container">
         <Bleed>

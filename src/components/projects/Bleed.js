@@ -9,7 +9,7 @@ export default function Bleed({ children, backgroundColor }) {
         className="projects/Bleed projects/Bleed--background"
         style={{ backgroundColor }}
       >
-        <div className="projects/Bleed__inner"> {children}</div>
+        <div className="projects/Bleed__inner">{children}</div>
       </div>
     );
   }
