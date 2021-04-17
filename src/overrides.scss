@@ -6,21 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400%3B500&family=Source+Code+Pro:wght@500&display=swap');
 
 :root {
-  --blue-color: #1066e1;
-  --base-text-color: rgba(0, 0, 0, 0.9);
+  --base-link-color: #0076d8;
+  --base-text-color: #063155;
   --base-font-size: 16px;
-  --small-font-size: 14px;
-  --micro-font-size: 12px;
   --base-line-height: 20px;
-  --small-line-height: 18px;
-  --micro-line-height: 16px;
   --max-mobile-width: #{variables.$max-mobile-width};
   --column-width: 250px;
   --gutter: 40px;
   --page-width: calc(var(--column-width) * 3 + var(--gutter) * 2);
   --article-width: 600px;
   --article-bleed-width: 1000px;
-
   --monospace-font-family: 'Source Code Pro', monospace;
 
   @include variables.mobile {

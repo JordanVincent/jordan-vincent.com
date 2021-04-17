@@ -1,15 +1,4 @@
-// TODO remove
-$article-width: 1080px;
-$link-color: blue;
-$screen-sm-min: 768px;
-
-$font-size-base: 16px;
-$line-height-base: 1.6;
-$font-family-serif: 'PT Serif', serif;
-$font-family-sans-serif: 'PT Sans', sans-serif;
-$font-family-sans-narrow: 'PT Sans Narrow', sans-serif;
-$font-family-base: $font-family-serif;
-$headings-font-family: $font-family-sans-serif;
+@use 'variables.scss' as variables;
 
 .projects\/Figure {
   margin: 0;
@@ -96,7 +85,7 @@ $headings-font-family: $font-family-sans-serif;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  @media (max-width: $screen-sm-min) {
+  @include variables.mobile {
     &--margins {
       margin: 20px 0;
     }

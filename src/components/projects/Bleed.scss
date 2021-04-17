@@ -1,4 +1,4 @@
-$screen-sm-min: 768px;
+@use 'variables.scss' as variables;
 
 .projects\/Bleed {
   margin: 0 calc((var(--article-width) - var(--article-bleed-width)) / 2);
@@ -14,7 +14,7 @@ $screen-sm-min: 768px;
     margin: 0 auto;
   }
 
-  @media (max-width: $screen-sm-min) {
+  @include variables.mobile {
     margin: 0;
 
     &--background {

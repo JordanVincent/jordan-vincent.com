@@ -1,15 +1,4 @@
-// TODO remove
-$article-width: 1080px;
-$link-color: blue;
-$screen-sm-min: 768px;
-
-$font-size-base: 16px;
-$line-height-base: 1.6;
-$font-family-serif: 'PT Serif', serif;
-$font-family-sans-serif: 'PT Sans', sans-serif;
-$font-family-sans-narrow: 'PT Sans Narrow', sans-serif;
-$font-family-base: $font-family-serif;
-$headings-font-family: $font-family-sans-serif;
+@use 'variables.scss' as variables;
 
 .projects\/Paragraph {
   line-height: 28px;
@@ -17,7 +6,7 @@ $headings-font-family: $font-family-sans-serif;
   margin: 0 0 28px 0;
 
   a {
-    color: #0076d8;
+    color: var(--base-link-color);
   }
 
   b {
@@ -37,7 +26,7 @@ $headings-font-family: $font-family-sans-serif;
   }
 
   a {
-    color: #0076d8;
+    color: var(--base-link-color);
   }
 
   b {
@@ -70,7 +59,7 @@ $headings-font-family: $font-family-sans-serif;
   display: grid;
   gap: 32px;
 
-  @media (max-width: $screen-sm-min) {
+  @include variables.mobile {
     display: block;
   }
 }

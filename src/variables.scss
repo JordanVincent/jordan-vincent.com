@@ -1,5 +1,5 @@
 // Using a SASS variable here because CSS variables can't be used in media queries
-$max-mobile-width: 500px;
+$max-mobile-width: 600px;
 
 @mixin mobile {
   @media only screen and (max-width: $max-mobile-width) {

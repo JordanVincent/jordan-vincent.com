@@ -1,15 +1,4 @@
-// TODO remove
-$article-width: 1080px;
-$link-color: blue;
-$screen-sm-min: 768px;
-
-$font-size-base: 16px;
-$line-height-base: 1.6;
-$font-family-serif: 'PT Serif', serif;
-$font-family-sans-serif: 'PT Sans', sans-serif;
-$font-family-sans-narrow: 'PT Sans Narrow', sans-serif;
-$font-family-base: $font-family-serif;
-$headings-font-family: $font-family-sans-serif;
+@use 'variables.scss' as variables;
 
 .projects\/Header {
   &__container {
@@ -40,7 +29,7 @@ $headings-font-family: $font-family-sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-size: 60px;
     line-height: 60px;
-    color: #063155;
+    color: var(--base-text-color);
     text-align: center;
 
     &-inner {
@@ -156,7 +145,7 @@ $headings-font-family: $font-family-sans-serif;
     }
   }
 
-  @media (max-width: $screen-sm-min) {
+  @include variables.mobile {
     &__container {
       width: auto;
       margin-left: 20px;
@@ -177,7 +166,7 @@ $headings-font-family: $font-family-sans-serif;
     }
 
     &__about-text {
-      font-size: $font-size-base;
+      font-size: var(--base-font-size);
       line-height: 24px;
     }
 
