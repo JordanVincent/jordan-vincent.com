@@ -8,7 +8,9 @@ import {
   Paragraph,
   Article,
   Distribute,
+  List,
 } from 'components/projects/utils';
+import { Tall } from 'components/Spacing';
 
 import annotationsVideo from 'assets/projects/annotation-manager/annotation-manager-annotations.mp4';
 import deckImage from 'assets/projects/annotation-manager/annotation-manager-deck.png';
@@ -100,7 +102,7 @@ export default function AnnotationManager() {
       </Paragraph>
 
       <Paragraph>It took a few dozens of iterations.</Paragraph>
-
+      <Tall desktop={40} mobile={40} />
       <Bleed>
         <Distribute childrenPerRow={2}>
           <Figure
@@ -211,6 +213,7 @@ export default function AnnotationManager() {
           />
         </Distribute>
       </Bleed>
+      <Tall desktop={80} mobile={80} />
 
       <Paragraph>
         After a few days of tinkering, I decided to ask for help. After exposing
@@ -265,20 +268,20 @@ export default function AnnotationManager() {
         That was a wake-up call. Why did I spend so much time building features
         when I should have done my designer's job? For the following weeks, I
         met with everyone who had used the tool. There were three main issues:
-        <ul>
-          <li>
-            The tool was too slow: text searches would take close to a minute to
-            resolve. We clearly underestimated the size of the datasets.
-          </li>
-          <li>
-            It was not flexible for nurses who worked on a flexible schedule.
-          </li>
-          <li>
-            The integrated platform approach made it very hard for Data
-            Scientists to integrate the tool into their workflow.
-          </li>
-        </ul>
       </Paragraph>
+      <List>
+        <li>
+          The tool was too slow: text searches would take close to a minute to
+          resolve. We clearly underestimated the size of the datasets.
+        </li>
+        <li>
+          It was not flexible for nurses who worked on a flexible schedule.
+        </li>
+        <li>
+          The integrated platform approach made it very hard for Data Scientists
+          to integrate the tool into their workflow.
+        </li>
+      </List>
       <Paragraph>
         Interestingly, users loved the new annotation interface I co-designed
         with them. It was miles ahead from{' '}
@@ -357,31 +360,30 @@ export default function AnnotationManager() {
         I firmly believe that the best way to build platforms is to build a
         suite of independent and loosely connected products. The benefits are
         numerous:
-        <ol>
-          <li>
-            Independent products can evolve at their own pace. It makes it
-            easier to iterate and mistakes are cheaper.
-          </li>
-          <li>
-            A single team can own an entire product. Everyone on the team is
-            aligned toward a single goal.{' '}
-            <OutboundLink href="https://en.wikipedia.org/wiki/Conway%27s_law">
-              Conway's law
-            </OutboundLink>{' '}
-            states that the structure of a system is a reflection of the
-            communication pattern of its individuals. Because communication
-            within teams is stronger than in between teams, products will
-            naturally be loosely coupled.
-          </li>
-          <li>
-            It’s much easier to avoid scope creep because each product fulfills
-            one single goal. Trying to add a new feature that isn’t aligned with
-            any of the platform's existing products? Let’s create a new product
-            and a new team!
-          </li>
-        </ol>
       </Paragraph>
-
+      <List isOrdered>
+        <li>
+          Independent products can evolve at their own pace. It makes it easier
+          to iterate and mistakes are cheaper.
+        </li>
+        <li>
+          A single team can own an entire product. Everyone on the team is
+          aligned toward a single goal.{' '}
+          <OutboundLink href="https://en.wikipedia.org/wiki/Conway%27s_law">
+            Conway's law
+          </OutboundLink>{' '}
+          states that the structure of a system is a reflection of the
+          communication pattern of its individuals. Because communication within
+          teams is stronger than in between teams, products will naturally be
+          loosely coupled.
+        </li>
+        <li>
+          It’s much easier to avoid scope creep because each product fulfills
+          one single goal. Trying to add a new feature that isn’t aligned with
+          any of the platform's existing products? Let’s create a new product
+          and a new team!
+        </li>
+      </List>
       <Paragraph>
         Cathal Horan from Intercom uses the{' '}
         <OutboundLink href="https://www.intercom.com/blog/what-the-evolution-of-cities-can-teach-us-about-building-platforms/">

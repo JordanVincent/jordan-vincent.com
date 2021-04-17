@@ -1,5 +1,4 @@
 import React from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { Tweet } from 'react-twitter-widgets';
 
 import {
@@ -10,6 +9,7 @@ import {
   Paragraph,
   Article,
   Distribute,
+  List,
 } from 'components/projects/utils';
 import { Tall } from 'components/Spacing';
 
@@ -53,17 +53,17 @@ export default function AnnotationManager() {
         database. Companies have to design and develop admin panels to enable
         their non-technical staff to view and manage this data. However,
         creating admin panels has always been a hassle, because:
-        <ul>
-          <li>
-            Developers <b>waste time</b> building and maintaining a
-            non-revenue-generating tool.
-          </li>
-          <li>
-            It often <b>lowers staff efficiency</b> due to poorly designed
-            interfaces.
-          </li>
-        </ul>
       </Paragraph>
+      <List>
+        <li>
+          Developers <b>waste time</b> building and maintaining a
+          non-revenue-generating tool.
+        </li>
+        <li>
+          It often <b>lowers staff efficiency</b> due to poorly designed
+          interfaces.
+        </li>
+      </List>
       <SectionHeading title="Research" />
       <Paragraph>
         We carried out a lengthy user research study that included 14
@@ -275,11 +275,11 @@ export default function AnnotationManager() {
       <Tall desktop={80} mobile={80} />
       <Paragraph>
         Download the{' '}
-        <a href={bookDocument} target="_blank">
+        <a href={bookDocument} target="_blank" rel="noreferrer">
           design process book
         </a>{' '}
         and{' '}
-        <a href={posterDocument} target="_blank">
+        <a href={posterDocument} target="_blank" rel="noreferrer">
           poster
         </a>
         .

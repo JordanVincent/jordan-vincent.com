@@ -16,11 +16,24 @@ $headings-font-family: $font-family-sans-serif;
   font-size: 18px;
   margin: 0 0 28px 0;
 
-  ul,
-  ol {
-    list-style: disc;
-    padding-left: 20px;
-    margin: 8px 0;
+  a {
+    color: #0076d8;
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.projects\/List {
+  line-height: 28px;
+  font-size: 18px;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0 0 28px 0;
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   a {

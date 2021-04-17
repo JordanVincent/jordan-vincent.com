@@ -27,9 +27,9 @@ export default function Figure({
         <iframe
           title="YouTube video player"
           src={src}
-          frameborder="0"
+          frameBorder="0"
           className="projects/Figure__media-inner"
-          allowfullscreen
+          allowFullScreen
         />
       </div>
     );

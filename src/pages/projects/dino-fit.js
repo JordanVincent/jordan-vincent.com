@@ -1,5 +1,4 @@
 import React from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 import {
   Figure,
@@ -144,40 +143,38 @@ export default function DinoFit() {
 
       <SectionHeading title="Development" />
 
-      <div class="centered-column">
-        <Paragraph>
-          I always wanted to create an Android app. I started thinking about the
-          concept in June 2014. After sketching many gameplay ideas and
-          interactions, I started developing a first version in about 3 months.
-          I developed a Ruby on Rails server to store user’s information and
-          generate new workouts every day. The app and the server would
-          communicate through a REST API.
-        </Paragraph>
-        <Paragraph>
-          It worked very well, but I also became very busy with school around
-          that time while entering at the University of Washington.
-        </Paragraph>
-      </div>
+      <Paragraph>
+        I always wanted to create an Android app. I started thinking about the
+        concept in June 2014. After sketching many gameplay ideas and
+        interactions, I started developing a first version in about 3 months. I
+        developed a Ruby on Rails server to store user’s information and
+        generate new workouts every day. The app and the server would
+        communicate through a REST API.
+      </Paragraph>
+      <Paragraph>
+        It worked very well, but I also became very busy with school around that
+        time while entering at the University of Washington.
+      </Paragraph>
+
       <Distribute>
         <Figure src={dino1Image} alt="Dino sketch" />
         <Figure src={dino2Image} alt="Dino wireframe" />
         <Figure src={dino3Image} alt="Dino illustraction" />
       </Distribute>
-      <div class="centered-column">
-        <Paragraph>
-          Around April 2015, I started the project again but from scratch,
-          learning from my first experience. I spent a month creating a high
-          fidelity mockup of the app, and then another month developing the app.
-          I ditched the server and managed to generate workouts on the phone
-          directly. Because there is no need to wait for any server, it is more
-          responsive than ever.
-        </Paragraph>
-        <Paragraph>
-          The app is currently in closed beta. However, I have started many
-          other projects and I didn’t have the time to release it yet, although
-          it is ready to launch. So stay tuned!
-        </Paragraph>
-      </div>
+
+      <Paragraph>
+        Around April 2015, I started the project again but from scratch,
+        learning from my first experience. I spent a month creating a high
+        fidelity mockup of the app, and then another month developing the app. I
+        ditched the server and managed to generate workouts on the phone
+        directly. Because there is no need to wait for any server, it is more
+        responsive than ever.
+      </Paragraph>
+      <Paragraph>
+        The app is currently in closed beta. However, I have started many other
+        projects and I didn’t have the time to release it yet, although it is
+        ready to launch. So stay tuned!
+      </Paragraph>
     </Article>
   );
 }

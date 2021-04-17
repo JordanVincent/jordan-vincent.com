@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 
 import IndexFooter from 'components/Index/Footer';
 
@@ -11,6 +10,11 @@ import './utils.scss';
 
 export function Paragraph({ children }) {
   return <p className="projects/Paragraph">{children}</p>;
+}
+
+export function List({ isOrdered = false, children }) {
+  const TagName = isOrdered ? 'ol' : 'ul';
+  return <TagName className="projects/List">{children}</TagName>;
 }
 
 export function SectionHeading({ title, subtitle }) {

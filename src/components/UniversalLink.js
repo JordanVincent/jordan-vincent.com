@@ -2,10 +2,17 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
-const UniversalLink = (props) => {
-  const isExternalUrl = /(https*:\/\/)/.test(props.href);
-  const TagName = isExternalUrl ? OutboundLink : Link;
-  return <TagName {...props} />;
+const UniversalLink = ({ href, ...rest }) => {
+  if (!href) {
+    console.warn('"href" is undefined for <UniversalLink/>');
+  }
+
+  const isExternalUrl = /(https*:\/\/)/.test(href);
+  if (isExternalUrl) {
+    return <OutboundLink href={href} {...rest} />;
+  } else {
+    return <Link to={href} {...rest} />;
+  }
 };
 
 export default UniversalLink;
