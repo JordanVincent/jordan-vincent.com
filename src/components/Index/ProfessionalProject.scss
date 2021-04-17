@@ -1,0 +1,42 @@
+@use 'variables.scss' as variables;
+
+.Index\/ProfessionalProject {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+
+  &__cover {
+    width: calc(var(--column-width) * 2 + var(--gutter));
+    flex: 0 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__details {
+    width: var(--column-width);
+    margin-left: var(--gutter);
+    flex: 0 0 auto;
+    line-height: 22px;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__description {
+    opacity: 0.7;
+  }
+
+  @include variables.mobile {
+    flex-wrap: wrap;
+
+    &__cover {
+      width: var(--column-width);
+    }
+
+    &__details {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

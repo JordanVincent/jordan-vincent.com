@@ -1,0 +1,44 @@
+@use 'variables.scss' as variables;
+
+.Index\/FeaturedProject {
+  width: var(--column-width);
+  position: relative;
+  text-decoration: none;
+  display: block;
+
+  &__title {
+    font-size: 18px;
+    color: white;
+  }
+
+  &__subtitle {
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__cover {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    display: block;
+    width: var(--column-width);
+    height: 404px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 100px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  @include variables.mobile {
+    &__cover {
+      height: calc(100vw - var(--gutter) * 2);
+    }
+  }
+}

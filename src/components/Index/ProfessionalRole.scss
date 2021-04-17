@@ -1,0 +1,16 @@
+.Index\/ProfessionalRole {
+  padding-top: 16px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 3px;
+    background-color: var(--base-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

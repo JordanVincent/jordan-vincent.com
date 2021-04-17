@@ -1,0 +1,65 @@
+@use 'variables.scss' as variables;
+
+.projects\/Paragraph {
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0 0 28px 0;
+
+  a {
+    color: var(--base-link-color);
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.projects\/List {
+  line-height: 28px;
+  font-size: 18px;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0 0 28px 0;
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: var(--base-link-color);
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.projects\/SectionHeading {
+  margin: 80px 0 40px 0;
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__subtitle {
+    opacity: 0.5;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+
+.projects\/Heading {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 40px 0 16px 0;
+}
+
+.projects\/Distribute {
+  display: grid;
+  gap: 32px;
+
+  @include variables.mobile {
+    display: block;
+  }
+}

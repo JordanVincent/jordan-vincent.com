@@ -1,0 +1,29 @@
+@use 'variables.scss' as variables;
+
+.projects\/Bleed {
+  margin: 0 calc((var(--article-width) - var(--article-bleed-width)) / 2);
+
+  &--background {
+    width: 100vw;
+    margin-right: 0;
+    margin-left: calc((var(--article-width) - 100vw) / 2);
+  }
+
+  &__inner {
+    width: var(--article-bleed-width);
+    margin: 0 auto;
+  }
+
+  @include variables.mobile {
+    margin: 0;
+
+    &--background {
+      margin: 0 -16px;
+    }
+
+    &__inner {
+      width: auto;
+      margin: 0 16px;
+    }
+  }
+}

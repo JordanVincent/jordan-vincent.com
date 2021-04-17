@@ -1,0 +1,34 @@
+@use 'variables.scss' as variables;
+
+.pages\/projects\/DinoFit {
+  &__right-bleed {
+    display: flex;
+    margin-right: calc((var(--article-width) - var(--article-bleed-width)) / 2);
+  }
+
+  &__left-column {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  &__right-column {
+    flex: 0 0 260px;
+    margin-left: 40px;
+  }
+
+  @include variables.mobile {
+    &__right-bleed {
+      display: block;
+      margin: 0;
+    }
+
+    &__left-column {
+      flex: none;
+    }
+
+    &__right-column {
+      margin-left: 0;
+      flex: none;
+    }
+  }
+}

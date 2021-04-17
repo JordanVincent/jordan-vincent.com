@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400%3B600&family=Rasa:wght@400%3B500%3B600&display=swap');
+
+@function group-width($groups) {
+  @return 340px * $groups + 280px + 60px * 2;
+}
+
+.NightUnderTheStars {
+  $title-color: #63544e;
+  --body-color: #948b87;
+  --title-color: #{$title-color};
+
+  --background-color: #f5eeeb;
+  --footer-color: #e7deda;
+
+  $lodging-color: #efc13a;
+  $tent-color: #7cb342;
+  $rv-color: #00897b;
+  $backcountry-color: #d27f3c;
+
+  --lodging-color: #{$lodging-color};
+  --tent-color: #{$tent-color};
+  --rv-color: #{$rv-color};
+  --backcountry-color: #{$backcountry-color};
+
+  & {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--body-color);
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  &__back-btn {
+    position: fixed;
+    top: 42px;
+    left: 16px;
+    z-index: 1;
+    color: var(--body-color);
+    background-color: var(--footer-color);
+    border-radius: 2px;
+    padding: 4px 16px;
+    margin-top: 16px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__os-banner {
+    padding: 8px 20px;
+    background: #4cb159;
+    color: white;
+    transition: background-color 0.2s;
+    display: block;
+    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      background: #3d9a49;
+    }
+  }
+
+  // Legend
+
+  .chart-legend-tooltip {
+    font-size: 14px;
+    line-height: 18px;
+    overflow: visible;
+
+    & > .primary {
+    }
+
+    & > .secondary {
+      opacity: 0.6;
+      margin-top: 4px;
+    }
+  }
+
+  .chart-legend-line {
+    stroke: #63544e;
+    fill: none;
+  }
+
+  .chart-legend-dot {
+    fill: #63544e;
+  }
+
+  // Chart
+
+  .chart-wrapper {
+    display: inline-block;
+  }
+
+  .chart {
+    margin-bottom: -5px;
+    //box-shadow: 0 0 0px 1px red;
+
+    text {
+      font-family: 'Open Sans', sans-serif;
+      fill: #63544e;
+      text-anchor: middle;
+    }
+
+    .month-label {
+      font-size: 10px;
+      fill: #cac5c2;
+    }
+
+    .park-name {
+      font-family: 'Rasa', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .last-tick-value {
+      font-size: 10px;
+    }
+
+    .park-state {
+      fill: #948b87;
+      font-size: 13px;
+    }
+  }
+
+  // Body
+  .poster-body {
+  }
+
+  .park-group {
+    margin: 0 auto 60px auto;
+    padding: 0 60px;
+    display: flex;
+
+    .park-group-header {
+      width: 240px;
+
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 80px;
+      margin-right: 40px;
+    }
+
+    .park-group-title {
+      font-size: 28px;
+      font-family: 'Rasa', sans-serif;
+      margin-bottom: 16px;
+      font-weight: 500;
+      color: var(--title-color);
+
+      & > .arrow {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        margin-left: 8px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border: 2px solid var(--title-color);
+          top: 0px;
+          right: 0px;
+          border-width: 2px 2px 0 0;
+          transform-origin: 0px 6px;
+          transform: rotate(45deg);
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 2px;
+          background-color: var(--title-color);
+          top: 50%;
+          right: 0px;
+          transform: translate(-2px, -50%);
+        }
+      }
+    }
+
+    .park-group-description {
+      font-size: 16px;
+    }
+
+    .park-group-legend {
+      margin-top: 24px;
+    }
+
+    .park-group-label-lodging,
+    .park-group-label-rv,
+    .park-group-label-tent,
+    .park-group-label-backcountry {
+      font-size: 13px;
+      line-height: 22px;
+
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        margin-right: 8px;
+        display: inline-block;
+      }
+    }
+
+    .park-group-label-lodging:before {
+      background: $lodging-color;
+    }
+
+    .park-group-label-rv:before {
+      background: $rv-color;
+    }
+
+    .park-group-label-tent:before {
+      background: $tent-color;
+    }
+
+    .park-group-label-backcountry:before {
+      background: $backcountry-color;
+    }
+
+    .park-group-body {
+      flex: 1 1 0px;
+    }
+  }
+
+  /* Header */
+
+  .poster-header {
+    margin: 0px 0 80px 0;
+    padding: 80px 60px 0 60px;
+  }
+
+  .poster-header-title {
+    color: var(--title-color);
+    font-family: 'Rasa', sans-serif;
+    font-size: 90px;
+    margin: 20px 0 12px 0;
+    font-weight: 600;
+    line-height: 0.8;
+  }
+
+  .poster-header-subtitle {
+    color: #948b87;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+
+  .poster-header-lead {
+    // color: #948B87;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+
+  .poster-header-inner {
+    // flex: 0 0 1000px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .poster-header-column-title {
+    font-family: 'Rasa', sans-serif;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .label-lodging,
+  .label-rv,
+  .label-tent,
+  .label-backcountry {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 4px;
+    border-radius: 1px;
+  }
+
+  .label-lodging {
+    background-color: transparentize($lodging-color, 0.2);
+    color: mix($title-color, $lodging-color, 70%);
+  }
+
+  .label-rv {
+    background-color: transparentize($rv-color, 0.2);
+    color: mix($title-color, $rv-color, 70%);
+  }
+
+  .label-tent {
+    background-color: transparentize($tent-color, 0.2);
+    color: mix($title-color, $tent-color, 70%);
+  }
+
+  .label-backcountry {
+    background-color: transparentize($backcountry-color, 0.2);
+    color: mix($title-color, $backcountry-color, 70%);
+  }
+
+  /* Footer */
+
+  .poster-footer {
+    background: var(--footer-color);
+    padding: 60px;
+    font-size: 13px;
+    line-height: 18px;
+
+    .poster-footer-inner {
+      width: 600px;
+      margin: 0 auto;
+      columns: 2;
+      column-gap: 40px;
+    }
+
+    p {
+      margin: 0 0 12px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: #326598;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .spacer {
+      flex: 1 1 0;
+    }
+  }
+}
+
+.NightUnderTheStars .park-group {
+  width: group-width(4);
+}
+
+@media only screen and (max-width: group-width(4)) {
+  .NightUnderTheStars .park-group {
+    width: group-width(3);
+  }
+}
+
+@media only screen and (max-width: group-width(3)) {
+  .NightUnderTheStars .park-group {
+    width: group-width(2);
+  }
+}
+
+@media only screen and (max-width: group-width(2)) {
+  .NightUnderTheStars .park-group {
+    flex-direction: column;
+    width: auto;
+
+    .park-group-header {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .park-group-body {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .NightUnderTheStars {
+    .park-group {
+      padding: 0 20px;
+
+      .park-group-header {
+        width: auto;
+      }
+    }
+
+    .poster-header {
+      padding: 80px 20px 0 20px;
+    }
+
+    .poster-header-inner {
+      width: auto;
+    }
+
+    .poster-header-title {
+      font-size: 64px;
+    }
+
+    .poster-footer {
+      padding: 20px;
+
+      .poster-footer-inner {
+        width: auto;
+        columns: unset;
+      }
+    }
+  }
+}

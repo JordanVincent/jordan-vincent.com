@@ -1,0 +1,80 @@
+@use 'variables.scss' as variables;
+
+// Using `%3B` in place of `;` characters because Chrome has issues fetching url
+// imports with semi-colons. More info:
+// https://talk.observablehq.com/t/unescaped-semicolon-in-inlined-css-import-url-triggers-invalid-request/3706
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400%3B500&family=Source+Code+Pro:wght@500&display=swap');
+
+:root {
+  --base-link-color: #0076d8;
+  --base-text-color: #063155;
+  --base-font-size: 16px;
+  --base-line-height: 20px;
+  --max-mobile-width: #{variables.$max-mobile-width};
+  --column-width: 250px;
+  --gutter: 40px;
+  --page-width: calc(var(--column-width) * 3 + var(--gutter) * 2);
+  --article-width: 600px;
+  --article-bleed-width: 1000px;
+  --monospace-font-family: 'Source Code Pro', monospace;
+
+  @include variables.mobile {
+    --gutter: 16px;
+    --column-width: 100%;
+    --page-width: 100%;
+  }
+}
+
+// Default to border-box
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  color: var(--base-text-color);
+}
+
+button,
+textarea,
+select,
+input {
+  font-family: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  text-align: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

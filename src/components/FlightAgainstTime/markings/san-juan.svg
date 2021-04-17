@@ -1,0 +1,23 @@
+<svg width="954px" height="400px" viewBox="0 0 954 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>san-juan</title>
+    <desc>Created with Sketch.</desc>
+    <g id="san-juan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="No-cities-are-access" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="123" y="205">No cities are accessible by </tspan>
+            <tspan x="123" y="221">direct flight past the Great </tspan>
+            <tspan x="123" y="237">Plaines.</tspan>
+        </text>
+        <text id="Puerto-Rico-is-2h45m" font-family="NunitoSans-Regular, Nunito Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+            <tspan x="652" y="189">Puerto Rico is 2h45min </tspan>
+            <tspan x="652" y="205">away from Miami. But </tspan>
+            <tspan x="652" y="221">because it’s located East of </tspan>
+            <tspan x="652" y="237">the contiguous US, it </tspan>
+            <tspan x="652" y="253">appears even closer.</tspan>
+        </text>
+        <polygon id="Path-13" fill="#FFFFFF" transform="translate(335.000000, 188.000000) rotate(137.000000) translate(-335.000000, -188.000000) " points="338 190 332 188 338 186"></polygon>
+        <path d="M283,188 C293.505173,197.607349 302.67184,203.587002 310.5,205.938959 C318.32816,208.290916 326.494827,209.287525 335,208.928785" id="Path-14" stroke="#FFFFFF" transform="translate(309.000000, 198.500000) scale(-1, 1) translate(-309.000000, -198.500000) "></path>
+        <path d="M727,267 C726.663609,286.666667 721.617737,300.5 711.862385,308.5 C702.107034,316.5 688.819572,320.666667 672,321" id="Path-26" stroke="#FFFFFF"></path>
+        <polygon id="Path-13" fill="#FFFFFF" points="673 323 667 321 673 319"></polygon>
+    </g>
+</svg>

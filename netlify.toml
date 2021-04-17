@@ -1,0 +1,7 @@
+[build]
+  command = "yarn build"
+  publish = "public"
+  environment = { NODE_ENV = "production", NODE_VERSION = "14.16.1" }
+
+[dev]
+  command = "yarn start"

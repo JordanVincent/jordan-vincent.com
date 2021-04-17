@@ -1,0 +1,17 @@
+@use 'variables.scss' as variables;
+
+.projects\/Article {
+  color: var(--base-text-color);
+
+  &__inner {
+    width: var(--article-width);
+    margin: 60px auto;
+  }
+
+  @include variables.mobile {
+    &__inner {
+      width: auto;
+      margin: 40px 16px;
+    }
+  }
+}

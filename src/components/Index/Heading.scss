@@ -1,0 +1,40 @@
+.Index\/Heading {
+  font-family: 'Permanent Marker', cursive;
+  max-width: 320px;
+  font-size: 30px;
+  line-height: 28px;
+  color: var(--base-text-color);
+  position: relative;
+  display: inline-block;
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6ea5f8;
+    opacity: 0.5;
+    z-index: 0;
+    transform: skew(10deg, -1deg);
+  }
+
+  &--darkGreen {
+    color: #314111;
+    left: 12px;
+
+    .Index\/Heading__back {
+      background-color: white;
+      opacity: 1;
+      top: -10px;
+      bottom: -10px;
+      right: -10px;
+      left: -10px;
+    }
+  }
+}

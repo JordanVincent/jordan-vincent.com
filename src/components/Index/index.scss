@@ -1,0 +1,53 @@
+@use 'overrides.scss';
+@use 'variables.scss' as variables;
+
+.Index {
+  color: #063155;
+
+  &__instagram-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gutter);
+  }
+
+  &__featured-projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__other-projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    max-width: calc(var(--column-width) * 2 + var(--gutter));
+
+    a {
+      color: inherit;
+    }
+
+    &--inverted {
+      color: rgba(255, 255, 255, 0.7);
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  @include variables.mobile {
+    &__instagram-photos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__featured-projects {
+      flex-wrap: wrap;
+    }
+
+    &__other-projects {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
