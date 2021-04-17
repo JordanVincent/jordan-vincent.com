@@ -4,9 +4,9 @@
   "private": true,
   "description": "Jordan Vincent",
   "author": "jordanvincent",
-  "keywords": [
-    "gatsby"
-  ],
+  "engines": {
+    "node": ">=12.13.0",
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
