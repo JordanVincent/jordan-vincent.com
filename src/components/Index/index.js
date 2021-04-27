@@ -25,7 +25,7 @@ import nightUnderTheStars from './project-images/night-under-the-stars.png';
 import rimToRimPermits from './project-images/rim-to-rim-permits.png';
 import smartBricks from './project-images/smart-bricks.jpg';
 
-import profilePicture from './profile.jpg';
+import metaPicture from 'assets/meta.jpg';
 
 import instagramPhotoA from './instagram-photos/A.jpg';
 import instagramPhotoB from './instagram-photos/B.jpg';
@@ -66,7 +66,7 @@ const instagramPhotos = [
 const Index = () => {
   return (
     <div className="Index">
-      <PageMetadata image={{ src: profilePicture, width: 680, height: 940 }} />
+      <PageMetadata image={{ src: metaPicture, width: 512, height: 512 }} />
       <Header />
       <Container backgroundColor="#3C4E11">
         <Tall desktop={80} mobile={60} />
