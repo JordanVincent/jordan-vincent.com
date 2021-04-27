@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const siteUrl = 'http://jordan-vincent.com';
+const siteUrl = 'https://jordan-vincent.com';
 
 export default function PageMetadata({
   title = 'Jordan Vincent | Designer & Engineer',
@@ -15,7 +15,8 @@ export default function PageMetadata({
   }
 
   // Social networks require images to use absolute paths
-  const absoluteImageSrc = imageSrc ? siteUrl + imageSrc : '';
+  const isAbsolutePath = /(https*:\/\/)/.test(imageSrc);
+  const absoluteImageSrc = isAbsolutePath ? imageSrc : siteUrl + imageSrc;
 
   return (
     <Helmet>
@@ -42,6 +43,7 @@ export default function PageMetadata({
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@jordan_vinc" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {absoluteImageSrc && (
