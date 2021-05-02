@@ -378,6 +378,10 @@
 
 @media only screen and (max-width: 600px) {
   .NightUnderTheStars {
+    &__back-btn {
+      top: 80px;
+    }
+
     .park-group {
       padding: 0 20px;
 
