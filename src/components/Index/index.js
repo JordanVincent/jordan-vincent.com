@@ -78,7 +78,7 @@ const Index = () => {
             Twitter
           </OutboundLink>{' '}
           or subscribe to the{' '}
-          <OutboundLink href="https://outdoorstatus.com">
+          <OutboundLink href="https://outdoorstatus.com/newsletter/">
             Outdoor Status newsletter
           </OutboundLink>
           .
@@ -89,7 +89,7 @@ const Index = () => {
             title="Outdoor Status"
             subtitle="The newsletter for booking hiking permits"
             coverSrc={outdoorStatus}
-            href="https://outdoorstatus.com"
+            href="https://outdoorstatus.com/"
           />
           <Tall mobile={40} />
           <FeaturedProject
@@ -141,7 +141,7 @@ const Index = () => {
           .
         </p>
         <Tall desktop={60} mobile={40} />
-        <ProfessionalRole companyName="Airtable" duration="2020–present" />
+        <ProfessionalRole companyName="Airtable" duration="2020–2022" />
         <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Airtable Onboarding"

@@ -21,10 +21,10 @@ export default function NightUnderTheStars() {
       />
       <OutboundLink
         className="NightUnderTheStars__os-banner"
-        href="https://outdoorstatus.com"
+        href="https://outdoorstatus.com/"
       >
-        Tired of missing outdoor permit deadlines? Check out the Outdoor Status
-        newsletter!
+        Tired of missing outdoor permit deadlines? Check out my new project,
+        Outdoor Status.
       </OutboundLink>
 
       <Link to="/" className="NightUnderTheStars__back-btn">
