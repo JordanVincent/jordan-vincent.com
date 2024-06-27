@@ -131,7 +131,7 @@ const Index = () => {
       </Container>
       <Container backgroundColor="#F8F3EC">
         <Tall desktop={80} mobile={40} />
-        <Heading>Helping others acheive their dreams</Heading>
+        <Heading>Helping others achieve their dreams</Heading>
         <Tall desktop={40} mobile={40} />
         <p className="Index__description">
           Find more details on{' '}
@@ -145,7 +145,7 @@ const Index = () => {
         <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Airtable Onboarding"
-          description="As part of the Activation team, I design and build onboarding experiences for new Airtable users."
+          description="As part of the Activation Team, I designed and built onboarding experiences for new Airtable users."
           coverSrc={airtable}
           href="https://airtable.com"
         />
