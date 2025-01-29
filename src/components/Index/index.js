@@ -87,21 +87,21 @@ const Index = () => {
         <div className="Index__featured-projects">
           <FeaturedProject
             title="Outdoor Status"
-            subtitle="The newsletter for booking hiking permits"
+            subtitle="Helping plan and book backpacking trips."
             coverSrc={outdoorStatus}
             href="https://outdoorstatus.com/"
           />
           <Tall mobile={40} />
           <FeaturedProject
             title="Rim to Rim permits"
-            subtitle="An interactive guide to the Grand Canyon most iconic trail"
+            subtitle="An interactive guide to the Grand Canyon’s most iconic trail."
             coverSrc={rimToRimPermits}
             href="https://rimtorimpermits.com"
           />
           <Tall mobile={40} />
           <FeaturedProject
             title="A night under the stars"
-            subtitle="Find out when to visit all US National parks, in one visualization"
+            subtitle="When to visit all the US National Parks, in one visualization."
             coverSrc={nightUnderTheStars}
             withIibBadge={true}
             href="/night-under-the-stars"
@@ -154,14 +154,14 @@ const Index = () => {
         <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Annotation Manager"
-          description="I designed and built most of Roam's products, including Annotation Manager — a text annotation tool that doesn't sacrifice user experience."
+          description="I designed and built most of Roam’s products, including Annotation Manager — a text annotation tool that doesn’t sacrifice user experience."
           coverSrc={annotationManager}
           href="/projects/annotation-manager"
         />
         <Tall desktop={60} mobile={40} />
         <ProfessionalProject
           title="Goggles"
-          description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam's extensive health knowledge graph."
+          description="I also designed and built internal tools. Goggles allows Data Engineers to explore Roam’s extensive health knowledge graph."
           coverSrc={goggles}
           href="/projects/goggles"
         />
@@ -170,7 +170,7 @@ const Index = () => {
         <Tall desktop={40} mobile={20} />
         <ProfessionalProject
           title="Cogniac Web App"
-          description="I designed and built Cogniac's web application. It's used by non-technical users to build and train computed vision models from scratch."
+          description="I designed and built Cogniac’s web application. It’s used by non-technical users to build and train computed vision models from scratch."
           coverSrc={cogniac}
           href="/projects/cogniac"
         />
@@ -181,28 +181,28 @@ const Index = () => {
         <Heading>Other projects</Heading>
         <Tall desktop={40} mobile={40} />
         <p className="Index__description">
-          I've worked on dozens of side projects over the years, these ones are
-          the most notable.
+          I’ve worked on dozens of side projects over the years, here are the
+          most notable.
         </p>
         <Tall desktop={60} mobile={40} />
         <div className="Index__other-projects">
           <OtherProject
             title="A flight against time"
-            subtitle="See how strange the US looks like from an airplane's perspective"
+            subtitle="See how strange the US looks like from an airplane’s perspective."
             coverSrc={flightAgainstTime}
             href="/flight-against-time"
           />
           <Tall desktop={0} mobile={40} />
           <OtherProject
             title="DinoFit"
-            subtitle="Do pushups to save dinos on the brink of extinction"
+            subtitle="Do push-ups to save dinos on the brink of extinction."
             coverSrc={dinofit}
             href="/projects/dino-fit"
           />
           <Tall desktop={0} mobile={40} />
           <OtherProject
             title="Smart Bricks"
-            subtitle="A place for LEGO artists to sell their creations"
+            subtitle="A place for LEGO artists to sell their creations."
             coverSrc={smartBricks}
             href="/projects/smart-bricks"
           />
